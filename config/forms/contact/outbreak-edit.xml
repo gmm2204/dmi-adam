@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Edit Outbreak</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/outbreak/code:label">
+            <value>Code</value>
+          </text>
+          <text id="/data/outbreak/description:label">
+            <value>Description</value>
+          </text>
+          <text id="/data/outbreak/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/outbreak/name:label">
+            <value>Name</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/outbreak/code:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/outbreak/description:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/outbreak/external_id:label">
+            <value>Identifiant externe</value>
+          </text>
+          <text id="/data/outbreak/name:label">
+            <value>Nom</value>
+          </text>
+        </translation>
+        <translation lang="hi">
+          <text id="/data/outbreak/code:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/description:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/external_id:label">
+            <value>बाहरी ID</value>
+          </text>
+          <text id="/data/outbreak/name:label">
+            <value>नाम</value>
+          </text>
+        </translation>
+        <translation lang="id">
+          <text id="/data/outbreak/code:label">
+            <value>Nama</value>
+          </text>
+          <text id="/data/outbreak/description:label">
+            <value>Nama</value>
+          </text>
+          <text id="/data/outbreak/external_id:label">
+            <value>Eksternal ID</value>
+          </text>
+          <text id="/data/outbreak/name:label">
+            <value>Nama</value>
+          </text>
+        </translation>
+        <translation lang="ne">
+          <text id="/data/outbreak/code:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/description:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/external_id:label">
+            <value>बाहिरि ID</value>
+          </text>
+          <text id="/data/outbreak/name:label">
+            <value>नाम</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/outbreak/code:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/outbreak/description:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/outbreak/external_id:label">
+            <value>Namba ya nje</value>
+          </text>
+          <text id="/data/outbreak/name:label">
+            <value>Jina</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:outbreak:edit" prefix="J1!contact:outbreak:edit!" delimiter="#" version="2023-10-20 7-01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <outbreak>
+            <parent>PARENT</parent>
+            <type/>
+            <name/>
+            <description/>
+            <code/>
+            <external_id/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </outbreak>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/outbreak/parent" type="string"/>
+      <bind nodeset="/data/outbreak/type" type="string"/>
+      <bind nodeset="/data/outbreak/name" type="string" required="true()"/>
+      <bind nodeset="/data/outbreak/description" type="string"/>
+      <bind nodeset="/data/outbreak/code" type="string"/>
+      <bind nodeset="/data/outbreak/external_id" type="string"/>
+      <bind nodeset="/data/outbreak/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/outbreak/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/outbreak/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/outbreak">
+      <input ref="/data/outbreak/name">
+        <label ref="jr:itext('/data/outbreak/name:label')"/>
+      </input>
+      <input ref="/data/outbreak/description">
+        <label ref="jr:itext('/data/outbreak/description:label')"/>
+      </input>
+      <input ref="/data/outbreak/code">
+        <label ref="jr:itext('/data/outbreak/code:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/outbreak/meta"/>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,128 @@
+{
+  "messages-en": {
+    "localhost/medic": "Xj7IoIdqCQRFkfXlOKa3/A=="
+  },
+  "form:contact:clinic:create": {
+    "localhost/medic": "osnVTPdAqrL1U2cKN15BZw=="
+  },
+  "form:contact:clinic:edit": {
+    "localhost/medic": "B/fdBF58vQw3+yoram4Zrg=="
+  },
+  "form:contact:district_hospital:create": {
+    "localhost/medic": "jO5pSiObR2BmvbLdLr1d6A=="
+  },
+  "form:contact:district_hospital:edit": {
+    "localhost/medic": "Nj6ewzGWppaGUUkDC5FGPQ=="
+  },
+  "form:contact:health_center:create": {
+    "localhost/medic": "7YzK4Sa/TYFAHc2dUHKoeg=="
+  },
+  "form:contact:health_center:edit": {
+    "localhost/medic": "dLp5HjL5ms8RK8aXJH0f6A=="
+  },
+  "form:contact:person:create": {
+    "localhost/medic": "hpIfqyCI0N21RgBT0g3jzA=="
+  },
+  "form:contact:person:edit": {
+    "localhost/medic": "roUPknPlnrxaUu/x9d8faQ=="
+  },
+  "form:ci_cholera": {
+    "localhost/medic": "1W1bh3ET+UWAnd20ppB70g=="
+  },
+  "form:covid19_rdt_capture": {
+    "localhost/medic": "L8HW4bXlrTA/YaGijzlMIw=="
+  },
+  "form:covid19_rdt_provision": {
+    "localhost/medic": "7IzvHUMNDOc0GSqBiD0RSg=="
+  },
+  "resources": {
+    "localhost/medic": "Xt82Ne+cixvdGIab+Q0oOA=="
+  },
+  "form:adam_lab_report": {
+    "localhost/medic": "9s14ers0Q8TpVaaDWhm4sQ=="
+  },
+  "form:cholera_lab_report": {
+    "localhost/medic": "Vm1T18aLQFJwpCtjsHMrVQ=="
+  },
+  "form:cholera_case_management": {
+    "localhost/medic": "bFWOPms3+Q67le3CUn+arQ=="
+  },
+  "form:cholera_case_investigation": {
+    "localhost/medic": "G9sWMdx4yd2WnK7Q+pn4ew=="
+  },
+  "form:covid19_case_investigation": {
+    "localhost/medic": "fRtJ3JNkSINNhXLE104YtQ=="
+  },
+  "form:cholera_lab_form": {
+    "localhost/medic": "HW0E1Ivsg1P/RWj4q5qhFQ=="
+  },
+  "form:patient_contact": {
+    "localhost/medic": "KYgHD/8hvbOTHDzfrFsyUw=="
+  },
+  "form:contact:person_contact:create": {
+    "localhost/medic": "q+paIx70oQZxvJ+I6c2gRQ=="
+  },
+  "form:contact:person_contact:edit": {
+    "localhost/medic": "XQ2h+6zro+Fz0Gm0oUw/Tg=="
+  },
+  "form:contact:patient_contact:create": {
+    "localhost/medic": "F57eEkvPcyQOE4qTFE6cXQ=="
+  },
+  "form:contact_tracing": {
+    "localhost/medic": "7rEa9FsqO2fQlZSz5u/oag=="
+  },
+  "form:case_investigation": {
+    "localhost/medic": "QT83YcOaaOoLBCL6A6IWZA=="
+  },
+  "form:case_management": {
+    "localhost/medic": "0+1NeX5CfS9cMbvkfJqlCQ=="
+  },
+  "form:laboratory_confirmation": {
+    "localhost/medic": "NLQ4eNsSzDzBU58pUOtjvQ=="
+  },
+  "form:case_outcome": {
+    "localhost/medic": "9+vitViowc7rnvDVwdFIxg=="
+  },
+  "form:contact:person": {
+    "localhost/medic": "4vx0LCQJBRINgz+nYrbu9w=="
+  },
+  "form:contact:outbreak": {
+    "localhost/medic": "j8Bv0lrmiyPYgM39FpoUGA=="
+  },
+  "form:contact:outbreak:create": {
+    "localhost/medic": "EqP0EiWwxaQ6SQ7zwf0x2A=="
+  },
+  "form:contact:outbreak:edit": {
+    "localhost/medic": "2m2zWn/D8RbS2rCrQHhZBA=="
+  },
+  "form:contact:health_unit": {
+    "localhost/medic": "OjBcB3h+L6X3fIln99Yd1A=="
+  },
+  "form:case_contact_listing": {
+    "localhost/medic": "XOaMuZrIz/CjJsnxYRiXMQ=="
+  },
+  "form:contact:case": {
+    "localhost/medic": "LHViViXpsxdhkKlP685cUg=="
+  },
+  "form:contact:case:create": {
+    "localhost/medic": "WFIR4WX0V3XCEKiCn6a9aA=="
+  },
+  "form:contact:case:edit": {
+    "localhost/medic": "FGKf6h72QUqiaaqbxxywAw=="
+  },
+  "form:contact:health_unit:create": {
+    "localhost/medic": "5djvQYqZND8zpZXyCdzTxw=="
+  },
+  "form:contact:health_unit:edit": {
+    "localhost/medic": "99rprRZC6OYfRIzAZpHyQQ=="
+  },
+  "form:contact:case_contact:create": {
+    "localhost/medic": "KX6Hx3itq04gocMijdN16w=="
+  },
+  "form:contact:case_contact:edit": {
+    "localhost/medic": "s6u05vbvtx8lL8SCEXYM+w=="
+  },
+  "form:case_contact_follow_up": {
+    "localhost/medic": "1UdCE9COFL3sM50U1RtXCA=="
+  }
+}

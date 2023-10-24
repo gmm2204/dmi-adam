@@ -1,0 +1,363 @@
+{
+  "languages": [
+    {
+      "locale": "en",
+      "enabled": true
+    },
+    {
+      "locale": "sw",
+      "enabled": true
+    }
+  ],
+  "place_hierarchy_types": [
+    "health_unit",
+    "person",
+    "outbreak",
+    "case",
+    "case_contact"
+  ],
+  "contact_types": [
+    {
+      "id": "health_unit",
+      "name_key": "contact.type.health_unit",
+      "group_key": "contact.type.health_unit.plural",
+      "create_key": "contact.type.health_unit.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "icon-hospital-solid-gray",
+      "create_form": "form:contact:health_unit:create",
+      "edit_form": "form:contact:health_unit:edit"
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "primary_contact_key": "outbreak.field.contact",
+      "parents": [
+        "health_unit"
+      ],
+      "icon": "icon-user-outline-gray",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true
+    },
+    {
+      "id": "outbreak",
+      "name_key": "contact.type.outbreak",
+      "group_key": "contact.type.outbreak.plural",
+      "create_key": "contact.type.outbreak.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "health_unit"
+      ],
+      "icon": "icon-outbreak-colored",
+      "create_form": "form:contact:outbreak:create",
+      "edit_form": "form:contact:outbreak:edit"
+    },
+    {
+      "id": "case",
+      "name_key": "contact.type.case",
+      "group_key": "contact.type.case.plural",
+      "create_key": "contact.type.case.new",
+      "edit_key": "contact.type.case.edit",
+      "parents": [
+        "outbreak"
+      ],
+      "icon": "icon-investigation-outline-gray",
+      "create_form": "form:contact:case:create",
+      "edit_form": "form:contact:case:edit",
+      "person": true
+    },
+    {
+      "id": "case_contact",
+      "name_key": "contact.type.case_contact",
+      "group_key": "contact.type.case_contact.plural",
+      "create_key": "contact.type.case_contact.new",
+      "edit_key": "contact.type.case_contact.edit",
+      "parents": [
+        "case"
+      ],
+      "icon": "icon-user-add-outline-blue",
+      "create_form": "form:contact:case_contact:create",
+      "edit_form": "form:contact:case_contact:edit",
+      "person": true
+    }
+  ],
+  "roles": {
+    "data_entry": {
+      "name": "usertype.data-entry"
+    },
+    "analytics": {
+      "name": "usertype.analytics"
+    },
+    "gateway": {
+      "name": "usertype.gateway"
+    },
+    "program_officer": {
+      "name": "usertype.program-officer"
+    },
+    "crfo": {
+      "name": "usertype.crfo"
+    },
+    "chw_supervisor": {
+      "name": "usertype.chw-supervisor",
+      "offline": true
+    },
+    "chw": {
+      "name": "usertype.chw",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [
+      "gateway"
+    ],
+    "can_bulk_delete_reports": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_configure": [
+      "program_officer",
+      "crfo"
+    ],
+    "can_create_people": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_create_places": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_create_records": [
+      "data_entry",
+      "gateway",
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_create_users": [
+      "program_officer"
+    ],
+    "can_delete_contacts": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_delete_messages": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_delete_reports": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_delete_users": [
+      "program_officer"
+    ],
+    "can_edit": [
+      "gateway",
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_edit_profile": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_edit_verification": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_export_all": [
+      "program_officer",
+      "crfo"
+    ],
+    "can_export_contacts": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_export_feedback": [
+      "program_officer"
+    ],
+    "can_export_messages": [
+      "analytics",
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_log_out_on_android": [
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_update_places": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_update_reports": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_update_users": [
+      "program_officer"
+    ],
+    "can_export_dhis": [
+      "national_admin",
+      "crfo"
+    ],
+    "can_verify_reports": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_analytics": [
+      "analytics",
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_analytics_tab": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_call_action": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_contacts": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_contacts_tab": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_last_visited_date": [],
+    "can_view_uhc_stats": [],
+    "can_view_message_action": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_messages": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_messages_tab": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_outgoing_messages": [
+      "program_officer"
+    ],
+    "can_view_reports": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_reports_tab": [
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_tasks": [],
+    "can_view_tasks_tab": [],
+    "can_view_tasks_group": [],
+    "can_view_unallocated_data_records": [
+      "gateway",
+      "program_officer",
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_users": [
+      "program_officer"
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_aggregate_targets": [
+      "chw_supervisor"
+    ],
+    "can_upgrade": [
+      "program_officer"
+    ],
+    "can_view_old_filter_and_search": [],
+    "can_view_old_action_bar": []
+  },
+  "forms": {},
+  "schedules": [],
+  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var n=t();for(var r in n)('object'==typeof exports?exports:e)[r]=n[r]}}(ContactSummary,(function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(e,'__esModule',{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&'object'==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,'default',{enumerable:!0,value:e}),2&t&&'string'!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,'a',t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p='',n(n.s=0)}([function(e,t,n){var r=n(1),o=n(2);e.exports=o(r,contact,reports)},function(e,t){e.exports={fields:[{label:'contact.profile.role_label',value:contact.role_label,width:6,appliesToType:['person','person_contact']},{label:'contact.profile.email',value:contact.email,width:6,appliesToType:['person','person_contact']},{label:'contact.profile.phone',value:contact.phone,width:6,appliesToType:['person','person_contact']}],cards:[],context:{}}},function(e,t){function n(e){return e?Array.isArray(e)?e:[e]:[]}function r(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function o(e,t,n){if(r(e.appliesIf,n)){var o='function'==typeof e.fields?e.fields(n):e.fields.filter((function(e){return r(e.appliesIf,n)})).map((function(e){var t={};return i(e,t,'label'),i(e,t,'value'),i(e,t,'translate'),i(e,t,'filter'),i(e,t,'width'),i(e,t,'icon'),e.context&&(t.context={},i(e.context,t.context,'count'),i(e.context,t.context,'total')),t}));return e.modifyContext&&e.modifyContext(t,n),{label:e.label,fields:o}}function i(e,t,r){switch(typeof e[r]){case'undefined':return;case'function':t[r]=e[r](n);break;default:t[r]=e[r]}}}e.exports=function(e,t,r){var i=e.fields||[],c=e.context||{},l=e.cards||[],a=t&&('contact'===t.type?t.contact_type:t.type),f={cards:[],fields:i.filter((function(e){var t=n(e.appliesToType),r=t.filter((function(e){return e&&'!'===e.charAt(0)}));if((0===t.length||t.includes(a)||r.length>0&&!r.includes('!'+a))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0}))};return l.forEach((function(e){var t,i,l,u,p=n(e.appliesToType);if(p.includes('report')&&p.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(p.includes('report'))for(t=0;t<r.length;++t)i=r[t],!(u=i)||u.errors&&u.errors.length||(l=o(e,c,i))&&f.cards.push(l);else{if(!p.includes(a)&&p.length>0)return;(l=o(e,c))&&f.cards.push(l)}})),f.context=c,f}}])})); return ContactSummary;",
+  "tasks": {
+    "rules": "define Target { _id: null, contact: null, deleted: null, type: null, pass: null, date: null, groupBy: null }\ndefine Contact { contact: null, reports: null, tasks: null }\ndefine Task { _id: null, deleted: null, doc: null, contact: null, icon: null, date: null, readyStart: null, readyEnd: null, title: null, fields: null, resolved: null, priority: null, priorityLabel: null, reports: null, actions: null }\nrule GenerateEvents {\n  when { c: Contact } then { !function(e){var t={};function o(i){if(t[i])return t[i].exports;var r=t[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,o),r.l=!0,r.exports}o.m=e,o.c=t,o.d=function(e,t,i){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:i})},o.r=function(e){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(e,'__esModule',{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&'object'==typeof e&&e&&e.__esModule)return e;var i=Object.create(null);if(o.r(i),Object.defineProperty(i,'default',{enumerable:!0,value:e}),2&t&&'string'!=typeof e)for(var r in e)o.d(i,r,function(t){return e[t]}.bind(null,r));return i},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,'a',t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p='',o(o.s=1)}([function(e,t){e.exports=function(e){var t={};!function e(t,o){var i=Object.keys(t);for(var r in i){var a=i[r];switch(typeof t[a]){case'object':e(t[a],o);break;case'function':t[a]=t[a].bind(o)}}}(e,t),t.definition=function e(t){var o=Object.assign({},t),i=Object.keys(o);for(var r in i){var a=i[r];if(Array.isArray(o[a])){o[a]=o[a].slice(0);for(var n=0;n<o[a].length;++n)'object'==typeof o[a][n]&&(o[a][n]=e(o[a][n]))}else'object'==typeof o[a]&&(o[a]=e(o[a]))}return o}(e)}},function(e,t,o){var i=o(2),r=o(3),a=o(5);o(7)(r,c,Utils,Target,emit),a(i,c,Utils,Task,emit),emit('_complete',{_id:!0})},function(e,t){e.exports=[]},function(e,t,o){const{icCICholeraPositive:i,icCICholeraAll:r,icCICovid19:a,icCICovid19All:n}=o(4);e.exports=[{id:'ci_cholera_positive_month',type:'count',icon:'icon-cholera-colored',goal:-1,translation_key:'targets.ci_cholera.title',subtitle_translation_key:'targets.ci_cholera.subtitle_positive_month',appliesTo:'reports',appliesIf:i,date:'reported'},{id:'ci_cholera_positive_all',type:'count',icon:'icon-cholera-colored',goal:-1,translation_key:'targets.ci_cholera.title',subtitle_translation_key:'targets.ci_cholera.subtitle_positive_all',appliesTo:'reports',appliesIf:i,date:'now'},{id:'ci_cholera_all',type:'count',icon:'icon-cholera-colored',goal:-1,translation_key:'targets.ci_cholera.title',subtitle_translation_key:'targets.ci_cholera.subtitle_all',appliesTo:'reports',appliesIf:r,date:'now'},{id:'ci_covid19_positive_month',type:'count',icon:'icon-covid19-colored',goal:-1,translation_key:'targets.ci_covid19.title',subtitle_translation_key:'targets.ci_covid19.subtitle_positive_month',appliesTo:'reports',appliesIf:a,date:'reported',aggregate:!0},{id:'ci_covid19_positive_all',type:'count',icon:'icon-covid19-colored',goal:-1,translation_key:'targets.ci_covid19.title',subtitle_translation_key:'targets.ci_covid19.subtitle_positive_all',appliesTo:'reports',appliesIf:a,date:'now',aggregate:!0},{id:'ci_covid19_all',type:'count',icon:'icon-covid19-colored',goal:-1,translation_key:'targets.ci_covid19.title',subtitle_translation_key:'targets.ci_covid19.subtitle_all',appliesTo:'reports',appliesIf:n,date:'now',aggregate:!0}]},function(e,t){e.exports={icCICholeraPositive:(e,t)=>'D'===t.form||'case_investigation'===t.form&&'yes'===t.fields.outbreak_screening.os_criteria_met&&'cholera'===t.fields.ci_outbreak.ci_outbreak_name,icCICholeraAll:(e,t)=>'D'===t.form||'case_investigation'===t.form&&'cholera'===t.fields.ci_outbreak.ci_outbreak_name,icCICovid19:(e,t)=>'E'===t.form||'case_investigation'===t.form&&'yes'===t.fields.outbreak_screening.os_criteria_met&&'covid19'===t.fields.ci_outbreak.ci_outbreak_name,icCICovid19All:(e,t)=>'E'===t.form||'case_investigation'===t.form&&'covid19'===t.fields.ci_outbreak.ci_outbreak_name,countReportsSubmittedInWindow(e,t,o,i){var r=0;return e.forEach((function(e){t.indexOf(e.form)>=0&&e.reported_date>=o&&e.reported_date<=i&&r++})),r},countReports(e){var t=0;return e.forEach((function(){t++})),t}}},function(e,t,o){var i=o(0),r=o(6);function a(e,t,o,i,r,a){var n;if(e.appliesToType){var c;if('contacts'===e.appliesTo){if(!r.contact)return;c='contact'===r.contact.type?r.contact.contact_type:r.contact.type}else{if(!a)return;c=a.form}if(-1===e.appliesToType.indexOf(c))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(r,a))if('scheduled_tasks'===e.appliesTo){if(a&&e.appliesIf){if(!a.scheduled_tasks)return;for(n=0;n<a.scheduled_tasks.length;n++)e.appliesIf(r,a,n)&&l(n)}}else l();function s(e,t,o){var i;return(i='function'==typeof e.contactLabel?e.contactLabel(t,o):e.contactLabel)?{name:i}:t.contact}function l(n){var c,l,p,f,u=null;for(c=0;c<e.events.length;c++){if((l=e.events[c]).dueDate)u=l.dueDate(l,r,a,n);else if(a)u=void 0!==n?new Date(t.addDate(new Date(a.scheduled_tasks[n].due),l.days)):new Date(t.addDate(new Date(a.reported_date),l.days));else if(l.dueDate)u=l.dueDate(l,r);else{var _=r.contact&&r.contact.reported_date?new Date(r.contact.reported_date):new Date;u=new Date(t.addDate(_,l.days))}t.isTimely(u,l)&&(f={_id:(a?a._id:r.contact&&r.contact._id)+'~'+(l.id||c)+'~'+e.name,deleted:!(!(r.contact&&r.contact.deleted||a)||!a.deleted),doc:r,contact:s(e,r,a),icon:e.icon,date:u,readyStart:l.start||0,readyEnd:l.end||0,title:e.title,resolved:e.resolvedIf(r,a,l,u,n),actions:d(e.actions,l)},void 0!==n&&(f._id+='-'+n),'function'==typeof(p=e.priority)&&(p=p(r,a)),p&&(f.priority=p.level,f.priorityLabel=p.label),i('task',new o(f)))}}function d(t,o){return e.actions.map((function(e){return function(e,t){var o={source:'task',source_id:a?a._id:r.contact&&r.contact._id,contact:r.contact};e.modifyContent&&e.modifyContent(o,r,a,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:o}}(e,o)}))}}e.exports=function(e,t,o,n,c){if(e)for(var s,l,d=0;d<e.length;++d)switch('function'!=typeof(s=Object.assign({},e[d],r)).resolvedIf&&(s.resolvedIf=function(e,t,i,r){return s.defaultResolvedIf(e,t,i,r,o)}),i(s),s.appliesTo){case'reports':case'scheduled_tasks':for(var p=0;p<t.reports.length;++p)l=t.reports[p],a(s,o,n,c,t,l);break;case'contacts':t.contact&&a(s,o,n,c,t);break;default:throw new Error('Unrecognised task.appliesTo: '+s.appliesTo)}}},function(e,t){e.exports={defaultResolvedIf:function(e,t,o,i,r){var a,n;r||(r=Utils);var c=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find((function(e){return!e.type||'report'===e.type})))&&t.form}(this.definition);if(!c)throw new Error('Could not find the default resolving form!');return a=0,a=t?Math.max(r.addDate(i,-o.start).getTime(),t.reported_date+1):r.addDate(i,-o.start).getTime(),n=r.addDate(i,o.end+1).getTime(),r.isFormSubmittedInWindow(e.reports,c,a,n)}}},function(e,t,o){var i=o(0);function r(e,t,o,i,r,a){var n=!!a;if(r.contact){var c='contact'===r.contact.type?r.contact.contact_type:r.contact.type,s=n?a.form:c;if(!(e.appliesToType&&e.appliesToType.indexOf(s)<0)&&(!e.appliesIf||e.appliesIf(r,a)))for(var l=n?a:r.contact,d=function(e,t,o){var i;return i='function'==typeof e.idType?e.idType(t,o):'report'===e.idType?o&&o._id:t.contact&&t.contact._id,Array.isArray(i)||(i=[i]),i}(e,r,a),p=!e.passesIf||!!e.passesIf(r,a),f=function(e,t,o,i){if('function'==typeof e.date)return e.date(o,i)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return i?i.reported_date:o.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,o,r,a),u=e.groupBy&&e.groupBy(r,a),_=0;_<d.length;++_){var v=new t({_id:d[_]+'~'+e.id,contact:r.contact,deleted:!!l.deleted,type:e.id,pass:p,groupBy:u,date:f});e.emitCustom?e.emitCustom(y,v,r,a):y(v)}}function y(e){i('target',e)}}e.exports=function(e,t,o,a,n){for(var c=0;c<e.length;++c){var s=e[c];switch(i(s),s.appliesTo){case'contacts':r(s,a,o,n,t);break;case'reports':for(var l=0;l<t.reports.length;++l){r(s,a,o,n,t,t.reports[l])}break;default:throw new Error('Unrecognised target.appliesTo: '+s.appliesTo)}}}}]); }\n}",
+    "targets": {
+      "enabled": true,
+      "items": [
+        {
+          "id": "ci_cholera_positive_month",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.ci_cholera.title",
+          "icon": "icon-cholera-colored",
+          "subtitle_translation_key": "targets.ci_cholera.subtitle_positive_month"
+        },
+        {
+          "id": "ci_cholera_positive_all",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.ci_cholera.title",
+          "icon": "icon-cholera-colored",
+          "subtitle_translation_key": "targets.ci_cholera.subtitle_positive_all"
+        },
+        {
+          "id": "ci_cholera_all",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.ci_cholera.title",
+          "icon": "icon-cholera-colored",
+          "subtitle_translation_key": "targets.ci_cholera.subtitle_all"
+        },
+        {
+          "id": "ci_covid19_positive_month",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.ci_covid19.title",
+          "icon": "icon-covid19-colored",
+          "subtitle_translation_key": "targets.ci_covid19.subtitle_positive_month",
+          "aggregate": true
+        },
+        {
+          "id": "ci_covid19_positive_all",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.ci_covid19.title",
+          "icon": "icon-covid19-colored",
+          "subtitle_translation_key": "targets.ci_covid19.subtitle_positive_all",
+          "aggregate": true
+        },
+        {
+          "id": "ci_covid19_all",
+          "type": "count",
+          "goal": -1,
+          "translation_key": "targets.ci_covid19.title",
+          "icon": "icon-covid19-colored",
+          "subtitle_translation_key": "targets.ci_covid19.subtitle_all",
+          "aggregate": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Case Investigation",
+  "icon": "icon-investigation-outline-gray",
+  "context": {
+    "expression": "(contact.hierarchy_id == 'case') || (!contact)"
+  },
+  "hidden_fields": [
+    "cif_title"
+  ]
+}

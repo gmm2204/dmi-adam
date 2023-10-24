@@ -1,0 +1,20 @@
+{
+  "messages-en": {
+    "adamtest.icapkenya.org/medic": "akr1oruqde5ZD8crF4r/Mg=="
+  },
+  "resources": {
+    "adamtest.icapkenya.org/medic": "aQ8q9QR2VZvH7p7aPr8Esg=="
+  },
+  "form:contact:clinic:create": {
+    "adamtest.icapkenya.org/medic": "xTi4l2YZc+tg6+0qaATbiA=="
+  },
+  "form:contact:clinic:edit": {
+    "adamtest.icapkenya.org/medic": "8+w9RlkvGggk0xD311U9Iw=="
+  },
+  "form:contact:district_hospital:create": {
+    "adamtest.icapkenya.org/medic": "52Y+rD7d/FHRP7c6jkOvGg=="
+  },
+  "form:contact:district_hospital:edit": {
+    "adamtest.icapkenya.org/medic": "BRdLcnB2YPekq5ASUbo9cw=="
+  }
+}

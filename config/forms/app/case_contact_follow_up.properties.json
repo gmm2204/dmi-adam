@@ -1,0 +1,10 @@
+{
+  "title": "Contact Follow Up",
+  "icon": "icon-person-tracing-gray",
+  "context": {
+    "expression": "(contact.hierarchy_id === 'case_contact') || (!contact)"
+  },
+  "hidden_fields": [
+    "ct_title_2"
+  ]
+}

@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Contact Follow Up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_identifier_title:label">
+            <value>&lt;h3 style="border-bottom: #f47b63 solid 2px; padding: 5px 0;"&gt;Signs &amp; Symptoms&lt;/h3&gt;</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_number_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;<output value=" /case_contact_follow_up/outbreak_name "/> &gt; <output value=" /case_contact_follow_up/case_name "/> &gt; <output value=" /case_contact_follow_up/case_contact_name "/> &lt;/h4&gt;</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Number: <output value=" /case_contact_follow_up/case_number "/> &lt;/h4&gt;</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact:label">
+            <value>Date of last contact</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/ccfu_day_current_follow_up:label">
+            <value>Day of follow up</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator/case_investigator_designation:label">
+            <value>Investigator Designation</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator/case_investigator_name:label">
+            <value>Investigator Name</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator/case_investigator_phone_number:label">
+            <value>Investigator Phone Number</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_identifier_title:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_number_title:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_title:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up/ccfu_day_current_follow_up:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_follow_up:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_contact_name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator/case_investigator_designation:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator/case_investigator_name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator/case_investigator_phone_number:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_investigator:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/case_number:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/parent/code:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/parent/name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/outbreak_code:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/outbreak_name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/patient_uuid:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <case_contact_follow_up id="case_contact_follow_up" prefix="J1!case_contact_follow_up!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+              <role/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <name/>
+                  <code/>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <case_contact_name/>
+          <case_number/>
+          <case_name/>
+          <outbreak_code/>
+          <outbreak_name/>
+          <case_contact_follow_up>
+            <case_number_title/>
+            <case_title/>
+            <case_identifier_title/>
+            <ccfu_date_last_contact/>
+            <ccfu_day_current_follow_up/>
+          </case_contact_follow_up>
+          <case_investigator>
+            <case_investigator_name/>
+            <case_investigator_designation/>
+            <case_investigator_phone_number/>
+          </case_investigator>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </case_contact_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/case_contact_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/case_contact_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/user/name" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/user/role" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/user/phone" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/_id" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/parent/parent/name" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/parent/parent/code" type="string"/>
+      <bind nodeset="/case_contact_follow_up/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/case_contact_follow_up/case_number" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/case_contact_follow_up/case_name" type="string" calculate="../inputs/contact/parent/name"/>
+      <bind nodeset="/case_contact_follow_up/outbreak_code" type="string" calculate="../inputs/contact/parent/parent/code"/>
+      <bind nodeset="/case_contact_follow_up/outbreak_name" type="string" calculate="../inputs/contact/parent/parent/name"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_number_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_identifier_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact" type="date" required="true()"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/ccfu_day_current_follow_up" type="int" required="true()"/>
+      <bind nodeset="/case_contact_follow_up/case_investigator/case_investigator_name" type="string" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_contact_follow_up/case_investigator/case_investigator_designation" type="string" calculate="../../inputs/user/role"/>
+      <bind nodeset="/case_contact_follow_up/case_investigator/case_investigator_phone_number" type="string" calculate="../../inputs/user/phone"/>
+      <bind nodeset="/case_contact_follow_up/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/case_contact_follow_up/inputs">
+      <group ref="/case_contact_follow_up/inputs/user"/>
+      <group appearance="field-list" ref="/case_contact_follow_up/inputs/contact">
+        <group ref="/case_contact_follow_up/inputs/contact/parent">
+          <group ref="/case_contact_follow_up/inputs/contact/parent/parent"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/case_contact_follow_up/case_contact_follow_up">
+      <input ref="/case_contact_follow_up/case_contact_follow_up/case_number_title">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_number_title:label')"/>
+      </input>
+      <input ref="/case_contact_follow_up/case_contact_follow_up/case_title">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_title:label')"/>
+      </input>
+      <input ref="/case_contact_follow_up/case_contact_follow_up/case_identifier_title">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_identifier_title:label')"/>
+      </input>
+      <input ref="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact:label')"/>
+      </input>
+      <input ref="/case_contact_follow_up/case_contact_follow_up/ccfu_day_current_follow_up">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/ccfu_day_current_follow_up:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/case_contact_follow_up/case_investigator"/>
+  </h:body>
+</h:html>
