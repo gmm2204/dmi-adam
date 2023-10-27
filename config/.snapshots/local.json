@@ -9,10 +9,10 @@
     "localhost/medic": "B/fdBF58vQw3+yoram4Zrg=="
   },
   "form:contact:district_hospital:create": {
-    "localhost/medic": "jO5pSiObR2BmvbLdLr1d6A=="
+    "localhost/medic": "anLJHnQH2fPmm7/Scrc6Vg=="
   },
   "form:contact:district_hospital:edit": {
-    "localhost/medic": "Nj6ewzGWppaGUUkDC5FGPQ=="
+    "localhost/medic": "b74++ebuc5KM84f0oTlGxw=="
   },
   "form:contact:health_center:create": {
     "localhost/medic": "7YzK4Sa/TYFAHc2dUHKoeg=="
@@ -72,10 +72,10 @@
     "localhost/medic": "7rEa9FsqO2fQlZSz5u/oag=="
   },
   "form:case_investigation": {
-    "localhost/medic": "QT83YcOaaOoLBCL6A6IWZA=="
+    "localhost/medic": "52QcPJLaf8ySZfEpLK8Izw=="
   },
   "form:case_management": {
-    "localhost/medic": "0+1NeX5CfS9cMbvkfJqlCQ=="
+    "localhost/medic": "noLA5jHKLjWm/61R2E3/qQ=="
   },
   "form:laboratory_confirmation": {
     "localhost/medic": "NLQ4eNsSzDzBU58pUOtjvQ=="
@@ -90,10 +90,10 @@
     "localhost/medic": "j8Bv0lrmiyPYgM39FpoUGA=="
   },
   "form:contact:outbreak:create": {
-    "localhost/medic": "EqP0EiWwxaQ6SQ7zwf0x2A=="
+    "localhost/medic": "Kg0bga6RZgNa1agqczHcWg=="
   },
   "form:contact:outbreak:edit": {
-    "localhost/medic": "2m2zWn/D8RbS2rCrQHhZBA=="
+    "localhost/medic": "e8ksCw8qMxHLgo6uGIpaEQ=="
   },
   "form:contact:health_unit": {
     "localhost/medic": "OjBcB3h+L6X3fIln99Yd1A=="
@@ -105,10 +105,10 @@
     "localhost/medic": "LHViViXpsxdhkKlP685cUg=="
   },
   "form:contact:case:create": {
-    "localhost/medic": "WFIR4WX0V3XCEKiCn6a9aA=="
+    "localhost/medic": "iJyRk0ZpSDmIvyOcDaFkAw=="
   },
   "form:contact:case:edit": {
-    "localhost/medic": "FGKf6h72QUqiaaqbxxywAw=="
+    "localhost/medic": "8SJouMXViohOGs+NogpjxA=="
   },
   "form:contact:health_unit:create": {
     "localhost/medic": "5djvQYqZND8zpZXyCdzTxw=="
@@ -117,12 +117,12 @@
     "localhost/medic": "99rprRZC6OYfRIzAZpHyQQ=="
   },
   "form:contact:case_contact:create": {
-    "localhost/medic": "KX6Hx3itq04gocMijdN16w=="
+    "localhost/medic": "dIdGdK01WuAoSAWMTCz08Q=="
   },
   "form:contact:case_contact:edit": {
-    "localhost/medic": "s6u05vbvtx8lL8SCEXYM+w=="
+    "localhost/medic": "bp8exKrPygzzoew1qGbdzA=="
   },
   "form:case_contact_follow_up": {
-    "localhost/medic": "1UdCE9COFL3sM50U1RtXCA=="
+    "localhost/medic": "XJ7FrFaQ4YnR3vDX4W3wFg=="
   }
 }

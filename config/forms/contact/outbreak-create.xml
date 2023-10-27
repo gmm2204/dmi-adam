@@ -5,8 +5,35 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/data/outbreak/code/cholera:label">
+            <value>Cholera</value>
+          </text>
+          <text id="/data/outbreak/code/covid19:label">
+            <value>Covid-19</value>
+          </text>
+          <text id="/data/outbreak/code/evd:label">
+            <value>Ebola Virus Disease</value>
+          </text>
+          <text id="/data/outbreak/code/measles:label">
+            <value>Measles</value>
+          </text>
+          <text id="/data/outbreak/code/unknown:label">
+            <value>Unknown Outbreak</value>
+          </text>
+          <text id="/data/outbreak/code:hint">
+            <value>This will be used to tailor the case tools</value>
+          </text>
           <text id="/data/outbreak/code:label">
-            <value>Code</value>
+            <value>Outbreak</value>
+          </text>
+          <text id="/data/outbreak/date:hint">
+            <value>Date of outbreak declaration</value>
+          </text>
+          <text id="/data/outbreak/date:label">
+            <value>Date</value>
+          </text>
+          <text id="/data/outbreak/description:hint">
+            <value>Additional information regarding this outbreak</value>
           </text>
           <text id="/data/outbreak/description:label">
             <value>Description</value>
@@ -14,13 +41,58 @@
           <text id="/data/outbreak/external_id:label">
             <value>External ID</value>
           </text>
+          <text id="/data/outbreak/location:hint">
+            <value>Location of the outbreak</value>
+          </text>
+          <text id="/data/outbreak/location:label">
+            <value>Location</value>
+          </text>
           <text id="/data/outbreak/name:label">
             <value>Name</value>
           </text>
+          <text id="/data/outbreak/status/closed:label">
+            <value>Closed</value>
+          </text>
+          <text id="/data/outbreak/status/open:label">
+            <value>Open</value>
+          </text>
+          <text id="/data/outbreak/status:hint">
+            <value>Date of outbreak declaration</value>
+          </text>
+          <text id="/data/outbreak/status:label">
+            <value>Status</value>
+          </text>
         </translation>
         <translation lang="fr">
+          <text id="/data/outbreak/code/cholera:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/covid19:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/evd:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/measles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/unknown:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code:hint">
+            <value>-</value>
+          </text>
           <text id="/data/outbreak/code:label">
             <value>Nom</value>
+          </text>
+          <text id="/data/outbreak/date:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/date:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/outbreak/description:hint">
+            <value>-</value>
           </text>
           <text id="/data/outbreak/description:label">
             <value>Nom</value>
@@ -28,13 +100,58 @@
           <text id="/data/outbreak/external_id:label">
             <value>Identifiant externe</value>
           </text>
+          <text id="/data/outbreak/location:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/location:label">
+            <value>Nom</value>
+          </text>
           <text id="/data/outbreak/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/outbreak/status/closed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status/open:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:label">
             <value>Nom</value>
           </text>
         </translation>
         <translation lang="hi">
+          <text id="/data/outbreak/code/cholera:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/covid19:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/evd:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/measles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/unknown:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code:hint">
+            <value>-</value>
+          </text>
           <text id="/data/outbreak/code:label">
             <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/date:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/date:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/description:hint">
+            <value>-</value>
           </text>
           <text id="/data/outbreak/description:label">
             <value>नाम</value>
@@ -42,13 +159,58 @@
           <text id="/data/outbreak/external_id:label">
             <value>बाहरी ID</value>
           </text>
+          <text id="/data/outbreak/location:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/location:label">
+            <value>नाम</value>
+          </text>
           <text id="/data/outbreak/name:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/status/closed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status/open:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:label">
             <value>नाम</value>
           </text>
         </translation>
         <translation lang="id">
+          <text id="/data/outbreak/code/cholera:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/covid19:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/evd:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/measles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/unknown:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code:hint">
+            <value>-</value>
+          </text>
           <text id="/data/outbreak/code:label">
             <value>Nama</value>
+          </text>
+          <text id="/data/outbreak/date:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/date:label">
+            <value>Nama</value>
+          </text>
+          <text id="/data/outbreak/description:hint">
+            <value>-</value>
           </text>
           <text id="/data/outbreak/description:label">
             <value>Nama</value>
@@ -56,13 +218,58 @@
           <text id="/data/outbreak/external_id:label">
             <value>Eksternal ID</value>
           </text>
+          <text id="/data/outbreak/location:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/location:label">
+            <value>Nama</value>
+          </text>
           <text id="/data/outbreak/name:label">
+            <value>Nama</value>
+          </text>
+          <text id="/data/outbreak/status/closed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status/open:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:label">
             <value>Nama</value>
           </text>
         </translation>
         <translation lang="ne">
+          <text id="/data/outbreak/code/cholera:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/covid19:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/evd:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/measles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/unknown:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code:hint">
+            <value>-</value>
+          </text>
           <text id="/data/outbreak/code:label">
             <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/date:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/date:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/description:hint">
+            <value>-</value>
           </text>
           <text id="/data/outbreak/description:label">
             <value>नाम</value>
@@ -70,13 +277,58 @@
           <text id="/data/outbreak/external_id:label">
             <value>बाहिरि ID</value>
           </text>
+          <text id="/data/outbreak/location:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/location:label">
+            <value>नाम</value>
+          </text>
           <text id="/data/outbreak/name:label">
+            <value>नाम</value>
+          </text>
+          <text id="/data/outbreak/status/closed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status/open:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:label">
             <value>नाम</value>
           </text>
         </translation>
         <translation lang="sw">
+          <text id="/data/outbreak/code/cholera:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/covid19:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/evd:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/measles:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code/unknown:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/code:hint">
+            <value>-</value>
+          </text>
           <text id="/data/outbreak/code:label">
             <value>Jina</value>
+          </text>
+          <text id="/data/outbreak/date:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/date:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/outbreak/description:hint">
+            <value>-</value>
           </text>
           <text id="/data/outbreak/description:label">
             <value>Jina</value>
@@ -84,13 +336,31 @@
           <text id="/data/outbreak/external_id:label">
             <value>Namba ya nje</value>
           </text>
+          <text id="/data/outbreak/location:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/location:label">
+            <value>Jina</value>
+          </text>
           <text id="/data/outbreak/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/outbreak/status/closed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status/open:label">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/outbreak/status:label">
             <value>Jina</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak:create" prefix="J1!contact:outbreak:create!" delimiter="#" version="2023-10-20 7-47">
+        <data id="contact:outbreak:create" prefix="J1!contact:outbreak:create!" delimiter="#" version="2023-10-26 11-24">
           <inputs>
             <meta>
               <location>
@@ -109,9 +379,12 @@
           <outbreak>
             <parent>PARENT</parent>
             <type/>
+            <code/>
             <name/>
             <description/>
-            <code/>
+            <location/>
+            <date/>
+            <status>open</status>
             <external_id/>
             <meta tag="hidden">
               <created_by/>
@@ -130,9 +403,12 @@
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/outbreak/parent" type="string"/>
       <bind nodeset="/data/outbreak/type" type="string"/>
-      <bind nodeset="/data/outbreak/name" type="string" required="true()"/>
+      <bind nodeset="/data/outbreak/code" type="select1" required="true()"/>
+      <bind nodeset="/data/outbreak/name" type="string" required="true()" calculate="jr:choice-name( /data/outbreak/code ,' /data/outbreak/code ')"/>
       <bind nodeset="/data/outbreak/description" type="string"/>
-      <bind nodeset="/data/outbreak/code" type="string"/>
+      <bind nodeset="/data/outbreak/location" type="string"/>
+      <bind nodeset="/data/outbreak/date" type="date" required="true()"/>
+      <bind nodeset="/data/outbreak/status" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/external_id" type="string"/>
       <bind nodeset="/data/outbreak/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -149,15 +425,54 @@
       </group>
     </group>
     <group appearance="field-list" ref="/data/outbreak">
-      <input ref="/data/outbreak/name">
-        <label ref="jr:itext('/data/outbreak/name:label')"/>
-      </input>
+      <select1 ref="/data/outbreak/code">
+        <label ref="jr:itext('/data/outbreak/code:label')"/>
+        <hint ref="jr:itext('/data/outbreak/code:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/outbreak/code/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/outbreak/code/evd:label')"/>
+          <value>evd</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/outbreak/code/cholera:label')"/>
+          <value>cholera</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/outbreak/code/measles:label')"/>
+          <value>measles</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/outbreak/code/covid19:label')"/>
+          <value>covid19</value>
+        </item>
+      </select1>
       <input ref="/data/outbreak/description">
         <label ref="jr:itext('/data/outbreak/description:label')"/>
+        <hint ref="jr:itext('/data/outbreak/description:hint')"/>
       </input>
-      <input ref="/data/outbreak/code">
-        <label ref="jr:itext('/data/outbreak/code:label')"/>
+      <input ref="/data/outbreak/location">
+        <label ref="jr:itext('/data/outbreak/location:label')"/>
+        <hint ref="jr:itext('/data/outbreak/location:hint')"/>
       </input>
+      <input ref="/data/outbreak/date">
+        <label ref="jr:itext('/data/outbreak/date:label')"/>
+        <hint ref="jr:itext('/data/outbreak/date:hint')"/>
+      </input>
+      <select1 appearance="columns" ref="/data/outbreak/status">
+        <label ref="jr:itext('/data/outbreak/status:label')"/>
+        <hint ref="jr:itext('/data/outbreak/status:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/outbreak/status/open:label')"/>
+          <value>open</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/outbreak/status/closed:label')"/>
+          <value>closed</value>
+        </item>
+      </select1>
       <group appearance="hidden" ref="/data/outbreak/meta"/>
     </group>
   </h:body>

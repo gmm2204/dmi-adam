@@ -5,14 +5,14 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_id_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case ID: <output value=" /case_contact_follow_up/cfu_case_id "/> &lt;/h4&gt;</value>
+          </text>
           <text id="/case_contact_follow_up/case_contact_follow_up/case_identifier_title:label">
             <value>&lt;h3 style="border-bottom: #f47b63 solid 2px; padding: 5px 0;"&gt;Signs &amp; Symptoms&lt;/h3&gt;</value>
           </text>
-          <text id="/case_contact_follow_up/case_contact_follow_up/case_number_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;<output value=" /case_contact_follow_up/outbreak_name "/> &gt; <output value=" /case_contact_follow_up/case_name "/> &gt; <output value=" /case_contact_follow_up/case_contact_name "/> &lt;/h4&gt;</value>
-          </text>
-          <text id="/case_contact_follow_up/case_contact_follow_up/case_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Number: <output value=" /case_contact_follow_up/case_number "/> &lt;/h4&gt;</value>
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_name_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;<output value=" /case_contact_follow_up/cfu_outbreak_name "/> &gt; <output value=" /case_contact_follow_up/cfu_case_name "/> &gt; <output value=" /case_contact_follow_up/case_contact_name "/> &lt;/h4&gt;</value>
           </text>
           <text id="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact:label">
             <value>Date of last contact</value>
@@ -31,13 +31,13 @@
           </text>
         </translation>
         <translation lang="sw">
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_id_title:label">
+            <value>-</value>
+          </text>
           <text id="/case_contact_follow_up/case_contact_follow_up/case_identifier_title:label">
             <value>-</value>
           </text>
-          <text id="/case_contact_follow_up/case_contact_follow_up/case_number_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_contact_follow_up/case_contact_follow_up/case_title:label">
+          <text id="/case_contact_follow_up/case_contact_follow_up/case_name_title:label">
             <value>-</value>
           </text>
           <text id="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact:label">
@@ -64,10 +64,16 @@
           <text id="/case_contact_follow_up/case_investigator:label">
             <value>-</value>
           </text>
-          <text id="/case_contact_follow_up/case_name:label">
+          <text id="/case_contact_follow_up/cfu_case_id:label">
             <value>-</value>
           </text>
-          <text id="/case_contact_follow_up/case_number:label">
+          <text id="/case_contact_follow_up/cfu_case_name:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/cfu_outbreak_code:label">
+            <value>-</value>
+          </text>
+          <text id="/case_contact_follow_up/cfu_outbreak_name:label">
             <value>-</value>
           </text>
           <text id="/case_contact_follow_up/inputs/contact/_id:label">
@@ -94,6 +100,9 @@
           <text id="/case_contact_follow_up/inputs/contact/parent/parent:label">
             <value>-</value>
           </text>
+          <text id="/case_contact_follow_up/inputs/contact/parent/patient_id:label">
+            <value>-</value>
+          </text>
           <text id="/case_contact_follow_up/inputs/contact/parent:label">
             <value>-</value>
           </text>
@@ -104,12 +113,6 @@
             <value>-</value>
           </text>
           <text id="/case_contact_follow_up/inputs:label">
-            <value>-</value>
-          </text>
-          <text id="/case_contact_follow_up/outbreak_code:label">
-            <value>-</value>
-          </text>
-          <text id="/case_contact_follow_up/outbreak_name:label">
             <value>-</value>
           </text>
           <text id="/case_contact_follow_up/patient_uuid:label">
@@ -141,6 +144,7 @@
               <name/>
               <parent>
                 <_id/>
+                <patient_id/>
                 <name/>
                 <parent>
                   <_id/>
@@ -152,13 +156,13 @@
           </inputs>
           <patient_uuid/>
           <case_contact_name/>
-          <case_number/>
-          <case_name/>
-          <outbreak_code/>
-          <outbreak_name/>
+          <cfu_case_id/>
+          <cfu_case_name/>
+          <cfu_outbreak_code/>
+          <cfu_outbreak_name/>
           <case_contact_follow_up>
-            <case_number_title/>
-            <case_title/>
+            <case_name_title/>
+            <case_id_title/>
             <case_identifier_title/>
             <ccfu_date_last_contact/>
             <ccfu_day_current_follow_up/>
@@ -184,18 +188,19 @@
       <bind nodeset="/case_contact_follow_up/inputs/contact/_id" type="string"/>
       <bind nodeset="/case_contact_follow_up/inputs/contact/name" type="string"/>
       <bind nodeset="/case_contact_follow_up/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/case_contact_follow_up/inputs/contact/parent/patient_id" type="string"/>
       <bind nodeset="/case_contact_follow_up/inputs/contact/parent/name" type="string"/>
       <bind nodeset="/case_contact_follow_up/inputs/contact/parent/parent/_id" type="string"/>
       <bind nodeset="/case_contact_follow_up/inputs/contact/parent/parent/name" type="string"/>
       <bind nodeset="/case_contact_follow_up/inputs/contact/parent/parent/code" type="string"/>
       <bind nodeset="/case_contact_follow_up/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/case_contact_follow_up/case_contact_name" type="string" calculate="../inputs/contact/name"/>
-      <bind nodeset="/case_contact_follow_up/case_number" type="string" calculate="../inputs/contact/parent/_id"/>
-      <bind nodeset="/case_contact_follow_up/case_name" type="string" calculate="../inputs/contact/parent/name"/>
-      <bind nodeset="/case_contact_follow_up/outbreak_code" type="string" calculate="../inputs/contact/parent/parent/code"/>
-      <bind nodeset="/case_contact_follow_up/outbreak_name" type="string" calculate="../inputs/contact/parent/parent/name"/>
-      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_number_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_contact_follow_up/cfu_case_id" type="string" calculate="../inputs/contact/parent/patient_id"/>
+      <bind nodeset="/case_contact_follow_up/cfu_case_name" type="string" calculate="../inputs/contact/parent/name"/>
+      <bind nodeset="/case_contact_follow_up/cfu_outbreak_code" type="string" calculate="../inputs/contact/parent/parent/code"/>
+      <bind nodeset="/case_contact_follow_up/cfu_outbreak_name" type="string" calculate="../inputs/contact/parent/parent/name"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_name_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_contact_follow_up/case_contact_follow_up/case_identifier_title" readonly="true()" type="string"/>
       <bind nodeset="/case_contact_follow_up/case_contact_follow_up/ccfu_date_last_contact" type="date" required="true()"/>
       <bind nodeset="/case_contact_follow_up/case_contact_follow_up/ccfu_day_current_follow_up" type="int" required="true()"/>
@@ -215,11 +220,11 @@
       </group>
     </group>
     <group appearance="field-list" ref="/case_contact_follow_up/case_contact_follow_up">
-      <input ref="/case_contact_follow_up/case_contact_follow_up/case_number_title">
-        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_number_title:label')"/>
+      <input ref="/case_contact_follow_up/case_contact_follow_up/case_name_title">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_name_title:label')"/>
       </input>
-      <input ref="/case_contact_follow_up/case_contact_follow_up/case_title">
-        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_title:label')"/>
+      <input ref="/case_contact_follow_up/case_contact_follow_up/case_id_title">
+        <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_id_title:label')"/>
       </input>
       <input ref="/case_contact_follow_up/case_contact_follow_up/case_identifier_title">
         <label ref="jr:itext('/case_contact_follow_up/case_contact_follow_up/case_identifier_title:label')"/>
