@@ -118,7 +118,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="contact:person:create" prefix="J1!contact:person:create!" delimiter="#" version="2023-10-20 6-58">
+        <data id="contact:person:create" prefix="J1!contact:person:create!" delimiter="#" version="2023-11-12 22-44">
           <inputs>
             <meta>
               <location>
@@ -167,7 +167,7 @@
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/init/parent_id" type="string" calculate=" /data/person/parent " readonly="true()"/>
+      <bind nodeset="/data/init/parent_id" type="string" readonly="true()" calculate=" /data/person/parent "/>
       <bind nodeset="/data/init/name" type="string"/>
       <bind nodeset="/data/init/type" type="string"/>
       <bind nodeset="/data/init/type_selector" type="select1" calculate="../type"/>
@@ -178,7 +178,7 @@
       <bind nodeset="/data/person/first_name" type="string" required="true()"/>
       <bind nodeset="/data/person/last_name" type="string"/>
       <bind nodeset="/data/person/surname" type="string" required="true()"/>
-      <bind nodeset="/data/person/phone" type="string" required="true()"/>
+      <bind nodeset="/data/person/phone" type="tel" required="true()"/>
       <bind nodeset="/data/person/email" type="string" required="true()"/>
       <bind nodeset="/data/person/name" type="string" calculate="concat( /data/person/first_name , ' ',  /data/person/last_name , ' ',  /data/person/surname )"/>
       <bind nodeset="/data/person/role_label" type="string" calculate="jr:choice-name( /data/person/role ,' /data/person/role ')"/>

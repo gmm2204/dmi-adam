@@ -8,62 +8,32 @@
           <text id="/data/case/case_demographics/case_demographics_title:label">
             <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Biographical Data&lt;/h4&gt;</value>
           </text>
+          <text id="/data/case/case_demographics/case_email_address:label">
+            <value>Email Address</value>
+          </text>
           <text id="/data/case/case_demographics/case_identification_document_number:label">
             <value><output value=" /data/case/case_demographics/case_identification_document_type_label "/> Number</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/alien_id:label">
-            <value>Alien ID</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/birth_certificate:label">
-            <value>Birth Certificate</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/national_id:label">
-            <value>National ID</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/none:label">
-            <value>None</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/passport:label">
-            <value>Passport</value>
           </text>
           <text id="/data/case/case_demographics/case_identification_document_type:label">
             <value>Identification Document Type</value>
           </text>
-          <text id="/data/case/case_demographics/case_lactating/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case/case_demographics/case_lactating/yes:label">
-            <value>Yes</value>
-          </text>
           <text id="/data/case/case_demographics/case_lactating:label">
             <value>Lactating</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/divorced:label">
-            <value>Divorced</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/married:label">
-            <value>Married</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/separated:label">
-            <value>Separated</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/single:label">
-            <value>Single</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/widowed:label">
-            <value>Widowed</value>
           </text>
           <text id="/data/case/case_demographics/case_marital_status:label">
             <value>Marital Status</value>
           </text>
-          <text id="/data/case/case_demographics/case_pregnant/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case/case_demographics/case_pregnant/yes:label">
-            <value>Yes</value>
+          <text id="/data/case/case_demographics/case_phone_number:label">
+            <value>Phone Number</value>
           </text>
           <text id="/data/case/case_demographics/case_pregnant:label">
             <value>Pregnant</value>
+          </text>
+          <text id="/data/case/case_demographics/case_sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/case/case_demographics/contact_information_title:label">
+            <value>&lt;h3 style="border-bottom: #f47b63 dashed 2px; padding: 5px 0;"&gt;&lt;/h3&gt;</value>
           </text>
           <text id="/data/case/case_demographics/ephemeral_dob/age_months:label">
             <value>Age (Months)</value>
@@ -80,12 +50,6 @@ Year: <output value=" /data/case/case_demographics/ephemeral_dob/ephemeral_years
 DOB Approx: <output value=" /data/case/case_demographics/ephemeral_dob/dob_approx "/>
 DOB Calendar: <output value=" /data/case/case_demographics/ephemeral_dob/dob_calendar "/>
 DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/></value></text>
-          <text id="/data/case/case_demographics/ephemeral_dob/dob_method/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case/case_demographics/ephemeral_dob/dob_method/yes:label">
-            <value>Yes</value>
-          </text>
           <text id="/data/case/case_demographics/ephemeral_dob/dob_method:label">
             <value>Does the patient know their date of birth?</value>
           </text>
@@ -95,89 +59,14 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           <text id="/data/case/case_demographics/middle_name:label">
             <value>Middle name</value>
           </text>
-          <text id="/data/case/case_demographics/sex/female:label">
-            <value>Female</value>
-          </text>
-          <text id="/data/case/case_demographics/sex/male:label">
-            <value>Male</value>
-          </text>
-          <text id="/data/case/case_demographics/sex:label">
-            <value>Sex</value>
-          </text>
           <text id="/data/case/case_demographics/surname:label">
             <value>Surname</value>
           </text>
           <text id="/data/case/case_demographics_extended/case_demographics_extended_title:label">
-            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px"&gt;&lt;/h3&gt;</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/none:label">
-            <value>None</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/primary:label">
-            <value>Primary Education</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/secondary:label">
-            <value>Secondary Education</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/tertiary:label">
-            <value>College / University / Polytechnic</value>
+            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;&lt;/h3&gt;</value>
           </text>
           <text id="/data/case/case_demographics_extended/case_education_level:label">
             <value>Education Level</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw:label">
-            <value>Is the patient a health care worker?</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/ambulance_driver:label">
-            <value>Ambulance driver</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/cha:label">
-            <value>CHA</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/cho:label">
-            <value>CHO</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/doctor:label">
-            <value>Doctor</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/eho:label">
-            <value>EHO</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/lab_personnel:label">
-            <value>Lab personnel</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/mch_aide:label">
-            <value>MCH Aide</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/midwife:label">
-            <value>Midwife</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/nursing_aide:label">
-            <value>Nursing Aide</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/nutritionist:label">
-            <value>Nutritionist</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/pharmacy_personnel:label">
-            <value>Pharmacy Personnel</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/porter:label">
-            <value>Porter</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/sechn:label">
-            <value>SECHN</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/srn:label">
-            <value>SRN</value>
           </text>
           <text id="/data/case/case_demographics_extended/case_hcw_cadre:label">
             <value>Cadre</value>
@@ -194,38 +83,11 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           <text id="/data/case/case_demographics_extended/case_hcw_station:label">
             <value>Work Station</value>
           </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/driver:label">
-            <value>Driver</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/employee:label">
-            <value>Employee</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/farmer:label">
-            <value>Farmer</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/none:label">
-            <value>None</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/student:label">
-            <value>Student</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/trader:label">
-            <value>Trader</value>
-          </text>
           <text id="/data/case/case_demographics_extended/case_occupation:label">
             <value>Occupation</value>
           </text>
           <text id="/data/case/case_demographics_extended/case_other_occupation:label">
             <value>Occupation (Other)</value>
-          </text>
-          <text id="/data/case/case_household_head/case_hh/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case/case_household_head/case_hh/yes:label">
-            <value>Yes</value>
           </text>
           <text id="/data/case/case_household_head/case_hh:label">
             <value>Is the patient the head of the household?</value>
@@ -237,7 +99,7 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
             <value>Head of household phone number</value>
           </text>
           <text id="/data/case/case_household_head/case_hh_title:label">
-            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px"&gt;&lt;/h3&gt;</value>
+            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;&lt;/h3&gt;</value>
           </text>
           <text id="/data/case/case_identifiers/case_demographics_title:label">
             <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Case Identifiers&lt;/h4&gt;</value>
@@ -260,827 +122,53 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           <text id="/data/case/case_kin/case_kin_phone_number:label">
             <value>Phone Number</value>
           </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Aunt:label">
-            <value>Aunt</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Child:label">
-            <value>Child</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Co-worker:label">
-            <value>Co-worker</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Father:label">
-            <value>Father</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Friend:label">
-            <value>Friend</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Grand father:label">
-            <value>Grand father</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Grand mother:label">
-            <value>Grand mother</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Guardian:label">
-            <value>Guardian</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Mother:label">
-            <value>Mother</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Partner:label">
-            <value>Partner</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Sibling:label">
-            <value>Sibling</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Spouse:label">
-            <value>Spouse</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Uncle:label">
-            <value>Uncle</value>
-          </text>
           <text id="/data/case/case_kin/case_kin_relationship:label">
             <value>Relationship</value>
           </text>
           <text id="/data/case/case_kin/case_kin_title:label">
             <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;Parent, guardian or next of kin&lt;/h3&gt;</value>
           </text>
-          <text id="/data/case/case_location/case_country/Afghanistan:label">
-            <value>Afghanistan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Albania:label">
-            <value>Albania</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Algeria:label">
-            <value>Algeria</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Andorra:label">
-            <value>Andorra</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Angola:label">
-            <value>Angola</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Antigua and Barbuda:label">
-            <value>Antigua and Barbuda</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Argentina:label">
-            <value>Argentina</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Armenia:label">
-            <value>Armenia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Australia:label">
-            <value>Australia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Austria:label">
-            <value>Austria</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Azerbaijan:label">
-            <value>Azerbaijan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bahrain:label">
-            <value>Bahrain</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bangladesh:label">
-            <value>Bangladesh</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Barbados:label">
-            <value>Barbados</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Belarus:label">
-            <value>Belarus</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Belgium:label">
-            <value>Belgium</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Belize:label">
-            <value>Belize</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Benin:label">
-            <value>Benin</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bhutan:label">
-            <value>Bhutan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bolivia:label">
-            <value>Bolivia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bosnia and Herzegovina:label">
-            <value>Bosnia and Herzegovina</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Botswana:label">
-            <value>Botswana</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Brazil:label">
-            <value>Brazil</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Brunei:label">
-            <value>Brunei</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bulgaria:label">
-            <value>Bulgaria</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Burkina Faso:label">
-            <value>Burkina Faso</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Burundi:label">
-            <value>Burundi</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cabo Verde:label">
-            <value>Cabo Verde</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cambodia:label">
-            <value>Cambodia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cameroon:label">
-            <value>Cameroon</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Canada:label">
-            <value>Canada</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Central African Republic:label">
-            <value>Central African Republic</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Chad:label">
-            <value>Chad</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Chile:label">
-            <value>Chile</value>
-          </text>
-          <text id="/data/case/case_location/case_country/China:label">
-            <value>China</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Colombia:label">
-            <value>Colombia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Comoros:label">
-            <value>Comoros</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Congo, Democratic Republic of the:label">
-            <value>Congo, Democratic Republic of the</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Congo, Republic of the:label">
-            <value>Congo, Republic of the</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Costa Rica:label">
-            <value>Costa Rica</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Croatia:label">
-            <value>Croatia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cuba:label">
-            <value>Cuba</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cyprus:label">
-            <value>Cyprus</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Czech Republic:label">
-            <value>Czech Republic</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Côte d'Ivoire:label">
-            <value>Côte d'Ivoire</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Denmark:label">
-            <value>Denmark</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Djibouti:label">
-            <value>Djibouti</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Dominica:label">
-            <value>Dominica</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Dominican Republic:label">
-            <value>Dominican Republic</value>
-          </text>
-          <text id="/data/case/case_location/case_country/East Timor (Timor-Leste):label">
-            <value>East Timor (Timor-Leste)</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ecuador:label">
-            <value>Ecuador</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Egypt:label">
-            <value>Egypt</value>
-          </text>
-          <text id="/data/case/case_location/case_country/El Salvador:label">
-            <value>El Salvador</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Equatorial Guinea:label">
-            <value>Equatorial Guinea</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Eritrea:label">
-            <value>Eritrea</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Estonia:label">
-            <value>Estonia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Eswatini:label">
-            <value>Eswatini</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ethiopia:label">
-            <value>Ethiopia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Fiji:label">
-            <value>Fiji</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Finland:label">
-            <value>Finland</value>
-          </text>
-          <text id="/data/case/case_location/case_country/France:label">
-            <value>France</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Gabon:label">
-            <value>Gabon</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Georgia:label">
-            <value>Georgia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Germany:label">
-            <value>Germany</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ghana:label">
-            <value>Ghana</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Greece:label">
-            <value>Greece</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Grenada:label">
-            <value>Grenada</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guatemala:label">
-            <value>Guatemala</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guinea-Bissau:label">
-            <value>Guinea-Bissau</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guinea:label">
-            <value>Guinea</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guyana:label">
-            <value>Guyana</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Haiti:label">
-            <value>Haiti</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Honduras:label">
-            <value>Honduras</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Hungary:label">
-            <value>Hungary</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Iceland:label">
-            <value>Iceland</value>
-          </text>
-          <text id="/data/case/case_location/case_country/India:label">
-            <value>India</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Indonesia:label">
-            <value>Indonesia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Iran:label">
-            <value>Iran</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Iraq:label">
-            <value>Iraq</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ireland:label">
-            <value>Ireland</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Israel:label">
-            <value>Israel</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Italy:label">
-            <value>Italy</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Jamaica:label">
-            <value>Jamaica</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Japan:label">
-            <value>Japan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Jordan:label">
-            <value>Jordan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kazakhstan:label">
-            <value>Kazakhstan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kenya:label">
-            <value>Kenya</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kiribati:label">
-            <value>Kiribati</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Korea, North:label">
-            <value>Korea, North</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Korea, South:label">
-            <value>Korea, South</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kosovo:label">
-            <value>Kosovo</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kuwait:label">
-            <value>Kuwait</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kyrgyzstan:label">
-            <value>Kyrgyzstan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Laos:label">
-            <value>Laos</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Latvia:label">
-            <value>Latvia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Lebanon:label">
-            <value>Lebanon</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Lesotho:label">
-            <value>Lesotho</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Liberia:label">
-            <value>Liberia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Libya:label">
-            <value>Libya</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Liechtenstein:label">
-            <value>Liechtenstein</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Lithuania:label">
-            <value>Lithuania</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Luxembourg:label">
-            <value>Luxembourg</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Madagascar:label">
-            <value>Madagascar</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Malawi:label">
-            <value>Malawi</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Malaysia:label">
-            <value>Malaysia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Maldives:label">
-            <value>Maldives</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mali:label">
-            <value>Mali</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Malta:label">
-            <value>Malta</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Marshall Islands:label">
-            <value>Marshall Islands</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mauritania:label">
-            <value>Mauritania</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mauritius:label">
-            <value>Mauritius</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mexico:label">
-            <value>Mexico</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Micronesia, Federated States of:label">
-            <value>Micronesia, Federated States of</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Moldova:label">
-            <value>Moldova</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Monaco:label">
-            <value>Monaco</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mongolia:label">
-            <value>Mongolia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Montenegro:label">
-            <value>Montenegro</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Morocco:label">
-            <value>Morocco</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mozambique:label">
-            <value>Mozambique</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Myanmar (Burma):label">
-            <value>Myanmar (Burma)</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Namibia:label">
-            <value>Namibia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nauru:label">
-            <value>Nauru</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nepal:label">
-            <value>Nepal</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Netherlands:label">
-            <value>Netherlands</value>
-          </text>
-          <text id="/data/case/case_location/case_country/New Zealand:label">
-            <value>New Zealand</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nicaragua:label">
-            <value>Nicaragua</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Niger:label">
-            <value>Niger</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nigeria:label">
-            <value>Nigeria</value>
-          </text>
-          <text id="/data/case/case_location/case_country/North Macedonia:label">
-            <value>North Macedonia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Norway:label">
-            <value>Norway</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Oman:label">
-            <value>Oman</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Pakistan:label">
-            <value>Pakistan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Palau:label">
-            <value>Palau</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Panama:label">
-            <value>Panama</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Papua New Guinea:label">
-            <value>Papua New Guinea</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Paraguay:label">
-            <value>Paraguay</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Peru:label">
-            <value>Peru</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Philippines:label">
-            <value>Philippines</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Poland:label">
-            <value>Poland</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Portugal:label">
-            <value>Portugal</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Qatar:label">
-            <value>Qatar</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Romania:label">
-            <value>Romania</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Russia:label">
-            <value>Russia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Rwanda:label">
-            <value>Rwanda</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saint Kitts and Nevis:label">
-            <value>Saint Kitts and Nevis</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saint Lucia:label">
-            <value>Saint Lucia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saint Vincent and the Grenadines:label">
-            <value>Saint Vincent and the Grenadines</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Samoa:label">
-            <value>Samoa</value>
-          </text>
-          <text id="/data/case/case_location/case_country/San Marino:label">
-            <value>San Marino</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sao Tome and Principe:label">
-            <value>Sao Tome and Principe</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saudi Arabia:label">
-            <value>Saudi Arabia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Senegal:label">
-            <value>Senegal</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Serbia:label">
-            <value>Serbia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Seychelles:label">
-            <value>Seychelles</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sierra Leone:label">
-            <value>Sierra Leone</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Singapore:label">
-            <value>Singapore</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Slovakia:label">
-            <value>Slovakia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Slovenia:label">
-            <value>Slovenia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Solomon Islands:label">
-            <value>Solomon Islands</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Somalia:label">
-            <value>Somalia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/South Africa:label">
-            <value>South Africa</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Spain:label">
-            <value>Spain</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sri Lanka:label">
-            <value>Sri Lanka</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sudan, South:label">
-            <value>Sudan, South</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sudan:label">
-            <value>Sudan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Suriname:label">
-            <value>Suriname</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sweden:label">
-            <value>Sweden</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Switzerland:label">
-            <value>Switzerland</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Syria:label">
-            <value>Syria</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Taiwan:label">
-            <value>Taiwan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tajikistan:label">
-            <value>Tajikistan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tanzania:label">
-            <value>Tanzania</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Thailand:label">
-            <value>Thailand</value>
-          </text>
-          <text id="/data/case/case_location/case_country/The Bahamas:label">
-            <value>The Bahamas</value>
-          </text>
-          <text id="/data/case/case_location/case_country/The Gambia:label">
-            <value>The Gambia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Togo:label">
-            <value>Togo</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tonga:label">
-            <value>Tonga</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Trinidad and Tobago:label">
-            <value>Trinidad and Tobago</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tunisia:label">
-            <value>Tunisia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Turkey:label">
-            <value>Turkey</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Turkmenistan:label">
-            <value>Turkmenistan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tuvalu:label">
-            <value>Tuvalu</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Uganda:label">
-            <value>Uganda</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ukraine:label">
-            <value>Ukraine</value>
-          </text>
-          <text id="/data/case/case_location/case_country/United Arab Emirates:label">
-            <value>United Arab Emirates</value>
-          </text>
-          <text id="/data/case/case_location/case_country/United Kingdom:label">
-            <value>United Kingdom</value>
-          </text>
-          <text id="/data/case/case_location/case_country/United States:label">
-            <value>United States</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Uruguay:label">
-            <value>Uruguay</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Uzbekistan:label">
-            <value>Uzbekistan</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Vanuatu:label">
-            <value>Vanuatu</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Vatican City:label">
-            <value>Vatican City</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Venezuela:label">
-            <value>Venezuela</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Vietnam:label">
-            <value>Vietnam</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Yemen:label">
-            <value>Yemen</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Zambia:label">
-            <value>Zambia</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Zimbabwe:label">
-            <value>Zimbabwe</value>
-          </text>
           <text id="/data/case/case_location/case_country:label">
             <value>Country</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Baringo:label">
-            <value>Baringo</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Bomet:label">
-            <value>Bomet</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Bungoma:label">
-            <value>Bungoma</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Busia:label">
-            <value>Busia</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Elgeyo-Marakwet:label">
-            <value>Elgeyo-Marakwet</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Embu:label">
-            <value>Embu</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Garissa:label">
-            <value>Garissa</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Homa Bay:label">
-            <value>Homa Bay</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Isiolo:label">
-            <value>Isiolo</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kajiado:label">
-            <value>Kajiado</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kakamega:label">
-            <value>Kakamega</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kericho:label">
-            <value>Kericho</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kiambu:label">
-            <value>Kiambu</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kilifi:label">
-            <value>Kilifi</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kirinyaga:label">
-            <value>Kirinyaga</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kisii:label">
-            <value>Kisii</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kisumu:label">
-            <value>Kisumu</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kitui:label">
-            <value>Kitui</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kwale:label">
-            <value>Kwale</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Laikipia:label">
-            <value>Laikipia</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Lamu:label">
-            <value>Lamu</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Machakos:label">
-            <value>Machakos</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Makueni:label">
-            <value>Makueni</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Mandera:label">
-            <value>Mandera</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Marsabit:label">
-            <value>Marsabit</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Meru:label">
-            <value>Meru</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Migori:label">
-            <value>Migori</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Mombasa:label">
-            <value>Mombasa</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Murang'A:label">
-            <value>Murang'A</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nairobi:label">
-            <value>Nairobi</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nakuru:label">
-            <value>Nakuru</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nandi:label">
-            <value>Nandi</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Narok:label">
-            <value>Narok</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nyamira:label">
-            <value>Nyamira</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nyandarua:label">
-            <value>Nyandarua</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nyeri:label">
-            <value>Nyeri</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Samburu:label">
-            <value>Samburu</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Siaya:label">
-            <value>Siaya</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Taita Taveta:label">
-            <value>Taita Taveta</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Tana River:label">
-            <value>Tana River</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Tharaka-Nithi:label">
-            <value>Tharaka-Nithi</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Trans Nzoia:label">
-            <value>Trans Nzoia</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Turkana:label">
-            <value>Turkana</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Uasin Gishu:label">
-            <value>Uasin Gishu</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Vihiga:label">
-            <value>Vihiga</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Wajir:label">
-            <value>Wajir</value>
-          </text>
-          <text id="/data/case/case_location/case_county/West Pokot:label">
-            <value>West Pokot</value>
           </text>
           <text id="/data/case/case_location/case_county:label">
             <value>County</value>
           </text>
-          <text id="/data/case/case_location/case_detection_hcw/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_hcw/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_hcw:label">
-            <value>Was the case detected by a health care worker?</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location/community:label">
-            <value>Community</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location/health_facility:label">
-            <value>Health Facility</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location/laboratory:label">
-            <value>Laboratory</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location:label">
-            <value>Where was the case detected?</value>
-          </text>
           <text id="/data/case/case_location/case_facility:label">
-            <value>Name the nearest health facility</value>
+            <value>Nearest Health Facility</value>
           </text>
           <text id="/data/case/case_location/case_location_title:label">
-            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px"&gt;&lt;/h3&gt;</value>
+            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;Residence&lt;/h3&gt;</value>
           </text>
           <text id="/data/case/case_location/case_subcounty:label">
-            <value>Sub-County</value>
+            <value>Sub County</value>
           </text>
           <text id="/data/case/case_location/case_ward:label">
-            <value>Ward ~</value>
+            <value>Ward</value>
           </text>
-          <text id="/data/case/meta/case_followed_contact/no:label">
-            <value>No</value>
+          <text id="/data/case/case_reporting_location/case_detection_hcw:label">
+            <value>Was the case detected by a health care worker?</value>
           </text>
-          <text id="/data/case/meta/case_followed_contact/unknown:label">
-            <value>Unknown</value>
+          <text id="/data/case/case_reporting_location/case_detection_location:label">
+            <value>Where was the case detected?</value>
           </text>
-          <text id="/data/case/meta/case_followed_contact/yes:label">
-            <value>Yes</value>
+          <text id="/data/case/case_reporting_location/case_reporting_county:label">
+            <value>County</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_health_facility:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_location_title:label">
+            <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;Reporting Location&lt;/h3&gt;</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_location_type:hint">
+            <value>Reporting location / site type</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_location_type:label">
+            <value>Type</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_subcounty:label">
+            <value>Sub County</value>
           </text>
           <text id="/data/case/meta/case_followed_contact:label">
             <value>Is the patient a followed contact?</value>
@@ -1093,6 +181,36 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           </text>
           <text id="/data/case/meta/case_investigation_reason:label">
             <value>What is the reason for this investigation?</value>
+          </text>
+          <text id="/data/case/outbreak_location/_id:label">
+            <value>Outbreak Location</value>
+          </text>
+          <text id="/data/case/outbreak_location/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/case/outbreak_location/ol_county:label">
+            <value>County</value>
+          </text>
+          <text id="/data/case/outbreak_location/ol_subcounty:label">
+            <value>Sub-county</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/code:label">
+            <value>Code</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/county:label">
+            <value>County</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/date:label">
+            <value>Date</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/status:label">
+            <value>Status</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/subcounty:label">
+            <value>Sub-county</value>
           </text>
           <text id="static_instance-case_detection_location-0">
             <value>Health Facility</value>
@@ -1236,24 +354,27 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
             <value>Single</value>
           </text>
           <text id="static_instance-occupation-0">
-            <value>Farmer</value>
+            <value>Health Care Worker</value>
           </text>
           <text id="static_instance-occupation-1">
-            <value>Trader</value>
+            <value>Farmer</value>
           </text>
           <text id="static_instance-occupation-2">
-            <value>Employee</value>
+            <value>Trader</value>
           </text>
           <text id="static_instance-occupation-3">
-            <value>Student</value>
+            <value>Employee</value>
           </text>
           <text id="static_instance-occupation-4">
-            <value>Driver</value>
+            <value>Student</value>
           </text>
           <text id="static_instance-occupation-5">
-            <value>None</value>
+            <value>Driver</value>
           </text>
           <text id="static_instance-occupation-6">
+            <value>None</value>
+          </text>
+          <text id="static_instance-occupation-7">
             <value>Other</value>
           </text>
           <text id="static_instance-select_country-0">
@@ -7189,22 +6310,10 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_demographics/case_demographics_title:label">
             <value>-</value>
           </text>
+          <text id="/data/case/case_demographics/case_email_address:label">
+            <value>-</value>
+          </text>
           <text id="/data/case/case_demographics/case_identification_document_number:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/alien_id:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/birth_certificate:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/national_id:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/none:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_identification_document_type/passport:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics/case_identification_document_type:label">
@@ -7213,40 +6322,22 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_demographics/case_identification_document_type_label:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_demographics/case_lactating/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_lactating/yes:label">
-            <value>-</value>
-          </text>
           <text id="/data/case/case_demographics/case_lactating:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/divorced:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/married:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/separated:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/single:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_marital_status/widowed:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics/case_marital_status:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_demographics/case_pregnant/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/case_pregnant/yes:label">
+          <text id="/data/case/case_demographics/case_phone_number:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics/case_pregnant:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_demographics/case_sex:label">
+            <value>Jinsia</value>
+          </text>
+          <text id="/data/case/case_demographics/contact_information_title:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics/ephemeral_dob/age_months:label">
@@ -7259,12 +6350,6 @@ Mutonga/Kithumula</value>
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics/ephemeral_dob/dob_debug:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/ephemeral_dob/dob_method/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/ephemeral_dob/dob_method/yes:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics/ephemeral_dob/dob_method:label">
@@ -7282,15 +6367,6 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_demographics/name:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_demographics/sex/female:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/sex/male:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics/sex:label">
-            <value>Jinsia</value>
-          </text>
           <text id="/data/case/case_demographics/surname:label">
             <value>-</value>
           </text>
@@ -7300,73 +6376,7 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_demographics_extended/case_demographics_extended_title:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/none:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/primary:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/secondary:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_education_level/tertiary:label">
-            <value>-</value>
-          </text>
           <text id="/data/case/case_demographics_extended/case_education_level:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/ambulance_driver:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/cha:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/cho:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/doctor:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/eho:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/lab_personnel:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/mch_aide:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/midwife:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/nursing_aide:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/nutritionist:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/other:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/pharmacy_personnel:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/porter:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/sechn:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_hcw_cadre/srn:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics_extended/case_hcw_cadre:label">
@@ -7384,27 +6394,6 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_demographics_extended/case_hcw_station:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/driver:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/employee:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/farmer:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/none:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/other:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/student:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_demographics_extended/case_occupation/trader:label">
-            <value>-</value>
-          </text>
           <text id="/data/case/case_demographics_extended/case_occupation:label">
             <value>-</value>
           </text>
@@ -7412,12 +6401,6 @@ Mutonga/Kithumula</value>
             <value>-</value>
           </text>
           <text id="/data/case/case_demographics_extended:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_household_head/case_hh/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_household_head/case_hh/yes:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_household_head/case_hh:label">
@@ -7459,45 +6442,6 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_kin/case_kin_phone_number:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Aunt:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Child:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Co-worker:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Father:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Friend:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Grand father:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Grand mother:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Guardian:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Mother:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Partner:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Sibling:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Spouse:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_kin/case_kin_relationship/Uncle:label">
-            <value>-</value>
-          </text>
           <text id="/data/case/case_kin/case_kin_relationship:label">
             <value>-</value>
           </text>
@@ -7507,760 +6451,10 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_kin:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_location/case_country/Afghanistan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Albania:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Algeria:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Andorra:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Angola:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Antigua and Barbuda:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Argentina:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Armenia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Australia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Austria:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Azerbaijan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bahrain:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bangladesh:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Barbados:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Belarus:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Belgium:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Belize:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Benin:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bhutan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bolivia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bosnia and Herzegovina:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Botswana:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Brazil:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Brunei:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Bulgaria:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Burkina Faso:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Burundi:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cabo Verde:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cambodia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cameroon:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Canada:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Central African Republic:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Chad:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Chile:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/China:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Colombia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Comoros:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Congo, Democratic Republic of the:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Congo, Republic of the:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Costa Rica:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Croatia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cuba:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Cyprus:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Czech Republic:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Côte d'Ivoire:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Denmark:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Djibouti:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Dominica:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Dominican Republic:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/East Timor (Timor-Leste):label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ecuador:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Egypt:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/El Salvador:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Equatorial Guinea:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Eritrea:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Estonia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Eswatini:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ethiopia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Fiji:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Finland:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/France:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Gabon:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Georgia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Germany:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ghana:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Greece:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Grenada:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guatemala:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guinea-Bissau:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guinea:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Guyana:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Haiti:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Honduras:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Hungary:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Iceland:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/India:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Indonesia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Iran:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Iraq:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ireland:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Israel:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Italy:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Jamaica:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Japan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Jordan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kazakhstan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kenya:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kiribati:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Korea, North:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Korea, South:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kosovo:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kuwait:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Kyrgyzstan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Laos:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Latvia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Lebanon:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Lesotho:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Liberia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Libya:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Liechtenstein:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Lithuania:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Luxembourg:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Madagascar:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Malawi:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Malaysia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Maldives:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mali:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Malta:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Marshall Islands:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mauritania:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mauritius:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mexico:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Micronesia, Federated States of:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Moldova:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Monaco:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mongolia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Montenegro:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Morocco:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Mozambique:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Myanmar (Burma):label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Namibia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nauru:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nepal:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Netherlands:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/New Zealand:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nicaragua:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Niger:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Nigeria:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/North Macedonia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Norway:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Oman:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Pakistan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Palau:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Panama:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Papua New Guinea:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Paraguay:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Peru:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Philippines:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Poland:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Portugal:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Qatar:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Romania:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Russia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Rwanda:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saint Kitts and Nevis:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saint Lucia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saint Vincent and the Grenadines:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Samoa:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/San Marino:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sao Tome and Principe:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Saudi Arabia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Senegal:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Serbia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Seychelles:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sierra Leone:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Singapore:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Slovakia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Slovenia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Solomon Islands:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Somalia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/South Africa:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Spain:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sri Lanka:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sudan, South:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sudan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Suriname:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Sweden:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Switzerland:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Syria:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Taiwan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tajikistan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tanzania:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Thailand:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/The Bahamas:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/The Gambia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Togo:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tonga:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Trinidad and Tobago:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tunisia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Turkey:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Turkmenistan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Tuvalu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Uganda:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Ukraine:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/United Arab Emirates:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/United Kingdom:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/United States:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Uruguay:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Uzbekistan:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Vanuatu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Vatican City:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Venezuela:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Vietnam:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Yemen:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Zambia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_country/Zimbabwe:label">
-            <value>-</value>
-          </text>
           <text id="/data/case/case_location/case_country:label">
             <value>-</value>
           </text>
-          <text id="/data/case/case_location/case_county/Baringo:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Bomet:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Bungoma:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Busia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Elgeyo-Marakwet:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Embu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Garissa:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Homa Bay:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Isiolo:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kajiado:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kakamega:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kericho:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kiambu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kilifi:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kirinyaga:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kisii:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kisumu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kitui:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Kwale:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Laikipia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Lamu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Machakos:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Makueni:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Mandera:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Marsabit:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Meru:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Migori:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Mombasa:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Murang'A:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nairobi:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nakuru:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nandi:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Narok:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nyamira:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nyandarua:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Nyeri:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Samburu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Siaya:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Taita Taveta:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Tana River:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Tharaka-Nithi:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Trans Nzoia:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Turkana:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Uasin Gishu:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Vihiga:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/Wajir:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_county/West Pokot:label">
-            <value>-</value>
-          </text>
           <text id="/data/case/case_location/case_county:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_hcw/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_hcw/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_hcw:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location/community:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location/health_facility:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location/laboratory:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/case_location/case_detection_location:label">
             <value>-</value>
           </text>
           <text id="/data/case/case_location/case_facility:label">
@@ -8278,16 +6472,37 @@ Mutonga/Kithumula</value>
           <text id="/data/case/case_location:label">
             <value>-</value>
           </text>
+          <text id="/data/case/case_reporting_location/case_detection_hcw:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_detection_location:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_county:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_health_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_location_title:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_location_type:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_location_type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location/case_reporting_subcounty:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/case_reporting_location:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/email:label">
+            <value>-</value>
+          </text>
           <text id="/data/case/hierarchy_id:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/meta/case_followed_contact/no:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/meta/case_followed_contact/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/data/case/meta/case_followed_contact/yes:label">
             <value>-</value>
           </text>
           <text id="/data/case/meta/case_followed_contact:label">
@@ -8308,7 +6523,49 @@ Mutonga/Kithumula</value>
           <text id="/data/case/name:label">
             <value>-</value>
           </text>
+          <text id="/data/case/outbreak_location/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/ol_county:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/ol_subcounty:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/code:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/county:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/date:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/status:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak/subcounty:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location/outbreak:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/outbreak_location:label">
+            <value>-</value>
+          </text>
           <text id="/data/case/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/case/sex:label">
             <value>-</value>
           </text>
           <text id="/data/case/type:label">
@@ -8492,6 +6749,9 @@ Mutonga/Kithumula</value>
             <value>-</value>
           </text>
           <text id="static_instance-occupation-6">
+            <value>-</value>
+          </text>
+          <text id="static_instance-occupation-7">
             <value>-</value>
           </text>
           <text id="static_instance-select_country-0">
@@ -14422,7 +12682,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-10-26 11-15">
+        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-11-13 18-05">
           <inputs>
             <meta>
               <location>
@@ -14440,8 +12700,25 @@ Mutonga/Kithumula</value>
           </inputs>
           <case>
             <parent>PARENT</parent>
-            <type/>
+            <type>case</type>
             <name/>
+            <outbreak_location>
+              <_id/>
+              <name/>
+              <ol_county/>
+              <ol_subcounty/>
+              <outbreak>
+                <name/>
+                <code/>
+                <date/>
+                <status/>
+                <county/>
+                <subcounty/>
+              </outbreak>
+            </outbreak_location>
+            <phone/>
+            <email/>
+            <sex/>
             <hierarchy_id/>
             <case_identifiers>
               <case_demographics_title/>
@@ -14458,7 +12735,7 @@ Mutonga/Kithumula</value>
               <case_identification_document_type/>
               <case_identification_document_type_label/>
               <case_identification_document_number/>
-              <sex/>
+              <case_sex/>
               <date_of_birth/>
               <date_of_birth_method/>
               <ephemeral_dob>
@@ -14473,6 +12750,9 @@ Mutonga/Kithumula</value>
                 <dob_iso/>
                 <dob_debug/>
               </ephemeral_dob>
+              <contact_information_title/>
+              <case_phone_number/>
+              <case_email_address/>
               <case_pregnant/>
               <case_lactating/>
               <case_marital_status/>
@@ -14484,15 +12764,21 @@ Mutonga/Kithumula</value>
               <case_subcounty/>
               <case_ward/>
               <case_facility/>
+            </case_location>
+            <case_reporting_location>
+              <case_reporting_location_title/>
+              <case_reporting_county/>
+              <case_reporting_subcounty/>
+              <case_reporting_location_type/>
+              <case_reporting_health_facility/>
               <case_detection_location/>
               <case_detection_hcw/>
-            </case_location>
+            </case_reporting_location>
             <case_demographics_extended>
               <case_demographics_extended_title/>
               <case_education_level/>
               <case_occupation/>
               <case_other_occupation/>
-              <case_hcw/>
               <case_hcw_facility/>
               <case_hcw_cadre/>
               <case_hcw_cadre_other/>
@@ -14663,30 +12949,34 @@ Mutonga/Kithumula</value>
         <root>
           <item>
             <itextId>static_instance-occupation-0</itextId>
-            <name>farmer</name>
+            <name>hcw</name>
           </item>
           <item>
             <itextId>static_instance-occupation-1</itextId>
-            <name>trader</name>
+            <name>farmer</name>
           </item>
           <item>
             <itextId>static_instance-occupation-2</itextId>
-            <name>employee</name>
+            <name>trader</name>
           </item>
           <item>
             <itextId>static_instance-occupation-3</itextId>
-            <name>student</name>
+            <name>employee</name>
           </item>
           <item>
             <itextId>static_instance-occupation-4</itextId>
-            <name>driver</name>
+            <name>student</name>
           </item>
           <item>
             <itextId>static_instance-occupation-5</itextId>
-            <name>none</name>
+            <name>driver</name>
           </item>
           <item>
             <itextId>static_instance-occupation-6</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>static_instance-occupation-7</itextId>
             <name>other</name>
           </item>
         </root>
@@ -24438,6 +22728,19 @@ Course</name>
       <bind nodeset="/data/case/parent" type="string"/>
       <bind nodeset="/data/case/type" type="string"/>
       <bind nodeset="/data/case/name" type="string" calculate="concat( /data/case/case_demographics/first_name , ' ',  /data/case/case_demographics/middle_name , ' ',  /data/case/case_demographics/surname )"/>
+      <bind nodeset="/data/case/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
+      <bind nodeset="/data/case/outbreak_location/name" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/ol_county" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/ol_subcounty" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/outbreak/name" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/outbreak/date" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/outbreak/status" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/outbreak/county" type="string"/>
+      <bind nodeset="/data/case/outbreak_location/outbreak/subcounty" type="string"/>
+      <bind nodeset="/data/case/phone" type="string" calculate="concat( /data/case/case_demographics/case_phone_number , ' ')"/>
+      <bind nodeset="/data/case/email" type="string" calculate="concat( /data/case/case_demographics/case_email_address , ' ')"/>
+      <bind nodeset="/data/case/sex" type="string" calculate="concat( /data/case/case_demographics/case_sex , ' ')"/>
       <bind nodeset="/data/case/hierarchy_id" type="string" calculate="concat('case')"/>
       <bind nodeset="/data/case/case_identifiers/case_demographics_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_identifiers/case_id_title" readonly="true()" type="string"/>
@@ -24451,12 +22754,12 @@ Course</name>
       <bind nodeset="/data/case/case_demographics/case_identification_document_type" type="select1"/>
       <bind nodeset="/data/case/case_demographics/case_identification_document_type_label" type="string" calculate="jr:choice-name( /data/case/case_demographics/case_identification_document_type ,' /data/case/case_demographics/case_identification_document_type ')"/>
       <bind nodeset="/data/case/case_demographics/case_identification_document_number" type="string" relevant="(( /data/case/case_demographics/case_identification_document_type  != &quot;&quot;) and ( /data/case/case_demographics/case_identification_document_type  != &quot;none&quot;))"/>
-      <bind nodeset="/data/case/case_demographics/sex" type="select1" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/case_sex" type="select1" required="true()"/>
       <bind nodeset="/data/case/case_demographics/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_iso"/>
       <bind nodeset="/data/case/case_demographics/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_years" type="int" constraint=". &gt;= 0 and . &lt;= 130" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_years" type="int" constraint=". &gt;= 0 and . &lt;= 130" required="true()" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) + 12, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0))"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>
@@ -24466,27 +22769,34 @@ Course</name>
  /data/case/case_demographics/ephemeral_dob/dob_approx )"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_iso" type="string" calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_debug" readonly="true()" type="string" relevant="false()"/>
-      <bind nodeset="/data/case/case_demographics/case_pregnant" type="select1" relevant="selected( /data/case/case_demographics/sex , 'female')"/>
-      <bind nodeset="/data/case/case_demographics/case_lactating" type="select1" relevant="selected( /data/case/case_demographics/sex , 'female')"/>
+      <bind nodeset="/data/case/case_demographics/contact_information_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/case/case_demographics/case_phone_number" type="tel" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/case_email_address" type="string"/>
+      <bind nodeset="/data/case/case_demographics/case_pregnant" type="select1" relevant="selected( /data/case/sex , 'female')"/>
+      <bind nodeset="/data/case/case_demographics/case_lactating" type="select1" relevant="selected( /data/case/sex , 'female')"/>
       <bind nodeset="/data/case/case_demographics/case_marital_status" type="select1"/>
       <bind nodeset="/data/case/case_location/case_location_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/case/case_location/case_country" type="select1"/>
-      <bind nodeset="/data/case/case_location/case_county" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_subcounty" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_ward" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
+      <bind nodeset="/data/case/case_location/case_country" type="select1" required="true()"/>
+      <bind nodeset="/data/case/case_location/case_county" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
+      <bind nodeset="/data/case/case_location/case_subcounty" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
+      <bind nodeset="/data/case/case_location/case_ward" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
       <bind nodeset="/data/case/case_location/case_facility" type="string"/>
-      <bind nodeset="/data/case/case_location/case_detection_location" type="select1"/>
-      <bind nodeset="/data/case/case_location/case_detection_hcw" type="select1"/>
+      <bind nodeset="/data/case/case_reporting_location/case_reporting_location_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/case/case_reporting_location/case_reporting_county" type="select1" required="true()" calculate="../../../case/outbreak_location/ol_county"/>
+      <bind nodeset="/data/case/case_reporting_location/case_reporting_subcounty" type="select1" required="true()"/>
+      <bind nodeset="/data/case/case_reporting_location/case_reporting_location_type" type="string"/>
+      <bind nodeset="/data/case/case_reporting_location/case_reporting_health_facility" type="string"/>
+      <bind nodeset="/data/case/case_reporting_location/case_detection_location" type="select1"/>
+      <bind nodeset="/data/case/case_reporting_location/case_detection_hcw" type="select1"/>
       <bind nodeset="/data/case/case_demographics_extended/case_demographics_extended_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_demographics_extended/case_education_level" type="select1"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_occupation" type="select1"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_other_occupation" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'other')"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw" type="select1"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_facility" type="string" relevant="selected( /data/case/case_demographics_extended/case_hcw , 'yes')"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre" type="select1" relevant="selected( /data/case/case_demographics_extended/case_hcw , 'yes')"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre_other" type="string" relevant="selected( /data/case/case_demographics_extended/case_hcw_cadre , 'other')"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_position" type="string" relevant="selected( /data/case/case_demographics_extended/case_hcw , 'yes')"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_station" type="string" relevant="selected( /data/case/case_demographics_extended/case_hcw , 'yes')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_occupation" type="select1" required="true()"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_other_occupation" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'other')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_facility" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre" type="select1" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre_other" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_position" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_station" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
       <bind nodeset="/data/case/case_household_head/case_hh_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_household_head/case_hh" type="select1"/>
       <bind nodeset="/data/case/case_household_head/case_hh_name" type="string" relevant="selected( /data/case/case_household_head/case_hh , 'no')"/>
@@ -24499,7 +22809,7 @@ Course</name>
       <bind nodeset="/data/case/meta/case_hh_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/meta/case_followed_contact" type="select1" required="true()"/>
       <bind nodeset="/data/case/meta/case_investigation_reason" type="string"/>
-      <bind nodeset="/data/case/meta/case_investigation_date" type="date"/>
+      <bind nodeset="/data/case/meta/case_investigation_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/data/case/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/case/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/case/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -24515,6 +22825,12 @@ Course</name>
       </group>
     </group>
     <group appearance="field-list" ref="/data/case">
+      <group appearance="field-list" ref="/data/case/outbreak_location">
+        <input appearance="hidden select-contact type-outbreak_location" ref="/data/case/outbreak_location/_id">
+          <label ref="jr:itext('/data/case/outbreak_location/_id:label')"/>
+        </input>
+        <group ref="/data/case/outbreak_location/outbreak"/>
+      </group>
       <group appearance="field-list" ref="/data/case/case_identifiers">
         <input ref="/data/case/case_identifiers/case_demographics_title">
           <label ref="jr:itext('/data/case/case_identifiers/case_demographics_title:label')"/>
@@ -24545,37 +22861,37 @@ Course</name>
         <select1 ref="/data/case/case_demographics/case_identification_document_type">
           <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/passport:label')"/>
+            <label>Passport</label>
             <value>passport</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/national_id:label')"/>
+            <label>National ID</label>
             <value>national_id</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/birth_certificate:label')"/>
+            <label>Birth Certificate</label>
             <value>birth_certificate</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/alien_id:label')"/>
+            <label>Alien ID</label>
             <value>alien_id</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/none:label')"/>
+            <label>None</label>
             <value>none</value>
           </item>
         </select1>
         <input ref="/data/case/case_demographics/case_identification_document_number">
           <label ref="jr:itext('/data/case/case_demographics/case_identification_document_number:label')"/>
         </input>
-        <select1 appearance="columns" ref="/data/case/case_demographics/sex">
-          <label ref="jr:itext('/data/case/case_demographics/sex:label')"/>
+        <select1 appearance="columns" ref="/data/case/case_demographics/case_sex">
+          <label ref="jr:itext('/data/case/case_demographics/case_sex:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/sex/male:label')"/>
+            <label>Male</label>
             <value>male</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/sex/female:label')"/>
+            <label>Female</label>
             <value>female</value>
           </item>
         </select1>
@@ -24583,11 +22899,11 @@ Course</name>
           <select1 appearance="columns" ref="/data/case/case_demographics/ephemeral_dob/dob_method">
             <label ref="jr:itext('/data/case/case_demographics/ephemeral_dob/dob_method:label')"/>
             <item>
-              <label ref="jr:itext('/data/case/case_demographics/ephemeral_dob/dob_method/yes:label')"/>
+              <label>Yes</label>
               <value>yes</value>
             </item>
             <item>
-              <label ref="jr:itext('/data/case/case_demographics/ephemeral_dob/dob_method/no:label')"/>
+              <label>No</label>
               <value>no</value>
             </item>
           </select1>
@@ -24604,48 +22920,57 @@ Course</name>
             <label ref="jr:itext('/data/case/case_demographics/ephemeral_dob/dob_debug:label')"/>
           </input>
         </group>
+        <input ref="/data/case/case_demographics/contact_information_title">
+          <label ref="jr:itext('/data/case/case_demographics/contact_information_title:label')"/>
+        </input>
+        <input ref="/data/case/case_demographics/case_phone_number">
+          <label ref="jr:itext('/data/case/case_demographics/case_phone_number:label')"/>
+        </input>
+        <input ref="/data/case/case_demographics/case_email_address">
+          <label ref="jr:itext('/data/case/case_demographics/case_email_address:label')"/>
+        </input>
         <select1 appearance="columns" ref="/data/case/case_demographics/case_pregnant">
           <label ref="jr:itext('/data/case/case_demographics/case_pregnant:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_pregnant/yes:label')"/>
+            <label>Yes</label>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_pregnant/no:label')"/>
+            <label>No</label>
             <value>no</value>
           </item>
         </select1>
         <select1 appearance="columns" ref="/data/case/case_demographics/case_lactating">
           <label ref="jr:itext('/data/case/case_demographics/case_lactating:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_lactating/yes:label')"/>
+            <label>Yes</label>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_lactating/no:label')"/>
+            <label>No</label>
             <value>no</value>
           </item>
         </select1>
         <select1 appearance="columns" ref="/data/case/case_demographics/case_marital_status">
           <label ref="jr:itext('/data/case/case_demographics/case_marital_status:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_marital_status/married:label')"/>
+            <label>Married</label>
             <value>married</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_marital_status/widowed:label')"/>
+            <label>Widowed</label>
             <value>widowed</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_marital_status/separated:label')"/>
+            <label>Separated</label>
             <value>separated</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_marital_status/divorced:label')"/>
+            <label>Divorced</label>
             <value>divorced</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_marital_status/single:label')"/>
+            <label>Single</label>
             <value>single</value>
           </item>
         </select1>
@@ -24654,998 +22979,998 @@ Course</name>
         <input ref="/data/case/case_location/case_location_title">
           <label ref="jr:itext('/data/case/case_location/case_location_title:label')"/>
         </input>
-        <select1 appearance="minimal" ref="/data/case/case_location/case_country">
+        <select1 appearance="autocomplete" ref="/data/case/case_location/case_country">
           <label ref="jr:itext('/data/case/case_location/case_country:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Afghanistan:label')"/>
+            <label>Afghanistan</label>
             <value>Afghanistan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Albania:label')"/>
+            <label>Albania</label>
             <value>Albania</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Algeria:label')"/>
+            <label>Algeria</label>
             <value>Algeria</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Andorra:label')"/>
+            <label>Andorra</label>
             <value>Andorra</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Angola:label')"/>
+            <label>Angola</label>
             <value>Angola</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Antigua and Barbuda:label')"/>
+            <label>Antigua and Barbuda</label>
             <value>Antigua and Barbuda</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Argentina:label')"/>
+            <label>Argentina</label>
             <value>Argentina</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Armenia:label')"/>
+            <label>Armenia</label>
             <value>Armenia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Australia:label')"/>
+            <label>Australia</label>
             <value>Australia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Austria:label')"/>
+            <label>Austria</label>
             <value>Austria</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Azerbaijan:label')"/>
+            <label>Azerbaijan</label>
             <value>Azerbaijan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/The Bahamas:label')"/>
+            <label>The Bahamas</label>
             <value>The Bahamas</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Bahrain:label')"/>
+            <label>Bahrain</label>
             <value>Bahrain</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Bangladesh:label')"/>
+            <label>Bangladesh</label>
             <value>Bangladesh</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Barbados:label')"/>
+            <label>Barbados</label>
             <value>Barbados</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Belarus:label')"/>
+            <label>Belarus</label>
             <value>Belarus</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Belgium:label')"/>
+            <label>Belgium</label>
             <value>Belgium</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Belize:label')"/>
+            <label>Belize</label>
             <value>Belize</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Benin:label')"/>
+            <label>Benin</label>
             <value>Benin</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Bhutan:label')"/>
+            <label>Bhutan</label>
             <value>Bhutan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Bolivia:label')"/>
+            <label>Bolivia</label>
             <value>Bolivia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Bosnia and Herzegovina:label')"/>
+            <label>Bosnia and Herzegovina</label>
             <value>Bosnia and Herzegovina</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Botswana:label')"/>
+            <label>Botswana</label>
             <value>Botswana</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Brazil:label')"/>
+            <label>Brazil</label>
             <value>Brazil</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Brunei:label')"/>
+            <label>Brunei</label>
             <value>Brunei</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Bulgaria:label')"/>
+            <label>Bulgaria</label>
             <value>Bulgaria</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Burkina Faso:label')"/>
+            <label>Burkina Faso</label>
             <value>Burkina Faso</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Burundi:label')"/>
+            <label>Burundi</label>
             <value>Burundi</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Cabo Verde:label')"/>
+            <label>Cabo Verde</label>
             <value>Cabo Verde</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Cambodia:label')"/>
+            <label>Cambodia</label>
             <value>Cambodia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Cameroon:label')"/>
+            <label>Cameroon</label>
             <value>Cameroon</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Canada:label')"/>
+            <label>Canada</label>
             <value>Canada</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Central African Republic:label')"/>
+            <label>Central African Republic</label>
             <value>Central African Republic</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Chad:label')"/>
+            <label>Chad</label>
             <value>Chad</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Chile:label')"/>
+            <label>Chile</label>
             <value>Chile</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/China:label')"/>
+            <label>China</label>
             <value>China</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Colombia:label')"/>
+            <label>Colombia</label>
             <value>Colombia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Comoros:label')"/>
+            <label>Comoros</label>
             <value>Comoros</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Congo, Democratic Republic of the:label')"/>
+            <label>Congo, Democratic Republic of the</label>
             <value>Congo, Democratic Republic of the</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Congo, Republic of the:label')"/>
+            <label>Congo, Republic of the</label>
             <value>Congo, Republic of the</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Costa Rica:label')"/>
+            <label>Costa Rica</label>
             <value>Costa Rica</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Côte d'Ivoire:label')"/>
+            <label>Côte d'Ivoire</label>
             <value>Côte d'Ivoire</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Croatia:label')"/>
+            <label>Croatia</label>
             <value>Croatia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Cuba:label')"/>
+            <label>Cuba</label>
             <value>Cuba</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Cyprus:label')"/>
+            <label>Cyprus</label>
             <value>Cyprus</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Czech Republic:label')"/>
+            <label>Czech Republic</label>
             <value>Czech Republic</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Denmark:label')"/>
+            <label>Denmark</label>
             <value>Denmark</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Djibouti:label')"/>
+            <label>Djibouti</label>
             <value>Djibouti</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Dominica:label')"/>
+            <label>Dominica</label>
             <value>Dominica</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Dominican Republic:label')"/>
+            <label>Dominican Republic</label>
             <value>Dominican Republic</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/East Timor (Timor-Leste):label')"/>
+            <label>East Timor (Timor-Leste)</label>
             <value>East Timor (Timor-Leste)</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Ecuador:label')"/>
+            <label>Ecuador</label>
             <value>Ecuador</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Egypt:label')"/>
+            <label>Egypt</label>
             <value>Egypt</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/El Salvador:label')"/>
+            <label>El Salvador</label>
             <value>El Salvador</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Equatorial Guinea:label')"/>
+            <label>Equatorial Guinea</label>
             <value>Equatorial Guinea</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Eritrea:label')"/>
+            <label>Eritrea</label>
             <value>Eritrea</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Estonia:label')"/>
+            <label>Estonia</label>
             <value>Estonia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Eswatini:label')"/>
+            <label>Eswatini</label>
             <value>Eswatini</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Ethiopia:label')"/>
+            <label>Ethiopia</label>
             <value>Ethiopia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Fiji:label')"/>
+            <label>Fiji</label>
             <value>Fiji</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Finland:label')"/>
+            <label>Finland</label>
             <value>Finland</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/France:label')"/>
+            <label>France</label>
             <value>France</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Gabon:label')"/>
+            <label>Gabon</label>
             <value>Gabon</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/The Gambia:label')"/>
+            <label>The Gambia</label>
             <value>The Gambia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Georgia:label')"/>
+            <label>Georgia</label>
             <value>Georgia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Germany:label')"/>
+            <label>Germany</label>
             <value>Germany</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Ghana:label')"/>
+            <label>Ghana</label>
             <value>Ghana</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Greece:label')"/>
+            <label>Greece</label>
             <value>Greece</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Grenada:label')"/>
+            <label>Grenada</label>
             <value>Grenada</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Guatemala:label')"/>
+            <label>Guatemala</label>
             <value>Guatemala</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Guinea:label')"/>
+            <label>Guinea</label>
             <value>Guinea</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Guinea-Bissau:label')"/>
+            <label>Guinea-Bissau</label>
             <value>Guinea-Bissau</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Guyana:label')"/>
+            <label>Guyana</label>
             <value>Guyana</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Haiti:label')"/>
+            <label>Haiti</label>
             <value>Haiti</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Honduras:label')"/>
+            <label>Honduras</label>
             <value>Honduras</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Hungary:label')"/>
+            <label>Hungary</label>
             <value>Hungary</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Iceland:label')"/>
+            <label>Iceland</label>
             <value>Iceland</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/India:label')"/>
+            <label>India</label>
             <value>India</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Indonesia:label')"/>
+            <label>Indonesia</label>
             <value>Indonesia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Iran:label')"/>
+            <label>Iran</label>
             <value>Iran</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Iraq:label')"/>
+            <label>Iraq</label>
             <value>Iraq</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Ireland:label')"/>
+            <label>Ireland</label>
             <value>Ireland</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Israel:label')"/>
+            <label>Israel</label>
             <value>Israel</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Italy:label')"/>
+            <label>Italy</label>
             <value>Italy</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Jamaica:label')"/>
+            <label>Jamaica</label>
             <value>Jamaica</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Japan:label')"/>
+            <label>Japan</label>
             <value>Japan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Jordan:label')"/>
+            <label>Jordan</label>
             <value>Jordan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Kazakhstan:label')"/>
+            <label>Kazakhstan</label>
             <value>Kazakhstan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Kenya:label')"/>
+            <label>Kenya</label>
             <value>Kenya</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Kiribati:label')"/>
+            <label>Kiribati</label>
             <value>Kiribati</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Korea, North:label')"/>
+            <label>Korea, North</label>
             <value>Korea, North</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Korea, South:label')"/>
+            <label>Korea, South</label>
             <value>Korea, South</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Kosovo:label')"/>
+            <label>Kosovo</label>
             <value>Kosovo</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Kuwait:label')"/>
+            <label>Kuwait</label>
             <value>Kuwait</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Kyrgyzstan:label')"/>
+            <label>Kyrgyzstan</label>
             <value>Kyrgyzstan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Laos:label')"/>
+            <label>Laos</label>
             <value>Laos</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Latvia:label')"/>
+            <label>Latvia</label>
             <value>Latvia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Lebanon:label')"/>
+            <label>Lebanon</label>
             <value>Lebanon</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Lesotho:label')"/>
+            <label>Lesotho</label>
             <value>Lesotho</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Liberia:label')"/>
+            <label>Liberia</label>
             <value>Liberia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Libya:label')"/>
+            <label>Libya</label>
             <value>Libya</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Liechtenstein:label')"/>
+            <label>Liechtenstein</label>
             <value>Liechtenstein</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Lithuania:label')"/>
+            <label>Lithuania</label>
             <value>Lithuania</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Luxembourg:label')"/>
+            <label>Luxembourg</label>
             <value>Luxembourg</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Madagascar:label')"/>
+            <label>Madagascar</label>
             <value>Madagascar</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Malawi:label')"/>
+            <label>Malawi</label>
             <value>Malawi</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Malaysia:label')"/>
+            <label>Malaysia</label>
             <value>Malaysia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Maldives:label')"/>
+            <label>Maldives</label>
             <value>Maldives</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Mali:label')"/>
+            <label>Mali</label>
             <value>Mali</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Malta:label')"/>
+            <label>Malta</label>
             <value>Malta</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Marshall Islands:label')"/>
+            <label>Marshall Islands</label>
             <value>Marshall Islands</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Mauritania:label')"/>
+            <label>Mauritania</label>
             <value>Mauritania</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Mauritius:label')"/>
+            <label>Mauritius</label>
             <value>Mauritius</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Mexico:label')"/>
+            <label>Mexico</label>
             <value>Mexico</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Micronesia, Federated States of:label')"/>
+            <label>Micronesia, Federated States of</label>
             <value>Micronesia, Federated States of</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Moldova:label')"/>
+            <label>Moldova</label>
             <value>Moldova</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Monaco:label')"/>
+            <label>Monaco</label>
             <value>Monaco</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Mongolia:label')"/>
+            <label>Mongolia</label>
             <value>Mongolia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Montenegro:label')"/>
+            <label>Montenegro</label>
             <value>Montenegro</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Morocco:label')"/>
+            <label>Morocco</label>
             <value>Morocco</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Mozambique:label')"/>
+            <label>Mozambique</label>
             <value>Mozambique</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Myanmar (Burma):label')"/>
+            <label>Myanmar (Burma)</label>
             <value>Myanmar (Burma)</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Namibia:label')"/>
+            <label>Namibia</label>
             <value>Namibia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Nauru:label')"/>
+            <label>Nauru</label>
             <value>Nauru</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Nepal:label')"/>
+            <label>Nepal</label>
             <value>Nepal</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Netherlands:label')"/>
+            <label>Netherlands</label>
             <value>Netherlands</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/New Zealand:label')"/>
+            <label>New Zealand</label>
             <value>New Zealand</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Nicaragua:label')"/>
+            <label>Nicaragua</label>
             <value>Nicaragua</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Niger:label')"/>
+            <label>Niger</label>
             <value>Niger</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Nigeria:label')"/>
+            <label>Nigeria</label>
             <value>Nigeria</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/North Macedonia:label')"/>
+            <label>North Macedonia</label>
             <value>North Macedonia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Norway:label')"/>
+            <label>Norway</label>
             <value>Norway</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Oman:label')"/>
+            <label>Oman</label>
             <value>Oman</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Pakistan:label')"/>
+            <label>Pakistan</label>
             <value>Pakistan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Palau:label')"/>
+            <label>Palau</label>
             <value>Palau</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Panama:label')"/>
+            <label>Panama</label>
             <value>Panama</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Papua New Guinea:label')"/>
+            <label>Papua New Guinea</label>
             <value>Papua New Guinea</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Paraguay:label')"/>
+            <label>Paraguay</label>
             <value>Paraguay</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Peru:label')"/>
+            <label>Peru</label>
             <value>Peru</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Philippines:label')"/>
+            <label>Philippines</label>
             <value>Philippines</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Poland:label')"/>
+            <label>Poland</label>
             <value>Poland</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Portugal:label')"/>
+            <label>Portugal</label>
             <value>Portugal</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Qatar:label')"/>
+            <label>Qatar</label>
             <value>Qatar</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Romania:label')"/>
+            <label>Romania</label>
             <value>Romania</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Russia:label')"/>
+            <label>Russia</label>
             <value>Russia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Rwanda:label')"/>
+            <label>Rwanda</label>
             <value>Rwanda</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Saint Kitts and Nevis:label')"/>
+            <label>Saint Kitts and Nevis</label>
             <value>Saint Kitts and Nevis</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Saint Lucia:label')"/>
+            <label>Saint Lucia</label>
             <value>Saint Lucia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Saint Vincent and the Grenadines:label')"/>
+            <label>Saint Vincent and the Grenadines</label>
             <value>Saint Vincent and the Grenadines</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Samoa:label')"/>
+            <label>Samoa</label>
             <value>Samoa</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/San Marino:label')"/>
+            <label>San Marino</label>
             <value>San Marino</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Sao Tome and Principe:label')"/>
+            <label>Sao Tome and Principe</label>
             <value>Sao Tome and Principe</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Saudi Arabia:label')"/>
+            <label>Saudi Arabia</label>
             <value>Saudi Arabia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Senegal:label')"/>
+            <label>Senegal</label>
             <value>Senegal</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Serbia:label')"/>
+            <label>Serbia</label>
             <value>Serbia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Seychelles:label')"/>
+            <label>Seychelles</label>
             <value>Seychelles</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Sierra Leone:label')"/>
+            <label>Sierra Leone</label>
             <value>Sierra Leone</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Singapore:label')"/>
+            <label>Singapore</label>
             <value>Singapore</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Slovakia:label')"/>
+            <label>Slovakia</label>
             <value>Slovakia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Slovenia:label')"/>
+            <label>Slovenia</label>
             <value>Slovenia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Solomon Islands:label')"/>
+            <label>Solomon Islands</label>
             <value>Solomon Islands</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Somalia:label')"/>
+            <label>Somalia</label>
             <value>Somalia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/South Africa:label')"/>
+            <label>South Africa</label>
             <value>South Africa</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Spain:label')"/>
+            <label>Spain</label>
             <value>Spain</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Sri Lanka:label')"/>
+            <label>Sri Lanka</label>
             <value>Sri Lanka</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Sudan:label')"/>
+            <label>Sudan</label>
             <value>Sudan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Sudan, South:label')"/>
+            <label>Sudan, South</label>
             <value>Sudan, South</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Suriname:label')"/>
+            <label>Suriname</label>
             <value>Suriname</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Sweden:label')"/>
+            <label>Sweden</label>
             <value>Sweden</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Switzerland:label')"/>
+            <label>Switzerland</label>
             <value>Switzerland</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Syria:label')"/>
+            <label>Syria</label>
             <value>Syria</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Taiwan:label')"/>
+            <label>Taiwan</label>
             <value>Taiwan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Tajikistan:label')"/>
+            <label>Tajikistan</label>
             <value>Tajikistan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Tanzania:label')"/>
+            <label>Tanzania</label>
             <value>Tanzania</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Thailand:label')"/>
+            <label>Thailand</label>
             <value>Thailand</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Togo:label')"/>
+            <label>Togo</label>
             <value>Togo</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Tonga:label')"/>
+            <label>Tonga</label>
             <value>Tonga</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Trinidad and Tobago:label')"/>
+            <label>Trinidad and Tobago</label>
             <value>Trinidad and Tobago</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Tunisia:label')"/>
+            <label>Tunisia</label>
             <value>Tunisia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Turkey:label')"/>
+            <label>Turkey</label>
             <value>Turkey</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Turkmenistan:label')"/>
+            <label>Turkmenistan</label>
             <value>Turkmenistan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Tuvalu:label')"/>
+            <label>Tuvalu</label>
             <value>Tuvalu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Uganda:label')"/>
+            <label>Uganda</label>
             <value>Uganda</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Ukraine:label')"/>
+            <label>Ukraine</label>
             <value>Ukraine</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/United Arab Emirates:label')"/>
+            <label>United Arab Emirates</label>
             <value>United Arab Emirates</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/United Kingdom:label')"/>
+            <label>United Kingdom</label>
             <value>United Kingdom</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/United States:label')"/>
+            <label>United States</label>
             <value>United States</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Uruguay:label')"/>
+            <label>Uruguay</label>
             <value>Uruguay</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Uzbekistan:label')"/>
+            <label>Uzbekistan</label>
             <value>Uzbekistan</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Vanuatu:label')"/>
+            <label>Vanuatu</label>
             <value>Vanuatu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Vatican City:label')"/>
+            <label>Vatican City</label>
             <value>Vatican City</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Venezuela:label')"/>
+            <label>Venezuela</label>
             <value>Venezuela</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Vietnam:label')"/>
+            <label>Vietnam</label>
             <value>Vietnam</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Yemen:label')"/>
+            <label>Yemen</label>
             <value>Yemen</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Zambia:label')"/>
+            <label>Zambia</label>
             <value>Zambia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_country/Zimbabwe:label')"/>
+            <label>Zimbabwe</label>
             <value>Zimbabwe</value>
           </item>
         </select1>
-        <select1 appearance="minimal" ref="/data/case/case_location/case_county">
+        <select1 appearance="autocomplete" ref="/data/case/case_location/case_county">
           <label ref="jr:itext('/data/case/case_location/case_county:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Mombasa:label')"/>
+            <label>Mombasa</label>
             <value>Mombasa</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kwale:label')"/>
+            <label>Kwale</label>
             <value>Kwale</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kilifi:label')"/>
+            <label>Kilifi</label>
             <value>Kilifi</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Tana River:label')"/>
+            <label>Tana River</label>
             <value>Tana River</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Lamu:label')"/>
+            <label>Lamu</label>
             <value>Lamu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Taita Taveta:label')"/>
+            <label>Taita Taveta</label>
             <value>Taita Taveta</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Garissa:label')"/>
+            <label>Garissa</label>
             <value>Garissa</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Wajir:label')"/>
+            <label>Wajir</label>
             <value>Wajir</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Mandera:label')"/>
+            <label>Mandera</label>
             <value>Mandera</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Marsabit:label')"/>
+            <label>Marsabit</label>
             <value>Marsabit</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Isiolo:label')"/>
+            <label>Isiolo</label>
             <value>Isiolo</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Meru:label')"/>
+            <label>Meru</label>
             <value>Meru</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Tharaka-Nithi:label')"/>
+            <label>Tharaka-Nithi</label>
             <value>Tharaka-Nithi</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Embu:label')"/>
+            <label>Embu</label>
             <value>Embu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kitui:label')"/>
+            <label>Kitui</label>
             <value>Kitui</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Machakos:label')"/>
+            <label>Machakos</label>
             <value>Machakos</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Makueni:label')"/>
+            <label>Makueni</label>
             <value>Makueni</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Nyandarua:label')"/>
+            <label>Nyandarua</label>
             <value>Nyandarua</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Nyeri:label')"/>
+            <label>Nyeri</label>
             <value>Nyeri</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kirinyaga:label')"/>
+            <label>Kirinyaga</label>
             <value>Kirinyaga</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Murang'A:label')"/>
+            <label>Murang'A</label>
             <value>Murang'A</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kiambu:label')"/>
+            <label>Kiambu</label>
             <value>Kiambu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Turkana:label')"/>
+            <label>Turkana</label>
             <value>Turkana</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/West Pokot:label')"/>
+            <label>West Pokot</label>
             <value>West Pokot</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Samburu:label')"/>
+            <label>Samburu</label>
             <value>Samburu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Trans Nzoia:label')"/>
+            <label>Trans Nzoia</label>
             <value>Trans Nzoia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Uasin Gishu:label')"/>
+            <label>Uasin Gishu</label>
             <value>Uasin Gishu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Elgeyo-Marakwet:label')"/>
+            <label>Elgeyo-Marakwet</label>
             <value>Elgeyo-Marakwet</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Nandi:label')"/>
+            <label>Nandi</label>
             <value>Nandi</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Baringo:label')"/>
+            <label>Baringo</label>
             <value>Baringo</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Laikipia:label')"/>
+            <label>Laikipia</label>
             <value>Laikipia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Nakuru:label')"/>
+            <label>Nakuru</label>
             <value>Nakuru</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Narok:label')"/>
+            <label>Narok</label>
             <value>Narok</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kajiado:label')"/>
+            <label>Kajiado</label>
             <value>Kajiado</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kericho:label')"/>
+            <label>Kericho</label>
             <value>Kericho</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Bomet:label')"/>
+            <label>Bomet</label>
             <value>Bomet</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kakamega:label')"/>
+            <label>Kakamega</label>
             <value>Kakamega</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Trans Nzoia:label')"/>
+            <label>Trans Nzoia</label>
             <value>Trans Nzoia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Vihiga:label')"/>
+            <label>Vihiga</label>
             <value>Vihiga</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Bungoma:label')"/>
+            <label>Bungoma</label>
             <value>Bungoma</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Busia:label')"/>
+            <label>Busia</label>
             <value>Busia</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Siaya:label')"/>
+            <label>Siaya</label>
             <value>Siaya</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kisumu:label')"/>
+            <label>Kisumu</label>
             <value>Kisumu</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Homa Bay:label')"/>
+            <label>Homa Bay</label>
             <value>Homa Bay</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Migori:label')"/>
+            <label>Migori</label>
             <value>Migori</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Kisii:label')"/>
+            <label>Kisii</label>
             <value>Kisii</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Nyamira:label')"/>
+            <label>Nyamira</label>
             <value>Nyamira</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_county/Nairobi:label')"/>
+            <label>Nairobi</label>
             <value>Nairobi</value>
           </item>
         </select1>
-        <select1 appearance="minimal" ref="/data/case/case_location/case_subcounty">
+        <select1 appearance="autocomplete" ref="/data/case/case_location/case_subcounty">
           <label ref="jr:itext('/data/case/case_location/case_subcounty:label')"/>
-          <itemset nodeset="instance('select_subcounty')/root/item[county =  /data/case/case_location/case_county ]">
+          <itemset nodeset="instance('select_subcounty')/root/item[county= /data/case/case_location/case_county ]">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
         </select1>
-        <select1 appearance="minimal" ref="/data/case/case_location/case_ward">
+        <select1 appearance="autocomplete" ref="/data/case/case_location/case_ward">
           <label ref="jr:itext('/data/case/case_location/case_ward:label')"/>
-          <itemset nodeset="instance('select_ward')/root/item[subcounty =  /data/case/case_location/case_subcounty ]">
+          <itemset nodeset="instance('select_ward')/root/item[subcounty= /data/case/case_location/case_subcounty ]">
             <value ref="name"/>
             <label ref="jr:itext(itextId)"/>
           </itemset>
@@ -25653,29 +23978,243 @@ Course</name>
         <input ref="/data/case/case_location/case_facility">
           <label ref="jr:itext('/data/case/case_location/case_facility:label')"/>
         </input>
-        <select1 ref="/data/case/case_location/case_detection_location">
-          <label ref="jr:itext('/data/case/case_location/case_detection_location:label')"/>
+      </group>
+      <group appearance="field-list" ref="/data/case/case_reporting_location">
+        <input ref="/data/case/case_reporting_location/case_reporting_location_title">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_reporting_location_title:label')"/>
+        </input>
+        <select1 appearance="autocomplete" ref="/data/case/case_reporting_location/case_reporting_county">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_reporting_county:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_detection_location/health_facility:label')"/>
+            <label>Mombasa</label>
+            <value>Mombasa</value>
+          </item>
+          <item>
+            <label>Kwale</label>
+            <value>Kwale</value>
+          </item>
+          <item>
+            <label>Kilifi</label>
+            <value>Kilifi</value>
+          </item>
+          <item>
+            <label>Tana River</label>
+            <value>Tana River</value>
+          </item>
+          <item>
+            <label>Lamu</label>
+            <value>Lamu</value>
+          </item>
+          <item>
+            <label>Taita Taveta</label>
+            <value>Taita Taveta</value>
+          </item>
+          <item>
+            <label>Garissa</label>
+            <value>Garissa</value>
+          </item>
+          <item>
+            <label>Wajir</label>
+            <value>Wajir</value>
+          </item>
+          <item>
+            <label>Mandera</label>
+            <value>Mandera</value>
+          </item>
+          <item>
+            <label>Marsabit</label>
+            <value>Marsabit</value>
+          </item>
+          <item>
+            <label>Isiolo</label>
+            <value>Isiolo</value>
+          </item>
+          <item>
+            <label>Meru</label>
+            <value>Meru</value>
+          </item>
+          <item>
+            <label>Tharaka-Nithi</label>
+            <value>Tharaka-Nithi</value>
+          </item>
+          <item>
+            <label>Embu</label>
+            <value>Embu</value>
+          </item>
+          <item>
+            <label>Kitui</label>
+            <value>Kitui</value>
+          </item>
+          <item>
+            <label>Machakos</label>
+            <value>Machakos</value>
+          </item>
+          <item>
+            <label>Makueni</label>
+            <value>Makueni</value>
+          </item>
+          <item>
+            <label>Nyandarua</label>
+            <value>Nyandarua</value>
+          </item>
+          <item>
+            <label>Nyeri</label>
+            <value>Nyeri</value>
+          </item>
+          <item>
+            <label>Kirinyaga</label>
+            <value>Kirinyaga</value>
+          </item>
+          <item>
+            <label>Murang'A</label>
+            <value>Murang'A</value>
+          </item>
+          <item>
+            <label>Kiambu</label>
+            <value>Kiambu</value>
+          </item>
+          <item>
+            <label>Turkana</label>
+            <value>Turkana</value>
+          </item>
+          <item>
+            <label>West Pokot</label>
+            <value>West Pokot</value>
+          </item>
+          <item>
+            <label>Samburu</label>
+            <value>Samburu</value>
+          </item>
+          <item>
+            <label>Trans Nzoia</label>
+            <value>Trans Nzoia</value>
+          </item>
+          <item>
+            <label>Uasin Gishu</label>
+            <value>Uasin Gishu</value>
+          </item>
+          <item>
+            <label>Elgeyo-Marakwet</label>
+            <value>Elgeyo-Marakwet</value>
+          </item>
+          <item>
+            <label>Nandi</label>
+            <value>Nandi</value>
+          </item>
+          <item>
+            <label>Baringo</label>
+            <value>Baringo</value>
+          </item>
+          <item>
+            <label>Laikipia</label>
+            <value>Laikipia</value>
+          </item>
+          <item>
+            <label>Nakuru</label>
+            <value>Nakuru</value>
+          </item>
+          <item>
+            <label>Narok</label>
+            <value>Narok</value>
+          </item>
+          <item>
+            <label>Kajiado</label>
+            <value>Kajiado</value>
+          </item>
+          <item>
+            <label>Kericho</label>
+            <value>Kericho</value>
+          </item>
+          <item>
+            <label>Bomet</label>
+            <value>Bomet</value>
+          </item>
+          <item>
+            <label>Kakamega</label>
+            <value>Kakamega</value>
+          </item>
+          <item>
+            <label>Trans Nzoia</label>
+            <value>Trans Nzoia</value>
+          </item>
+          <item>
+            <label>Vihiga</label>
+            <value>Vihiga</value>
+          </item>
+          <item>
+            <label>Bungoma</label>
+            <value>Bungoma</value>
+          </item>
+          <item>
+            <label>Busia</label>
+            <value>Busia</value>
+          </item>
+          <item>
+            <label>Siaya</label>
+            <value>Siaya</value>
+          </item>
+          <item>
+            <label>Kisumu</label>
+            <value>Kisumu</value>
+          </item>
+          <item>
+            <label>Homa Bay</label>
+            <value>Homa Bay</value>
+          </item>
+          <item>
+            <label>Migori</label>
+            <value>Migori</value>
+          </item>
+          <item>
+            <label>Kisii</label>
+            <value>Kisii</value>
+          </item>
+          <item>
+            <label>Nyamira</label>
+            <value>Nyamira</value>
+          </item>
+          <item>
+            <label>Nairobi</label>
+            <value>Nairobi</value>
+          </item>
+        </select1>
+        <select1 appearance="autocomplete" ref="/data/case/case_reporting_location/case_reporting_subcounty">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_reporting_subcounty:label')"/>
+          <itemset nodeset="instance('select_subcounty')/root/item[county= /data/case/case_reporting_location/case_reporting_county ]">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <input ref="/data/case/case_reporting_location/case_reporting_location_type">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_reporting_location_type:label')"/>
+          <hint ref="jr:itext('/data/case/case_reporting_location/case_reporting_location_type:hint')"/>
+        </input>
+        <input ref="/data/case/case_reporting_location/case_reporting_health_facility">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_reporting_health_facility:label')"/>
+        </input>
+        <select1 appearance="columns" ref="/data/case/case_reporting_location/case_detection_location">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_detection_location:label')"/>
+          <item>
+            <label>Health Facility</label>
             <value>health_facility</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_detection_location/community:label')"/>
+            <label>Community</label>
             <value>community</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_detection_location/laboratory:label')"/>
+            <label>Laboratory</label>
             <value>laboratory</value>
           </item>
         </select1>
-        <select1 appearance="columns" ref="/data/case/case_location/case_detection_hcw">
-          <label ref="jr:itext('/data/case/case_location/case_detection_hcw:label')"/>
+        <select1 appearance="columns" ref="/data/case/case_reporting_location/case_detection_hcw">
+          <label ref="jr:itext('/data/case/case_reporting_location/case_detection_hcw:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_detection_hcw/yes:label')"/>
+            <label>Yes</label>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_location/case_detection_hcw/no:label')"/>
+            <label>No</label>
             <value>no</value>
           </item>
         </select1>
@@ -25684,133 +24223,126 @@ Course</name>
         <input ref="/data/case/case_demographics_extended/case_demographics_extended_title">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_demographics_extended_title:label')"/>
         </input>
-        <select1 ref="/data/case/case_demographics_extended/case_education_level">
+        <select1 appearance="minimal" ref="/data/case/case_demographics_extended/case_education_level">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_education_level:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_education_level/none:label')"/>
+            <label>None</label>
             <value>none</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_education_level/primary:label')"/>
+            <label>Primary Education</label>
             <value>primary</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_education_level/secondary:label')"/>
+            <label>Secondary Education</label>
             <value>secondary</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_education_level/tertiary:label')"/>
+            <label>College / University / Polytechnic</label>
             <value>tertiary</value>
           </item>
         </select1>
-        <select1 appearance="columns" ref="/data/case/case_demographics_extended/case_occupation">
+        <select1 appearance="minimal" ref="/data/case/case_demographics_extended/case_occupation">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/farmer:label')"/>
+            <label>Health Care Worker</label>
+            <value>hcw</value>
+          </item>
+          <item>
+            <label>Farmer</label>
             <value>farmer</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/trader:label')"/>
+            <label>Trader</label>
             <value>trader</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/employee:label')"/>
+            <label>Employee</label>
             <value>employee</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/student:label')"/>
+            <label>Student</label>
             <value>student</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/driver:label')"/>
+            <label>Driver</label>
             <value>driver</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/none:label')"/>
+            <label>None</label>
             <value>none</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_occupation/other:label')"/>
+            <label>Other</label>
             <value>other</value>
           </item>
         </select1>
         <input ref="/data/case/case_demographics_extended/case_other_occupation">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_other_occupation:label')"/>
         </input>
-        <select1 appearance="columns" ref="/data/case/case_demographics_extended/case_hcw">
-          <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw:label')"/>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw/yes:label')"/>
-            <value>yes</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw/no:label')"/>
-            <value>no</value>
-          </item>
-        </select1>
         <input ref="/data/case/case_demographics_extended/case_hcw_facility">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_facility:label')"/>
         </input>
-        <select1 appearance="columns" ref="/data/case/case_demographics_extended/case_hcw_cadre">
+        <select1 appearance="minimal" ref="/data/case/case_demographics_extended/case_hcw_cadre">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/doctor:label')"/>
+            <label>Doctor</label>
             <value>doctor</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/cho:label')"/>
+            <label>CHO</label>
             <value>cho</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/srn:label')"/>
+            <label>SRN</label>
             <value>srn</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/sechn:label')"/>
+            <label>SECHN</label>
             <value>sechn</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/cha:label')"/>
+            <label>CHA</label>
             <value>cha</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/mch_aide:label')"/>
+            <label>MCH Aide</label>
             <value>mch_aide</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/nursing_aide:label')"/>
+            <label>Nursing Aide</label>
             <value>nursing_aide</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/lab_personnel:label')"/>
+            <label>Lab personnel</label>
             <value>lab_personnel</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/pharmacy_personnel:label')"/>
+            <label>Pharmacy Personnel</label>
             <value>pharmacy_personnel</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/ambulance_driver:label')"/>
+            <label>Ambulance driver</label>
             <value>ambulance_driver</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/porter:label')"/>
+            <label>Porter</label>
             <value>porter</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/nutritionist:label')"/>
+            <label>Nutritionist</label>
             <value>nutritionist</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/eho:label')"/>
+            <label>EHO</label>
             <value>eho</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/midwife:label')"/>
+            <label>Midwife</label>
             <value>midwife</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_cadre/other:label')"/>
+            <label>Other</label>
             <value>other</value>
           </item>
         </select1>
@@ -25831,11 +24363,11 @@ Course</name>
         <select1 appearance="columns" ref="/data/case/case_household_head/case_hh">
           <label ref="jr:itext('/data/case/case_household_head/case_hh:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_household_head/case_hh/yes:label')"/>
+            <label>Yes</label>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_household_head/case_hh/no:label')"/>
+            <label>No</label>
             <value>no</value>
           </item>
         </select1>
@@ -25862,55 +24394,55 @@ Course</name>
         <select1 appearance="columns" ref="/data/case/case_kin/case_kin_relationship">
           <label ref="jr:itext('/data/case/case_kin/case_kin_relationship:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Father:label')"/>
+            <label>Father</label>
             <value>Father</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Mother:label')"/>
+            <label>Mother</label>
             <value>Mother</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Grand father:label')"/>
+            <label>Grand father</label>
             <value>Grand father</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Grand mother:label')"/>
+            <label>Grand mother</label>
             <value>Grand mother</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Sibling:label')"/>
+            <label>Sibling</label>
             <value>Sibling</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Child:label')"/>
+            <label>Child</label>
             <value>Child</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Aunt:label')"/>
+            <label>Aunt</label>
             <value>Aunt</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Uncle:label')"/>
+            <label>Uncle</label>
             <value>Uncle</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Guardian:label')"/>
+            <label>Guardian</label>
             <value>Guardian</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Friend:label')"/>
+            <label>Friend</label>
             <value>Friend</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Co-worker:label')"/>
+            <label>Co-worker</label>
             <value>Co-worker</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Partner:label')"/>
+            <label>Partner</label>
             <value>Partner</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/case_kin/case_kin_relationship/Spouse:label')"/>
+            <label>Spouse</label>
             <value>Spouse</value>
           </item>
         </select1>
@@ -25922,15 +24454,15 @@ Course</name>
         <select1 appearance="columns" ref="/data/case/meta/case_followed_contact">
           <label ref="jr:itext('/data/case/meta/case_followed_contact:label')"/>
           <item>
-            <label ref="jr:itext('/data/case/meta/case_followed_contact/yes:label')"/>
+            <label>Yes</label>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/meta/case_followed_contact/no:label')"/>
+            <label>No</label>
             <value>no</value>
           </item>
           <item>
-            <label ref="jr:itext('/data/case/meta/case_followed_contact/unknown:label')"/>
+            <label>Unknown</label>
             <value>unknown</value>
           </item>
         </select1>

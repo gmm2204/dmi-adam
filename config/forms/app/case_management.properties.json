@@ -2,7 +2,9 @@
   "title": "Case Management",
   "icon": "icon-management-outline-blue",
   "context": {
-    "expression": "(contact.hierarchy_id == 'case') || (!contact)"
+    "person": false,
+    "place": false,
+    "expression": "(contact.hierarchy_id === 'case') || (!contact)"
   },
   "hidden_fields": [
     "cif_title"

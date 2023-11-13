@@ -2,3 +2,4 @@
 docs
 developer/.env
 config/backups
+config/node_modules

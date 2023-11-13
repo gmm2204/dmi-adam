@@ -13,6 +13,8 @@
     "health_unit",
     "person",
     "outbreak",
+    "outbreak_location",
+    "hcw",
     "case",
     "case_contact"
   ],
@@ -33,7 +35,6 @@
       "group_key": "contact.type.person.plural",
       "create_key": "contact.type.person.new",
       "edit_key": "contact.type.person.edit",
-      "primary_contact_key": "outbreak.field.contact",
       "parents": [
         "health_unit"
       ],
@@ -47,7 +48,7 @@
       "name_key": "contact.type.outbreak",
       "group_key": "contact.type.outbreak.plural",
       "create_key": "contact.type.outbreak.new",
-      "edit_key": "contact.type.place.edit",
+      "edit_key": "contact.type.outbreak.edit",
       "parents": [
         "health_unit"
       ],
@@ -56,15 +57,42 @@
       "edit_form": "form:contact:outbreak:edit"
     },
     {
+      "id": "outbreak_location",
+      "name_key": "contact.type.outbreak_location",
+      "group_key": "contact.type.outbreak_location.plural",
+      "create_key": "contact.type.outbreak_location.new",
+      "edit_key": "contact.type.outbreak_location.edit",
+      "parents": [
+        "outbreak"
+      ],
+      "icon": "icon-outbreak_location-blue",
+      "create_form": "form:contact:outbreak_location:create",
+      "edit_form": "form:contact:outbreak_location:edit"
+    },
+    {
+      "id": "hcw",
+      "name_key": "contact.type.hcw",
+      "group_key": "contact.type.hcw.plural",
+      "create_key": "contact.type.hcw.new",
+      "edit_key": "contact.type.hcw.edit",
+      "parents": [
+        "outbreak_location"
+      ],
+      "icon": "icon-doctor-blue",
+      "create_form": "form:contact:hcw:create",
+      "edit_form": "form:contact:hcw:edit",
+      "person": true
+    },
+    {
       "id": "case",
       "name_key": "contact.type.case",
       "group_key": "contact.type.case.plural",
       "create_key": "contact.type.case.new",
       "edit_key": "contact.type.case.edit",
       "parents": [
-        "outbreak"
+        "outbreak_location"
       ],
-      "icon": "icon-investigation-outline-gray",
+      "icon": "icon-patient-colored",
       "create_form": "form:contact:case:create",
       "edit_form": "form:contact:case:edit",
       "person": true
@@ -200,8 +228,7 @@
     ],
     "can_update_places": [
       "program_officer",
-      "chw_supervisor",
-      "chw"
+      "chw_supervisor"
     ],
     "can_update_reports": [
       "program_officer",
@@ -253,16 +280,8 @@
       "chw_supervisor",
       "chw"
     ],
-    "can_view_messages": [
-      "program_officer",
-      "chw_supervisor",
-      "chw"
-    ],
-    "can_view_messages_tab": [
-      "program_officer",
-      "chw_supervisor",
-      "chw"
-    ],
+    "can_view_messages": [],
+    "can_view_messages_tab": [],
     "can_view_outgoing_messages": [
       "program_officer"
     ],
@@ -276,9 +295,18 @@
       "chw_supervisor",
       "chw"
     ],
-    "can_view_tasks": [],
-    "can_view_tasks_tab": [],
-    "can_view_tasks_group": [],
+    "can_view_tasks": [
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_tasks_tab": [
+      "chw_supervisor",
+      "chw"
+    ],
+    "can_view_tasks_group": [
+      "chw_supervisor",
+      "chw"
+    ],
     "can_view_unallocated_data_records": [
       "gateway",
       "program_officer",
@@ -300,64 +328,13 @@
   },
   "forms": {},
   "schedules": [],
-  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var n=t();for(var r in n)('object'==typeof exports?exports:e)[r]=n[r]}}(ContactSummary,(function(){return function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(e,'__esModule',{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&'object'==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,'default',{enumerable:!0,value:e}),2&t&&'string'!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,'a',t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p='',n(n.s=0)}([function(e,t,n){var r=n(1),o=n(2);e.exports=o(r,contact,reports)},function(e,t){e.exports={fields:[{label:'contact.profile.role_label',value:contact.role_label,width:6,appliesToType:['person','person_contact']},{label:'contact.profile.email',value:contact.email,width:6,appliesToType:['person','person_contact']},{label:'contact.profile.phone',value:contact.phone,width:6,appliesToType:['person','person_contact']}],cards:[],context:{}}},function(e,t){function n(e){return e?Array.isArray(e)?e:[e]:[]}function r(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function o(e,t,n){if(r(e.appliesIf,n)){var o='function'==typeof e.fields?e.fields(n):e.fields.filter((function(e){return r(e.appliesIf,n)})).map((function(e){var t={};return i(e,t,'label'),i(e,t,'value'),i(e,t,'translate'),i(e,t,'filter'),i(e,t,'width'),i(e,t,'icon'),e.context&&(t.context={},i(e.context,t.context,'count'),i(e.context,t.context,'total')),t}));return e.modifyContext&&e.modifyContext(t,n),{label:e.label,fields:o}}function i(e,t,r){switch(typeof e[r]){case'undefined':return;case'function':t[r]=e[r](n);break;default:t[r]=e[r]}}}e.exports=function(e,t,r){var i=e.fields||[],c=e.context||{},l=e.cards||[],a=t&&('contact'===t.type?t.contact_type:t.type),f={cards:[],fields:i.filter((function(e){var t=n(e.appliesToType),r=t.filter((function(e){return e&&'!'===e.charAt(0)}));if((0===t.length||t.includes(a)||r.length>0&&!r.includes('!'+a))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0}))};return l.forEach((function(e){var t,i,l,u,p=n(e.appliesToType);if(p.includes('report')&&p.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(p.includes('report'))for(t=0;t<r.length;++t)i=r[t],!(u=i)||u.errors&&u.errors.length||(l=o(e,c,i))&&f.cards.push(l);else{if(!p.includes(a)&&p.length>0)return;(l=o(e,c))&&f.cards.push(l)}})),f.context=c,f}}])})); return ContactSummary;",
+  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var o=t();for(var n in o)('object'==typeof exports?exports:e)[n]=o[n]}}(ContactSummary,(function(){return function(e){var t={};function o(n){if(t[n])return t[n].exports;var r=t[n]={i:n,l:!1,exports:{}};return e[n].call(r.exports,r,r.exports,o),r.l=!0,r.exports}return o.m=e,o.c=t,o.d=function(e,t,n){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},o.r=function(e){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(e,'__esModule',{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&'object'==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,'default',{enumerable:!0,value:e}),2&t&&'string'!=typeof e)for(var r in e)o.d(n,r,function(t){return e[t]}.bind(null,r));return n},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,'a',t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p='',o(o.s=0)}([function(e,t,o){var n=o(1),r=o(2);e.exports=r(n,contact,reports)},function(e,t){const o=lineage;e.exports={fields:[{label:'contact.profile.outbreak_description',value:contact.description,width:12,appliesToType:['outbreak']},{label:'contact.profile.outbreak_date',value:contact.date,width:4,appliesToType:['outbreak']},{label:'contact.profile.outbreak_status',value:contact.status,width:4,appliesToType:['outbreak']},{label:'contact.profile.county',value:contact.county,width:4,appliesToType:['outbreak']},{label:'contact.profile.sub_county',value:contact.subcounty,width:4,appliesToType:['outbreak']},{label:'contact.profile.ward',value:contact.ward,width:4,appliesToType:['outbreak']},{label:'contact.profile.role_label',value:contact.role_label,width:6,appliesToType:['person']},{label:'contact.profile.outbreak_location',value:o,filter:'lineage',appliesToType:['case']},{label:'contact.profile.case',value:o,filter:'lineage',appliesToType:['case_contact']},{label:'contact.profile.email',value:contact.email,width:6,appliesToType:['person','case','case_contact']},{label:'contact.profile.phone',value:contact.phone,width:6,appliesToType:['person','case','case_contact']}],cards:[],context:{}}},function(e,t){function o(e){return e?Array.isArray(e)?e:[e]:[]}function n(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function r(e,t,o){if(n(e.appliesIf,o)){var r='function'==typeof e.fields?e.fields(o):e.fields.filter((function(e){return n(e.appliesIf,o)})).map((function(e){var t={};return a(e,t,'label'),a(e,t,'value'),a(e,t,'translate'),a(e,t,'filter'),a(e,t,'width'),a(e,t,'icon'),e.context&&(t.context={},a(e.context,t.context,'count'),a(e.context,t.context,'total')),t}));return e.modifyContext&&e.modifyContext(t,o),{label:e.label,fields:r}}function a(e,t,n){switch(typeof e[n]){case'undefined':return;case'function':t[n]=e[n](o);break;default:t[n]=e[n]}}}e.exports=function(e,t,n){var a=e.fields||[],c=e.context||{},l=e.cards||[],i=t&&('contact'===t.type?t.contact_type:t.type),p={cards:[],fields:a.filter((function(e){var t=o(e.appliesToType),n=t.filter((function(e){return e&&'!'===e.charAt(0)}));if((0===t.length||t.includes(i)||n.length>0&&!n.includes('!'+i))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0}))};return l.forEach((function(e){var t,a,l,u,f=o(e.appliesToType);if(f.includes('report')&&f.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(f.includes('report'))for(t=0;t<n.length;++t)a=n[t],!(u=a)||u.errors&&u.errors.length||(l=r(e,c,a))&&p.cards.push(l);else{if(!f.includes(i)&&f.length>0)return;(l=r(e,c))&&p.cards.push(l)}})),p.context=c,p}}])})); return ContactSummary;",
   "tasks": {
-    "rules": "define Target { _id: null, contact: null, deleted: null, type: null, pass: null, date: null, groupBy: null }\ndefine Contact { contact: null, reports: null, tasks: null }\ndefine Task { _id: null, deleted: null, doc: null, contact: null, icon: null, date: null, readyStart: null, readyEnd: null, title: null, fields: null, resolved: null, priority: null, priorityLabel: null, reports: null, actions: null }\nrule GenerateEvents {\n  when { c: Contact } then { !function(e){var t={};function o(i){if(t[i])return t[i].exports;var r=t[i]={i:i,l:!1,exports:{}};return e[i].call(r.exports,r,r.exports,o),r.l=!0,r.exports}o.m=e,o.c=t,o.d=function(e,t,i){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:i})},o.r=function(e){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(e,'__esModule',{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&'object'==typeof e&&e&&e.__esModule)return e;var i=Object.create(null);if(o.r(i),Object.defineProperty(i,'default',{enumerable:!0,value:e}),2&t&&'string'!=typeof e)for(var r in e)o.d(i,r,function(t){return e[t]}.bind(null,r));return i},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,'a',t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p='',o(o.s=1)}([function(e,t){e.exports=function(e){var t={};!function e(t,o){var i=Object.keys(t);for(var r in i){var a=i[r];switch(typeof t[a]){case'object':e(t[a],o);break;case'function':t[a]=t[a].bind(o)}}}(e,t),t.definition=function e(t){var o=Object.assign({},t),i=Object.keys(o);for(var r in i){var a=i[r];if(Array.isArray(o[a])){o[a]=o[a].slice(0);for(var n=0;n<o[a].length;++n)'object'==typeof o[a][n]&&(o[a][n]=e(o[a][n]))}else'object'==typeof o[a]&&(o[a]=e(o[a]))}return o}(e)}},function(e,t,o){var i=o(2),r=o(3),a=o(5);o(7)(r,c,Utils,Target,emit),a(i,c,Utils,Task,emit),emit('_complete',{_id:!0})},function(e,t){e.exports=[]},function(e,t,o){const{icCICholeraPositive:i,icCICholeraAll:r,icCICovid19:a,icCICovid19All:n}=o(4);e.exports=[{id:'ci_cholera_positive_month',type:'count',icon:'icon-cholera-colored',goal:-1,translation_key:'targets.ci_cholera.title',subtitle_translation_key:'targets.ci_cholera.subtitle_positive_month',appliesTo:'reports',appliesIf:i,date:'reported'},{id:'ci_cholera_positive_all',type:'count',icon:'icon-cholera-colored',goal:-1,translation_key:'targets.ci_cholera.title',subtitle_translation_key:'targets.ci_cholera.subtitle_positive_all',appliesTo:'reports',appliesIf:i,date:'now'},{id:'ci_cholera_all',type:'count',icon:'icon-cholera-colored',goal:-1,translation_key:'targets.ci_cholera.title',subtitle_translation_key:'targets.ci_cholera.subtitle_all',appliesTo:'reports',appliesIf:r,date:'now'},{id:'ci_covid19_positive_month',type:'count',icon:'icon-covid19-colored',goal:-1,translation_key:'targets.ci_covid19.title',subtitle_translation_key:'targets.ci_covid19.subtitle_positive_month',appliesTo:'reports',appliesIf:a,date:'reported',aggregate:!0},{id:'ci_covid19_positive_all',type:'count',icon:'icon-covid19-colored',goal:-1,translation_key:'targets.ci_covid19.title',subtitle_translation_key:'targets.ci_covid19.subtitle_positive_all',appliesTo:'reports',appliesIf:a,date:'now',aggregate:!0},{id:'ci_covid19_all',type:'count',icon:'icon-covid19-colored',goal:-1,translation_key:'targets.ci_covid19.title',subtitle_translation_key:'targets.ci_covid19.subtitle_all',appliesTo:'reports',appliesIf:n,date:'now',aggregate:!0}]},function(e,t){e.exports={icCICholeraPositive:(e,t)=>'D'===t.form||'case_investigation'===t.form&&'yes'===t.fields.outbreak_screening.os_criteria_met&&'cholera'===t.fields.ci_outbreak.ci_outbreak_name,icCICholeraAll:(e,t)=>'D'===t.form||'case_investigation'===t.form&&'cholera'===t.fields.ci_outbreak.ci_outbreak_name,icCICovid19:(e,t)=>'E'===t.form||'case_investigation'===t.form&&'yes'===t.fields.outbreak_screening.os_criteria_met&&'covid19'===t.fields.ci_outbreak.ci_outbreak_name,icCICovid19All:(e,t)=>'E'===t.form||'case_investigation'===t.form&&'covid19'===t.fields.ci_outbreak.ci_outbreak_name,countReportsSubmittedInWindow(e,t,o,i){var r=0;return e.forEach((function(e){t.indexOf(e.form)>=0&&e.reported_date>=o&&e.reported_date<=i&&r++})),r},countReports(e){var t=0;return e.forEach((function(){t++})),t}}},function(e,t,o){var i=o(0),r=o(6);function a(e,t,o,i,r,a){var n;if(e.appliesToType){var c;if('contacts'===e.appliesTo){if(!r.contact)return;c='contact'===r.contact.type?r.contact.contact_type:r.contact.type}else{if(!a)return;c=a.form}if(-1===e.appliesToType.indexOf(c))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(r,a))if('scheduled_tasks'===e.appliesTo){if(a&&e.appliesIf){if(!a.scheduled_tasks)return;for(n=0;n<a.scheduled_tasks.length;n++)e.appliesIf(r,a,n)&&l(n)}}else l();function s(e,t,o){var i;return(i='function'==typeof e.contactLabel?e.contactLabel(t,o):e.contactLabel)?{name:i}:t.contact}function l(n){var c,l,p,f,u=null;for(c=0;c<e.events.length;c++){if((l=e.events[c]).dueDate)u=l.dueDate(l,r,a,n);else if(a)u=void 0!==n?new Date(t.addDate(new Date(a.scheduled_tasks[n].due),l.days)):new Date(t.addDate(new Date(a.reported_date),l.days));else if(l.dueDate)u=l.dueDate(l,r);else{var _=r.contact&&r.contact.reported_date?new Date(r.contact.reported_date):new Date;u=new Date(t.addDate(_,l.days))}t.isTimely(u,l)&&(f={_id:(a?a._id:r.contact&&r.contact._id)+'~'+(l.id||c)+'~'+e.name,deleted:!(!(r.contact&&r.contact.deleted||a)||!a.deleted),doc:r,contact:s(e,r,a),icon:e.icon,date:u,readyStart:l.start||0,readyEnd:l.end||0,title:e.title,resolved:e.resolvedIf(r,a,l,u,n),actions:d(e.actions,l)},void 0!==n&&(f._id+='-'+n),'function'==typeof(p=e.priority)&&(p=p(r,a)),p&&(f.priority=p.level,f.priorityLabel=p.label),i('task',new o(f)))}}function d(t,o){return e.actions.map((function(e){return function(e,t){var o={source:'task',source_id:a?a._id:r.contact&&r.contact._id,contact:r.contact};e.modifyContent&&e.modifyContent(o,r,a,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:o}}(e,o)}))}}e.exports=function(e,t,o,n,c){if(e)for(var s,l,d=0;d<e.length;++d)switch('function'!=typeof(s=Object.assign({},e[d],r)).resolvedIf&&(s.resolvedIf=function(e,t,i,r){return s.defaultResolvedIf(e,t,i,r,o)}),i(s),s.appliesTo){case'reports':case'scheduled_tasks':for(var p=0;p<t.reports.length;++p)l=t.reports[p],a(s,o,n,c,t,l);break;case'contacts':t.contact&&a(s,o,n,c,t);break;default:throw new Error('Unrecognised task.appliesTo: '+s.appliesTo)}}},function(e,t){e.exports={defaultResolvedIf:function(e,t,o,i,r){var a,n;r||(r=Utils);var c=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find((function(e){return!e.type||'report'===e.type})))&&t.form}(this.definition);if(!c)throw new Error('Could not find the default resolving form!');return a=0,a=t?Math.max(r.addDate(i,-o.start).getTime(),t.reported_date+1):r.addDate(i,-o.start).getTime(),n=r.addDate(i,o.end+1).getTime(),r.isFormSubmittedInWindow(e.reports,c,a,n)}}},function(e,t,o){var i=o(0);function r(e,t,o,i,r,a){var n=!!a;if(r.contact){var c='contact'===r.contact.type?r.contact.contact_type:r.contact.type,s=n?a.form:c;if(!(e.appliesToType&&e.appliesToType.indexOf(s)<0)&&(!e.appliesIf||e.appliesIf(r,a)))for(var l=n?a:r.contact,d=function(e,t,o){var i;return i='function'==typeof e.idType?e.idType(t,o):'report'===e.idType?o&&o._id:t.contact&&t.contact._id,Array.isArray(i)||(i=[i]),i}(e,r,a),p=!e.passesIf||!!e.passesIf(r,a),f=function(e,t,o,i){if('function'==typeof e.date)return e.date(o,i)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return i?i.reported_date:o.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,o,r,a),u=e.groupBy&&e.groupBy(r,a),_=0;_<d.length;++_){var v=new t({_id:d[_]+'~'+e.id,contact:r.contact,deleted:!!l.deleted,type:e.id,pass:p,groupBy:u,date:f});e.emitCustom?e.emitCustom(y,v,r,a):y(v)}}function y(e){i('target',e)}}e.exports=function(e,t,o,a,n){for(var c=0;c<e.length;++c){var s=e[c];switch(i(s),s.appliesTo){case'contacts':r(s,a,o,n,t);break;case'reports':for(var l=0;l<t.reports.length;++l){r(s,a,o,n,t,t.reports[l])}break;default:throw new Error('Unrecognised target.appliesTo: '+s.appliesTo)}}}}]); }\n}",
+    "rules": "!function(e){var t={};function n(o){if(t[o])return t[o].exports;var a=t[o]={i:o,l:!1,exports:{}};return e[o].call(a.exports,a,a.exports,n),a.l=!0,a.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){'undefined'!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:'Module'}),Object.defineProperty(e,'__esModule',{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&'object'==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,'default',{enumerable:!0,value:e}),2&t&&'string'!=typeof e)for(var a in e)n.d(o,a,function(t){return e[t]}.bind(null,a));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,'a',t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p='',n(n.s=1)}([function(e,t){e.exports=function(e){var t={};!function e(t,n){var o=Object.keys(t);for(var a in o){var r=o[a];switch(typeof t[r]){case'object':e(t[r],n);break;case'function':t[r]=t[r].bind(n)}}}(e,t),t.definition=function e(t){var n=Object.assign({},t),o=Object.keys(n);for(var a in o){var r=o[a];if(Array.isArray(n[r])){n[r]=n[r].slice(0);for(var i=0;i<n[r].length;++i)'object'==typeof n[r][i]&&(n[r][i]=e(n[r][i]))}else'object'==typeof n[r]&&(n[r]=e(n[r]))}return n}(e)}},function(e,t,n){var o=n(2),a=n(3),r=n(4);n(6)(a,c,Utils,Target,emit),r(o,c,Utils,Task,emit),emit('_complete',{_id:!0})},function(e,t){e.exports=[{name:'case_investigation',title:'task.title.case_investigation',icon:'icon-investigation-outline-gray',appliesTo:'contacts',appliesToType:['case'],actions:[{form:'case_investigation',modifyContent:function(e,t,n,o){}}],events:[{days:7,start:7,end:1}],resolvedIf:function(e,t,n,o){return Utils.isFormSubmittedInWindow(e.reports,'case_investigation',Utils.addDate(o,-n.start).getTime(),Utils.addDate(o,n.end+1).getTime())}},{name:'case_management',title:'task.title.case_management',icon:'icon-management-outline-blue',appliesTo:'contacts',appliesToType:['case'],appliesIf:function(e){return Utils.getMostRecentReport(e.reports,'case_investigation')},actions:[{form:'case_management',modifyContent:function(e,t,n,o){e.outbreak_code=JSON.stringify()}}],events:[{days:7,start:7,end:1}],resolvedIf:function(e,t,n,o){return Utils.isFormSubmittedInWindow(e.reports,'case_management',Utils.addDate(o,-n.start).getTime(),Utils.addDate(o,n.end+1).getTime())}}]},function(e,t){e.exports=[]},function(e,t,n){var o=n(0),a=n(5);function r(e,t,n,o,a,r){var i;if(e.appliesToType){var c;if('contacts'===e.appliesTo){if(!a.contact)return;c='contact'===a.contact.type?a.contact.contact_type:a.contact.type}else{if(!r)return;c=r.form}if(-1===e.appliesToType.indexOf(c))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(a,r))if('scheduled_tasks'===e.appliesTo){if(r&&e.appliesIf){if(!r.scheduled_tasks)return;for(i=0;i<r.scheduled_tasks.length;i++)e.appliesIf(a,r,i)&&d(i)}}else d();function s(e,t,n){var o;return(o='function'==typeof e.contactLabel?e.contactLabel(t,n):e.contactLabel)?{name:o}:t.contact}function d(i){var c,d,p,l,u=null;for(c=0;c<e.events.length;c++){if((d=e.events[c]).dueDate)u=d.dueDate(d,a,r,i);else if(r)u=void 0!==i?new Date(t.addDate(new Date(r.scheduled_tasks[i].due),d.days)):new Date(t.addDate(new Date(r.reported_date),d.days));else if(d.dueDate)u=d.dueDate(d,a);else{var y=a.contact&&a.contact.reported_date?new Date(a.contact.reported_date):new Date;u=new Date(t.addDate(y,d.days))}t.isTimely(u,d)&&(l={_id:(r?r._id:a.contact&&a.contact._id)+'~'+(d.id||c)+'~'+e.name,deleted:!(!(a.contact&&a.contact.deleted||r)||!r.deleted),doc:a,contact:s(e,a,r),icon:e.icon,date:u,readyStart:d.start||0,readyEnd:d.end||0,title:e.title,resolved:e.resolvedIf(a,r,d,u,i),actions:f(e.actions,d)},void 0!==i&&(l._id+='-'+i),'function'==typeof(p=e.priority)&&(p=p(a,r)),p&&(l.priority=p.level,l.priorityLabel=p.label),o('task',new n(l)))}}function f(t,n){return e.actions.map((function(e){return function(e,t){var n={source:'task',source_id:r?r._id:a.contact&&a.contact._id,contact:a.contact};e.modifyContent&&e.modifyContent(n,a,r,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:n}}(e,n)}))}}e.exports=function(e,t,n,i,c){if(e)for(var s,d,f=0;f<e.length;++f)switch('function'!=typeof(s=Object.assign({},e[f],a)).resolvedIf&&(s.resolvedIf=function(e,t,o,a){return s.defaultResolvedIf(e,t,o,a,n)}),o(s),s.appliesTo){case'reports':case'scheduled_tasks':for(var p=0;p<t.reports.length;++p)d=t.reports[p],r(s,n,i,c,t,d);break;case'contacts':t.contact&&r(s,n,i,c,t);break;default:throw new Error('Unrecognised task.appliesTo: '+s.appliesTo)}}},function(e,t){e.exports={defaultResolvedIf:function(e,t,n,o,a){var r,i;a||(a=Utils);var c=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find((function(e){return!e.type||'report'===e.type})))&&t.form}(this.definition);if(!c)throw new Error('Could not find the default resolving form!');return r=0,r=t?Math.max(a.addDate(o,-n.start).getTime(),t.reported_date+1):a.addDate(o,-n.start).getTime(),i=a.addDate(o,n.end+1).getTime(),a.isFormSubmittedInWindow(e.reports,c,r,i)}}},function(e,t,n){var o=n(0);function a(e,t,n,o,a,r){var i=!!r;if(a.contact){var c='contact'===a.contact.type?a.contact.contact_type:a.contact.type,s=i?r.form:c;if(!(e.appliesToType&&e.appliesToType.indexOf(s)<0)&&(!e.appliesIf||e.appliesIf(a,r)))for(var d=i?r:a.contact,f=function(e,t,n){var o;return o='function'==typeof e.idType?e.idType(t,n):'report'===e.idType?n&&n._id:t.contact&&t.contact._id,Array.isArray(o)||(o=[o]),o}(e,a,r),p=!e.passesIf||!!e.passesIf(a,r),l=function(e,t,n,o){if('function'==typeof e.date)return e.date(n,o)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return o?o.reported_date:n.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,n,a,r),u=e.groupBy&&e.groupBy(a,r),y=0;y<f.length;++y){var v=new t({_id:f[y]+'~'+e.id,contact:a.contact,deleted:!!d.deleted,type:e.id,pass:p,groupBy:u,date:l});e.emitCustom?e.emitCustom(m,v,a,r):m(v)}}function m(e){o('target',e)}}e.exports=function(e,t,n,r,i){for(var c=0;c<e.length;++c){var s=e[c];switch(o(s),s.appliesTo){case'contacts':a(s,r,n,i,t);break;case'reports':for(var d=0;d<t.reports.length;++d){a(s,r,n,i,t,t.reports[d])}break;default:throw new Error('Unrecognised target.appliesTo: '+s.appliesTo)}}}}]);",
+    "isDeclarative": true,
     "targets": {
       "enabled": true,
-      "items": [
-        {
-          "id": "ci_cholera_positive_month",
-          "type": "count",
-          "goal": -1,
-          "translation_key": "targets.ci_cholera.title",
-          "icon": "icon-cholera-colored",
-          "subtitle_translation_key": "targets.ci_cholera.subtitle_positive_month"
-        },
-        {
-          "id": "ci_cholera_positive_all",
-          "type": "count",
-          "goal": -1,
-          "translation_key": "targets.ci_cholera.title",
-          "icon": "icon-cholera-colored",
-          "subtitle_translation_key": "targets.ci_cholera.subtitle_positive_all"
-        },
-        {
-          "id": "ci_cholera_all",
-          "type": "count",
-          "goal": -1,
-          "translation_key": "targets.ci_cholera.title",
-          "icon": "icon-cholera-colored",
-          "subtitle_translation_key": "targets.ci_cholera.subtitle_all"
-        },
-        {
-          "id": "ci_covid19_positive_month",
-          "type": "count",
-          "goal": -1,
-          "translation_key": "targets.ci_covid19.title",
-          "icon": "icon-covid19-colored",
-          "subtitle_translation_key": "targets.ci_covid19.subtitle_positive_month",
-          "aggregate": true
-        },
-        {
-          "id": "ci_covid19_positive_all",
-          "type": "count",
-          "goal": -1,
-          "translation_key": "targets.ci_covid19.title",
-          "icon": "icon-covid19-colored",
-          "subtitle_translation_key": "targets.ci_covid19.subtitle_positive_all",
-          "aggregate": true
-        },
-        {
-          "id": "ci_covid19_all",
-          "type": "count",
-          "goal": -1,
-          "translation_key": "targets.ci_covid19.title",
-          "icon": "icon-covid19-colored",
-          "subtitle_translation_key": "targets.ci_covid19.subtitle_all",
-          "aggregate": true
-        }
-      ]
+      "items": []
     }
   }
 }

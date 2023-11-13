@@ -13,6 +13,8 @@
         "health_unit",
         "person",
         "outbreak",
+        "outbreak_location",
+        "hcw",
         "case",
         "case_contact"
     ],
@@ -33,7 +35,6 @@
             "group_key": "contact.type.person.plural",
             "create_key": "contact.type.person.new",
             "edit_key": "contact.type.person.edit",
-            "primary_contact_key": "outbreak.field.contact",
             "parents": [
                 "health_unit"
             ],
@@ -47,7 +48,7 @@
             "name_key": "contact.type.outbreak",
             "group_key": "contact.type.outbreak.plural",
             "create_key": "contact.type.outbreak.new",
-            "edit_key": "contact.type.place.edit",
+            "edit_key": "contact.type.outbreak.edit",
             "parents": [
                 "health_unit"
             ],
@@ -56,15 +57,42 @@
             "edit_form": "form:contact:outbreak:edit"
         },
         {
+            "id": "outbreak_location",
+            "name_key": "contact.type.outbreak_location",
+            "group_key": "contact.type.outbreak_location.plural",
+            "create_key": "contact.type.outbreak_location.new",
+            "edit_key": "contact.type.outbreak_location.edit",
+            "parents": [
+                "outbreak"
+            ],
+            "icon": "icon-outbreak_location-blue",
+            "create_form": "form:contact:outbreak_location:create",
+            "edit_form": "form:contact:outbreak_location:edit"
+        },
+        {
+            "id": "hcw",
+            "name_key": "contact.type.hcw",
+            "group_key": "contact.type.hcw.plural",
+            "create_key": "contact.type.hcw.new",
+            "edit_key": "contact.type.hcw.edit",
+            "parents": [
+                "outbreak_location"
+            ],
+            "icon": "icon-doctor-blue",
+            "create_form": "form:contact:hcw:create",
+            "edit_form": "form:contact:hcw:edit",
+            "person": true
+        },
+        {
             "id": "case",
             "name_key": "contact.type.case",
             "group_key": "contact.type.case.plural",
             "create_key": "contact.type.case.new",
             "edit_key": "contact.type.case.edit",
             "parents": [
-                "outbreak"
+                "outbreak_location"
             ],
-            "icon": "icon-investigation-outline-gray",
+            "icon": "icon-patient-colored",
             "create_form": "form:contact:case:create",
             "edit_form": "form:contact:case:edit",
             "person": true
@@ -130,7 +158,7 @@
         "can_create_places": [
             "program_officer",
             "chw_supervisor",
-            "chw"
+            "chw" 
         ],
         "can_create_records": [
             "data_entry",
@@ -200,8 +228,7 @@
         ],
         "can_update_places": [
             "program_officer",
-            "chw_supervisor",
-            "chw"
+            "chw_supervisor"
         ],
         "can_update_reports": [
             "program_officer",
@@ -253,16 +280,8 @@
             "chw_supervisor",
             "chw"
         ],
-        "can_view_messages": [
-            "program_officer",
-            "chw_supervisor",
-            "chw"
-        ],
-        "can_view_messages_tab": [
-            "program_officer",
-            "chw_supervisor",
-            "chw"
-        ],
+        "can_view_messages": [],
+        "can_view_messages_tab": [],
         "can_view_outgoing_messages": [
             "program_officer"
         ],
@@ -276,9 +295,18 @@
             "chw_supervisor",
             "chw"
         ],
-        "can_view_tasks": [],
-        "can_view_tasks_tab": [],
-        "can_view_tasks_group": [],
+        "can_view_tasks": [
+            "chw_supervisor",
+            "chw"
+        ],
+        "can_view_tasks_tab": [
+            "chw_supervisor",
+            "chw"
+        ],
+        "can_view_tasks_group": [
+            "chw_supervisor",
+            "chw"
+        ],
         "can_view_unallocated_data_records": [
             "gateway",
             "program_officer",

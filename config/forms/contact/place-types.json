@@ -1,5 +1,7 @@
 {
   "district_hospital": "District Hospital",
   "person": "Person",
-  "outbreak": "Outbreak"
+  "outbreak": "Outbreak",
+  "case": "Case",
+  "case_contact": "Case Contact"
 }
