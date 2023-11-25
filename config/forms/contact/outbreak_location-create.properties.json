@@ -1,0 +1,12 @@
+{
+  "title": "Create Outbreak Location",
+  "icon": "icon-investigation-outline-gray",
+  "context": {
+    "person": false,
+    "place": true,
+    "permission": "can_modify_outbreak_location"
+  },
+  "hidden_fields": [
+    "cif_title"
+  ]
+}

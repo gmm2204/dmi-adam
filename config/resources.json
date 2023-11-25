@@ -23,5 +23,9 @@
     "icon-outbreak-colored": "icon-outbreak-colored.png",
     "icon-doctor-blue": "icon-doctor-blue.png",
     "icon-outbreak_location-blue": "icon-outbreak_location-blue.png",
-    "icon-patient-colored": "icon-patient-colored.png"
+    "icon-patient-colored": "icon-patient-colored.png",
+    "icon-outbreak-location-colored": "icon-outbreak-location-colored.png",
+    "icon-cases_group-colored": "icon-cases_group-colored.png",
+    "icon-hospitalization-colored": "icon-hospitalization-colored.png",
+    "icon-outcome-colored": "icon-outcome-colored.png"
 }

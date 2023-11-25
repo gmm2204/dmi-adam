@@ -1,0 +1,7 @@
+{
+  "title": "Case Exposure",
+  "icon": "icon-exposure-colored",
+  "context": {
+    "expression": "(contact.hierarchy_id === 'case') || (!contact)"
+  }
+}

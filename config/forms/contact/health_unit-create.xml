@@ -5,8 +5,8 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/data/health_unit/description:label">
-            <value>Description</value>
+          <text id="/data/contact/title:label">
+            <value>A primary contact associated with this &lt;strong&gt;Health Unit&lt;/strong&gt; will be automatically created.</value>
           </text>
           <text id="/data/health_unit/external_id:label">
             <value>External ID</value>
@@ -14,65 +14,19 @@
           <text id="/data/health_unit/name:label">
             <value>Name</value>
           </text>
-        </translation>
-        <translation lang="fr">
-          <text id="/data/health_unit/description:label">
-            <value>Nom</value>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>New Person</value>
           </text>
-          <text id="/data/health_unit/external_id:label">
-            <value>Identifiant externe</value>
+          <text id="/data/init/create_new_person:label">
+            <value>Set the Primary Contact</value>
           </text>
-          <text id="/data/health_unit/name:label">
-            <value>Nom</value>
-          </text>
-        </translation>
-        <translation lang="hi">
-          <text id="/data/health_unit/description:label">
-            <value>नाम</value>
-          </text>
-          <text id="/data/health_unit/external_id:label">
-            <value>बाहरी ID</value>
-          </text>
-          <text id="/data/health_unit/name:label">
-            <value>नाम</value>
-          </text>
-        </translation>
-        <translation lang="id">
-          <text id="/data/health_unit/description:label">
-            <value>Nama</value>
-          </text>
-          <text id="/data/health_unit/external_id:label">
-            <value>Eksternal ID</value>
-          </text>
-          <text id="/data/health_unit/name:label">
-            <value>Nama</value>
-          </text>
-        </translation>
-        <translation lang="ne">
-          <text id="/data/health_unit/description:label">
-            <value>नाम</value>
-          </text>
-          <text id="/data/health_unit/external_id:label">
-            <value>बाहिरि ID</value>
-          </text>
-          <text id="/data/health_unit/name:label">
-            <value>नाम</value>
-          </text>
-        </translation>
-        <translation lang="sw">
-          <text id="/data/health_unit/description:label">
-            <value>Jina</value>
-          </text>
-          <text id="/data/health_unit/external_id:label">
-            <value>Namba ya nje</value>
-          </text>
-          <text id="/data/health_unit/name:label">
-            <value>Jina</value>
+          <text id="/data/init/select_person:label">
+            <value>Select the Primary Contact</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="contact:health_unit:create" prefix="J1!contact:health_unit:create!" delimiter="#" version="2023-10-20 6-56">
+        <data id="contact:health_unit:create" prefix="J1!contact:health_unit:create!" delimiter="#" version="2023-11-22 18-23">
           <inputs>
             <meta>
               <location>
@@ -90,16 +44,32 @@
           </inputs>
           <health_unit>
             <parent>PARENT</parent>
-            <type/>
+            <type>health_unit</type>
             <name/>
-            <description/>
             <external_id/>
+            <contact/>
+            <geolocation/>
             <meta tag="hidden">
               <created_by/>
               <created_by_person_uuid/>
               <created_by_place_uuid/>
             </meta>
           </health_unit>
+          <init>
+            <create_new_person>new_person</create_new_person>
+            <select_person/>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>person</type>
+            <name/>
+            <title/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -109,11 +79,21 @@
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/name" type="string" calculate="concat(../../health_unit/name, &quot;'s Primary Contact&quot;)"/>
+      <bind nodeset="/data/contact/title" readonly="true()" type="string"/>
+      <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/contact/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
       <bind nodeset="/data/health_unit/parent" type="string"/>
       <bind nodeset="/data/health_unit/type" type="string"/>
       <bind nodeset="/data/health_unit/name" type="string" required="true()"/>
-      <bind nodeset="/data/health_unit/description" type="string"/>
       <bind nodeset="/data/health_unit/external_id" type="string"/>
+      <bind nodeset="/data/health_unit/contact" type="string" calculate="coalesce( /data/init/select_person ,&quot;NEW&quot;)"/>
+      <bind nodeset="/data/health_unit/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
       <bind nodeset="/data/health_unit/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/health_unit/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/health_unit/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -128,15 +108,27 @@
         <input ref="/data/inputs/user/name"/>
       </group>
     </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 appearance="hidden" ref="/data/init/create_new_person">
+        <label ref="jr:itext('/data/init/create_new_person:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/new_person:label')"/>
+          <value>new_person</value>
+        </item>
+      </select1>
+      <input appearance="db-object" ref="/data/init/select_person">
+        <label ref="jr:itext('/data/init/select_person:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/contact">
+        <input ref="/data/contact/title">
+          <label ref="jr:itext('/data/contact/title:label')"/>
+        </input>
+        <group ref="/data/contact/meta"/>
+        </group>
+      </group>
     <group appearance="field-list" ref="/data/health_unit">
       <input ref="/data/health_unit/name">
         <label ref="jr:itext('/data/health_unit/name:label')"/>
-      </input>
-      <input ref="/data/health_unit/description">
-        <label ref="jr:itext('/data/health_unit/description:label')"/>
-      </input>
-      <input ref="/data/health_unit/external_id">
-        <label ref="jr:itext('/data/health_unit/external_id:label')"/>
       </input>
       <group appearance="hidden" ref="/data/health_unit/meta"/>
     </group>

@@ -1,0 +1,7 @@
+{
+  "title": "Create Outbreak",
+  "icon": "icon-investigation-outline-gray",
+  "context": {
+    "permission": "can_modify_outbreak"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Create Cases Group",
+  "context": {
+    "permission": "can_modify_cases_group"
+  }
+}

@@ -1,0 +1,427 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Case Exposure</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/case_exposure/ce_created/created_by:label">
+            <value>Created By</value>
+          </text>
+          <text id="/case_exposure/ce_created/created_on:label">
+            <value>Created On</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_date:label">
+            <value>When did the patient consume the food</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_name:label">
+            <value>Name of the food</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_participants_affected_count:label">
+            <value>How many (of those that ate the food) are experiencing similar symptoms?</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_participants_count:label">
+            <value>How many people ate the same food?</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_source:label">
+            <value>Source of the food</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_time:label">
+            <value>At what time</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type/dug_hole:label">
+            <value>Dug hole</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type/forest:label">
+            <value>Forest or bushes</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type/river:label">
+            <value>River</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type/traditional:label">
+            <value>Traditional</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type/water_sealed:label">
+            <value>Water sealed</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type:label">
+            <value>Toilet type</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_toilet_type_other:label">
+            <value>Toilet type (other)</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_waste_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Waste Disposal&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source/borehole:label">
+            <value>Drilled water</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source/distiller:label">
+            <value>Distilled</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source/piped:label">
+            <value>Piped water</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source/river:label">
+            <value>River</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source/well:label">
+            <value>Well</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source:label">
+            <value>Source(s) of water</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_source_other:label">
+            <value>Source of water (other)</value>
+          </text>
+          <text id="/case_exposure/ce_food/cef_water_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Water&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/ce_location/cel_type/food:label">
+            <value>Food</value>
+          </text>
+          <text id="/case_exposure/ce_location/cel_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_exposure/ce_location/cel_type:label">
+            <value>Exposure type</value>
+          </text>
+          <text id="/case_exposure/prerequisites/case_exposure_title:label">
+            <value>&lt;h3 style="border-bottom: #f47b63 dashed 1px; padding: 5px 0;"&gt;Record how the patient may have been exposed to the outbreak&lt;/h3&gt;</value>
+          </text>
+          <text id="/case_exposure/prerequisites/case_id_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case ID: <output value=" /case_exposure/prerequisites/ci_case_id "/> &lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/prerequisites/case_name_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Name: <output value=" /case_exposure/prerequisites/ci_case_name "/> &lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/prerequisites/case_outbreak_location_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_exposure/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_exposure/prerequisites/outbreak_location_subcounty "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/prerequisites/case_outbreak_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_exposure/prerequisites/outbreak_name "/> | <output value=" /case_exposure/prerequisites/outbreak_date "/> | <output value=" /case_exposure/prerequisites/outbreak_status "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/_id:label">
+            <value>Outbreak Location</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/ol_county:label">
+            <value>Outbreak Location County</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/ol_subcounty:label">
+            <value>Outbreak Location Sub-county</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/outbreak/_id:label">
+            <value>Outbreak</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/outbreak/code:label">
+            <value>Outbreak Code</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/outbreak/date:label">
+            <value>Outbreak Date</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/outbreak/name:label">
+            <value>Outbreak Name</value>
+          </text>
+          <text id="/case_exposure/prerequisites/outbreak_location/outbreak/status:label">
+            <value>Outbreak Status</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <case_exposure id="case_exposure" prefix="J1!case_exposure!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+              <role/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <name/>
+                  <parent>
+                    <_id/>
+                    <name/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <prerequisites>
+            <outbreak_location>
+              <_id/>
+              <ol_county/>
+              <ol_subcounty/>
+              <outbreak>
+                <_id/>
+                <name/>
+                <code/>
+                <date/>
+                <status/>
+              </outbreak>
+            </outbreak_location>
+            <ci_case_id/>
+            <ci_case_name/>
+            <outbreak_code/>
+            <outbreak_name/>
+            <outbreak_date/>
+            <outbreak_status/>
+            <outbreak_location_county/>
+            <outbreak_location_subcounty/>
+            <case_outbreak_title/>
+            <case_outbreak_location_title/>
+            <case_name_title/>
+            <case_id_title/>
+            <case_exposure_title/>
+          </prerequisites>
+          <ce_location>
+            <cel_type/>
+          </ce_location>
+          <ce_food>
+            <cef_name/>
+            <cef_date/>
+            <cef_time/>
+            <cef_source/>
+            <cef_participants_count/>
+            <cef_participants_affected_count/>
+            <cef_water_title/>
+            <cef_water_source/>
+            <cef_water_source_other/>
+            <cef_waste_title/>
+            <cef_toilet_type/>
+            <cef_toilet_type_other/>
+          </ce_food>
+          <ce_created>
+            <created_by/>
+            <created_on/>
+          </ce_created>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </case_exposure>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/case_exposure/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/case_exposure/inputs/source" type="string"/>
+      <bind nodeset="/case_exposure/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/user/name" type="string"/>
+      <bind nodeset="/case_exposure/inputs/user/role" type="string"/>
+      <bind nodeset="/case_exposure/inputs/user/phone" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/name" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/parent/parent/name" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_exposure/inputs/contact/parent/parent/parent/name" type="string"/>
+      <bind nodeset="/case_exposure/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/ol_county" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/ol_subcounty" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/outbreak/_id" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/outbreak/name" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/outbreak/date" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/outbreak/status" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/ci_case_id" type="string" calculate="../../inputs/contact/patient_id"/>
+      <bind nodeset="/case_exposure/prerequisites/ci_case_name" type="string" calculate="../../inputs/contact/name"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_code" type="string" calculate="../outbreak_location/outbreak/code"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_name" type="string" calculate="../outbreak_location/outbreak/name"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_date" type="string" calculate="../outbreak_location/outbreak/date"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_status" type="string" calculate="../outbreak_location/outbreak/status"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location_county" type="string" calculate="../outbreak_location/ol_county"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location_subcounty" type="string" calculate="../outbreak_location/ol_subcounty"/>
+      <bind nodeset="/case_exposure/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/case_name_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/case_id_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/prerequisites/case_exposure_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/ce_location/cel_type" type="select1" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food" relevant="selected( /case_exposure/ce_location/cel_type , 'food')"/>
+      <bind nodeset="/case_exposure/ce_food/cef_name" type="string" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" required="true()" calculate="today()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_time" type="time" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_source" type="string" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_participants_count" type="int" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_participants_affected_count" type="int" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_source" type="select" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')"/>
+      <bind nodeset="/case_exposure/ce_food/cef_waste_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_exposure/ce_food/cef_toilet_type" type="select" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')"/>
+      <bind nodeset="/case_exposure/ce_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_exposure/ce_created/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_exposure/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/case_exposure/inputs">
+      <group ref="/case_exposure/inputs/user"/>
+      <group appearance="field-list" ref="/case_exposure/inputs/contact">
+        <group ref="/case_exposure/inputs/contact/parent">
+          <group ref="/case_exposure/inputs/contact/parent/parent">
+            <group ref="/case_exposure/inputs/contact/parent/parent/parent"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/case_exposure/prerequisites">
+      <group ref="/case_exposure/prerequisites/outbreak_location">
+        <input appearance="hidden select-contact type-outbreak_location" ref="/case_exposure/prerequisites/outbreak_location/_id">
+          <label ref="jr:itext('/case_exposure/prerequisites/outbreak_location/_id:label')"/>
+        </input>
+        <group ref="/case_exposure/prerequisites/outbreak_location/outbreak"/>
+      </group>
+      <input ref="/case_exposure/prerequisites/case_outbreak_title">
+        <label ref="jr:itext('/case_exposure/prerequisites/case_outbreak_title:label')"/>
+      </input>
+      <input ref="/case_exposure/prerequisites/case_outbreak_location_title">
+        <label ref="jr:itext('/case_exposure/prerequisites/case_outbreak_location_title:label')"/>
+      </input>
+      <input ref="/case_exposure/prerequisites/case_name_title">
+        <label ref="jr:itext('/case_exposure/prerequisites/case_name_title:label')"/>
+      </input>
+      <input ref="/case_exposure/prerequisites/case_id_title">
+        <label ref="jr:itext('/case_exposure/prerequisites/case_id_title:label')"/>
+      </input>
+      <input ref="/case_exposure/prerequisites/case_exposure_title">
+        <label ref="jr:itext('/case_exposure/prerequisites/case_exposure_title:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/case_exposure/ce_location">
+      <select1 ref="/case_exposure/ce_location/cel_type">
+        <label ref="jr:itext('/case_exposure/ce_location/cel_type:label')"/>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_location/cel_type/food:label')"/>
+          <value>food</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_location/cel_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/case_exposure/ce_food">
+      <input ref="/case_exposure/ce_food/cef_name">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_name:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_date">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_date:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_time">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_time:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_source">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_source:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_participants_count">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_participants_count:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_participants_affected_count">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_participants_affected_count:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_water_title">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_water_title:label')"/>
+      </input>
+      <select ref="/case_exposure/ce_food/cef_water_source">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_water_source:label')"/>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_water_source/well:label')"/>
+          <value>well</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_water_source/distiller:label')"/>
+          <value>distiller</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_water_source/borehole:label')"/>
+          <value>borehole</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_water_source/piped:label')"/>
+          <value>piped</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_water_source/river:label')"/>
+          <value>river</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_water_source/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/case_exposure/ce_food/cef_water_source_other">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_water_source_other:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_food/cef_waste_title">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_waste_title:label')"/>
+      </input>
+      <select ref="/case_exposure/ce_food/cef_toilet_type">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type:label')"/>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type/water_sealed:label')"/>
+          <value>water_sealed</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type/traditional:label')"/>
+          <value>traditional</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type/forest:label')"/>
+          <value>forest</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type/river:label')"/>
+          <value>river</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type/dug_hole:label')"/>
+          <value>dug_hole</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/case_exposure/ce_food/cef_toilet_type_other">
+        <label ref="jr:itext('/case_exposure/ce_food/cef_toilet_type_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/case_exposure/ce_created">
+      <input ref="/case_exposure/ce_created/created_by">
+        <label ref="jr:itext('/case_exposure/ce_created/created_by:label')"/>
+      </input>
+      <input ref="/case_exposure/ce_created/created_on">
+        <label ref="jr:itext('/case_exposure/ce_created/created_on:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,7 @@
+{
+  "title": "Case Hospitalization",
+  "icon": "icon-hospitalization-colored",
+  "context": {
+    "expression": "(contact.hierarchy_id === 'case') || (!contact)"
+  }
+}

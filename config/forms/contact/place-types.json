@@ -2,6 +2,8 @@
   "district_hospital": "District Hospital",
   "person": "Person",
   "outbreak": "Outbreak",
+  "outbreak_location": "Outbreak",
+  "cases_group": "Outbreak",
   "case": "Case",
   "case_contact": "Case Contact"
 }

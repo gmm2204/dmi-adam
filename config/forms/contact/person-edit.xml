@@ -29,11 +29,8 @@
           <text id="/data/person/email:label">
             <value>Email Address</value>
           </text>
-          <text id="/data/person/first_name:label">
-            <value>First name</value>
-          </text>
-          <text id="/data/person/last_name:label">
-            <value>Middle name</value>
+          <text id="/data/person/name:label">
+            <value>Name</value>
           </text>
           <text id="/data/person/parent:label">
             <value>Parent ID</value>
@@ -41,84 +38,13 @@
           <text id="/data/person/phone:label">
             <value>Phone Number</value>
           </text>
-          <text id="/data/person/role/CHP:label">
-            <value>CHP</value>
-          </text>
-          <text id="/data/person/role/CHP_Supervisor:label">
-            <value>CHP Supervisor</value>
-          </text>
-          <text id="/data/person/role:hint">
-            <value>Select the role that best suits this person</value>
-          </text>
-          <text id="/data/person/role:label">
-            <value>Role</value>
-          </text>
-          <text id="/data/person/surname:label">
-            <value>Last name</value>
-          </text>
           <text id="/data/person/type:label">
             <value>Person type</value>
           </text>
         </translation>
-        <translation lang="sw">
-          <text id="/data/init/parent_id:hint">
-            <value><output value=" /data/init/type_label "/></value>
-          </text>
-          <text id="/data/init/parent_id:label">
-            <value>Ni wa</value>
-          </text>
-          <text id="/data/init/type_selector/district_hospital:label">
-            <value>-</value>
-          </text>
-          <text id="/data/init/type_selector/outbreak:label">
-            <value>-</value>
-          </text>
-          <text id="/data/inputs/user/contact_id:label">
-            <value>Namba ya Usajilisho ya mtumiaji wa huduma hii</value>
-          </text>
-          <text id="/data/inputs/user/facility_id:label">
-            <value>Kitambulisho cha mahali cha mtumizi wa huduma hii</value>
-          </text>
-          <text id="/data/inputs/user/name:label">
-            <value>Jina ya mtumizi</value>
-          </text>
-          <text id="/data/person/email:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/first_name:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/last_name:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/parent:label">
-            <value>ID ya mzazi</value>
-          </text>
-          <text id="/data/person/phone:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/role/CHP:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/role/CHP_Supervisor:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/role:hint">
-            <value>Chagua jukumu linachoambatana na huyu mtu</value>
-          </text>
-          <text id="/data/person/role:label">
-            <value>Jukumu</value>
-          </text>
-          <text id="/data/person/surname:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/type:label">
-            <value>Jina</value>
-          </text>
-        </translation>
       </itext>
       <instance>
-        <data id="contact:person:edit" prefix="J1!contact:person:edit!" delimiter="#" version="2023-11-12 22-44">
+        <data id="contact:person:edit" prefix="J1!contact:person:edit!" delimiter="#" version="2023-11-20 22-14">
           <inputs>
             <meta>
               <location>
@@ -137,14 +63,9 @@
           <person>
             <parent>PARENT</parent>
             <type>person</type>
-            <role>patient</role>
-            <first_name/>
-            <last_name/>
-            <surname/>
+            <name/>
             <phone/>
             <email/>
-            <name/>
-            <role_label/>
             <meta tag="hidden">
               <created_by/>
               <created_by_person_uuid/>
@@ -174,14 +95,9 @@
       <bind nodeset="/data/init/type_label" type="string" calculate="jr:choice-name( /data/init/type_selector ,' /data/init/type_selector ')"/>
       <bind nodeset="/data/person/parent" type="string"/>
       <bind nodeset="/data/person/type" type="string"/>
-      <bind nodeset="/data/person/role" type="select1" required="true()"/>
-      <bind nodeset="/data/person/first_name" type="string" required="true()"/>
-      <bind nodeset="/data/person/last_name" type="string"/>
-      <bind nodeset="/data/person/surname" type="string" required="true()"/>
+      <bind nodeset="/data/person/name" type="string" required="true()"/>
       <bind nodeset="/data/person/phone" type="tel" required="true()"/>
       <bind nodeset="/data/person/email" type="string" required="true()"/>
-      <bind nodeset="/data/person/name" type="string" calculate="concat( /data/person/first_name , ' ',  /data/person/last_name , ' ',  /data/person/surname )"/>
-      <bind nodeset="/data/person/role_label" type="string" calculate="jr:choice-name( /data/person/role ,' /data/person/role ')"/>
       <bind nodeset="/data/person/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/person/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/person/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -221,26 +137,8 @@
       </select1>
     </group>
     <group ref="/data/person">
-      <select1 appearance="minimal" ref="/data/person/role">
-        <label ref="jr:itext('/data/person/role:label')"/>
-        <hint ref="jr:itext('/data/person/role:hint')"/>
-        <item>
-          <label ref="jr:itext('/data/person/role/CHP:label')"/>
-          <value>CHP</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/data/person/role/CHP_Supervisor:label')"/>
-          <value>CHP_Supervisor</value>
-        </item>
-      </select1>
-      <input ref="/data/person/first_name">
-        <label ref="jr:itext('/data/person/first_name:label')"/>
-      </input>
-      <input ref="/data/person/last_name">
-        <label ref="jr:itext('/data/person/last_name:label')"/>
-      </input>
-      <input ref="/data/person/surname">
-        <label ref="jr:itext('/data/person/surname:label')"/>
+      <input ref="/data/person/name">
+        <label ref="jr:itext('/data/person/name:label')"/>
       </input>
       <input ref="/data/person/phone">
         <label ref="jr:itext('/data/person/phone:label')"/>

@@ -1,0 +1,25 @@
+# Install command line tool
+npm install -g cht-conf
+
+# Install python pip
+sudo apt-get install python3-pip
+
+# Install xform
+sudo python3 -m pip install git+https://github.com/medic/pyxform.git@medic-conf-1.17#egg=pyxform-medic
+
+# Create and launch cht containers
+# Run from developer dir
+docker-compose up
+
+# Upload cht configurations
+cht --url=https://morlig:B8NnDhSyxg@adam.icapkenya.org compile-app-settings backup-app-settings upload-app-settings upload-custom-translations upload-resources
+
+# Upload cht contact and app forms
+cht --url=https://morlig:B8NnDhSyxg@adam.icapkenya.org delete-all-forms convert-contact-forms convert-app-forms upload-contact-forms upload-app-forms
+
+# Install couch2pg
+npm i couch2pg
+
+# Launch couch2pg
+docker-compose --env-file couch2pg.env up
+

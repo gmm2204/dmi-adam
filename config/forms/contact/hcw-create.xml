@@ -8,37 +8,40 @@
           <text id="/data/hcw/email:label">
             <value>Email Address</value>
           </text>
-          <text id="/data/hcw/first_name:label">
-            <value>First name</value>
+          <text id="/data/hcw/hcw_name:label">
+            <value>Name</value>
           </text>
           <text id="/data/hcw/hcw_title:label">
-            <value>Location: <output value=" /data/hcw/outbreak_location/county "/> &gt; <output value=" /data/hcw/outbreak_location/subcounty "/> &gt; <output value=" /data/hcw/outbreak_location/ward "/></value></text>
-          <text id="/data/hcw/last_name:label">
-            <value>Middle name</value>
+            <value>Location: <output value=" /data/hcw/outbreak_location/ol_county "/> &gt; <output value=" /data/hcw/outbreak_location/ol_subcounty "/></value></text>
+          <text id="/data/hcw/outbreak/_id:label">
+            <value>Outbreak</value>
+          </text>
+          <text id="/data/hcw/outbreak/county:label">
+            <value>County</value>
+          </text>
+          <text id="/data/hcw/outbreak/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/hcw/outbreak/subcounty:label">
+            <value>Sub-county</value>
           </text>
           <text id="/data/hcw/outbreak_location/_id:label">
             <value>Outbreak Location</value>
           </text>
-          <text id="/data/hcw/outbreak_location/county:label">
-            <value>County</value>
-          </text>
           <text id="/data/hcw/outbreak_location/name:label">
             <value>Name</value>
           </text>
-          <text id="/data/hcw/outbreak_location/subcounty:label">
-            <value>Sub-county</value>
+          <text id="/data/hcw/outbreak_location/ol_county:label">
+            <value>County</value>
           </text>
-          <text id="/data/hcw/outbreak_location/ward:label">
-            <value>Ward</value>
+          <text id="/data/hcw/outbreak_location/ol_subcounty:label">
+            <value>Sub-county</value>
           </text>
           <text id="/data/hcw/parent:label">
             <value>Parent ID</value>
           </text>
           <text id="/data/hcw/phone:label">
             <value>Phone Number</value>
-          </text>
-          <text id="/data/hcw/surname:label">
-            <value>Last name</value>
           </text>
           <text id="/data/hcw/type:label">
             <value>Person type</value>
@@ -67,7 +70,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="contact:hcw:create" prefix="J1!contact:hcw:create!" delimiter="#" version="2023-11-12 22-40">
+        <data id="contact:hcw:create" prefix="J1!contact:hcw:create!" delimiter="#" version="2023-11-18 11-04">
           <inputs>
             <meta>
               <location>
@@ -87,17 +90,20 @@
             <parent>PARENT</parent>
             <type>hcw</type>
             <name/>
-            <outbreak_location>
+            <outbreak>
               <_id/>
               <name/>
               <county/>
               <subcounty/>
-              <ward/>
+            </outbreak>
+            <outbreak_location>
+              <_id/>
+              <name/>
+              <ol_county/>
+              <ol_subcounty/>
             </outbreak_location>
             <hcw_title/>
-            <first_name/>
-            <last_name/>
-            <surname/>
+            <hcw_name/>
             <phone/>
             <email/>
             <meta tag="hidden">
@@ -129,16 +135,17 @@
       <bind nodeset="/data/init/type_label" type="string" calculate="jr:choice-name( /data/init/type_selector ,' /data/init/type_selector ')"/>
       <bind nodeset="/data/hcw/parent" type="string"/>
       <bind nodeset="/data/hcw/type" type="string"/>
-      <bind nodeset="/data/hcw/name" type="string" calculate="concat( /data/hcw/first_name , ' ',  /data/hcw/last_name , ' ',  /data/hcw/surname )"/>
+      <bind nodeset="/data/hcw/name" type="string" calculate="concat( /data/hcw/hcw_name , '')"/>
+      <bind nodeset="/data/hcw/outbreak/_id" type="string" readonly="true()" calculate="../../parent"/>
+      <bind nodeset="/data/hcw/outbreak/name" type="string"/>
+      <bind nodeset="/data/hcw/outbreak/county" type="string"/>
+      <bind nodeset="/data/hcw/outbreak/subcounty" type="string"/>
       <bind nodeset="/data/hcw/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/hcw/outbreak_location/name" type="string"/>
-      <bind nodeset="/data/hcw/outbreak_location/county" type="string"/>
-      <bind nodeset="/data/hcw/outbreak_location/subcounty" type="string"/>
-      <bind nodeset="/data/hcw/outbreak_location/ward" type="string"/>
+      <bind nodeset="/data/hcw/outbreak_location/ol_county" type="string"/>
+      <bind nodeset="/data/hcw/outbreak_location/ol_subcounty" type="string"/>
       <bind nodeset="/data/hcw/hcw_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/hcw/first_name" type="string" required="true()"/>
-      <bind nodeset="/data/hcw/last_name" type="string"/>
-      <bind nodeset="/data/hcw/surname" type="string" required="true()"/>
+      <bind nodeset="/data/hcw/hcw_name" type="string" required="true()"/>
       <bind nodeset="/data/hcw/phone" type="tel" required="true()"/>
       <bind nodeset="/data/hcw/email" type="string" required="true()"/>
       <bind nodeset="/data/hcw/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
@@ -180,6 +187,11 @@
       </select1>
     </group>
     <group ref="/data/hcw">
+      <group ref="/data/hcw/outbreak">
+        <input appearance="hidden select-contact type-outbreak_location" ref="/data/hcw/outbreak/_id">
+          <label ref="jr:itext('/data/hcw/outbreak/_id:label')"/>
+        </input>
+      </group>
       <group ref="/data/hcw/outbreak_location">
         <input appearance="hidden select-contact type-outbreak_location" ref="/data/hcw/outbreak_location/_id">
           <label ref="jr:itext('/data/hcw/outbreak_location/_id:label')"/>
@@ -188,14 +200,8 @@
       <input ref="/data/hcw/hcw_title">
         <label ref="jr:itext('/data/hcw/hcw_title:label')"/>
       </input>
-      <input ref="/data/hcw/first_name">
-        <label ref="jr:itext('/data/hcw/first_name:label')"/>
-      </input>
-      <input ref="/data/hcw/last_name">
-        <label ref="jr:itext('/data/hcw/last_name:label')"/>
-      </input>
-      <input ref="/data/hcw/surname">
-        <label ref="jr:itext('/data/hcw/surname:label')"/>
+      <input ref="/data/hcw/hcw_name">
+        <label ref="jr:itext('/data/hcw/hcw_name:label')"/>
       </input>
       <input ref="/data/hcw/phone">
         <label ref="jr:itext('/data/hcw/phone:label')"/>

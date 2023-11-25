@@ -1,0 +1,7 @@
+{
+  "title": "Edit Outbreak Location",
+  "icon": "icon-investigation-outline-gray",
+  "context": {
+    "permission": "can_modify_outbreak_location"
+  }
+}

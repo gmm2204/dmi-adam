@@ -10,15 +10,26 @@
         }
     ],
     "place_hierarchy_types": [
+        "moh",
         "health_unit",
         "person",
         "outbreak",
         "outbreak_location",
-        "hcw",
+        "cases_group",
         "case",
         "case_contact"
     ],
     "contact_types": [
+        {
+            "id": "moh",
+            "name_key": "contact.type.health_unit",
+            "group_key": "contact.type.health_unit.plural",
+            "create_key": "contact.type.health_unit.new",
+            "edit_key": "contact.type.place.edit",
+            "icon": "icon-hospital-solid-gray",
+            "create_form": "form:contact:moh:create",
+            "edit_form": "form:contact:moh:edit"
+        },
         {
             "id": "health_unit",
             "name_key": "contact.type.health_unit",
@@ -26,6 +37,9 @@
             "create_key": "contact.type.health_unit.new",
             "edit_key": "contact.type.place.edit",
             "icon": "icon-hospital-solid-gray",
+            "parents": [
+                "moh"
+            ],
             "create_form": "form:contact:health_unit:create",
             "edit_form": "form:contact:health_unit:edit"
         },
@@ -36,7 +50,8 @@
             "create_key": "contact.type.person.new",
             "edit_key": "contact.type.person.edit",
             "parents": [
-                "health_unit"
+                "health_unit",
+                "outbreak_location"
             ],
             "icon": "icon-user-outline-gray",
             "create_form": "form:contact:person:create",
@@ -65,22 +80,22 @@
             "parents": [
                 "outbreak"
             ],
-            "icon": "icon-outbreak_location-blue",
+            "icon": "icon-outbreak-location-colored",
             "create_form": "form:contact:outbreak_location:create",
             "edit_form": "form:contact:outbreak_location:edit"
         },
         {
-            "id": "hcw",
-            "name_key": "contact.type.hcw",
-            "group_key": "contact.type.hcw.plural",
-            "create_key": "contact.type.hcw.new",
-            "edit_key": "contact.type.hcw.edit",
+            "id": "cases_group",
+            "name_key": "contact.type.cases_group",
+            "group_key": "contact.type.cases_group.plural",
+            "create_key": "contact.type.cases_group.new",
+            "edit_key": "contact.type.cases_group.edit",
             "parents": [
                 "outbreak_location"
             ],
-            "icon": "icon-doctor-blue",
-            "create_form": "form:contact:hcw:create",
-            "edit_form": "form:contact:hcw:edit",
+            "icon": "icon-cases_group-colored",
+            "create_form": "form:contact:cases_group:create",
+            "edit_form": "form:contact:cases_group:edit",
             "person": true
         },
         {
@@ -90,7 +105,7 @@
             "create_key": "contact.type.case.new",
             "edit_key": "contact.type.case.edit",
             "parents": [
-                "outbreak_location"
+                "cases_group"
             ],
             "icon": "icon-patient-colored",
             "create_form": "form:contact:case:create",
@@ -113,31 +128,39 @@
         }
     ],
     "roles": {
-        "data_entry": {
-            "name": "usertype.data-entry"
-        },
         "analytics": {
             "name": "usertype.analytics"
-        },
-        "gateway": {
-            "name": "usertype.gateway"
         },
         "program_officer": {
             "name": "usertype.program-officer"
         },
-        "crfo": {
-            "name": "usertype.crfo"
+        "moh_user": {
+            "name": "MOH User"
         },
         "chw_supervisor": {
-            "name": "usertype.chw-supervisor",
+            "name": "Health Care Worker Supervisor",
             "offline": true
         },
         "chw": {
-            "name": "usertype.chw",
+            "name": "Health Care Worker",
             "offline": true
         }
     },
     "permissions": {
+        "can_modify_person": [
+            "moh_user"
+        ],
+        "can_modify_outbreak": [
+            "moh_user",
+            "chw_supervisor"
+        ],
+        "can_modify_outbreak_location": [
+            "moh_user",
+            "chw_supervisor"
+        ],
+        "can_modify_cases_group": [
+            "chw_supervisor"
+        ],
         "can_access_gateway_api": [
             "gateway"
         ],
@@ -148,59 +171,74 @@
         ],
         "can_configure": [
             "program_officer",
+            "moh_user",
             "crfo"
         ],
         "can_create_people": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_create_places": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
-            "chw" 
+            "chw"
         ],
         "can_create_records": [
+            "program_officer",
+            "moh_user",
             "data_entry",
             "gateway",
-            "program_officer",
             "chw_supervisor",
             "chw"
         ],
         "can_create_users": [
-            "program_officer"
+            "program_officer",
+            "moh_user",
+            "chw_supervisor"
         ],
         "can_delete_contacts": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_delete_messages": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_delete_reports": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_delete_users": [
-            "program_officer"
+            "program_officer",
+            "moh_user",
+            "moh_user",
+            "chw_supervisor"
         ],
         "can_edit": [
             "gateway",
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_edit_profile": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_edit_verification": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
@@ -210,6 +248,7 @@
         ],
         "can_export_contacts": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
@@ -228,6 +267,7 @@
         ],
         "can_update_places": [
             "program_officer",
+            "moh_user",
             "chw_supervisor"
         ],
         "can_update_reports": [
@@ -236,6 +276,7 @@
             "chw"
         ],
         "can_update_users": [
+            "moh_user",
             "program_officer"
         ],
         "can_export_dhis": [
@@ -250,11 +291,13 @@
         "can_view_analytics": [
             "analytics",
             "program_officer",
+            "can_view_users",
             "chw_supervisor",
             "chw"
         ],
         "can_view_analytics_tab": [
             "program_officer",
+            "can_view_users",
             "chw_supervisor",
             "chw"
         ],
@@ -265,11 +308,13 @@
         ],
         "can_view_contacts": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_view_contacts_tab": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
@@ -287,11 +332,13 @@
         ],
         "can_view_reports": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_view_reports_tab": [
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
@@ -310,11 +357,13 @@
         "can_view_unallocated_data_records": [
             "gateway",
             "program_officer",
+            "moh_user",
             "chw_supervisor",
             "chw"
         ],
         "can_view_users": [
-            "program_officer"
+            "program_officer",
+            "moh_user"
         ],
         "can_write_wealth_quintiles": [],
         "can_aggregate_targets": [

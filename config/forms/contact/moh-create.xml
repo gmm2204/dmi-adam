@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>New undefined</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/contact/title:label">
+            <value>An associated primary contact will be automatically created.</value>
+          </text>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>New Person</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Set the Primary Contact</value>
+          </text>
+          <text id="/data/init/select_person:label">
+            <value>Select the Primary Contact</value>
+          </text>
+          <text id="/data/moh/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/moh/name:label">
+            <value>Name</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="contact:moh:create" prefix="J1!contact:moh:create!" delimiter="#" version="2023-11-22 15-17">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <moh>
+            <parent>PARENT</parent>
+            <type>moh</type>
+            <name/>
+            <external_id/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </moh>
+          <init>
+            <create_new_person>new_person</create_new_person>
+            <select_person/>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>person</type>
+            <name/>
+            <title/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/name" type="string" calculate="concat(../../moh/name, &quot;'s Primary Contact&quot;)"/>
+      <bind nodeset="/data/contact/title" readonly="true()" type="string"/>
+      <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/contact/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/moh/parent" type="string"/>
+      <bind nodeset="/data/moh/type" type="string"/>
+      <bind nodeset="/data/moh/name" type="string" required="true()"/>
+      <bind nodeset="/data/moh/external_id" type="string"/>
+      <bind nodeset="/data/moh/contact" type="string" calculate="coalesce( /data/init/select_person ,&quot;NEW&quot;)"/>
+      <bind nodeset="/data/moh/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
+      <bind nodeset="/data/moh/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/moh/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/moh/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 appearance="hidden" ref="/data/init/create_new_person">
+        <label ref="jr:itext('/data/init/create_new_person:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/new_person:label')"/>
+          <value>new_person</value>
+        </item>
+      </select1>
+      <input appearance="db-object" ref="/data/init/select_person">
+        <label ref="jr:itext('/data/init/select_person:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/contact">
+        <input ref="/data/contact/title">
+          <label ref="jr:itext('/data/contact/title:label')"/>
+        </input>
+        <group ref="/data/contact/meta"/>
+        </group>
+      </group>
+    <group appearance="field-list" ref="/data/moh">
+      <input ref="/data/moh/name">
+        <label ref="jr:itext('/data/moh/name:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/moh/meta"/>
+    </group>
+  </h:body>
+</h:html>

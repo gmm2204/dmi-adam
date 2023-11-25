@@ -5,60 +5,6 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/case_investigation/case_interviewee/case_interviewee_name:hint">
-            <value>Surname, First Name, Last Name</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_name:label">
-            <value>Name</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_type/patient:label">
-            <value>Patient</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_type/proxy:label">
-            <value>Proxy</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_type:label">
-            <value>Interviewee</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_inverviewee_relationship:label">
-            <value>Relationship with the case</value>
-          </text>
-          <text id="/case_investigation/case_investigator/case_investigator_designation:label">
-            <value>Investigator Designation</value>
-          </text>
-          <text id="/case_investigation/case_investigator/case_investigator_name:label">
-            <value>Investigator Name</value>
-          </text>
-          <text id="/case_investigation/case_investigator/case_investigator_phone_number:label">
-            <value>Investigator Phone Number</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_attended/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_attended/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_attended:label">
-            <value>Did the patient visit a health facility?</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_date_admitted:label">
-            <value>When did the patient attend the health facility seeking medical services</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level/moderate:label">
-            <value>Moderate</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level/none:label">
-            <value>None</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level/severe:label">
-            <value>Severe</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level:label">
-            <value>Dehydration level at time of arrival at the health facility</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_name:label">
-            <value>Health facility name</value>
-          </text>
           <text id="/case_investigation/cholera_screening/cholera_symptoms/abdominal_cramps:label">
             <value>Abdominal cramps</value>
           </text>
@@ -77,6 +23,9 @@
           <text id="/case_investigation/cholera_screening/cholera_symptoms/nausea:label">
             <value>Nausea</value>
           </text>
+          <text id="/case_investigation/cholera_screening/cholera_symptoms/other:label">
+            <value>Other</value>
+          </text>
           <text id="/case_investigation/cholera_screening/cholera_symptoms/vomiting:label">
             <value>Vomiting</value>
           </text>
@@ -87,7 +36,7 @@
             <value>Any other symptoms not listed above</value>
           </text>
           <text id="/case_investigation/cholera_screening/cholera_symptoms_others:label">
-            <value>Symptoms (others)</value>
+            <value>Symptoms (other)</value>
           </text>
           <text id="/case_investigation/cholera_screening/cholera_symptoms_start_date:label">
             <value>Date of onset of symptoms</value>
@@ -592,6 +541,69 @@
           </text>
           <text id="/case_investigation/ci_gastrointestinal_title:label">
             <value>&lt;p style="border-bottom: #f47b63 solid 5px; border-radius: 5px"&gt;&lt;/p&gt;</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_interviewee_name:hint">
+            <value>Surname, First Name, Last Name</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_interviewee_name:label">
+            <value>Name</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_interviewee_type/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_interviewee_type/proxy:label">
+            <value>Proxy</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_interviewee_type:label">
+            <value>Interviewee</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Aunt:label">
+            <value>Aunt</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Child:label">
+            <value>Child</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Co-worker:label">
+            <value>Co-worker</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Father:label">
+            <value>Father</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Friend:label">
+            <value>Friend</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Grand father:label">
+            <value>Grand father</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Grand mother:label">
+            <value>Grand mother</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Guardian:label">
+            <value>Guardian</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Mother:label">
+            <value>Mother</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Partner:label">
+            <value>Partner</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Sibling:label">
+            <value>Sibling</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Spouse:label">
+            <value>Spouse</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship/Uncle:label">
+            <value>Uncle</value>
+          </text>
+          <text id="/case_investigation/ci_interviewee/case_inverviewee_relationship:label">
+            <value>Relationship with the case</value>
+          </text>
+          <text id="/case_investigation/ci_meta/created_by:label">
+            <value>Created By</value>
+          </text>
+          <text id="/case_investigation/ci_meta/created_on:label">
+            <value>Created On</value>
           </text>
           <text id="/case_investigation/ci_neurology/cin_abnormal_movements/no:label">
             <value>No</value>
@@ -1118,6 +1130,60 @@
           <text id="/case_investigation/covid19_screening/covid19_symptoms_start_date:label">
             <value>When did the symptoms first appear?</value>
           </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_diarrhea_per_day:label">
+            <value>How many times per day the did the patient diarrhea?</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/acute_bloody_diarrhea:label">
+            <value>Acute bloody diarrhea</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/acute_mucous_diarrhea:label">
+            <value>Acute mucous diarrhea</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/acute_watery_diarrhea:label">
+            <value>Acute watery diarrhea</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/adbominal_pain:label">
+            <value>Abdominal Pain</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/back_pain:label">
+            <value>Back pain</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/paralysis:label">
+            <value>Paralysis</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/salivary_discharge:label">
+            <value>Salivary discharge</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/sunken_fontanel:label">
+            <value>Sunken fontanel's (if baby)</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/sweat:label">
+            <value>Sweat</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms/vomiting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms:label">
+            <value>Symptoms</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms_other:hint">
+            <value>Any other symptoms not listed above</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms_other:label">
+            <value>Symptoms (other)</value>
+          </text>
+          <text id="/case_investigation/dysentery_screening/dysentery_symptoms_start_date:label">
+            <value>Date of onset of symptoms</value>
+          </text>
           <text id="/case_investigation/evd_screening/evd_symptoms/abdominal_pain:label">
             <value>Abdominal pain</value>
           </text>
@@ -1494,7 +1560,7 @@
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Name: <output value=" /case_investigation/prerequisites/ci_case_name "/> &lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/prerequisites/case_outbreak_location_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_investigation/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_investigation/prerequisites/outbreak_location_subcounty "/> &gt; <output value=" /case_investigation/prerequisites/outbreak_location_ward "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_investigation/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_investigation/prerequisites/outbreak_location_subcounty "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/prerequisites/case_outbreak_title:label">
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_investigation/prerequisites/outbreak_name "/> | <output value=" /case_investigation/prerequisites/outbreak_date "/> | <output value=" /case_investigation/prerequisites/outbreak_status "/>&lt;/h4&gt;</value>
@@ -1507,9 +1573,6 @@
           </text>
           <text id="/case_investigation/prerequisites/outbreak_location/ol_subcounty:label">
             <value>Outbreak Location Sub-county</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/ol_ward:label">
-            <value>Outbreak Location Ward</value>
           </text>
           <text id="/case_investigation/prerequisites/outbreak_location/outbreak/_id:label">
             <value>Outbreak</value>
@@ -1689,1814 +1752,6 @@
             <value>Other symptoms (separate using commas if multiple)</value>
           </text>
         </translation>
-        <translation lang="sw">
-          <text id="/case_investigation/case_interviewee/case_interviewee_name:hint">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_type/patient:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_type/proxy:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_interviewee_type:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_interviewee/case_inverviewee_relationship:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_interviewee:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_investigator/case_investigator_designation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_investigator/case_investigator_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_investigator/case_investigator_phone_number:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/case_investigator:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_attended/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_attended/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_attended:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_date_admitted:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level/moderate:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level/none:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level/severe:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_dehydration_level:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_facility_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/abdominal_cramps:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/diarrhea:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/fever:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/headache:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/myalgia:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/nausea:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms/vomiting:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms_others:hint">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms_others:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_symptoms_start_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination_doses/0:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination_doses/1:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination_doses/2:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination_doses/&gt;2:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening/cholera_vaccination_doses:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/cholera_screening:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_capillary_refill_time/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_capillary_refill_time/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_capillary_refill_time/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_capillary_refill_time:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_auscultation/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_auscultation/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_auscultation/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_auscultation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_failure_signs/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_failure_signs/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_failure_signs/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_cardiac_failure_signs:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_diastolic_blood_pressure:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_heart_rate:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_peripheral_oedemas/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_peripheral_oedemas/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_peripheral_oedemas/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_peripheral_oedemas:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_systolic_blood_pressure:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_weak_pulse/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_weak_pulse/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_weak_pulse/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology/ci_cardiology_weak_pulse:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cardiology_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/ci_ent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_duration_days:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_enlarged_lymph_nodes/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_enlarged_lymph_nodes/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_enlarged_lymph_nodes/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_enlarged_lymph_nodes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_localization/localized:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_localization/systemic:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_localization:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_localization_specified:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_necrosis/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_necrosis/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_necrosis/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_necrosis:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_ulceration/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_ulceration/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_ulceration/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_skin_ulceration:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_type/erythematous:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_type/maculo-papular:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_type/petechial-purpuric:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_type/rash:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_type/vesicular-pustular:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous/cic_type:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_cutaneous_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjuctival_injections/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjuctival_injections/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjuctival_injections/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjuctival_injections:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjunctivitis/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjunctivitis/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjunctivitis/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_conjunctivitis:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_difficulty_swallowing/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_difficulty_swallowing/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_difficulty_swallowing/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_difficulty_swallowing:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_ear_pain/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_ear_pain/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_ear_pain/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_ear_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_hypersalivation/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_hypersalivation/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_hypersalivation/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_hypersalivation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_oral_ulcerations/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_oral_ulcerations/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_oral_ulcerations/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_oral_ulcerations:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_runny_nose/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_runny_nose/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_runny_nose/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_runny_nose:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_sore_throat/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_sore_throat/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_sore_throat/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_sore_throat:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_voice_hoarse/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_voice_hoarse/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_voice_hoarse/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent/cie_voice_hoarse:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_ent_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_abdominal_mass/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_abdominal_mass/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_abdominal_mass/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_abdominal_mass:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_appetite_loss/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_appetite_loss/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_appetite_loss/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_appetite_loss:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea_blood/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea_blood/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea_blood/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_diarrhea_blood:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_hiccups/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_hiccups/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_hiccups/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_hiccups:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_jaundice/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_jaundice/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_jaundice/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_jaundice:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_nausea_vomiting/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_nausea_vomiting/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_nausea_vomiting/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_nausea_vomiting:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_liver/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_liver/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_liver/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_liver:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_spleen/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_spleen/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_spleen/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_palpable_spleen:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stomach_abdominal_pain/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stomach_abdominal_pain/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stomach_abdominal_pain/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stomach_abdominal_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_bloody/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_bloody/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_bloody/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_bloody:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_pale/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_pale/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_pale/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_pale:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_rice_water_like_stools/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_rice_water_like_stools/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_rice_water_like_stools/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_stool_rice_water_like_stools:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_tender_abdomen/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_tender_abdomen/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_tender_abdomen/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal/cig_tender_abdomen:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_gastrointestinal_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_abnormal_movements/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_abnormal_movements/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_abnormal_movements/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_abnormal_movements:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_drowsiness_coma/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_drowsiness_coma/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_drowsiness_coma/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_drowsiness_coma:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_flaccid/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_flaccid/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_flaccid/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_flaccid:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_mental_disorder/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_mental_disorder/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_mental_disorder/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_mental_disorder:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_neck_stiffness/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_neck_stiffness/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_neck_stiffness/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_neck_stiffness:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_paralysis/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_paralysis/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_paralysis/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_paralysis:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_seizures/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_seizures/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_seizures/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology/cin_seizures:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_neurology_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_cardiology/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_cardiology/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_cardiology:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_cutaneous/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_cutaneous/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_cutaneous:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_ent/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_ent/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_ent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_gastrointestinal/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_gastrointestinal/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_gastrointestinal:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_neurology/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_neurology/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_neurology:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_respiratory/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_respiratory/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_respiratory:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_underlying_conditions/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_underlying_conditions/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_underlying_conditions:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_uro_gynecology/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_uro_gynecology/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_record_uro_gynecology:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_abnormal_lung_auscultation/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_abnormal_lung_auscultation/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_abnormal_lung_auscultation/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_abnormal_lung_auscultation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_breath_shortness/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_breath_shortness/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_breath_shortness/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_breath_shortness:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cough/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cough/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cough/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cough:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cyanosis/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cyanosis/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cyanosis/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_cyanosis:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration_with_blood/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration_with_blood/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration_with_blood/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_expectoration_with_blood:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_oxygen_saturation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_rate:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_respiratory_distress/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_respiratory_distress/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_respiratory_distress/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_respiratory_distress:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumonia/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumonia/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumonia/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumonia:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumothorax/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumothorax/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumothorax/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory/cir_signs_of_pneumothorax:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_respiratory_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/ciuc_pregrancy/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/ciuc_pregrancy/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/ciuc_pregrancy/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/ciuc_pregrancy:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/ciuc_pregrancy_months:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_associated_acute_disease/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_associated_acute_disease/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_associated_acute_disease/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_associated_acute_disease:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_associated_acute_disease_specify:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_chronic_disease/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_chronic_disease/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_chronic_disease/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_chronic_disease:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_chronic_disease_specify:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_conditions/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_conditions/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_conditions/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_conditions:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_immunodeficiency/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_immunodeficiency/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_immunodeficiency/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_immunodeficiency:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_immunodeficiency_specify:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_malnutrition/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_malnutrition/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_malnutrition/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_malnutrition:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_muac_measurement:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_post_partum/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_post_partum/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_post_partum/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions/cuic_post_partum:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_underlying_conditions_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cie_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_observed_disorders/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_observed_disorders/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_observed_disorders:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_recent_spontaneous_abortion/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_recent_spontaneous_abortion/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_recent_spontaneous_abortion/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/ciug_recent_spontaneous_abortion:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urination_pain/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urination_pain/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urination_pain/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urination_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_dark/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_dark/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_dark/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_dark:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_not_passing/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_not_passing/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_not_passing/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_urine_not_passing:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_bleeding_outside_menstruation/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_bleeding_outside_menstruation/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_bleeding_outside_menstruation/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_bleeding_outside_menstruation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_discharge/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_discharge/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_discharge/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology/cuig_vaginal_discharge:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/ci_uro_gynecology_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/chills:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/cough:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/difficulty_breathing:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/fever:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/muscle_aches:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/sore_throat:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms/tiredness:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms_others:hint">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms_others:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening/covid19_symptoms_start_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/covid19_screening:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/abdominal_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/anorexia:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/conjuctivitis:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/diarrhea:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/difficulty_breathing:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/difficulty_swallowing:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/fever:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/headache:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/hiccups:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/intense_fatigue:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/joint_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/muscle_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/skin_rash:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/unexplained_bleeding:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/vomiting_nausea:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_others:hint">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_others:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_start_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_start_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_start_residence:hint">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_start_residence:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms_unexplained_bleeding:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/baboons:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/bat:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/chimpanzees:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/duikers:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/gorillas:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/monkeys:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type/squirrel:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_animal_contact_type_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_case_investigator_case_def/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_case_investigator_case_def/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_case_investigator_case_def/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_case_investigator_case_def:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_case_investigator_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_date_last:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_death_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_relationship:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_type/frequent_direct:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_type/same_community:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_type/same_household:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_type/same_room_vehicle:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_type:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_vital_status/alive:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_vital_status/dead:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_vital_status/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_contact_vital_status:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_deceased_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_funeral_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_departure_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_return_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_outside_travel_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_visited/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_visited/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_visited/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_visited:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_vaccination/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_vaccination/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_vaccination/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_vaccination:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_vaccination_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_vaccination_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/parent/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/parent/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/parent/parent/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/parent/parent/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/parent/parent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/parent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact/patient_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/contact:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs/source:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/inputs:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_rash_type/maculopapular:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_rash_type/other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_rash_type:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_residence_visit/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_residence_visit/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_residence_visit:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_residence_visit_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_fever/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_fever/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_fever:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_rash/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_rash/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_rash:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening/measles_symptoms_start_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/measles_screening:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/patient_uuid:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/case_id_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/case_identifier_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/case_name_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/case_outbreak_location_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/case_outbreak_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/ci_case_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/ci_case_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_code:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/ol_county:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/ol_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/ol_ward:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/outbreak/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/outbreak/code:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/outbreak/date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/outbreak/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/outbreak/status:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location/outbreak:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location_county:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_location_ward:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites/outbreak_status:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/prerequisites:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_chills/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_chills/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_chills/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_chills:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_dehydration/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_dehydration/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_dehydration/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_dehydration:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_fever_history/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_fever_history/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_fever_history/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_fever_history:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_fatigue/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_fatigue/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_fatigue/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_fatigue:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites/abdominal:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites/chest:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites/head:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites/joint:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites/muscular:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites/other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_intense_pain_sites_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_main_patient_complains:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites/injection_sites:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites/mouth:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites/nose:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites/stool:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites/urine:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites/vagina:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_observed_abnormal_bleeding_sites_others:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_onset/acute:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_onset/progressive:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_onset:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_profuse_sweating/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_profuse_sweating/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_profuse_sweating/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_profuse_sweating:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_signs_of_shock/no:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_signs_of_shock/unknown:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_signs_of_shock/yes:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_signs_of_shock:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/general_temperature:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening/os_symptoms_other:label">
-            <value>-</value>
-          </text>
-          <text id="/case_investigation/unknown_screening:label">
-            <value>-</value>
-          </text>
-        </translation>
       </itext>
       <instance>
         <case_investigation id="case_investigation" prefix="J1!case_investigation!" delimiter="#" version="1">
@@ -3527,6 +1782,10 @@
                 <parent>
                   <_id/>
                   <name/>
+                  <parent>
+                    <_id/>
+                    <name/>
+                  </parent>
                 </parent>
               </parent>
             </contact>
@@ -3537,7 +1796,6 @@
               <_id/>
               <ol_county/>
               <ol_subcounty/>
-              <ol_ward/>
               <outbreak>
                 <_id/>
                 <name/>
@@ -3554,23 +1812,24 @@
             <outbreak_status/>
             <outbreak_location_county/>
             <outbreak_location_subcounty/>
-            <outbreak_location_ward/>
             <case_outbreak_title/>
             <case_outbreak_location_title/>
             <case_name_title/>
             <case_id_title/>
             <case_identifier_title/>
           </prerequisites>
+          <dysentery_screening>
+            <dysentery_symptoms_start_date/>
+            <dysentery_symptoms/>
+            <dysentery_symptoms_other/>
+            <dysentery_diarrhea_per_day/>
+          </dysentery_screening>
           <cholera_screening>
-            <cholera_vaccination/>
-            <cholera_vaccination_doses/>
-            <cholera_facility_attended/>
-            <cholera_facility_name/>
-            <cholera_facility_dehydration_level/>
-            <cholera_facility_date_admitted/>
             <cholera_symptoms_start_date/>
             <cholera_symptoms/>
             <cholera_symptoms_others/>
+            <cholera_vaccination/>
+            <cholera_vaccination_doses/>
           </cholera_screening>
           <covid19_screening>
             <covid19_symptoms_start_date/>
@@ -3778,16 +2037,15 @@
             <evd_case_investigator_title/>
             <evd_case_investigator_case_def/>
           </evd_screening_extended>
-          <case_interviewee>
+          <ci_interviewee>
             <case_interviewee_type/>
             <case_interviewee_name/>
             <case_inverviewee_relationship/>
-          </case_interviewee>
-          <case_investigator>
-            <case_investigator_name/>
-            <case_investigator_designation/>
-            <case_investigator_phone_number/>
-          </case_investigator>
+          </ci_interviewee>
+          <ci_meta>
+            <created_by/>
+            <created_on/>
+          </ci_meta>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -3808,11 +2066,12 @@
       <bind nodeset="/case_investigation/inputs/contact/parent/name" type="string"/>
       <bind nodeset="/case_investigation/inputs/contact/parent/parent/_id" type="string"/>
       <bind nodeset="/case_investigation/inputs/contact/parent/parent/name" type="string"/>
+      <bind nodeset="/case_investigation/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_investigation/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_investigation/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_investigation/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/case_investigation/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/ol_subcounty" type="string"/>
-      <bind nodeset="/case_investigation/prerequisites/outbreak_location/ol_ward" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/outbreak/_id" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/outbreak/code" type="string"/>
@@ -3826,22 +2085,22 @@
       <bind nodeset="/case_investigation/prerequisites/outbreak_status" type="string" calculate="../outbreak_location/outbreak/status"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location_county" type="string" calculate="../outbreak_location/ol_county"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location_subcounty" type="string" calculate="../outbreak_location/ol_subcounty"/>
-      <bind nodeset="/case_investigation/prerequisites/outbreak_location_ward" type="string" calculate="../outbreak_location/ol_ward"/>
       <bind nodeset="/case_investigation/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_identifier_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/dysentery_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'dysentery'"/>
+      <bind nodeset="/case_investigation/dysentery_screening/dysentery_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_investigation/dysentery_screening/dysentery_symptoms" type="select" required="true()"/>
+      <bind nodeset="/case_investigation/dysentery_screening/dysentery_symptoms_other" type="string" relevant="selected( /case_investigation/dysentery_screening/dysentery_symptoms , 'other')"/>
+      <bind nodeset="/case_investigation/dysentery_screening/dysentery_diarrhea_per_day" type="int" required="true()"/>
       <bind nodeset="/case_investigation/cholera_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'cholera'"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_vaccination_doses" type="select1" relevant=" /case_investigation/cholera_screening/cholera_vaccination  = 'yes'" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_facility_attended" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_facility_name" type="string" relevant=" /case_investigation/cholera_screening/cholera_facility_attended  = 'yes'" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_facility_dehydration_level" type="select1" relevant=" /case_investigation/cholera_screening/cholera_facility_attended  = 'yes'" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_facility_date_admitted" type="date" relevant=" /case_investigation/cholera_screening/cholera_facility_attended  = 'yes'" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms_others" type="string"/>
+      <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_investigation/dysentery_screening/dysentery_symptoms , 'other')"/>
+      <bind nodeset="/case_investigation/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/cholera_screening/cholera_vaccination_doses" type="select1" relevant=" /case_investigation/cholera_screening/cholera_vaccination  = 'yes'" required="true()"/>
       <bind nodeset="/case_investigation/covid19_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_investigation/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/covid19_screening/covid19_symptoms" type="select" required="true()"/>
@@ -3941,7 +2200,7 @@
       <bind nodeset="/case_investigation/ci_record_cutaneous" type="select1" relevant=" /case_investigation/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous" relevant="selected( /case_investigation/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/ci_cutaneous/ci_ent" type="date" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_investigation/ci_cutaneous/ci_ent" type="date" required="true()" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_duration_days" type="int" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_type" type="select1" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_localization" type="select1" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
@@ -3997,21 +2256,21 @@
       <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_type" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_date_last" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_date_last" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_vital_status" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_death_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_contact_vital_status , 'dead')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_death_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact_vital_status , 'dead')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
@@ -4035,12 +2294,11 @@
       <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_vaccination , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/case_interviewee/case_interviewee_type" type="select1"/>
-      <bind nodeset="/case_investigation/case_interviewee/case_interviewee_name" type="string" relevant="selected( /case_investigation/case_interviewee/case_interviewee_type , 'proxy')"/>
-      <bind nodeset="/case_investigation/case_interviewee/case_inverviewee_relationship" type="string" relevant="selected( /case_investigation/case_interviewee/case_interviewee_type , 'proxy')"/>
-      <bind nodeset="/case_investigation/case_investigator/case_investigator_name" type="string" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_investigation/case_investigator/case_investigator_designation" type="string" calculate="../../inputs/user/role"/>
-      <bind nodeset="/case_investigation/case_investigator/case_investigator_phone_number" type="string" calculate="../../inputs/user/phone"/>
+      <bind nodeset="/case_investigation/ci_interviewee/case_interviewee_type" type="select1"/>
+      <bind nodeset="/case_investigation/ci_interviewee/case_interviewee_name" type="string" relevant="selected( /case_investigation/ci_interviewee/case_interviewee_type , 'proxy')"/>
+      <bind nodeset="/case_investigation/ci_interviewee/case_inverviewee_relationship" type="select1" relevant="selected( /case_investigation/ci_interviewee/case_interviewee_type , 'proxy')"/>
+      <bind nodeset="/case_investigation/ci_meta/created_by" type="string" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_investigation/ci_meta/created_on" type="string" calculate="today()"/>
       <bind nodeset="/case_investigation/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -4049,7 +2307,9 @@
       <group ref="/case_investigation/inputs/user"/>
       <group appearance="field-list" ref="/case_investigation/inputs/contact">
         <group ref="/case_investigation/inputs/contact/parent">
-          <group ref="/case_investigation/inputs/contact/parent/parent"/>
+          <group ref="/case_investigation/inputs/contact/parent/parent">
+            <group ref="/case_investigation/inputs/contact/parent/parent/parent"/>
+          </group>
         </group>
       </group>
     </group>
@@ -4076,73 +2336,78 @@
         <label ref="jr:itext('/case_investigation/prerequisites/case_identifier_title:label')"/>
       </input>
     </group>
+    <group appearance="field-list" ref="/case_investigation/dysentery_screening">
+      <input ref="/case_investigation/dysentery_screening/dysentery_symptoms_start_date">
+        <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms_start_date:label')"/>
+      </input>
+      <select ref="/case_investigation/dysentery_screening/dysentery_symptoms">
+        <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/adbominal_pain:label')"/>
+          <value>adbominal_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/nausea:label')"/>
+          <value>nausea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/vomiting:label')"/>
+          <value>vomiting</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/acute_watery_diarrhea:label')"/>
+          <value>acute_watery_diarrhea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/acute_bloody_diarrhea:label')"/>
+          <value>acute_bloody_diarrhea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/acute_mucous_diarrhea:label')"/>
+          <value>acute_mucous_diarrhea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/salivary_discharge:label')"/>
+          <value>salivary_discharge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/sweat:label')"/>
+          <value>sweat</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/back_pain:label')"/>
+          <value>back_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/sunken_fontanel:label')"/>
+          <value>sunken_fontanel</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/paralysis:label')"/>
+          <value>paralysis</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/case_investigation/dysentery_screening/dysentery_symptoms_other">
+        <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms_other:label')"/>
+        <hint ref="jr:itext('/case_investigation/dysentery_screening/dysentery_symptoms_other:hint')"/>
+      </input>
+      <input ref="/case_investigation/dysentery_screening/dysentery_diarrhea_per_day">
+        <label ref="jr:itext('/case_investigation/dysentery_screening/dysentery_diarrhea_per_day:label')"/>
+      </input>
+    </group>
     <group appearance="field-list" ref="/case_investigation/cholera_screening">
-      <select1 appearance="columns" ref="/case_investigation/cholera_screening/cholera_vaccination">
-        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination/no:label')"/>
-          <value>no</value>
-        </item>
-      </select1>
-      <select1 appearance="columns" ref="/case_investigation/cholera_screening/cholera_vaccination_doses">
-        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/0:label')"/>
-          <value>0</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/1:label')"/>
-          <value>1</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/2:label')"/>
-          <value>2</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/&gt;2:label')"/>
-          <value>&gt;2</value>
-        </item>
-      </select1>
-      <select1 appearance="columns" ref="/case_investigation/cholera_screening/cholera_facility_attended">
-        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_attended:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_attended/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_attended/no:label')"/>
-          <value>no</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/cholera_screening/cholera_facility_name">
-        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_name:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/cholera_screening/cholera_facility_dehydration_level">
-        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_dehydration_level:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_dehydration_level/none:label')"/>
-          <value>none</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_dehydration_level/moderate:label')"/>
-          <value>moderate</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_dehydration_level/severe:label')"/>
-          <value>severe</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/cholera_screening/cholera_facility_date_admitted">
-        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_facility_date_admitted:label')"/>
-      </input>
       <input ref="/case_investigation/cholera_screening/cholera_symptoms_start_date">
         <label ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms_start_date:label')"/>
       </input>
-      <select appearance="columns" ref="/case_investigation/cholera_screening/cholera_symptoms">
+      <select ref="/case_investigation/cholera_screening/cholera_symptoms">
         <label ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms:label')"/>
         <item>
           <label ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms/diarrhea:label')"/>
@@ -4172,11 +2437,45 @@
           <label ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms/myalgia:label')"/>
           <value>myalgia</value>
         </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms/other:label')"/>
+          <value>other</value>
+        </item>
       </select>
       <input ref="/case_investigation/cholera_screening/cholera_symptoms_others">
         <label ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms_others:label')"/>
         <hint ref="jr:itext('/case_investigation/cholera_screening/cholera_symptoms_others:hint')"/>
       </input>
+      <select1 ref="/case_investigation/cholera_screening/cholera_vaccination">
+        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/case_investigation/cholera_screening/cholera_vaccination_doses">
+        <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/cholera_screening/cholera_vaccination_doses/&gt;2:label')"/>
+          <value>&gt;2</value>
+        </item>
+      </select1>
     </group>
     <group appearance="field-list" ref="/case_investigation/covid19_screening">
       <input ref="/case_investigation/covid19_screening/covid19_symptoms_start_date">
@@ -6055,26 +4354,78 @@
         </item>
       </select1>
     </group>
-    <group appearance="field-list" ref="/case_investigation/case_interviewee">
-      <select1 appearance="columns" ref="/case_investigation/case_interviewee/case_interviewee_type">
-        <label ref="jr:itext('/case_investigation/case_interviewee/case_interviewee_type:label')"/>
+    <group appearance="field-list" ref="/case_investigation/ci_interviewee">
+      <select1 ref="/case_investigation/ci_interviewee/case_interviewee_type">
+        <label ref="jr:itext('/case_investigation/ci_interviewee/case_interviewee_type:label')"/>
         <item>
-          <label ref="jr:itext('/case_investigation/case_interviewee/case_interviewee_type/patient:label')"/>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_interviewee_type/patient:label')"/>
           <value>patient</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_investigation/case_interviewee/case_interviewee_type/proxy:label')"/>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_interviewee_type/proxy:label')"/>
           <value>proxy</value>
         </item>
       </select1>
-      <input ref="/case_investigation/case_interviewee/case_interviewee_name">
-        <label ref="jr:itext('/case_investigation/case_interviewee/case_interviewee_name:label')"/>
-        <hint ref="jr:itext('/case_investigation/case_interviewee/case_interviewee_name:hint')"/>
+      <input ref="/case_investigation/ci_interviewee/case_interviewee_name">
+        <label ref="jr:itext('/case_investigation/ci_interviewee/case_interviewee_name:label')"/>
+        <hint ref="jr:itext('/case_investigation/ci_interviewee/case_interviewee_name:hint')"/>
       </input>
-      <input ref="/case_investigation/case_interviewee/case_inverviewee_relationship">
-        <label ref="jr:itext('/case_investigation/case_interviewee/case_inverviewee_relationship:label')"/>
-      </input>
+      <select1 appearance="minimal" ref="/case_investigation/ci_interviewee/case_inverviewee_relationship">
+        <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Father:label')"/>
+          <value>Father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Mother:label')"/>
+          <value>Mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Grand father:label')"/>
+          <value>Grand father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Grand mother:label')"/>
+          <value>Grand mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Sibling:label')"/>
+          <value>Sibling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Child:label')"/>
+          <value>Child</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Aunt:label')"/>
+          <value>Aunt</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Uncle:label')"/>
+          <value>Uncle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Guardian:label')"/>
+          <value>Guardian</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Friend:label')"/>
+          <value>Friend</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Co-worker:label')"/>
+          <value>Co-worker</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Partner:label')"/>
+          <value>Partner</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/ci_interviewee/case_inverviewee_relationship/Spouse:label')"/>
+          <value>Spouse</value>
+        </item>
+      </select1>
     </group>
-    <group appearance="field-list" ref="/case_investigation/case_investigator"/>
+    <group appearance="field-list" ref="/case_investigation/ci_meta"/>
   </h:body>
 </h:html>
