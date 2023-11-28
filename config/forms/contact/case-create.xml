@@ -248,14 +248,14 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           <text id="/data/case/case_household_head/case_hh_title:label">
             <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;Household&lt;/h3&gt;</value>
           </text>
-          <text id="/data/case/case_identifiers/case_demographics_title:hint">
-            <value>System-wide unique Case ID will be assigned when this form is submitted and synchronized to the server</value>
-          </text>
-          <text id="/data/case/case_identifiers/case_demographics_title:label">
-            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Case Identifier&lt;/h4&gt;</value>
-          </text>
           <text id="/data/case/case_identifiers/case_epid:label">
             <value>Epidemiology Number</value>
+          </text>
+          <text id="/data/case/case_identifiers/case_identifiers_title:hint">
+            <value>System-wide unique Case ID will be assigned when this form is submitted and synchronized to the server</value>
+          </text>
+          <text id="/data/case/case_identifiers/case_identifiers_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Case Identifier&lt;/h4&gt;</value>
           </text>
           <text id="/data/case/case_identifiers/case_is_contact/no:label">
             <value>No</value>
@@ -1259,6 +1259,18 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           <text id="/data/case/case_reporting_location/case_reporting_subcounty:label">
             <value>Sub County</value>
           </text>
+          <text id="/data/case/cases_group/outbreak_location/_id:label">
+            <value>Outbreak Location</value>
+          </text>
+          <text id="/data/case/cases_group/outbreak_location/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/case/cases_group/outbreak_location/outbreak/code:label">
+            <value>Outbreak</value>
+          </text>
+          <text id="/data/case/cases_group/outbreak_location/outbreak/name:label">
+            <value>Outbreak</value>
+          </text>
           <text id="/data/case/meta/case_hh_title:label">
             <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;Investigation&lt;/h3&gt;</value>
           </text>
@@ -1273,36 +1285,6 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           </text>
           <text id="/data/case/meta/created_on:label">
             <value>Submitted On</value>
-          </text>
-          <text id="/data/case/outbreak_location/_id:label">
-            <value>Outbreak Location</value>
-          </text>
-          <text id="/data/case/outbreak_location/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/data/case/outbreak_location/ol_county:label">
-            <value>County</value>
-          </text>
-          <text id="/data/case/outbreak_location/ol_subcounty:label">
-            <value>Sub-county</value>
-          </text>
-          <text id="/data/case/outbreak_location/outbreak/code:label">
-            <value>Code</value>
-          </text>
-          <text id="/data/case/outbreak_location/outbreak/county:label">
-            <value>County</value>
-          </text>
-          <text id="/data/case/outbreak_location/outbreak/date:label">
-            <value>Date</value>
-          </text>
-          <text id="/data/case/outbreak_location/outbreak/name:label">
-            <value>Outbreak</value>
-          </text>
-          <text id="/data/case/outbreak_location/outbreak/status:label">
-            <value>Status</value>
-          </text>
-          <text id="/data/case/outbreak_location/outbreak/subcounty:label">
-            <value>Sub-county</value>
           </text>
           <text id="static_instance-case_detection_location-0">
             <value>Health Facility</value>
@@ -7400,7 +7382,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-11-23 16-41">
+        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-11-28 12-48">
           <inputs>
             <meta>
               <location>
@@ -7420,28 +7402,27 @@ Mutonga/Kithumula</value>
             <parent>PARENT</parent>
             <type/>
             <name/>
-            <outbreak_location>
+            <outbreak_name/>
+            <outbreak_code/>
+            <outbreak_location_name/>
+            <cases_group>
               <_id/>
               <name/>
-              <ol_county/>
-              <ol_subcounty/>
-              <outbreak>
+              <outbreak_location>
+                <_id/>
                 <name/>
-                <code/>
-                <date/>
-                <status/>
-                <county/>
-                <subcounty/>
-              </outbreak>
-            </outbreak_location>
-            <case_outbreak_name/>
-            <case_outbreak_code/>
+                <outbreak>
+                  <name/>
+                  <code/>
+                </outbreak>
+              </outbreak_location>
+            </cases_group>
             <phone/>
             <email/>
             <sex/>
             <hierarchy_id/>
             <case_identifiers>
-              <case_demographics_title/>
+              <case_identifiers_title/>
               <case_epid/>
               <case_nupi/>
               <case_is_contact>no</case_is_contact>
@@ -17460,23 +17441,20 @@ Course</name>
       <bind nodeset="/data/case/parent" type="string"/>
       <bind nodeset="/data/case/type" type="string"/>
       <bind nodeset="/data/case/name" type="string" calculate="concat(../../case/case_demographics/first_name, ' ', ../../case/case_demographics/middle_name, ' ', ../../case/case_demographics/surname)"/>
-      <bind nodeset="/data/case/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
-      <bind nodeset="/data/case/outbreak_location/name" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/ol_county" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/ol_subcounty" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/outbreak/name" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/outbreak/code" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/outbreak/date" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/outbreak/status" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/outbreak/county" type="string"/>
-      <bind nodeset="/data/case/outbreak_location/outbreak/subcounty" type="string"/>
-      <bind nodeset="/data/case/case_outbreak_name" type="string" calculate="../../case/outbreak_location/outbreak/name"/>
-      <bind nodeset="/data/case/case_outbreak_code" type="string" calculate="../../case/outbreak_location/outbreak/code"/>
+      <bind nodeset="/data/case/outbreak_name" type="string" calculate="../../case/cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/data/case/outbreak_code" type="string" calculate="../../case/cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/data/case/outbreak_location_name" type="string" calculate="../../case/cases_group/outbreak_location/name"/>
+      <bind nodeset="/data/case/cases_group/_id" type="string" readonly="true()" calculate="../../parent"/>
+      <bind nodeset="/data/case/cases_group/name" type="string"/>
+      <bind nodeset="/data/case/cases_group/outbreak_location/_id" type="string"/>
+      <bind nodeset="/data/case/cases_group/outbreak_location/name" type="string"/>
+      <bind nodeset="/data/case/cases_group/outbreak_location/outbreak/name" type="string"/>
+      <bind nodeset="/data/case/cases_group/outbreak_location/outbreak/code" type="string"/>
       <bind nodeset="/data/case/phone" type="string" calculate="concat( /data/case/case_location/case_phone_number , ' ')"/>
       <bind nodeset="/data/case/email" type="string" calculate="concat( /data/case/case_location/case_email_address , ' ')"/>
       <bind nodeset="/data/case/sex" type="string" calculate="concat( /data/case/case_demographics/case_sex , ' ')"/>
       <bind nodeset="/data/case/hierarchy_id" type="string" calculate="concat('case')"/>
-      <bind nodeset="/data/case/case_identifiers/case_demographics_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/case/case_identifiers/case_identifiers_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_identifiers/case_epid" type="string" required="true()"/>
       <bind nodeset="/data/case/case_identifiers/case_nupi" type="string"/>
       <bind nodeset="/data/case/case_identifiers/case_is_contact" type="select1" required="true()"/>
@@ -17497,7 +17475,7 @@ Course</name>
       <bind nodeset="/data/case/case_demographics/case_identification_document_type_label" type="string" calculate="jr:choice-name( /data/case/case_demographics/case_identification_document_type ,' /data/case/case_demographics/case_identification_document_type ')"/>
       <bind nodeset="/data/case/case_demographics/case_identification_document_number" type="string" relevant="(( /data/case/case_demographics/case_identification_document_type  != &quot;&quot;) and ( /data/case/case_demographics/case_identification_document_type  != &quot;none&quot;))" required="true()"/>
       <bind nodeset="/data/case/case_demographics/case_sex" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_iso"/>
+      <bind nodeset="/data/case/case_demographics/date_of_birth" type="string" calculate="../ephemeral_dob/dob_iso" required="true()"/>
       <bind nodeset="/data/case/case_demographics/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_method" type="select1" required="true()"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
@@ -17520,7 +17498,7 @@ Course</name>
       <bind nodeset="/data/case/case_location/case_subcounty" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
       <bind nodeset="/data/case/case_location/case_ward" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
       <bind nodeset="/data/case/case_location/case_facility" type="string"/>
-      <bind nodeset="/data/case/case_reporting_location" relevant=" /data/case/case_outbreak_code  = 'evd'"/>
+      <bind nodeset="/data/case/case_reporting_location" relevant=" /data/case/outbreak_code  = 'evd'"/>
       <bind nodeset="/data/case/case_reporting_location/case_reporting_location_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_reporting_location/case_reporting_county" type="select1" required="true()"/>
       <bind nodeset="/data/case/case_reporting_location/case_reporting_subcounty" type="select1" required="true()"/>
@@ -17565,16 +17543,16 @@ Course</name>
       </group>
     </group>
     <group appearance="field-list" ref="/data/case">
-      <group appearance="field-list" ref="/data/case/outbreak_location">
-        <input appearance="hidden select-contact type-outbreak_location" ref="/data/case/outbreak_location/_id">
-          <label ref="jr:itext('/data/case/outbreak_location/_id:label')"/>
-        </input>
-        <group ref="/data/case/outbreak_location/outbreak"/>
+      <group appearance="field-list" ref="/data/case/cases_group">
+        <input appearance="hidden select-contact type-cases_group" ref="/data/case/cases_group/_id"/>
+        <group ref="/data/case/cases_group/outbreak_location">
+          <group ref="/data/case/cases_group/outbreak_location/outbreak"/>
+        </group>
       </group>
       <group appearance="field-list" ref="/data/case/case_identifiers">
-        <input ref="/data/case/case_identifiers/case_demographics_title">
-          <label ref="jr:itext('/data/case/case_identifiers/case_demographics_title:label')"/>
-          <hint ref="jr:itext('/data/case/case_identifiers/case_demographics_title:hint')"/>
+        <input ref="/data/case/case_identifiers/case_identifiers_title">
+          <label ref="jr:itext('/data/case/case_identifiers/case_identifiers_title:label')"/>
+          <hint ref="jr:itext('/data/case/case_identifiers/case_identifiers_title:hint')"/>
         </input>
         <select1 ref="/data/case/case_identifiers/case_is_contact">
           <label ref="jr:itext('/data/case/case_identifiers/case_is_contact:label')"/>

@@ -17134,11 +17134,11 @@ Course</name>
       <bind nodeset="/data/case_contact/cc_biographical_data/first_name" type="string" required="true()"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/middle_name" type="string"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/sex" type="select1" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_iso"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth" type="string" calculate="../ephemeral_dob/dob_iso" required="true()"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_calendar" type="date" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_years" type="int" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 130" required="true()"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_calendar" type="date" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'yes')" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_years" type="int" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')" required="true()" constraint=". &gt;= 0 and . &lt;= 130"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_months" type="int" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 11"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) + 12, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0))"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>

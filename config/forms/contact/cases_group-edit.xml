@@ -5,13 +5,31 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/data/cases_group/cha_outbreak_location_title:label">
+            <value>&lt;h4 style=&quot;border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0&quot;&gt;Outbreak Location: <output value=" /data/cases_group/outbreak_location_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/cases_group/cha_outbreak_title:label">
+            <value>&lt;h4 style=&quot;border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0&quot;&gt;Outbreak: <output value=" /data/cases_group/outbreak_name "/>&lt;/h4&gt;</value>
+          </text>
           <text id="/data/cases_group/name:label">
+            <value>Cases Group Name</value>
+          </text>
+          <text id="/data/cases_group/outbreak_location/_id:label">
+            <value>Outbreak Location</value>
+          </text>
+          <text id="/data/cases_group/outbreak_location/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/cases_group/outbreak_location/outbreak/code:label">
+            <value>Code</value>
+          </text>
+          <text id="/data/cases_group/outbreak_location/outbreak/name:label">
             <value>Name</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="contact:cases_group:edit" prefix="J1!contact:cases_group:edit!" delimiter="#" version="2023-11-21 11-38">
+        <data id="contact:cases_group:edit" prefix="J1!contact:cases_group:edit!" delimiter="#" version="2023-11-28 12-37">
           <inputs>
             <meta>
               <location>
@@ -30,6 +48,19 @@
           <cases_group>
             <parent>PARENT</parent>
             <type>cases_group</type>
+            <outbreak_name/>
+            <outbreak_code/>
+            <outbreak_location_name/>
+            <cha_outbreak_title/>
+            <cha_outbreak_location_title/>
+            <outbreak_location>
+              <_id/>
+              <name/>
+              <outbreak>
+                <name/>
+                <code/>
+              </outbreak>
+            </outbreak_location>
             <name/>
             <meta tag="hidden">
               <created_by/>
@@ -48,6 +79,15 @@
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/cases_group/parent" type="string"/>
       <bind nodeset="/data/cases_group/type" type="string"/>
+      <bind nodeset="/data/cases_group/outbreak_name" type="string" calculate="../../cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/data/cases_group/outbreak_code" type="string" calculate="../../cases_group/outbreak_location/outbreak/code"/>
+      <bind nodeset="/data/cases_group/outbreak_location_name" type="string" calculate="../../cases_group/outbreak_location/name"/>
+      <bind nodeset="/data/cases_group/cha_outbreak_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/cases_group/cha_outbreak_location_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
+      <bind nodeset="/data/cases_group/outbreak_location/name" type="string"/>
+      <bind nodeset="/data/cases_group/outbreak_location/outbreak/name" type="string"/>
+      <bind nodeset="/data/cases_group/outbreak_location/outbreak/code" type="string"/>
       <bind nodeset="/data/cases_group/name" type="string" required="true()"/>
       <bind nodeset="/data/cases_group/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/cases_group/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -64,6 +104,18 @@
       </group>
     </group>
     <group appearance="field-list" ref="/data/cases_group">
+      <input ref="/data/cases_group/cha_outbreak_title">
+        <label ref="jr:itext('/data/cases_group/cha_outbreak_title:label')"/>
+      </input>
+      <input ref="/data/cases_group/cha_outbreak_location_title">
+        <label ref="jr:itext('/data/cases_group/cha_outbreak_location_title:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/cases_group/outbreak_location">
+        <input appearance="hidden select-contact type-outbreak_location" ref="/data/cases_group/outbreak_location/_id">
+          <label ref="jr:itext('/data/cases_group/outbreak_location/_id:label')"/>
+        </input>
+        <group appearance="field-list" ref="/data/cases_group/outbreak_location/outbreak"/>
+      </group>
       <input ref="/data/cases_group/name">
         <label ref="jr:itext('/data/cases_group/name:label')"/>
       </input>

@@ -5,17 +5,17 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/case_outcome/co_final/cof_case_classification/clinically_confirmed:label">
-            <value>Clinically confirmed</value>
+          <text id="/case_outcome/co_final/cof_case_classification/confirmed:label">
+            <value>Confirmed</value>
           </text>
-          <text id="/case_outcome/co_final/cof_case_classification/epidemiologically_confirmed:label">
-            <value>Epidemiologically confirmed</value>
+          <text id="/case_outcome/co_final/cof_case_classification/non_case:label">
+            <value>Non Case</value>
           </text>
-          <text id="/case_outcome/co_final/cof_case_classification/laboratory_confirmed:label">
-            <value>Laboratory confirmed</value>
+          <text id="/case_outcome/co_final/cof_case_classification/probable:label">
+            <value>Probable</value>
           </text>
-          <text id="/case_outcome/co_final/cof_case_classification/negative:label">
-            <value>Negative</value>
+          <text id="/case_outcome/co_final/cof_case_classification/suspected:label">
+            <value>Suspected</value>
           </text>
           <text id="/case_outcome/co_final/cof_case_classification:label">
             <value>Final case classification</value>
@@ -40,6 +40,15 @@
           </text>
           <text id="/case_outcome/co_final/cof_referral_reason:label">
             <value>Reason for referral</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_consent/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_consent/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_consent:label">
+            <value>Did you obtain the patient's express and/or informed consent prior the collection of laboratory testing samples?</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_results/indeterminate:label">
             <value>Indeterminate</value>
@@ -71,29 +80,56 @@
           <text id="/case_outcome/co_laboratory/col_sample_collected:label">
             <value>Where samples collected for laboratory confirmation?</value>
           </text>
+          <text id="/case_outcome/co_laboratory/col_sample_date:label">
+            <value>Date of sample collection</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type/biopsy:label">
+            <value>Biopsy</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type/blood:label">
+            <value>Blood</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type/saliva:label">
+            <value>Saliva</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type/stool:label">
+            <value>Stool</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type/urine:label">
+            <value>Urine</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_type:label">
+            <value>Samples collected</value>
+          </text>
           <text id="/case_outcome/co_meta/created_by:label">
             <value>Created By</value>
           </text>
           <text id="/case_outcome/co_meta/created_on:label">
             <value>Created On</value>
           </text>
-          <text id="/case_outcome/prerequisites/case_hospitalization_title:label">
-            <value>&lt;h3 style="border-bottom: #f47b63 dashed 1px; padding: 5px 0;"&gt;Record final case outcome&lt;/h3&gt;</value>
-          </text>
           <text id="/case_outcome/prerequisites/case_id_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case ID: <output value=" /case_outcome/prerequisites/ci_case_id "/> &lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_outcome/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/case_name_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Name: <output value=" /case_outcome/prerequisites/ci_case_name "/> &lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case Name: <output value=" /case_outcome/prerequisites/ci_case_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/case_outbreak_location_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_outcome/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_outcome/prerequisites/outbreak_location_subcounty "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0&quot;&gt;Outbreak Location: <output value=" /case_outcome/prerequisites/outbreak_location_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/case_outbreak_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_outcome/prerequisites/outbreak_name "/> | <output value=" /case_outcome/prerequisites/outbreak_date "/> | <output value=" /case_outcome/prerequisites/outbreak_status "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_outcome/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_outcome/prerequisites/case_outcome_title:label">
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Record the final outcome information of the case&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/outbreak_location/_id:label">
             <value>Outbreak Location</value>
+          </text>
+          <text id="/case_outcome/prerequisites/outbreak_location/name:label">
+            <value>Outbreak Location Name</value>
           </text>
           <text id="/case_outcome/prerequisites/outbreak_location/ol_county:label">
             <value>Outbreak Location County</value>
@@ -159,6 +195,7 @@
           <prerequisites>
             <outbreak_location>
               <_id/>
+              <name/>
               <ol_county/>
               <ol_subcounty/>
               <outbreak>
@@ -175,16 +212,20 @@
             <outbreak_name/>
             <outbreak_date/>
             <outbreak_status/>
+            <outbreak_location_name/>
             <outbreak_location_county/>
             <outbreak_location_subcounty/>
             <case_outbreak_title/>
             <case_outbreak_location_title/>
             <case_name_title/>
             <case_id_title/>
-            <case_hospitalization_title/>
+            <case_outcome_title/>
           </prerequisites>
           <co_laboratory>
             <col_sample_collected/>
+            <col_consent/>
+            <col_sample_date/>
+            <col_sample_type/>
             <col_results/>
           </co_laboratory>
           <co_final>
@@ -221,6 +262,7 @@
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_outcome/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_outcome/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_subcounty" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/outbreak/_id" type="string"/>
@@ -234,18 +276,22 @@
       <bind nodeset="/case_outcome/prerequisites/outbreak_name" type="string" calculate="../outbreak_location/outbreak/name"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_date" type="string" calculate="../outbreak_location/outbreak/date"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_status" type="string" calculate="../outbreak_location/outbreak/status"/>
+      <bind nodeset="/case_outcome/prerequisites/outbreak_location_name" type="string" calculate="../outbreak_location/name"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location_county" type="string" calculate="../outbreak_location/ol_county"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location_subcounty" type="string" calculate="../outbreak_location/ol_subcounty"/>
       <bind nodeset="/case_outcome/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/case_id_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_outcome/prerequisites/case_hospitalization_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consent" type="select1" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_final/cof_date" type="date" calculate="today()" required="true()"/>
+      <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" calculate="today()"/>
       <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')" required="true()"/>
       <bind nodeset="/case_outcome/co_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
       <bind nodeset="/case_outcome/co_meta/created_on" type="date" calculate="today()" readonly="true()"/>
@@ -282,8 +328,8 @@
       <input ref="/case_outcome/prerequisites/case_id_title">
         <label ref="jr:itext('/case_outcome/prerequisites/case_id_title:label')"/>
       </input>
-      <input ref="/case_outcome/prerequisites/case_hospitalization_title">
-        <label ref="jr:itext('/case_outcome/prerequisites/case_hospitalization_title:label')"/>
+      <input ref="/case_outcome/prerequisites/case_outcome_title">
+        <label ref="jr:itext('/case_outcome/prerequisites/case_outcome_title:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/case_outcome/co_laboratory">
@@ -298,6 +344,47 @@
           <value>no</value>
         </item>
       </select1>
+      <select1 ref="/case_outcome/co_laboratory/col_consent">
+        <label ref="jr:itext('/case_outcome/co_laboratory/col_consent:label')"/>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_consent/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_consent/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/case_outcome/co_laboratory/col_sample_date">
+        <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_date:label')"/>
+      </input>
+      <select ref="/case_outcome/co_laboratory/col_sample_type">
+        <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type:label')"/>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type/blood:label')"/>
+          <value>blood</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type/urine:label')"/>
+          <value>urine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type/saliva:label')"/>
+          <value>saliva</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type/biopsy:label')"/>
+          <value>biopsy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type/stool:label')"/>
+          <value>stool</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
       <select1 ref="/case_outcome/co_laboratory/col_results">
         <label ref="jr:itext('/case_outcome/co_laboratory/col_results:label')"/>
         <item>
@@ -330,20 +417,20 @@
       <select1 ref="/case_outcome/co_final/cof_case_classification">
         <label ref="jr:itext('/case_outcome/co_final/cof_case_classification:label')"/>
         <item>
-          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/clinically_confirmed:label')"/>
-          <value>clinically_confirmed</value>
+          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/confirmed:label')"/>
+          <value>confirmed</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/epidemiologically_confirmed:label')"/>
-          <value>epidemiologically_confirmed</value>
+          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/suspected:label')"/>
+          <value>suspected</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/laboratory_confirmed:label')"/>
-          <value>laboratory_confirmed</value>
+          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/probable:label')"/>
+          <value>probable</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/negative:label')"/>
-          <value>negative</value>
+          <label ref="jr:itext('/case_outcome/co_final/cof_case_classification/non_case:label')"/>
+          <value>non_case</value>
         </item>
       </select1>
       <select1 ref="/case_outcome/co_final/cof_patient_status">

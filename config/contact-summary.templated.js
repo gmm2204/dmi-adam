@@ -6,13 +6,23 @@ module.exports = {
       label: '',
       value: thisLineage,
       filter: 'lineage',
-      appliesToType: ['outbreak', 'outbreak_location', 'cases_group', 'case', 'case_contact']
+      appliesToType: ['outbreak']
     },
     {
       label: 'contact.profile.outbreak_date',
       value: contact.date,
       width: 4,
       appliesToType: ['outbreak']
+    },
+    {
+      label: 'contact.type.outbreak',
+      value: contact.outbreak_name,
+      appliesToType: ['outbreak_location', 'cases_group', 'case']
+    },
+    {
+      label: 'contact.type.outbreak_location',
+      value: contact.outbreak_location_name,
+      appliesToType: ['cases_group', 'case']
     },
     {
       label: 'contact.profile.outbreak_status',

@@ -30,19 +30,16 @@
             <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Vital Signs&lt;/h4&gt;</value>
           </text>
           <text id="/case_management/prerequisites/case_id_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case ID: <output value=" /case_management/prerequisites/ci_case_id "/> &lt;/h4&gt;</value>
-          </text>
-          <text id="/case_management/prerequisites/case_identifier_title:label">
-            <value>&lt;h3 style="border-bottom: #f47b63 dashed 1px; padding: 5px 0;"&gt;&lt;/h3&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_management/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_management/prerequisites/case_name_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Name: <output value=" /case_management/prerequisites/ci_case_name "/> &lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case Name: <output value=" /case_management/prerequisites/ci_case_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_management/prerequisites/case_outbreak_location_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_management/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_management/prerequisites/outbreak_location_subcounty "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400&quot;&gt;Outbreak Location: <output value=" /case_management/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_management/prerequisites/outbreak_location_subcounty "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_management/prerequisites/case_outbreak_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_management/prerequisites/outbreak_name "/> | <output value=" /case_management/prerequisites/outbreak_date "/> | <output value=" /case_management/prerequisites/outbreak_status "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_management/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_management/prerequisites/outbreak_location/_id:label">
             <value>Outbreak Location</value>
@@ -149,9 +146,6 @@
             <value>-</value>
           </text>
           <text id="/case_management/prerequisites/case_id_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/case_identifier_title:label">
             <value>-</value>
           </text>
           <text id="/case_management/prerequisites/case_name_title:label">
@@ -285,7 +279,6 @@
             <case_outbreak_location_title/>
             <case_name_title/>
             <case_id_title/>
-            <case_identifier_title/>
           </prerequisites>
           <cm_vitals>
             <cmv_title/>
@@ -342,7 +335,6 @@
       <bind nodeset="/case_management/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/prerequisites/case_id_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_management/prerequisites/case_identifier_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/cm_vitals/cmv_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/cm_vitals/cmv_temperature" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_blood_pressure" type="int"/>
@@ -383,9 +375,6 @@
       </input>
       <input ref="/case_management/prerequisites/case_id_title">
         <label ref="jr:itext('/case_management/prerequisites/case_id_title:label')"/>
-      </input>
-      <input ref="/case_management/prerequisites/case_identifier_title">
-        <label ref="jr:itext('/case_management/prerequisites/case_identifier_title:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/case_management/cm_vitals">

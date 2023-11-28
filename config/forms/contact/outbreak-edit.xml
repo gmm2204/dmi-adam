@@ -57,7 +57,7 @@
             <value>Anthrax</value>
           </text>
           <text id="static_instance-outbreaks-3">
-            <value>Diarrheal Diseases-Dysentery</value>
+            <value>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</value>
           </text>
           <text id="static_instance-outbreaks-4">
             <value>Cholera</value>
@@ -5996,7 +5996,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak:edit" prefix="J1!contact:outbreak:edit!" delimiter="#" version="2023-11-23 8-59">
+        <data id="contact:outbreak:edit" prefix="J1!contact:outbreak:edit!" delimiter="#" version="2023-11-28 10-02">
           <inputs>
             <meta>
               <location>
@@ -15739,12 +15739,12 @@ Course</name>
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/outbreak/parent" type="string"/>
       <bind nodeset="/data/outbreak/type" type="string"/>
-      <bind nodeset="/data/outbreak/code" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/outbreak/name" type="string" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" required="true()" readonly="true()"/>
+      <bind nodeset="/data/outbreak/code" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/outbreak/name" type="string" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/description" type="string" readonly="true()"/>
-      <bind nodeset="/data/outbreak/county" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/outbreak/subcounty" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/outbreak/date" type="date" required="true()" readonly="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/outbreak/county" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/outbreak/subcounty" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/outbreak/date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/status" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -15777,7 +15777,7 @@ Course</name>
           <value>anthrax</value>
         </item>
         <item>
-          <label>Diarrheal Diseases-Dysentery</label>
+          <label>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</label>
           <value>dysentry</value>
         </item>
         <item>

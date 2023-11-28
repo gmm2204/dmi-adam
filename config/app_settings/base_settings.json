@@ -3,10 +3,6 @@
         {
             "locale": "en",
             "enabled": true
-        },
-        {
-            "locale": "sw",
-            "enabled": true
         }
     ],
     "place_hierarchy_types": [

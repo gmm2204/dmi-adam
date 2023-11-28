@@ -1122,7 +1122,7 @@
             <value>Symptoms</value>
           </text>
           <text id="/case_investigation/covid19_screening/covid19_symptoms_others:hint">
-            <value>Any other symptoms not listed above</value>
+            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
           </text>
           <text id="/case_investigation/covid19_screening/covid19_symptoms_others:label">
             <value>Symptoms (others)</value>
@@ -1176,7 +1176,7 @@
             <value>Symptoms</value>
           </text>
           <text id="/case_investigation/dysentery_screening/dysentery_symptoms_other:hint">
-            <value>Any other symptoms not listed above</value>
+            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
           </text>
           <text id="/case_investigation/dysentery_screening/dysentery_symptoms_other:label">
             <value>Symptoms (other)</value>
@@ -1189,6 +1189,27 @@
           </text>
           <text id="/case_investigation/evd_screening/evd_symptoms/anorexia:label">
             <value>Anorexia / loss of appetite</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bleeding_gums:label">
+            <value>Bleeding gums (Gingivitis)</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bleeding_injection_points:label">
+            <value>Bleeding at injection points</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bleeding_nose:label">
+            <value>Bleeding nose (epistaxis)</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bleeding_unexplained:label">
+            <value>Unexplained bleeding</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bleeding_vagina:label">
+            <value>Vaginal bleeding outside of menstruation</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bloody_stool:label">
+            <value>Dark or bloody stool (melaena)</value>
+          </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/bloody_vomit:label">
+            <value>Vomiting of blood (haematemesis)</value>
           </text>
           <text id="/case_investigation/evd_screening/evd_symptoms/conjuctivitis:label">
             <value>Conjuctivitis (red eyes)</value>
@@ -1211,6 +1232,9 @@
           <text id="/case_investigation/evd_screening/evd_symptoms/hiccups:label">
             <value>Hiccups</value>
           </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/intense_coughing:label">
+            <value>Intense Coughing</value>
+          </text>
           <text id="/case_investigation/evd_screening/evd_symptoms/intense_fatigue:label">
             <value>Intense Fatigue / weakness</value>
           </text>
@@ -1220,11 +1244,11 @@
           <text id="/case_investigation/evd_screening/evd_symptoms/muscle_pain:label">
             <value>Muscle pain</value>
           </text>
+          <text id="/case_investigation/evd_screening/evd_symptoms/others:label">
+            <value>Others</value>
+          </text>
           <text id="/case_investigation/evd_screening/evd_symptoms/skin_rash:label">
             <value>Skin rash</value>
-          </text>
-          <text id="/case_investigation/evd_screening/evd_symptoms/unexplained_bleeding:label">
-            <value>Unexplained bleeding</value>
           </text>
           <text id="/case_investigation/evd_screening/evd_symptoms/vomiting_nausea:label">
             <value>Vomiting / Nausea</value>
@@ -1233,7 +1257,7 @@
             <value>Symptoms</value>
           </text>
           <text id="/case_investigation/evd_screening/evd_symptoms_others:hint">
-            <value>Any other symptoms not listed above</value>
+            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
           </text>
           <text id="/case_investigation/evd_screening/evd_symptoms_others:label">
             <value>Symptoms (others)</value>
@@ -1343,6 +1367,9 @@
           <text id="/case_investigation/evd_screening_extended/evd_contact_location:label">
             <value>Village/neighborhood/town</value>
           </text>
+          <text id="/case_investigation/evd_screening_extended/evd_contact_name:label">
+            <value>Name of contact</value>
+          </text>
           <text id="/case_investigation/evd_screening_extended/evd_contact_relationship:label">
             <value>Relation to Patient</value>
           </text>
@@ -1350,7 +1377,7 @@
             <value>Sub County</value>
           </text>
           <text id="/case_investigation/evd_screening_extended/evd_contact_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Contact with Suspected or Confirmed VHF&lt;/p&gt;</value>
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Contact with Suspected or Confirmed VHF&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/evd_screening_extended/evd_contact_type/frequent_direct:label">
             <value>Frequent direct contact</value>
@@ -1419,7 +1446,7 @@
             <value>Sub County</value>
           </text>
           <text id="/case_investigation/evd_screening_extended/evd_funeral_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Funerals&lt;/p&gt;</value>
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Funerals and Burials&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/evd_screening_extended/evd_outside_travel/no:label">
             <value>No</value>
@@ -1463,6 +1490,48 @@
           <text id="/case_investigation/evd_screening_extended/evd_outside_travel_title:label">
             <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Travel History&lt;/p&gt;</value>
           </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_date_death:label">
+            <value>Date of death</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_community:label">
+            <value>Village / neighbourhood</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_death/community:label">
+            <value>Community</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_death/health_facility:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_death/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_death:label">
+            <value>Location of death</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_health_facility_department:label">
+            <value>Health Facility Department</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_location_health_facility_name:label">
+            <value>Health Facility Name</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_status/alive:label">
+            <value>Alive</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_status/dead:label">
+            <value>Dead</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_status/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_status:label">
+            <value>Condition of the patient when found</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_patient_status_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Patient Status&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_investigation/evd_screening_extended/evd_tradiotional_healer_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Traditional Healer&lt;/h4&gt;</value>
+          </text>
           <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen:label">
             <value>Date Seen</value>
           </text>
@@ -1474,9 +1543,6 @@
           </text>
           <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county:label">
             <value>Sub County</value>
-          </text>
-          <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Traditional Healer&lt;/p&gt;</value>
           </text>
           <text id="/case_investigation/evd_screening_extended/evd_traditional_healer_visited/no:label">
             <value>No</value>
@@ -1551,22 +1617,22 @@
             <value>When did the symptoms first appear?</value>
           </text>
           <text id="/case_investigation/prerequisites/case_id_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case ID: <output value=" /case_investigation/prerequisites/ci_case_id "/> &lt;/h4&gt;</value>
-          </text>
-          <text id="/case_investigation/prerequisites/case_identifier_title:label">
-            <value>&lt;h3 style="border-bottom: #f47b63 dashed 1px; padding: 5px 0;"&gt;&lt;/h3&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_investigation/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/prerequisites/case_name_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Case Name: <output value=" /case_investigation/prerequisites/ci_case_name "/> &lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case Name: <output value=" /case_investigation/prerequisites/ci_case_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/prerequisites/case_outbreak_location_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_investigation/prerequisites/outbreak_location_county "/> &gt; <output value=" /case_investigation/prerequisites/outbreak_location_subcounty "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_investigation/prerequisites/outbreak_location_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/prerequisites/case_outbreak_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_investigation/prerequisites/outbreak_name "/> | <output value=" /case_investigation/prerequisites/outbreak_date "/> | <output value=" /case_investigation/prerequisites/outbreak_status "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_investigation/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_investigation/prerequisites/outbreak_location/_id:label">
             <value>Outbreak Location</value>
+          </text>
+          <text id="/case_investigation/prerequisites/outbreak_location/name:label">
+            <value>Outbreak Location Name</value>
           </text>
           <text id="/case_investigation/prerequisites/outbreak_location/ol_county:label">
             <value>Outbreak Location County</value>
@@ -1794,6 +1860,7 @@
           <prerequisites>
             <outbreak_location>
               <_id/>
+              <name/>
               <ol_county/>
               <ol_subcounty/>
               <outbreak>
@@ -1810,13 +1877,13 @@
             <outbreak_name/>
             <outbreak_date/>
             <outbreak_status/>
+            <outbreak_location_name/>
             <outbreak_location_county/>
             <outbreak_location_subcounty/>
             <case_outbreak_title/>
             <case_outbreak_location_title/>
             <case_name_title/>
             <case_id_title/>
-            <case_identifier_title/>
           </prerequisites>
           <dysentery_screening>
             <dysentery_symptoms_start_date/>
@@ -1844,6 +1911,59 @@
             <evd_symptoms_others/>
             <evd_symptoms_unexplained_bleeding/>
           </evd_screening>
+          <evd_screening_extended>
+            <evd_patient_status_title/>
+            <evd_patient_status/>
+            <evd_patient_date_death/>
+            <evd_patient_location_death/>
+            <evd_patient_location_community/>
+            <evd_patient_location_health_facility_name/>
+            <evd_patient_location_health_facility_department/>
+            <evd_tradiotional_healer_title/>
+            <evd_traditional_healer_visited/>
+            <evd_traditional_healer_name/>
+            <evd_traditional_healer_location/>
+            <evd_traditional_healer_sub_county/>
+            <evd_traditional_healer_date_seen/>
+            <evd_contact_title/>
+            <evd_contact/>
+            <evd_contact_name/>
+            <evd_contact_type/>
+            <evd_contact_relationship/>
+            <evd_contact_date_last/>
+            <evd_contact_location/>
+            <evd_contact_subcounty/>
+            <evd_contact_vital_status/>
+            <evd_contact_death_date/>
+            <evd_funeral_title/>
+            <evd_funeral/>
+            <evd_funeral_deceased_name/>
+            <evd_funeral_deceased_relationship/>
+            <evd_funeral_date/>
+            <evd_funeral_location/>
+            <evd_funeral_subcounty/>
+            <evd_funeral_deceased_contact/>
+            <evd_animal_contact_title/>
+            <evd_animal_contact/>
+            <evd_animal_contact_type/>
+            <evd_animal_contact_type_other/>
+            <evd_animal_contact_location/>
+            <evd_animal_contact_subcounty/>
+            <evd_animal_contact_date/>
+            <evd_outside_travel_title/>
+            <evd_outside_travel/>
+            <evd_outside_travel_location/>
+            <evd_outside_travel_subcounty/>
+            <evd_outside_travel_offcountry/>
+            <evd_outside_travel_offcountry_location/>
+            <evd_outside_travel_departure_date/>
+            <evd_outside_travel_return_date/>
+            <evd_vaccination_title/>
+            <evd_vaccination/>
+            <evd_vaccination_date/>
+            <evd_case_investigator_title/>
+            <evd_case_investigator_case_def/>
+          </evd_screening_extended>
           <measles_screening>
             <measles_symptoms_start_date/>
             <measles_symptoms_fever/>
@@ -1992,51 +2112,6 @@
             <cuic_muac_measurement/>
             <cuic_other/>
           </ci_underlying_conditions>
-          <evd_screening_extended>
-            <evd_traditional_healer_title/>
-            <evd_traditional_healer_visited/>
-            <evd_traditional_healer_name/>
-            <evd_traditional_healer_location/>
-            <evd_traditional_healer_sub_county/>
-            <evd_traditional_healer_date_seen/>
-            <evd_contact_title/>
-            <evd_contact/>
-            <evd_contact_type/>
-            <evd_contact_relationship/>
-            <evd_contact_date_last/>
-            <evd_contact_location/>
-            <evd_contact_subcounty/>
-            <evd_contact_vital_status/>
-            <evd_contact_death_date/>
-            <evd_funeral_title/>
-            <evd_funeral/>
-            <evd_funeral_deceased_name/>
-            <evd_funeral_deceased_relationship/>
-            <evd_funeral_date/>
-            <evd_funeral_location/>
-            <evd_funeral_subcounty/>
-            <evd_funeral_deceased_contact/>
-            <evd_animal_contact_title/>
-            <evd_animal_contact/>
-            <evd_animal_contact_type/>
-            <evd_animal_contact_type_other/>
-            <evd_animal_contact_location/>
-            <evd_animal_contact_subcounty/>
-            <evd_animal_contact_date/>
-            <evd_outside_travel_title/>
-            <evd_outside_travel/>
-            <evd_outside_travel_location/>
-            <evd_outside_travel_subcounty/>
-            <evd_outside_travel_offcountry/>
-            <evd_outside_travel_offcountry_location/>
-            <evd_outside_travel_departure_date/>
-            <evd_outside_travel_return_date/>
-            <evd_vaccination_title/>
-            <evd_vaccination/>
-            <evd_vaccination_date/>
-            <evd_case_investigator_title/>
-            <evd_case_investigator_case_def/>
-          </evd_screening_extended>
           <ci_interviewee>
             <case_interviewee_type/>
             <case_interviewee_name/>
@@ -2070,6 +2145,7 @@
       <bind nodeset="/case_investigation/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_investigation/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_investigation/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/ol_subcounty" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location/outbreak/_id" type="string"/>
@@ -2083,13 +2159,13 @@
       <bind nodeset="/case_investigation/prerequisites/outbreak_name" type="string" calculate="../outbreak_location/outbreak/name"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_date" type="string" calculate="../outbreak_location/outbreak/date"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_status" type="string" calculate="../outbreak_location/outbreak/status"/>
+      <bind nodeset="/case_investigation/prerequisites/outbreak_location_name" type="string" calculate="../outbreak_location/name"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location_county" type="string" calculate="../outbreak_location/ol_county"/>
       <bind nodeset="/case_investigation/prerequisites/outbreak_location_subcounty" type="string" calculate="../outbreak_location/ol_subcounty"/>
       <bind nodeset="/case_investigation/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/prerequisites/case_id_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/prerequisites/case_identifier_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/dysentery_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'dysentery'"/>
       <bind nodeset="/case_investigation/dysentery_screening/dysentery_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/dysentery_screening/dysentery_symptoms" type="select" required="true()"/>
@@ -2098,7 +2174,7 @@
       <bind nodeset="/case_investigation/cholera_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'cholera'"/>
       <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_investigation/dysentery_screening/dysentery_symptoms , 'other')"/>
+      <bind nodeset="/case_investigation/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_investigation/cholera_screening/cholera_symptoms , 'other')"/>
       <bind nodeset="/case_investigation/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/cholera_screening/cholera_vaccination_doses" type="select1" relevant=" /case_investigation/cholera_screening/cholera_vaccination  = 'yes'" required="true()"/>
       <bind nodeset="/case_investigation/covid19_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'covid19'"/>
@@ -2110,8 +2186,60 @@
       <bind nodeset="/case_investigation/evd_screening/evd_symptoms_start_location" type="string" required="true()"/>
       <bind nodeset="/case_investigation/evd_screening/evd_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_investigation/evd_screening/evd_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening/evd_symptoms_others" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening/evd_symptoms_others" type="string" relevant="selected( /case_investigation/evd_screening/evd_symptoms , 'other')"/>
       <bind nodeset="/case_investigation/evd_screening/evd_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_investigation/evd_screening/evd_symptoms , 'unexplained_bleeding')" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended" relevant=" /case_investigation/prerequisites/outbreak_code  = 'evd'"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_status_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_status" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_date_death" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_location_death" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_location_community" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_location_health_facility_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_patient_location_health_facility_department" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_patient_status , 'dead')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_tradiotional_healer_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_visited" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_type" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_date_last" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_vital_status" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_death_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact_vital_status , 'dead')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_type" type="select" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_type_other" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact_type , 'other')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel" type="select1" required="true()"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel_offcountry , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_departure_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_return_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination" type="select1"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_vaccination , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/measles_screening" relevant=" /case_investigation/prerequisites/outbreak_code  = 'measles'"/>
       <bind nodeset="/case_investigation/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
@@ -2200,7 +2328,7 @@
       <bind nodeset="/case_investigation/ci_record_cutaneous" type="select1" relevant=" /case_investigation/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous" relevant="selected( /case_investigation/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/ci_cutaneous/ci_ent" type="date" required="true()" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_investigation/ci_cutaneous/ci_ent" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_duration_days" type="int" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_type" type="select1" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_localization" type="select1" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
@@ -2250,50 +2378,6 @@
       <bind nodeset="/case_investigation/ci_underlying_conditions/cuic_malnutrition" type="select1" relevant="selected( /case_investigation/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_underlying_conditions/cuic_muac_measurement" type="decimal" relevant="selected( /case_investigation/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_underlying_conditions/cuic_other" type="string" relevant="selected( /case_investigation/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening_extended" relevant=" /case_investigation/prerequisites/outbreak_code  = 'evd'"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_visited" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_type" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_date_last" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_vital_status" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_death_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact_vital_status , 'dead')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_type" type="select" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_type_other" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact_type , 'other')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_animal_contact_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel_offcountry , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_departure_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_outside_travel_return_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination" type="select1"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_vaccination_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_vaccination , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/ci_interviewee/case_interviewee_type" type="select1"/>
       <bind nodeset="/case_investigation/ci_interviewee/case_interviewee_name" type="string" relevant="selected( /case_investigation/ci_interviewee/case_interviewee_type , 'proxy')"/>
       <bind nodeset="/case_investigation/ci_interviewee/case_inverviewee_relationship" type="select1" relevant="selected( /case_investigation/ci_interviewee/case_interviewee_type , 'proxy')"/>
@@ -2331,9 +2415,6 @@
       </input>
       <input ref="/case_investigation/prerequisites/case_id_title">
         <label ref="jr:itext('/case_investigation/prerequisites/case_id_title:label')"/>
-      </input>
-      <input ref="/case_investigation/prerequisites/case_identifier_title">
-        <label ref="jr:itext('/case_investigation/prerequisites/case_identifier_title:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/case_investigation/dysentery_screening">
@@ -2587,8 +2668,40 @@
           <value>hiccups</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/unexplained_bleeding:label')"/>
-          <value>unexplained_bleeding</value>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/intense_coughing:label')"/>
+          <value>intense_coughing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bleeding_injection_points:label')"/>
+          <value>bleeding_injection_points</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bleeding_gums:label')"/>
+          <value>bleeding_gums</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bleeding_nose:label')"/>
+          <value>bleeding_nose</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bleeding_vagina:label')"/>
+          <value>bleeding_vagina</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bloody_stool:label')"/>
+          <value>bloody_stool</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bloody_vomit:label')"/>
+          <value>bloody_vomit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/bleeding_unexplained:label')"/>
+          <value>bleeding_unexplained</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms/others:label')"/>
+          <value>others</value>
         </item>
       </select>
       <input ref="/case_investigation/evd_screening/evd_symptoms_others">
@@ -2598,6 +2711,353 @@
       <input ref="/case_investigation/evd_screening/evd_symptoms_unexplained_bleeding">
         <label ref="jr:itext('/case_investigation/evd_screening/evd_symptoms_unexplained_bleeding:label')"/>
       </input>
+    </group>
+    <group appearance="field-list" ref="/case_investigation/evd_screening_extended">
+      <input ref="/case_investigation/evd_screening_extended/evd_patient_status_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_status_title:label')"/>
+      </input>
+      <select1 ref="/case_investigation/evd_screening_extended/evd_patient_status">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_status:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_status/alive:label')"/>
+          <value>alive</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_status/dead:label')"/>
+          <value>dead</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_status/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_patient_date_death">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_date_death:label')"/>
+      </input>
+      <select1 ref="/case_investigation/evd_screening_extended/evd_patient_location_death">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_death:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_death/community:label')"/>
+          <value>community</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_death/health_facility:label')"/>
+          <value>health_facility</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_death/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_patient_location_community">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_community:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_patient_location_health_facility_name">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_health_facility_name:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_patient_location_health_facility_department">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_patient_location_health_facility_department:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_tradiotional_healer_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_tradiotional_healer_title:label')"/>
+      </input>
+      <select1 ref="/case_investigation/evd_screening_extended/evd_traditional_healer_visited">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_name">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_name:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_location">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_location:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_title:label')"/>
+      </input>
+      <select1 ref="/case_investigation/evd_screening_extended/evd_contact">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_name">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_name:label')"/>
+      </input>
+      <select1 ref="/case_investigation/evd_screening_extended/evd_contact_type">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/same_room_vehicle:label')"/>
+          <value>same_room_vehicle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/same_household:label')"/>
+          <value>same_household</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/frequent_direct:label')"/>
+          <value>frequent_direct</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/same_community:label')"/>
+          <value>same_community</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_relationship">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_relationship:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_date_last">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_date_last:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_location">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_location:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_subcounty">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_subcounty:label')"/>
+      </input>
+      <select1 ref="/case_investigation/evd_screening_extended/evd_contact_vital_status">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status/alive:label')"/>
+          <value>alive</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status/dead:label')"/>
+          <value>dead</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_contact_death_date">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_death_date:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_funeral_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_funeral">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_funeral_deceased_name">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_name:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_funeral_date">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_date:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_funeral_location">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_location:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_funeral_subcounty">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_subcounty:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_animal_contact">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <select appearance="columns" ref="/case_investigation/evd_screening_extended/evd_animal_contact_type">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/bat:label')"/>
+          <value>bat</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/monkeys:label')"/>
+          <value>monkeys</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/chimpanzees:label')"/>
+          <value>chimpanzees</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/gorillas:label')"/>
+          <value>gorillas</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/baboons:label')"/>
+          <value>baboons</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/duikers:label')"/>
+          <value>duikers</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/squirrel:label')"/>
+          <value>squirrel</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_type_other">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type_other:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_location">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_location:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_subcounty">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_subcounty:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_date">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_date:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_outside_travel">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_location">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_location:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_subcounty">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_subcounty:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_departure_date">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_departure_date:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_return_date">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_return_date:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_vaccination_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_vaccination">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
+      <input ref="/case_investigation/evd_screening_extended/evd_vaccination_date">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination_date:label')"/>
+      </input>
+      <input ref="/case_investigation/evd_screening_extended/evd_case_investigator_title">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_case_investigator_case_def">
+        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def:label')"/>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+      </select1>
     </group>
     <group appearance="field-list" ref="/case_investigation/measles_screening">
       <input ref="/case_investigation/measles_screening/measles_symptoms_start_date">
@@ -4054,305 +4514,6 @@
       <input ref="/case_investigation/ci_underlying_conditions/cuic_other">
         <label ref="jr:itext('/case_investigation/ci_underlying_conditions/cuic_other:label')"/>
       </input>
-    </group>
-    <group appearance="field-list" ref="/case_investigation/evd_screening_extended">
-      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_traditional_healer_visited">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_visited/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_name">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_name:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_location">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_location:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_contact_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_contact">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_contact_type">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/same_room_vehicle:label')"/>
-          <value>same_room_vehicle</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/same_household:label')"/>
-          <value>same_household</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/frequent_direct:label')"/>
-          <value>frequent_direct</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_type/same_community:label')"/>
-          <value>same_community</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_contact_relationship">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_relationship:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_contact_date_last">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_date_last:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_contact_location">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_location:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_contact_subcounty">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_subcounty:label')"/>
-      </input>
-      <select1 ref="/case_investigation/evd_screening_extended/evd_contact_vital_status">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status/alive:label')"/>
-          <value>alive</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status/dead:label')"/>
-          <value>dead</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_vital_status/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_contact_death_date">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_contact_death_date:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_funeral_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_funeral">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_funeral_deceased_name">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_name:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_funeral_date">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_date:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_funeral_location">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_location:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_funeral_subcounty">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_subcounty:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_funeral_deceased_contact/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_animal_contact">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <select appearance="columns" ref="/case_investigation/evd_screening_extended/evd_animal_contact_type">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/bat:label')"/>
-          <value>bat</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/monkeys:label')"/>
-          <value>monkeys</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/chimpanzees:label')"/>
-          <value>chimpanzees</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/gorillas:label')"/>
-          <value>gorillas</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/baboons:label')"/>
-          <value>baboons</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/duikers:label')"/>
-          <value>duikers</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/squirrel:label')"/>
-          <value>squirrel</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type/other:label')"/>
-          <value>other</value>
-        </item>
-      </select>
-      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_type_other">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_type_other:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_location">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_location:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_subcounty">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_subcounty:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_animal_contact_date">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_animal_contact_date:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_outside_travel">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_location">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_location:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_subcounty">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_subcounty:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_offcountry_location:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_departure_date">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_departure_date:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_outside_travel_return_date">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_outside_travel_return_date:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_vaccination_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_vaccination">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_investigation/evd_screening_extended/evd_vaccination_date">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_vaccination_date:label')"/>
-      </input>
-      <input ref="/case_investigation/evd_screening_extended/evd_case_investigator_title">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_investigation/evd_screening_extended/evd_case_investigator_case_def">
-        <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def:label')"/>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_investigation/evd_screening_extended/evd_case_investigator_case_def/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
     </group>
     <group appearance="field-list" ref="/case_investigation/ci_interviewee">
       <select1 ref="/case_investigation/ci_interviewee/case_interviewee_type">
