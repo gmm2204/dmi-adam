@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+  <h:head>
+    <h:title>Case Vaccination</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/case_vaccination/ce_created/created_by:label">
+            <value>Created By</value>
+          </text>
+          <text id="/case_vaccination/ce_created/created_on:label">
+            <value>Created On</value>
+          </text>
+          <text id="/case_vaccination/cv_prerequisites/cel_type/food:label">
+            <value>Food</value>
+          </text>
+          <text id="/case_vaccination/cv_prerequisites/cel_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_vaccination/cv_prerequisites/cel_type/travel:label">
+            <value>Travel</value>
+          </text>
+          <text id="/case_vaccination/cv_prerequisites/cel_type:label">
+            <value>Exposure type</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/case_exposure_title:label">
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Record exposure information e.g. food, travel etc. You can submit this form multiple times for different exposures.&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/case_id_title:label">
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_vaccination/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/case_name_title:label">
+            <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case Name: <output value=" /case_vaccination/prerequisites/ci_case_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/case_outbreak_location_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_vaccination/prerequisites/outbreak_location_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/case_outbreak_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_vaccination/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/_id:label">
+            <value>Outbreak Location</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/name:label">
+            <value>Outbreak Location Name</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/ol_county:label">
+            <value>Outbreak Location County</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/ol_subcounty:label">
+            <value>Outbreak Location Sub-county</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/outbreak/_id:label">
+            <value>Outbreak</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/outbreak/code:label">
+            <value>Outbreak Code</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/outbreak/date:label">
+            <value>Outbreak Date</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/outbreak/name:label">
+            <value>Outbreak Name</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/outbreak_location/outbreak/status:label">
+            <value>Outbreak Status</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <case_vaccination id="case_vaccination" prefix="J1!case_vaccination!" delimiter="#" version="1">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+              <role/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <parent>
+                <_id/>
+                <name/>
+                <parent>
+                  <_id/>
+                  <name/>
+                  <parent>
+                    <_id/>
+                    <name/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <prerequisites>
+            <outbreak_location>
+              <_id/>
+              <name/>
+              <ol_county/>
+              <ol_subcounty/>
+              <outbreak>
+                <_id/>
+                <name/>
+                <code/>
+                <date/>
+                <status/>
+              </outbreak>
+            </outbreak_location>
+            <ci_case_id/>
+            <ci_case_name/>
+            <outbreak_code/>
+            <outbreak_name/>
+            <outbreak_date/>
+            <outbreak_status/>
+            <outbreak_location_name/>
+            <outbreak_location_county/>
+            <outbreak_location_subcounty/>
+            <case_outbreak_title/>
+            <case_outbreak_location_title/>
+            <case_name_title/>
+            <case_id_title/>
+            <case_exposure_title/>
+          </prerequisites>
+          <cv_prerequisites>
+            <cel_type/>
+          </cv_prerequisites>
+          <ce_created>
+            <created_by/>
+            <created_on/>
+          </ce_created>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </case_vaccination>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/case_vaccination/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/case_vaccination/inputs/source" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/user/name" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/user/role" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/user/phone" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/name" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/parent/name" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/parent/parent/name" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_vaccination/inputs/contact/parent/parent/parent/name" type="string"/>
+      <bind nodeset="/case_vaccination/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/name" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/ol_county" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/ol_subcounty" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/outbreak/_id" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/outbreak/name" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/outbreak/date" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/outbreak/status" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/ci_case_id" type="string" calculate="../../inputs/contact/patient_id"/>
+      <bind nodeset="/case_vaccination/prerequisites/ci_case_name" type="string" calculate="../../inputs/contact/name"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_code" type="string" calculate="../outbreak_location/outbreak/code"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_name" type="string" calculate="../outbreak_location/outbreak/name"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_date" type="string" calculate="../outbreak_location/outbreak/date"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_status" type="string" calculate="../outbreak_location/outbreak/status"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location_name" type="string" calculate="../outbreak_location/name"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location_county" type="string" calculate="../outbreak_location/ol_county"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location_subcounty" type="string" calculate="../outbreak_location/ol_subcounty"/>
+      <bind nodeset="/case_vaccination/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/case_name_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/case_id_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/case_exposure_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_vaccination/cv_prerequisites/cel_type" type="select1" required="true()"/>
+      <bind nodeset="/case_vaccination/ce_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_vaccination/ce_created/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_vaccination/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/case_vaccination/inputs">
+      <group ref="/case_vaccination/inputs/user"/>
+      <group appearance="field-list" ref="/case_vaccination/inputs/contact">
+        <group ref="/case_vaccination/inputs/contact/parent">
+          <group ref="/case_vaccination/inputs/contact/parent/parent">
+            <group ref="/case_vaccination/inputs/contact/parent/parent/parent"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/case_vaccination/prerequisites">
+      <group ref="/case_vaccination/prerequisites/outbreak_location">
+        <input appearance="hidden select-contact type-outbreak_location" ref="/case_vaccination/prerequisites/outbreak_location/_id">
+          <label ref="jr:itext('/case_vaccination/prerequisites/outbreak_location/_id:label')"/>
+        </input>
+        <group ref="/case_vaccination/prerequisites/outbreak_location/outbreak"/>
+      </group>
+      <input ref="/case_vaccination/prerequisites/case_outbreak_title">
+        <label ref="jr:itext('/case_vaccination/prerequisites/case_outbreak_title:label')"/>
+      </input>
+      <input ref="/case_vaccination/prerequisites/case_outbreak_location_title">
+        <label ref="jr:itext('/case_vaccination/prerequisites/case_outbreak_location_title:label')"/>
+      </input>
+      <input ref="/case_vaccination/prerequisites/case_name_title">
+        <label ref="jr:itext('/case_vaccination/prerequisites/case_name_title:label')"/>
+      </input>
+      <input ref="/case_vaccination/prerequisites/case_id_title">
+        <label ref="jr:itext('/case_vaccination/prerequisites/case_id_title:label')"/>
+      </input>
+      <input ref="/case_vaccination/prerequisites/case_exposure_title">
+        <label ref="jr:itext('/case_vaccination/prerequisites/case_exposure_title:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/case_vaccination/cv_prerequisites">
+      <select1 ref="/case_vaccination/cv_prerequisites/cel_type">
+        <label ref="jr:itext('/case_vaccination/cv_prerequisites/cel_type:label')"/>
+        <item>
+          <label ref="jr:itext('/case_vaccination/cv_prerequisites/cel_type/food:label')"/>
+          <value>food</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_vaccination/cv_prerequisites/cel_type/travel:label')"/>
+          <value>travel</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_vaccination/cv_prerequisites/cel_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/case_vaccination/ce_created">
+      <input ref="/case_vaccination/ce_created/created_by">
+        <label ref="jr:itext('/case_vaccination/ce_created/created_by:label')"/>
+      </input>
+      <input ref="/case_vaccination/ce_created/created_on">
+        <label ref="jr:itext('/case_vaccination/ce_created/created_on:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1873,17 +1873,17 @@
             </outbreak_location>
             <ci_case_id/>
             <ci_case_name/>
-            <outbreak_code/>
-            <outbreak_name/>
-            <outbreak_date/>
-            <outbreak_status/>
-            <outbreak_location_name/>
-            <outbreak_location_county/>
-            <outbreak_location_subcounty/>
-            <case_outbreak_title/>
-            <case_outbreak_location_title/>
-            <case_name_title/>
-            <case_id_title/>
+            <outbreak_code tag="hidden"/>
+            <outbreak_name tag="hidden"/>
+            <outbreak_date tag="hidden"/>
+            <outbreak_status tag="hidden"/>
+            <outbreak_location_name tag="hidden"/>
+            <outbreak_location_county tag="hidden"/>
+            <outbreak_location_subcounty tag="hidden"/>
+            <case_outbreak_title tag="hidden"/>
+            <case_outbreak_location_title tag="hidden"/>
+            <case_name_title tag="hidden"/>
+            <case_id_title tag="hidden"/>
           </prerequisites>
           <dysentery_screening>
             <dysentery_symptoms_start_date/>
@@ -2201,22 +2201,22 @@
       <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_sub_county" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_traditional_healer_date_seen" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_traditional_healer_visited , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_type" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_date_last" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_date_last" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_vital_status" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_death_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_contact_vital_status , 'dead')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_contact_death_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_contact_vital_status , 'dead')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_title" readonly="true()" type="string"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral" type="select1" required="true()"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_name" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_relationship" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
+      <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_date" type="date" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_location" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_subcounty" type="string" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
       <bind nodeset="/case_investigation/evd_screening_extended/evd_funeral_deceased_contact" type="select1" relevant="selected( /case_investigation/evd_screening_extended/evd_funeral , 'yes')"/>
@@ -2328,7 +2328,7 @@
       <bind nodeset="/case_investigation/ci_record_cutaneous" type="select1" relevant=" /case_investigation/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous" relevant="selected( /case_investigation/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_investigation/ci_cutaneous/ci_ent" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_investigation/ci_cutaneous/ci_ent" type="date" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_duration_days" type="int" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_type" type="select1" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_investigation/ci_cutaneous/cic_localization" type="select1" relevant="selected( /case_investigation/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>

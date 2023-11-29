@@ -231,8 +231,8 @@
           <co_final>
             <cof_case_classification/>
             <cof_patient_status/>
-            <cof_date/>
             <cof_referral_reason/>
+            <cof_date/>
           </co_final>
           <co_meta>
             <created_by/>
@@ -261,7 +261,7 @@
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_outcome/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -285,16 +285,16 @@
       <bind nodeset="/case_outcome/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consent" type="select1" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consent" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
+      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
       <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" calculate="today()"/>
-      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')" required="true()"/>
-      <bind nodeset="/case_outcome/co_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_outcome/co_meta/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_meta/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_outcome/co_meta/created_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -452,11 +452,11 @@
           <value>dead</value>
         </item>
       </select1>
-      <input ref="/case_outcome/co_final/cof_date">
-        <label ref="jr:itext('/case_outcome/co_final/cof_date:label')"/>
-      </input>
       <input ref="/case_outcome/co_final/cof_referral_reason">
         <label ref="jr:itext('/case_outcome/co_final/cof_referral_reason:label')"/>
+      </input>
+      <input ref="/case_outcome/co_final/cof_date">
+        <label ref="jr:itext('/case_outcome/co_final/cof_date:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/case_outcome/co_meta">

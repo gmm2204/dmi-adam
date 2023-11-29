@@ -267,7 +267,7 @@
       <bind nodeset="/case_exposure/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_exposure/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_exposure/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_exposure/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_exposure/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_exposure/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_exposure/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -293,23 +293,23 @@
       <bind nodeset="/case_exposure/ce_type/cel_type" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_food" relevant="selected( /case_exposure/ce_type/cel_type , 'food')"/>
       <bind nodeset="/case_exposure/ce_food/cef_name" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" calculate="today()" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" required="true()" calculate="today()"/>
       <bind nodeset="/case_exposure/ce_food/cef_time" type="time" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_source" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_affected_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_source" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')"/>
       <bind nodeset="/case_exposure/ce_food/cef_waste_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_toilet_type" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')"/>
       <bind nodeset="/case_exposure/ce_travel" relevant="selected( /case_exposure/ce_type/cel_type , 'travel')"/>
       <bind nodeset="/case_exposure/ce_travel/cet_location" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_city_town_village" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_date" type="date" required="true()"/>
-      <bind nodeset="/case_exposure/ce_created/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_exposure/ce_created/created_on" type="date" readonly="true()" calculate="today()"/>
+      <bind nodeset="/case_exposure/ce_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_exposure/ce_created/created_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_exposure/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

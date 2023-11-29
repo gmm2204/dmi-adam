@@ -80,7 +80,7 @@
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
-      <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" required="true()" relevant="selected( /data/init/create_new_person ,'old_person')"/>
       <bind nodeset="/data/contact/parent" type="string"/>
       <bind nodeset="/data/contact/type" type="string"/>
       <bind nodeset="/data/contact/name" type="string" calculate="concat(../../health_unit/name, &quot;'s Primary Contact&quot;)"/>

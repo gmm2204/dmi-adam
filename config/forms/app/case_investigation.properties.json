@@ -7,6 +7,17 @@
     "expression": "(contact.hierarchy_id == 'case') || (!contact)"
   },
   "hidden_fields": [
-    "cif_title"
+    "case_outbreak_title",
+    "case_outbreak_location_title",
+    "case_name_title",
+    "case_id_title",
+    "case_identifier_title",
+    "outbreak_code",
+    "outbreak_name",
+    "outbreak_location_name",
+    "outbreak_date",
+    "outbreak_status",
+    "outbreak_location_county",
+    "outbreak_location_subcounty"
   ]
 }

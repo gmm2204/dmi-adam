@@ -1,0 +1,7 @@
+{
+  "title": "Case Vaccination",
+  "icon": "icon-vaccine-colored",
+  "context": {
+    "expression": "(contact.hierarchy_id === 'case') || (!contact)"
+  }
+}

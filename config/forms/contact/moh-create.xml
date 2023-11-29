@@ -79,7 +79,7 @@
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" required="true()" readonly="true()"/>
       <bind nodeset="/data/init/select_person" type="db:person" required="true()" relevant="selected( /data/init/create_new_person ,'old_person')"/>
       <bind nodeset="/data/contact/parent" type="string"/>
       <bind nodeset="/data/contact/type" type="string"/>

@@ -31,10 +31,13 @@ module.exports = {
       appliesToType: ['outbreak']
     },
     {
-      label: 'contact.profile.email',
-      value: contact.email,
+      label: 'contact.profile.case_id',
+      value: contact.patient_id,
+      appliesIf: function () {
+        return (contact.patient_id !== undefined) ? true : false;
+      },
       width: 6,
-      appliesToType: ['person', 'case', 'case_contact']
+      appliesToType: ['case']
     },
     {
       label: 'contact.profile.phone',
@@ -42,7 +45,5 @@ module.exports = {
       width: 6,
       appliesToType: ['person', 'case', 'case_contact']
     }
-  ],
-  cards: [],
-  context: {}
+  ]
 };
