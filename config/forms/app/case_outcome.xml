@@ -78,7 +78,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_sample_collected:label">
-            <value>Where samples collected for laboratory confirmation?</value>
+            <value>Were samples collected for laboratory confirmation?</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_sample_date:label">
             <value>Date of sample collection</value>
@@ -123,7 +123,7 @@
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_outcome/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/case_outcome_title:label">
-            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Record the final outcome information of the case&lt;/h4&gt;</value>
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to record lab data and results (if any samples were taken), final patient status (recovered, hospitalized, referred or alive) and final case classification (confirmed, suspected, probable or non case). This form is only filled once, but can be updated.&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/outbreak_location/_id:label">
             <value>Outbreak Location</value>
@@ -261,7 +261,7 @@
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_outcome/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -293,8 +293,8 @@
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
       <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" calculate="today()"/>
-      <bind nodeset="/case_outcome/co_meta/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_outcome/co_meta/created_on" type="date" readonly="true()" calculate="today()"/>
+      <bind nodeset="/case_outcome/co_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_meta/created_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

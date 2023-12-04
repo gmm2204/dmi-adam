@@ -32,6 +32,9 @@
           <text id="/case_management/prerequisites/case_id_title:label">
             <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_management/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
           </text>
+          <text id="/case_management/prerequisites/case_management_title:label">
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to record the case management details, such as the patient's vital signs at the time of investigation.&lt;/h4&gt;</value>
+          </text>
           <text id="/case_management/prerequisites/case_name_title:label">
             <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case Name: <output value=" /case_management/prerequisites/ci_case_name "/>&lt;/h4&gt;</value>
           </text>
@@ -64,155 +67,6 @@
           </text>
           <text id="/case_management/prerequisites/outbreak_location/outbreak/status:label">
             <value>Outbreak Status</value>
-          </text>
-        </translation>
-        <translation lang="sw">
-          <text id="/case_management/cm_meta/created_by:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_meta/created_on:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_meta:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals/cmv_blood_pressure:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals/cmv_oxygen_saturation:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals/cmv_pulse_rate:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals/cmv_respiratory_rate:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals/cmv_temperature:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals/cmv_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/cm_vitals:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/parent/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/parent/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/parent/parent/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/parent/parent/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/parent/parent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent/parent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/parent:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact/patient_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/contact:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs/source:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/inputs:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/patient_uuid:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/case_id_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/case_name_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/case_outbreak_location_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/case_outbreak_title:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/ci_case_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/ci_case_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_code:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/ol_county:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/ol_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/outbreak/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/outbreak/code:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/outbreak/date:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/outbreak/name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/outbreak/status:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location/outbreak:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location_county:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_location_subcounty:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_name:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites/outbreak_status:label">
-            <value>-</value>
-          </text>
-          <text id="/case_management/prerequisites:label">
-            <value>-</value>
           </text>
         </translation>
       </itext>
@@ -279,6 +133,7 @@
             <case_outbreak_location_title/>
             <case_name_title/>
             <case_id_title/>
+            <case_management_title/>
           </prerequisites>
           <cm_vitals>
             <cmv_title/>
@@ -315,7 +170,7 @@
       <bind nodeset="/case_management/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_management/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_management/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_management/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_management/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_management/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_management/prerequisites/outbreak_location/ol_subcounty" type="string"/>
       <bind nodeset="/case_management/prerequisites/outbreak_location/outbreak/_id" type="string"/>
@@ -335,14 +190,15 @@
       <bind nodeset="/case_management/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/prerequisites/case_id_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_management/prerequisites/case_management_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/cm_vitals/cmv_title" readonly="true()" type="string"/>
       <bind nodeset="/case_management/cm_vitals/cmv_temperature" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_blood_pressure" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_pulse_rate" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_respiratory_rate" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_oxygen_saturation" type="int"/>
-      <bind nodeset="/case_management/cm_meta/created_by" type="string" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_management/cm_meta/created_on" type="date" calculate="today()"/>
+      <bind nodeset="/case_management/cm_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_management/cm_meta/created_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_management/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -376,6 +232,9 @@
       <input ref="/case_management/prerequisites/case_id_title">
         <label ref="jr:itext('/case_management/prerequisites/case_id_title:label')"/>
       </input>
+      <input ref="/case_management/prerequisites/case_management_title">
+        <label ref="jr:itext('/case_management/prerequisites/case_management_title:label')"/>
+      </input>
     </group>
     <group appearance="field-list" ref="/case_management/cm_vitals">
       <input ref="/case_management/cm_vitals/cmv_title">
@@ -398,6 +257,9 @@
       </input>
     </group>
     <group appearance="field-list" ref="/case_management/cm_meta">
+      <input ref="/case_management/cm_meta/created_by">
+        <label ref="jr:itext('/case_management/cm_meta/created_by:label')"/>
+      </input>
       <input ref="/case_management/cm_meta/created_on">
         <label ref="jr:itext('/case_management/cm_meta/created_on:label')"/>
       </input>

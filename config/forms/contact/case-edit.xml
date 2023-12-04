@@ -27,7 +27,10 @@
             <value>Passport</value>
           </text>
           <text id="/data/case/case_demographics/case_identification_document_type:label">
-            <value>Identification Document Type</value>
+            <value>Type</value>
+          </text>
+          <text id="/data/case/case_demographics/case_identification_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Identification&lt;/h4&gt;</value>
           </text>
           <text id="/data/case/case_demographics/case_lactating/no:label">
             <value>No</value>
@@ -175,6 +178,597 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           </text>
           <text id="/data/case/case_demographics_extended/case_hcw_cadre_other:label">
             <value>Cadre (Other)</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Afghanistan:label">
+            <value>Afghanistan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Albania:label">
+            <value>Albania</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Algeria:label">
+            <value>Algeria</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Andorra:label">
+            <value>Andorra</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Angola:label">
+            <value>Angola</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Antigua and Barbuda:label">
+            <value>Antigua and Barbuda</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Argentina:label">
+            <value>Argentina</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Armenia:label">
+            <value>Armenia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Australia:label">
+            <value>Australia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Austria:label">
+            <value>Austria</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Azerbaijan:label">
+            <value>Azerbaijan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Bahrain:label">
+            <value>Bahrain</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Bangladesh:label">
+            <value>Bangladesh</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Barbados:label">
+            <value>Barbados</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Belarus:label">
+            <value>Belarus</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Belgium:label">
+            <value>Belgium</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Belize:label">
+            <value>Belize</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Benin:label">
+            <value>Benin</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Bhutan:label">
+            <value>Bhutan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Bolivia:label">
+            <value>Bolivia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Bosnia and Herzegovina:label">
+            <value>Bosnia and Herzegovina</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Botswana:label">
+            <value>Botswana</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Brazil:label">
+            <value>Brazil</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Brunei:label">
+            <value>Brunei</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Bulgaria:label">
+            <value>Bulgaria</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Burkina Faso:label">
+            <value>Burkina Faso</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Burundi:label">
+            <value>Burundi</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Cabo Verde:label">
+            <value>Cabo Verde</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Cambodia:label">
+            <value>Cambodia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Cameroon:label">
+            <value>Cameroon</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Canada:label">
+            <value>Canada</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Central African Republic:label">
+            <value>Central African Republic</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Chad:label">
+            <value>Chad</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Chile:label">
+            <value>Chile</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/China:label">
+            <value>China</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Colombia:label">
+            <value>Colombia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Comoros:label">
+            <value>Comoros</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Congo, Democratic Republic of the:label">
+            <value>Congo, Democratic Republic of the</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Congo, Republic of the:label">
+            <value>Congo, Republic of the</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Costa Rica:label">
+            <value>Costa Rica</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Croatia:label">
+            <value>Croatia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Cuba:label">
+            <value>Cuba</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Cyprus:label">
+            <value>Cyprus</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Czech Republic:label">
+            <value>Czech Republic</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Côte d'Ivoire:label">
+            <value>Côte d'Ivoire</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Denmark:label">
+            <value>Denmark</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Djibouti:label">
+            <value>Djibouti</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Dominica:label">
+            <value>Dominica</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Dominican Republic:label">
+            <value>Dominican Republic</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/East Timor (Timor-Leste):label">
+            <value>East Timor (Timor-Leste)</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Ecuador:label">
+            <value>Ecuador</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Egypt:label">
+            <value>Egypt</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/El Salvador:label">
+            <value>El Salvador</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Equatorial Guinea:label">
+            <value>Equatorial Guinea</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Eritrea:label">
+            <value>Eritrea</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Estonia:label">
+            <value>Estonia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Eswatini:label">
+            <value>Eswatini</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Ethiopia:label">
+            <value>Ethiopia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Fiji:label">
+            <value>Fiji</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Finland:label">
+            <value>Finland</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/France:label">
+            <value>France</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Gabon:label">
+            <value>Gabon</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Georgia:label">
+            <value>Georgia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Germany:label">
+            <value>Germany</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Ghana:label">
+            <value>Ghana</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Greece:label">
+            <value>Greece</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Grenada:label">
+            <value>Grenada</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Guatemala:label">
+            <value>Guatemala</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Guinea-Bissau:label">
+            <value>Guinea-Bissau</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Guinea:label">
+            <value>Guinea</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Guyana:label">
+            <value>Guyana</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Haiti:label">
+            <value>Haiti</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Honduras:label">
+            <value>Honduras</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Hungary:label">
+            <value>Hungary</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Iceland:label">
+            <value>Iceland</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/India:label">
+            <value>India</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Indonesia:label">
+            <value>Indonesia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Iran:label">
+            <value>Iran</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Iraq:label">
+            <value>Iraq</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Ireland:label">
+            <value>Ireland</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Israel:label">
+            <value>Israel</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Italy:label">
+            <value>Italy</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Jamaica:label">
+            <value>Jamaica</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Japan:label">
+            <value>Japan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Jordan:label">
+            <value>Jordan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Kazakhstan:label">
+            <value>Kazakhstan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Kenya:label">
+            <value>Kenya</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Kiribati:label">
+            <value>Kiribati</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Korea, North:label">
+            <value>Korea, North</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Korea, South:label">
+            <value>Korea, South</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Kosovo:label">
+            <value>Kosovo</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Kuwait:label">
+            <value>Kuwait</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Kyrgyzstan:label">
+            <value>Kyrgyzstan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Laos:label">
+            <value>Laos</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Latvia:label">
+            <value>Latvia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Lebanon:label">
+            <value>Lebanon</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Lesotho:label">
+            <value>Lesotho</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Liberia:label">
+            <value>Liberia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Libya:label">
+            <value>Libya</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Liechtenstein:label">
+            <value>Liechtenstein</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Lithuania:label">
+            <value>Lithuania</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Luxembourg:label">
+            <value>Luxembourg</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Madagascar:label">
+            <value>Madagascar</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Malawi:label">
+            <value>Malawi</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Malaysia:label">
+            <value>Malaysia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Maldives:label">
+            <value>Maldives</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Mali:label">
+            <value>Mali</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Malta:label">
+            <value>Malta</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Marshall Islands:label">
+            <value>Marshall Islands</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Mauritania:label">
+            <value>Mauritania</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Mauritius:label">
+            <value>Mauritius</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Mexico:label">
+            <value>Mexico</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Micronesia, Federated States of:label">
+            <value>Micronesia, Federated States of</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Moldova:label">
+            <value>Moldova</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Monaco:label">
+            <value>Monaco</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Mongolia:label">
+            <value>Mongolia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Montenegro:label">
+            <value>Montenegro</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Morocco:label">
+            <value>Morocco</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Mozambique:label">
+            <value>Mozambique</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Myanmar (Burma):label">
+            <value>Myanmar (Burma)</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Namibia:label">
+            <value>Namibia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Nauru:label">
+            <value>Nauru</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Nepal:label">
+            <value>Nepal</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Netherlands:label">
+            <value>Netherlands</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/New Zealand:label">
+            <value>New Zealand</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Nicaragua:label">
+            <value>Nicaragua</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Niger:label">
+            <value>Niger</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Nigeria:label">
+            <value>Nigeria</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/North Macedonia:label">
+            <value>North Macedonia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Norway:label">
+            <value>Norway</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Oman:label">
+            <value>Oman</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Pakistan:label">
+            <value>Pakistan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Palau:label">
+            <value>Palau</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Panama:label">
+            <value>Panama</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Papua New Guinea:label">
+            <value>Papua New Guinea</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Paraguay:label">
+            <value>Paraguay</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Peru:label">
+            <value>Peru</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Philippines:label">
+            <value>Philippines</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Poland:label">
+            <value>Poland</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Portugal:label">
+            <value>Portugal</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Qatar:label">
+            <value>Qatar</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Romania:label">
+            <value>Romania</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Russia:label">
+            <value>Russia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Rwanda:label">
+            <value>Rwanda</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Saint Kitts and Nevis:label">
+            <value>Saint Kitts and Nevis</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Saint Lucia:label">
+            <value>Saint Lucia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Saint Vincent and the Grenadines:label">
+            <value>Saint Vincent and the Grenadines</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Samoa:label">
+            <value>Samoa</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/San Marino:label">
+            <value>San Marino</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Sao Tome and Principe:label">
+            <value>Sao Tome and Principe</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Saudi Arabia:label">
+            <value>Saudi Arabia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Senegal:label">
+            <value>Senegal</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Serbia:label">
+            <value>Serbia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Seychelles:label">
+            <value>Seychelles</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Sierra Leone:label">
+            <value>Sierra Leone</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Singapore:label">
+            <value>Singapore</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Slovakia:label">
+            <value>Slovakia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Slovenia:label">
+            <value>Slovenia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Solomon Islands:label">
+            <value>Solomon Islands</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Somalia:label">
+            <value>Somalia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/South Africa:label">
+            <value>South Africa</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Spain:label">
+            <value>Spain</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Sri Lanka:label">
+            <value>Sri Lanka</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Sudan, South:label">
+            <value>Sudan, South</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Sudan:label">
+            <value>Sudan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Suriname:label">
+            <value>Suriname</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Sweden:label">
+            <value>Sweden</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Switzerland:label">
+            <value>Switzerland</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Syria:label">
+            <value>Syria</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Taiwan:label">
+            <value>Taiwan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Tajikistan:label">
+            <value>Tajikistan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Tanzania:label">
+            <value>Tanzania</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Thailand:label">
+            <value>Thailand</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/The Bahamas:label">
+            <value>The Bahamas</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/The Gambia:label">
+            <value>The Gambia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Togo:label">
+            <value>Togo</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Tonga:label">
+            <value>Tonga</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Trinidad and Tobago:label">
+            <value>Trinidad and Tobago</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Tunisia:label">
+            <value>Tunisia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Turkey:label">
+            <value>Turkey</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Turkmenistan:label">
+            <value>Turkmenistan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Tuvalu:label">
+            <value>Tuvalu</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Uganda:label">
+            <value>Uganda</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Ukraine:label">
+            <value>Ukraine</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/United Arab Emirates:label">
+            <value>United Arab Emirates</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/United Kingdom:label">
+            <value>United Kingdom</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/United States:label">
+            <value>United States</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Uruguay:label">
+            <value>Uruguay</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Uzbekistan:label">
+            <value>Uzbekistan</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Vanuatu:label">
+            <value>Vanuatu</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Vatican City:label">
+            <value>Vatican City</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Venezuela:label">
+            <value>Venezuela</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Vietnam:label">
+            <value>Vietnam</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Yemen:label">
+            <value>Yemen</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Zambia:label">
+            <value>Zambia</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country/Zimbabwe:label">
+            <value>Zimbabwe</value>
+          </text>
+          <text id="/data/case/case_demographics_extended/case_hcw_country:label">
+            <value>Health Facility: Country</value>
           </text>
           <text id="/data/case/case_demographics_extended/case_hcw_facility:label">
             <value>Health Facility</value>
@@ -1252,9 +1846,6 @@ DOB ISO: <output value=" /data/case/case_demographics/ephemeral_dob/dob_iso "/><
           </text>
           <text id="/data/case/meta/case_investigation_date:label">
             <value>Date of investigation</value>
-          </text>
-          <text id="/data/case/meta/case_investigation_reason:label">
-            <value>What is the reason for this investigation?</value>
           </text>
           <text id="/data/case/meta/created_by:label">
             <value>Modified By</value>
@@ -7358,7 +7949,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:case:edit" prefix="J1!contact:case:edit!" delimiter="#" version="2023-11-28 12-49">
+        <data id="contact:case:edit" prefix="J1!contact:case:edit!" delimiter="#" version="2023-12-04 9-39">
           <inputs>
             <meta>
               <location>
@@ -7407,9 +7998,6 @@ Mutonga/Kithumula</value>
               <surname/>
               <first_name/>
               <middle_name/>
-              <case_identification_document_type/>
-              <case_identification_document_type_label/>
-              <case_identification_document_number/>
               <case_sex/>
               <date_of_birth/>
               <date_of_birth_method/>
@@ -7428,6 +8016,10 @@ Mutonga/Kithumula</value>
               <case_pregnant/>
               <case_lactating/>
               <case_marital_status/>
+              <case_identification_title/>
+              <case_identification_document_type/>
+              <case_identification_document_type_label/>
+              <case_identification_document_number/>
             </case_demographics>
             <case_location>
               <case_location_title/>
@@ -7453,6 +8045,7 @@ Mutonga/Kithumula</value>
               <case_education_level/>
               <case_occupation/>
               <case_other_occupation/>
+              <case_hcw_country>Kenya</case_hcw_country>
               <case_hcw_facility/>
               <case_hcw_cadre/>
               <case_hcw_cadre_other/>
@@ -7474,7 +8067,6 @@ Mutonga/Kithumula</value>
             </case_kin>
             <meta tag="hidden">
               <case_hh_title/>
-              <case_investigation_reason/>
               <case_investigation_date/>
               <created_by/>
               <created_on/>
@@ -17415,23 +18007,20 @@ Course</name>
       <bind nodeset="/data/case/email" type="string" calculate="concat( /data/case/case_location/case_email_address , ' ')"/>
       <bind nodeset="/data/case/sex" type="string" calculate="concat( /data/case/case_demographics/case_sex , ' ')"/>
       <bind nodeset="/data/case/hierarchy_id" type="string" calculate="concat('case')"/>
-      <bind nodeset="/data/case/case_identifiers/case_demographics_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/case/case_identifiers/case_demographics_title" type="string"/>
       <bind nodeset="/data/case/case_identifiers/case_epid" type="string" required="true()"/>
       <bind nodeset="/data/case/case_identifiers/case_nupi" type="string"/>
       <bind nodeset="/data/case/case_demographics/case_demographics_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_demographics/surname" type="string" required="true()"/>
       <bind nodeset="/data/case/case_demographics/first_name" type="string" required="true()"/>
       <bind nodeset="/data/case/case_demographics/middle_name" type="string"/>
-      <bind nodeset="/data/case/case_demographics/case_identification_document_type" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/case_identification_document_type_label" type="string" calculate="jr:choice-name( /data/case/case_demographics/case_identification_document_type ,' /data/case/case_demographics/case_identification_document_type ')"/>
-      <bind nodeset="/data/case/case_demographics/case_identification_document_number" type="string" relevant="(( /data/case/case_demographics/case_identification_document_type  != &quot;&quot;) and ( /data/case/case_demographics/case_identification_document_type  != &quot;none&quot;))" required="true()"/>
       <bind nodeset="/data/case/case_demographics/case_sex" type="select1" required="true()"/>
       <bind nodeset="/data/case/case_demographics/date_of_birth" type="string" calculate="../ephemeral_dob/dob_iso" required="true()"/>
       <bind nodeset="/data/case/case_demographics/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_years" type="int" constraint=". &gt;= 0 and . &lt;= 130" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" required="true()" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_years" type="int" required="true()" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 130"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_months" type="int" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 11"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) + 12, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0))"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_approx" type="string" calculate="concat(string( /data/case/case_demographics/ephemeral_dob/ephemeral_years ),'-',if( /data/case/case_demographics/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /data/case/case_demographics/ephemeral_dob/ephemeral_months )),  /data/case/case_demographics/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))"/>
@@ -17441,13 +18030,17 @@ Course</name>
       <bind nodeset="/data/case/case_demographics/case_pregnant" type="select1" relevant="selected(../../../case/case_demographics/case_sex, 'female')"/>
       <bind nodeset="/data/case/case_demographics/case_lactating" type="select1" relevant="selected(../../../case/case_demographics/case_sex, 'female')"/>
       <bind nodeset="/data/case/case_demographics/case_marital_status" type="select1"/>
+      <bind nodeset="/data/case/case_demographics/case_identification_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/case/case_demographics/case_identification_document_type" type="select1" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/case_identification_document_type_label" type="string" calculate="jr:choice-name( /data/case/case_demographics/case_identification_document_type ,' /data/case/case_demographics/case_identification_document_type ')"/>
+      <bind nodeset="/data/case/case_demographics/case_identification_document_number" type="string" required="true()" relevant="(( /data/case/case_demographics/case_identification_document_type  != &quot;&quot;) and ( /data/case/case_demographics/case_identification_document_type  != &quot;none&quot;))"/>
       <bind nodeset="/data/case/case_location/case_location_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_location/case_phone_number" type="tel" required="true()"/>
       <bind nodeset="/data/case/case_location/case_email_address" type="string"/>
       <bind nodeset="/data/case/case_location/case_country" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_county" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_subcounty" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_ward" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
+      <bind nodeset="/data/case/case_location/case_county" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
+      <bind nodeset="/data/case/case_location/case_subcounty" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
+      <bind nodeset="/data/case/case_location/case_ward" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
       <bind nodeset="/data/case/case_location/case_facility" type="string"/>
       <bind nodeset="/data/case/case_reporting_location" relevant=" /data/case/outbreak_code  = 'evd'"/>
       <bind nodeset="/data/case/case_reporting_location/case_reporting_location_title" readonly="true()" type="string"/>
@@ -17460,12 +18053,13 @@ Course</name>
       <bind nodeset="/data/case/case_demographics_extended/case_demographics_extended_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_demographics_extended/case_education_level" type="select1"/>
       <bind nodeset="/data/case/case_demographics_extended/case_occupation" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_other_occupation" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'other')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_facility" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre" type="select1" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre_other" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_position" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_station" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_other_occupation" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'other')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_country" type="select1" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_facility" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre" type="select1" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre_other" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_position" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_station" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
       <bind nodeset="/data/case/case_household_head/case_hh_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_household_head/case_hh" type="select1"/>
       <bind nodeset="/data/case/case_household_head/case_hh_name" type="string" relevant="selected( /data/case/case_household_head/case_hh , 'no')"/>
@@ -17476,8 +18070,7 @@ Course</name>
       <bind nodeset="/data/case/case_kin/case_kin_address" type="string"/>
       <bind nodeset="/data/case/case_kin/case_kin_relationship" type="select1"/>
       <bind nodeset="/data/case/meta/case_hh_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/case/meta/case_investigation_reason" type="string"/>
-      <bind nodeset="/data/case/meta/case_investigation_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" calculate="today()"/>
+      <bind nodeset="/data/case/meta/case_investigation_date" type="date" calculate="today()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/data/case/meta/created_by" type="string" readonly="true()" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/case/meta/created_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/data/case/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -17500,12 +18093,7 @@ Course</name>
           <group ref="/data/case/cases_group/outbreak_location/outbreak"/>
         </group>
       </group>
-      <group appearance="field-list" ref="/data/case/case_identifiers">
-        <input ref="/data/case/case_identifiers/case_demographics_title">
-          <label ref="jr:itext('/data/case/case_identifiers/case_demographics_title:label')"/>
-          <hint ref="jr:itext('/data/case/case_identifiers/case_demographics_title:hint')"/>
-        </input>
-      </group>
+      <group appearance="field-list" ref="/data/case/case_identifiers"/>
       <group appearance="field-list" ref="/data/case/case_demographics">
         <input ref="/data/case/case_demographics/case_demographics_title">
           <label ref="jr:itext('/data/case/case_demographics/case_demographics_title:label')"/>
@@ -17518,32 +18106,6 @@ Course</name>
         </input>
         <input ref="/data/case/case_demographics/middle_name">
           <label ref="jr:itext('/data/case/case_demographics/middle_name:label')"/>
-        </input>
-        <select1 ref="/data/case/case_demographics/case_identification_document_type">
-          <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type:label')"/>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/passport:label')"/>
-            <value>passport</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/national_id:label')"/>
-            <value>national_id</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/birth_certificate:label')"/>
-            <value>birth_certificate</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/alien_id:label')"/>
-            <value>alien_id</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/none:label')"/>
-            <value>none</value>
-          </item>
-        </select1>
-        <input ref="/data/case/case_demographics/case_identification_document_number">
-          <label ref="jr:itext('/data/case/case_demographics/case_identification_document_number:label')"/>
         </input>
         <select1 ref="/data/case/case_demographics/case_sex">
           <label ref="jr:itext('/data/case/case_demographics/case_sex:label')"/>
@@ -17626,6 +18188,35 @@ Course</name>
             <value>single</value>
           </item>
         </select1>
+        <input ref="/data/case/case_demographics/case_identification_title">
+          <label ref="jr:itext('/data/case/case_demographics/case_identification_title:label')"/>
+        </input>
+        <select1 ref="/data/case/case_demographics/case_identification_document_type">
+          <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type:label')"/>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/passport:label')"/>
+            <value>passport</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/national_id:label')"/>
+            <value>national_id</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/birth_certificate:label')"/>
+            <value>birth_certificate</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/alien_id:label')"/>
+            <value>alien_id</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics/case_identification_document_type/none:label')"/>
+            <value>none</value>
+          </item>
+        </select1>
+        <input ref="/data/case/case_demographics/case_identification_document_number">
+          <label ref="jr:itext('/data/case/case_demographics/case_identification_document_number:label')"/>
+        </input>
       </group>
       <group appearance="field-list" ref="/data/case/case_location">
         <input ref="/data/case/case_location/case_location_title">
@@ -18939,6 +19530,793 @@ Course</name>
         <input ref="/data/case/case_demographics_extended/case_other_occupation">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_other_occupation:label')"/>
         </input>
+        <select1 appearance="autocomplete" ref="/data/case/case_demographics_extended/case_hcw_country">
+          <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country:label')"/>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Afghanistan:label')"/>
+            <value>Afghanistan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Albania:label')"/>
+            <value>Albania</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Algeria:label')"/>
+            <value>Algeria</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Andorra:label')"/>
+            <value>Andorra</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Angola:label')"/>
+            <value>Angola</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Antigua and Barbuda:label')"/>
+            <value>Antigua and Barbuda</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Argentina:label')"/>
+            <value>Argentina</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Armenia:label')"/>
+            <value>Armenia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Australia:label')"/>
+            <value>Australia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Austria:label')"/>
+            <value>Austria</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Azerbaijan:label')"/>
+            <value>Azerbaijan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/The Bahamas:label')"/>
+            <value>The Bahamas</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Bahrain:label')"/>
+            <value>Bahrain</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Bangladesh:label')"/>
+            <value>Bangladesh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Barbados:label')"/>
+            <value>Barbados</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Belarus:label')"/>
+            <value>Belarus</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Belgium:label')"/>
+            <value>Belgium</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Belize:label')"/>
+            <value>Belize</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Benin:label')"/>
+            <value>Benin</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Bhutan:label')"/>
+            <value>Bhutan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Bolivia:label')"/>
+            <value>Bolivia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Bosnia and Herzegovina:label')"/>
+            <value>Bosnia and Herzegovina</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Botswana:label')"/>
+            <value>Botswana</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Brazil:label')"/>
+            <value>Brazil</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Brunei:label')"/>
+            <value>Brunei</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Bulgaria:label')"/>
+            <value>Bulgaria</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Burkina Faso:label')"/>
+            <value>Burkina Faso</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Burundi:label')"/>
+            <value>Burundi</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Cabo Verde:label')"/>
+            <value>Cabo Verde</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Cambodia:label')"/>
+            <value>Cambodia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Cameroon:label')"/>
+            <value>Cameroon</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Canada:label')"/>
+            <value>Canada</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Central African Republic:label')"/>
+            <value>Central African Republic</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Chad:label')"/>
+            <value>Chad</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Chile:label')"/>
+            <value>Chile</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/China:label')"/>
+            <value>China</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Colombia:label')"/>
+            <value>Colombia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Comoros:label')"/>
+            <value>Comoros</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Congo, Democratic Republic of the:label')"/>
+            <value>Congo, Democratic Republic of the</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Congo, Republic of the:label')"/>
+            <value>Congo, Republic of the</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Costa Rica:label')"/>
+            <value>Costa Rica</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Côte d'Ivoire:label')"/>
+            <value>Côte d'Ivoire</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Croatia:label')"/>
+            <value>Croatia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Cuba:label')"/>
+            <value>Cuba</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Cyprus:label')"/>
+            <value>Cyprus</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Czech Republic:label')"/>
+            <value>Czech Republic</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Denmark:label')"/>
+            <value>Denmark</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Djibouti:label')"/>
+            <value>Djibouti</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Dominica:label')"/>
+            <value>Dominica</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Dominican Republic:label')"/>
+            <value>Dominican Republic</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/East Timor (Timor-Leste):label')"/>
+            <value>East Timor (Timor-Leste)</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Ecuador:label')"/>
+            <value>Ecuador</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Egypt:label')"/>
+            <value>Egypt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/El Salvador:label')"/>
+            <value>El Salvador</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Equatorial Guinea:label')"/>
+            <value>Equatorial Guinea</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Eritrea:label')"/>
+            <value>Eritrea</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Estonia:label')"/>
+            <value>Estonia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Eswatini:label')"/>
+            <value>Eswatini</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Ethiopia:label')"/>
+            <value>Ethiopia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Fiji:label')"/>
+            <value>Fiji</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Finland:label')"/>
+            <value>Finland</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/France:label')"/>
+            <value>France</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Gabon:label')"/>
+            <value>Gabon</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/The Gambia:label')"/>
+            <value>The Gambia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Georgia:label')"/>
+            <value>Georgia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Germany:label')"/>
+            <value>Germany</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Ghana:label')"/>
+            <value>Ghana</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Greece:label')"/>
+            <value>Greece</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Grenada:label')"/>
+            <value>Grenada</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Guatemala:label')"/>
+            <value>Guatemala</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Guinea:label')"/>
+            <value>Guinea</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Guinea-Bissau:label')"/>
+            <value>Guinea-Bissau</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Guyana:label')"/>
+            <value>Guyana</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Haiti:label')"/>
+            <value>Haiti</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Honduras:label')"/>
+            <value>Honduras</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Hungary:label')"/>
+            <value>Hungary</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Iceland:label')"/>
+            <value>Iceland</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/India:label')"/>
+            <value>India</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Indonesia:label')"/>
+            <value>Indonesia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Iran:label')"/>
+            <value>Iran</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Iraq:label')"/>
+            <value>Iraq</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Ireland:label')"/>
+            <value>Ireland</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Israel:label')"/>
+            <value>Israel</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Italy:label')"/>
+            <value>Italy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Jamaica:label')"/>
+            <value>Jamaica</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Japan:label')"/>
+            <value>Japan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Jordan:label')"/>
+            <value>Jordan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Kazakhstan:label')"/>
+            <value>Kazakhstan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Kenya:label')"/>
+            <value>Kenya</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Kiribati:label')"/>
+            <value>Kiribati</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Korea, North:label')"/>
+            <value>Korea, North</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Korea, South:label')"/>
+            <value>Korea, South</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Kosovo:label')"/>
+            <value>Kosovo</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Kuwait:label')"/>
+            <value>Kuwait</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Kyrgyzstan:label')"/>
+            <value>Kyrgyzstan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Laos:label')"/>
+            <value>Laos</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Latvia:label')"/>
+            <value>Latvia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Lebanon:label')"/>
+            <value>Lebanon</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Lesotho:label')"/>
+            <value>Lesotho</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Liberia:label')"/>
+            <value>Liberia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Libya:label')"/>
+            <value>Libya</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Liechtenstein:label')"/>
+            <value>Liechtenstein</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Lithuania:label')"/>
+            <value>Lithuania</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Luxembourg:label')"/>
+            <value>Luxembourg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Madagascar:label')"/>
+            <value>Madagascar</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Malawi:label')"/>
+            <value>Malawi</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Malaysia:label')"/>
+            <value>Malaysia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Maldives:label')"/>
+            <value>Maldives</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Mali:label')"/>
+            <value>Mali</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Malta:label')"/>
+            <value>Malta</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Marshall Islands:label')"/>
+            <value>Marshall Islands</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Mauritania:label')"/>
+            <value>Mauritania</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Mauritius:label')"/>
+            <value>Mauritius</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Mexico:label')"/>
+            <value>Mexico</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Micronesia, Federated States of:label')"/>
+            <value>Micronesia, Federated States of</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Moldova:label')"/>
+            <value>Moldova</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Monaco:label')"/>
+            <value>Monaco</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Mongolia:label')"/>
+            <value>Mongolia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Montenegro:label')"/>
+            <value>Montenegro</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Morocco:label')"/>
+            <value>Morocco</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Mozambique:label')"/>
+            <value>Mozambique</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Myanmar (Burma):label')"/>
+            <value>Myanmar (Burma)</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Namibia:label')"/>
+            <value>Namibia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Nauru:label')"/>
+            <value>Nauru</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Nepal:label')"/>
+            <value>Nepal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Netherlands:label')"/>
+            <value>Netherlands</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/New Zealand:label')"/>
+            <value>New Zealand</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Nicaragua:label')"/>
+            <value>Nicaragua</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Niger:label')"/>
+            <value>Niger</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Nigeria:label')"/>
+            <value>Nigeria</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/North Macedonia:label')"/>
+            <value>North Macedonia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Norway:label')"/>
+            <value>Norway</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Oman:label')"/>
+            <value>Oman</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Pakistan:label')"/>
+            <value>Pakistan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Palau:label')"/>
+            <value>Palau</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Panama:label')"/>
+            <value>Panama</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Papua New Guinea:label')"/>
+            <value>Papua New Guinea</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Paraguay:label')"/>
+            <value>Paraguay</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Peru:label')"/>
+            <value>Peru</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Philippines:label')"/>
+            <value>Philippines</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Poland:label')"/>
+            <value>Poland</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Portugal:label')"/>
+            <value>Portugal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Qatar:label')"/>
+            <value>Qatar</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Romania:label')"/>
+            <value>Romania</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Russia:label')"/>
+            <value>Russia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Rwanda:label')"/>
+            <value>Rwanda</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Saint Kitts and Nevis:label')"/>
+            <value>Saint Kitts and Nevis</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Saint Lucia:label')"/>
+            <value>Saint Lucia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Saint Vincent and the Grenadines:label')"/>
+            <value>Saint Vincent and the Grenadines</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Samoa:label')"/>
+            <value>Samoa</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/San Marino:label')"/>
+            <value>San Marino</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Sao Tome and Principe:label')"/>
+            <value>Sao Tome and Principe</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Saudi Arabia:label')"/>
+            <value>Saudi Arabia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Senegal:label')"/>
+            <value>Senegal</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Serbia:label')"/>
+            <value>Serbia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Seychelles:label')"/>
+            <value>Seychelles</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Sierra Leone:label')"/>
+            <value>Sierra Leone</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Singapore:label')"/>
+            <value>Singapore</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Slovakia:label')"/>
+            <value>Slovakia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Slovenia:label')"/>
+            <value>Slovenia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Solomon Islands:label')"/>
+            <value>Solomon Islands</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Somalia:label')"/>
+            <value>Somalia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/South Africa:label')"/>
+            <value>South Africa</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Spain:label')"/>
+            <value>Spain</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Sri Lanka:label')"/>
+            <value>Sri Lanka</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Sudan:label')"/>
+            <value>Sudan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Sudan, South:label')"/>
+            <value>Sudan, South</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Suriname:label')"/>
+            <value>Suriname</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Sweden:label')"/>
+            <value>Sweden</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Switzerland:label')"/>
+            <value>Switzerland</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Syria:label')"/>
+            <value>Syria</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Taiwan:label')"/>
+            <value>Taiwan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Tajikistan:label')"/>
+            <value>Tajikistan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Tanzania:label')"/>
+            <value>Tanzania</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Thailand:label')"/>
+            <value>Thailand</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Togo:label')"/>
+            <value>Togo</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Tonga:label')"/>
+            <value>Tonga</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Trinidad and Tobago:label')"/>
+            <value>Trinidad and Tobago</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Tunisia:label')"/>
+            <value>Tunisia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Turkey:label')"/>
+            <value>Turkey</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Turkmenistan:label')"/>
+            <value>Turkmenistan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Tuvalu:label')"/>
+            <value>Tuvalu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Uganda:label')"/>
+            <value>Uganda</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Ukraine:label')"/>
+            <value>Ukraine</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/United Arab Emirates:label')"/>
+            <value>United Arab Emirates</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/United Kingdom:label')"/>
+            <value>United Kingdom</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/United States:label')"/>
+            <value>United States</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Uruguay:label')"/>
+            <value>Uruguay</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Uzbekistan:label')"/>
+            <value>Uzbekistan</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Vanuatu:label')"/>
+            <value>Vanuatu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Vatican City:label')"/>
+            <value>Vatican City</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Venezuela:label')"/>
+            <value>Venezuela</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Vietnam:label')"/>
+            <value>Vietnam</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Yemen:label')"/>
+            <value>Yemen</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Zambia:label')"/>
+            <value>Zambia</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_country/Zimbabwe:label')"/>
+            <value>Zimbabwe</value>
+          </item>
+        </select1>
         <input ref="/data/case/case_demographics_extended/case_hcw_facility">
           <label ref="jr:itext('/data/case/case_demographics_extended/case_hcw_facility:label')"/>
         </input>
@@ -19109,9 +20487,6 @@ Course</name>
       <group ref="/data/case/meta">
         <input ref="/data/case/meta/case_hh_title">
           <label ref="jr:itext('/data/case/meta/case_hh_title:label')"/>
-        </input>
-        <input ref="/data/case/meta/case_investigation_reason">
-          <label ref="jr:itext('/data/case/meta/case_investigation_reason:label')"/>
         </input>
         <input ref="/data/case/meta/case_investigation_date">
           <label ref="jr:itext('/data/case/meta/case_investigation_date:label')"/>

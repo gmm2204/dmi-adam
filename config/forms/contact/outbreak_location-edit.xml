@@ -7104,1438 +7104,1438 @@ Mutonga/Kithumula</value>
         <root>
           <item>
             <itextId>static_instance-select_subcounty-0</itextId>
-            <county>Mombasa</county>
             <name>Changamwe</name>
+            <county>Mombasa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-1</itextId>
-            <county>Mombasa</county>
             <name>Jomvu</name>
+            <county>Mombasa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-2</itextId>
-            <county>Mombasa</county>
             <name>Kisauni</name>
+            <county>Mombasa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-3</itextId>
-            <county>Mombasa</county>
             <name>Nyali</name>
+            <county>Mombasa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-4</itextId>
-            <county>Mombasa</county>
             <name>Likoni</name>
+            <county>Mombasa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-5</itextId>
-            <county>Mombasa</county>
             <name>Mvita</name>
+            <county>Mombasa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-6</itextId>
-            <county>Kwale</county>
             <name>Msambweni</name>
+            <county>Kwale</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-7</itextId>
-            <county>Kwale</county>
             <name>Lungalunga</name>
+            <county>Kwale</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-8</itextId>
-            <county>Kwale</county>
             <name>Matuga</name>
+            <county>Kwale</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-9</itextId>
-            <county>Kwale</county>
             <name>Kinango</name>
+            <county>Kwale</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-10</itextId>
-            <county>Kilifi</county>
             <name>Kilifi North</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-11</itextId>
-            <county>Kilifi</county>
             <name>Kilifi South</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-12</itextId>
-            <county>Kilifi</county>
             <name>Kaloleni</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-13</itextId>
-            <county>Kilifi</county>
             <name>Rabai</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-14</itextId>
-            <county>Kilifi</county>
             <name>Ganze</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-15</itextId>
-            <county>Kilifi</county>
             <name>Malindi</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-16</itextId>
-            <county>Kilifi</county>
             <name>Magarini</name>
+            <county>Kilifi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-17</itextId>
-            <county>Tana River</county>
             <name>Garsen</name>
+            <county>Tana River</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-18</itextId>
-            <county>Tana River</county>
             <name>Galole</name>
+            <county>Tana River</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-19</itextId>
-            <county>Tana River</county>
             <name>Bura</name>
+            <county>Tana River</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-20</itextId>
-            <county>Lamu</county>
             <name>Lamu East</name>
+            <county>Lamu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-21</itextId>
-            <county>Lamu</county>
             <name>Lamu West</name>
+            <county>Lamu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-22</itextId>
-            <county>Taita Taveta</county>
             <name>Taveta</name>
+            <county>Taita Taveta</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-23</itextId>
-            <county>Taita Taveta</county>
             <name>Wundanyi</name>
+            <county>Taita Taveta</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-24</itextId>
-            <county>Taita Taveta</county>
             <name>Mwatate</name>
+            <county>Taita Taveta</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-25</itextId>
-            <county>Taita Taveta</county>
             <name>Voi</name>
+            <county>Taita Taveta</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-26</itextId>
-            <county>Garissa</county>
             <name>Garissa Township</name>
+            <county>Garissa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-27</itextId>
-            <county>Garissa</county>
             <name>Balambala</name>
+            <county>Garissa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-28</itextId>
-            <county>Garissa</county>
             <name>Lagdera</name>
+            <county>Garissa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-29</itextId>
-            <county>Garissa</county>
             <name>Daadab</name>
+            <county>Garissa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-30</itextId>
-            <county>Garissa</county>
             <name>Fafi</name>
+            <county>Garissa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-31</itextId>
-            <county>Garissa</county>
             <name>Ijara</name>
+            <county>Garissa</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-32</itextId>
-            <county>Wajir</county>
             <name>Wajir North</name>
+            <county>Wajir</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-33</itextId>
-            <county>Wajir</county>
             <name>Wajir East</name>
+            <county>Wajir</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-34</itextId>
-            <county>Wajir</county>
             <name>Tarbaj</name>
+            <county>Wajir</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-35</itextId>
-            <county>Wajir</county>
             <name>Wajir West</name>
+            <county>Wajir</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-36</itextId>
-            <county>Wajir</county>
             <name>Eldas</name>
+            <county>Wajir</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-37</itextId>
-            <county>Wajir</county>
             <name>Wajir South</name>
+            <county>Wajir</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-38</itextId>
-            <county>Mandera</county>
             <name>Mandera West</name>
+            <county>Mandera</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-39</itextId>
-            <county>Mandera</county>
             <name>Banissa</name>
+            <county>Mandera</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-40</itextId>
-            <county>Mandera</county>
             <name>Mandera North</name>
+            <county>Mandera</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-41</itextId>
-            <county>Mandera</county>
             <name>Mandera South</name>
+            <county>Mandera</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-42</itextId>
-            <county>Mandera</county>
             <name>Mandera East</name>
+            <county>Mandera</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-43</itextId>
-            <county>Mandera</county>
             <name>Lafey</name>
+            <county>Mandera</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-44</itextId>
-            <county>Marsabit</county>
             <name>Moyale</name>
+            <county>Marsabit</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-45</itextId>
-            <county>Marsabit</county>
             <name>North Horr</name>
+            <county>Marsabit</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-46</itextId>
-            <county>Marsabit</county>
             <name>Saku</name>
+            <county>Marsabit</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-47</itextId>
-            <county>Marsabit</county>
             <name>Laisamis</name>
+            <county>Marsabit</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-48</itextId>
-            <county>Isiolo</county>
             <name>Isiolo North</name>
+            <county>Isiolo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-49</itextId>
-            <county>Isiolo</county>
             <name>Isiolo South</name>
+            <county>Isiolo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-50</itextId>
-            <county>Meru</county>
             <name>Igembe South</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-51</itextId>
-            <county>Meru</county>
             <name>Igembe Central</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-52</itextId>
-            <county>Meru</county>
             <name>Igembe North</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-53</itextId>
-            <county>Meru</county>
             <name>Tigania West</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-54</itextId>
-            <county>Meru</county>
             <name>Tigania East</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-55</itextId>
-            <county>Meru</county>
             <name>North Imenti</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-56</itextId>
-            <county>Meru</county>
             <name>Buuri</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-57</itextId>
-            <county>Meru</county>
             <name>Central Imenti</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-58</itextId>
-            <county>Meru</county>
             <name>South Imenti</name>
+            <county>Meru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-59</itextId>
-            <county>Tharaka-Nithi</county>
             <name>Maara</name>
+            <county>Tharaka-Nithi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-60</itextId>
-            <county>Tharaka-Nithi</county>
             <name>Chuka/Igambang'Ombe</name>
+            <county>Tharaka-Nithi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-61</itextId>
-            <county>Tharaka-Nithi</county>
             <name>Tharaka</name>
+            <county>Tharaka-Nithi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-62</itextId>
-            <county>Embu</county>
             <name>Manyatta</name>
+            <county>Embu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-63</itextId>
-            <county>Embu</county>
             <name>Runyenjes</name>
+            <county>Embu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-64</itextId>
-            <county>Embu</county>
             <name>Mbeere South</name>
+            <county>Embu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-65</itextId>
-            <county>Embu</county>
             <name>Mbeere North</name>
+            <county>Embu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-66</itextId>
-            <county>Kitui</county>
             <name>Mwingi West</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-67</itextId>
-            <county>Kitui</county>
             <name>Mwingi Central</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-68</itextId>
-            <county>Kitui</county>
             <name>Kitui West</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-69</itextId>
-            <county>Kitui</county>
             <name>Kitui Rural</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-70</itextId>
-            <county>Kitui</county>
             <name>Kitui Central</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-71</itextId>
-            <county>Kitui</county>
             <name>Kitui Rural</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-72</itextId>
-            <county>Kitui</county>
             <name>Kitui East</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-73</itextId>
-            <county>Kitui</county>
             <name>Kitui South</name>
+            <county>Kitui</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-74</itextId>
-            <county>Machakos</county>
             <name>Masinga</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-75</itextId>
-            <county>Machakos</county>
             <name>Yatta</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-76</itextId>
-            <county>Machakos</county>
             <name>Kangundo</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-77</itextId>
-            <county>Machakos</county>
             <name>Matungulu</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-78</itextId>
-            <county>Machakos</county>
             <name>Kathiani</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-79</itextId>
-            <county>Machakos</county>
             <name>Mavoko</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-80</itextId>
-            <county>Machakos</county>
             <name>Machakos Town</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-81</itextId>
-            <county>Machakos</county>
             <name>Mwala</name>
+            <county>Machakos</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-82</itextId>
-            <county>Makueni</county>
             <name>Mbooni</name>
+            <county>Makueni</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-83</itextId>
-            <county>Makueni</county>
             <name>Kilome</name>
+            <county>Makueni</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-84</itextId>
-            <county>Makueni</county>
             <name>Kaiti</name>
+            <county>Makueni</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-85</itextId>
-            <county>Makueni</county>
             <name>Makueni</name>
+            <county>Makueni</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-86</itextId>
-            <county>Makueni</county>
             <name>Kibwezi West</name>
+            <county>Makueni</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-87</itextId>
-            <county>Makueni</county>
             <name>Kibwezi East</name>
+            <county>Makueni</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-88</itextId>
-            <county>Nyandarua</county>
             <name>Kinangop</name>
+            <county>Nyandarua</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-89</itextId>
-            <county>Nyandarua</county>
             <name>Kipipiri</name>
+            <county>Nyandarua</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-90</itextId>
-            <county>Nyandarua</county>
             <name>Ol Kalou</name>
+            <county>Nyandarua</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-91</itextId>
-            <county>Nyandarua</county>
             <name>Ol Jorok</name>
+            <county>Nyandarua</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-92</itextId>
-            <county>Nyandarua</county>
             <name>Ndaragwa</name>
+            <county>Nyandarua</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-93</itextId>
-            <county>Nyeri</county>
             <name>Tetu</name>
+            <county>Nyeri</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-94</itextId>
-            <county>Nyeri</county>
             <name>Kieni</name>
+            <county>Nyeri</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-95</itextId>
-            <county>Nyeri</county>
             <name>Mathira</name>
+            <county>Nyeri</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-96</itextId>
-            <county>Nyeri</county>
             <name>Othaya</name>
+            <county>Nyeri</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-97</itextId>
-            <county>Nyeri</county>
             <name>Mukurweini</name>
+            <county>Nyeri</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-98</itextId>
-            <county>Nyeri</county>
             <name>Nyeri Town</name>
+            <county>Nyeri</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-99</itextId>
-            <county>Kirinyaga</county>
             <name>Mwea</name>
+            <county>Kirinyaga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-100</itextId>
-            <county>Kirinyaga</county>
             <name>Gichugu</name>
+            <county>Kirinyaga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-101</itextId>
-            <county>Kirinyaga</county>
             <name>Ndia</name>
+            <county>Kirinyaga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-102</itextId>
-            <county>Kirinyaga</county>
             <name>Kirinyaga Central</name>
+            <county>Kirinyaga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-103</itextId>
-            <county>Murang'A</county>
             <name>Kangema</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-104</itextId>
-            <county>Murang'A</county>
             <name>Mathioya</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-105</itextId>
-            <county>Murang'A</county>
             <name>Kiharu</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-106</itextId>
-            <county>Murang'A</county>
             <name>Kigumo</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-107</itextId>
-            <county>Murang'A</county>
             <name>Maragwa</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-108</itextId>
-            <county>Murang'A</county>
             <name>Kandara</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-109</itextId>
-            <county>Murang'A</county>
             <name>Gatanga</name>
+            <county>Murang'A</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-110</itextId>
-            <county>Kiambu</county>
             <name>Gatundu North</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-111</itextId>
-            <county>Kiambu</county>
             <name>Juja</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-112</itextId>
-            <county>Kiambu</county>
             <name>Thika Town</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-113</itextId>
-            <county>Kiambu</county>
             <name>Ruiru</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-114</itextId>
-            <county>Kiambu</county>
             <name>Githunguri</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-115</itextId>
-            <county>Kiambu</county>
             <name>Kiambu</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-116</itextId>
-            <county>Kiambu</county>
             <name>Kiambaa</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-117</itextId>
-            <county>Kiambu</county>
             <name>Kabete</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-118</itextId>
-            <county>Kiambu</county>
             <name>Kikuyu</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-119</itextId>
-            <county>Kiambu</county>
             <name>Limuru</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-120</itextId>
-            <county>Kiambu</county>
             <name>Lari</name>
+            <county>Kiambu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-121</itextId>
-            <county>Turkana</county>
             <name>Turkana North</name>
+            <county>Turkana</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-122</itextId>
-            <county>Turkana</county>
             <name>Turkana West</name>
+            <county>Turkana</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-123</itextId>
-            <county>Turkana</county>
             <name>Turkana Central</name>
+            <county>Turkana</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-124</itextId>
-            <county>Turkana</county>
             <name>Loima</name>
+            <county>Turkana</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-125</itextId>
-            <county>Turkana</county>
             <name>Turkana South</name>
+            <county>Turkana</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-126</itextId>
-            <county>Turkana</county>
             <name>Turkana East</name>
+            <county>Turkana</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-127</itextId>
-            <county>West Pokot</county>
             <name>Kapenguria</name>
+            <county>West Pokot</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-128</itextId>
-            <county>West Pokot</county>
             <name>Sigor</name>
+            <county>West Pokot</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-129</itextId>
-            <county>West Pokot</county>
             <name>Kacheliba</name>
+            <county>West Pokot</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-130</itextId>
-            <county>West Pokot</county>
             <name>Pokot South</name>
+            <county>West Pokot</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-131</itextId>
-            <county>Samburu</county>
             <name>Samburu West</name>
+            <county>Samburu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-132</itextId>
-            <county>Samburu</county>
             <name>Samburu North</name>
+            <county>Samburu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-133</itextId>
-            <county>Samburu</county>
             <name>Samburu East</name>
+            <county>Samburu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-134</itextId>
-            <county>Trans Nzoia</county>
             <name>Kwanza</name>
+            <county>Trans Nzoia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-135</itextId>
-            <county>Trans Nzoia</county>
             <name>Endebess</name>
+            <county>Trans Nzoia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-136</itextId>
-            <county>Trans Nzoia</county>
             <name>Saboti</name>
+            <county>Trans Nzoia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-137</itextId>
-            <county>Trans Nzoia</county>
             <name>Kiminini</name>
+            <county>Trans Nzoia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-138</itextId>
-            <county>Trans Nzoia</county>
             <name>Cherangany</name>
+            <county>Trans Nzoia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-139</itextId>
-            <county>Uasin Gishu</county>
             <name>Soy</name>
+            <county>Uasin Gishu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-140</itextId>
-            <county>Uasin Gishu</county>
             <name>Turbo</name>
+            <county>Uasin Gishu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-141</itextId>
-            <county>Uasin Gishu</county>
             <name>Moiben</name>
+            <county>Uasin Gishu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-142</itextId>
-            <county>Uasin Gishu</county>
             <name>Ainabkoi</name>
+            <county>Uasin Gishu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-143</itextId>
-            <county>Uasin Gishu</county>
             <name>Kapseret</name>
+            <county>Uasin Gishu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-144</itextId>
-            <county>Uasin Gishu</county>
             <name>Kesses</name>
+            <county>Uasin Gishu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-145</itextId>
-            <county>Elgeyo-Marakwet</county>
             <name>Marakwet East</name>
+            <county>Elgeyo-Marakwet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-146</itextId>
-            <county>Elgeyo-Marakwet</county>
             <name>Keiyo North</name>
+            <county>Elgeyo-Marakwet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-147</itextId>
-            <county>Elgeyo-Marakwet</county>
             <name>Keiyo South</name>
+            <county>Elgeyo-Marakwet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-148</itextId>
-            <county>Nandi</county>
             <name>Tinderet</name>
+            <county>Nandi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-149</itextId>
-            <county>Nandi</county>
             <name>Aldai</name>
+            <county>Nandi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-150</itextId>
-            <county>Nandi</county>
             <name>Nandi Hills</name>
+            <county>Nandi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-151</itextId>
-            <county>Nandi</county>
             <name>Chesumei</name>
+            <county>Nandi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-152</itextId>
-            <county>Nandi</county>
             <name>Emgwen</name>
+            <county>Nandi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-153</itextId>
-            <county>Nandi</county>
             <name>Mosop</name>
+            <county>Nandi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-154</itextId>
-            <county>Baringo</county>
             <name>Tiaty</name>
+            <county>Baringo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-155</itextId>
-            <county>Baringo</county>
             <name>Baringo North</name>
+            <county>Baringo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-156</itextId>
-            <county>Baringo</county>
             <name>Baringo Central</name>
+            <county>Baringo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-157</itextId>
-            <county>Baringo</county>
             <name>Baringo South</name>
+            <county>Baringo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-158</itextId>
-            <county>Baringo</county>
             <name>Mogotio</name>
+            <county>Baringo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-159</itextId>
-            <county>Baringo</county>
             <name>Eldama Ravine</name>
+            <county>Baringo</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-160</itextId>
-            <county>Laikipia</county>
             <name>Laikipia West</name>
+            <county>Laikipia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-161</itextId>
-            <county>Laikipia</county>
             <name>Laikipia East</name>
+            <county>Laikipia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-162</itextId>
-            <county>Laikipia</county>
             <name>Laikipia North</name>
+            <county>Laikipia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-163</itextId>
-            <county>Nakuru</county>
             <name>Molo</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-164</itextId>
-            <county>Nakuru</county>
             <name>Njoro</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-165</itextId>
-            <county>Nakuru</county>
             <name>Naivasha</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-166</itextId>
-            <county>Nakuru</county>
             <name>Gilgil</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-167</itextId>
-            <county>Nakuru</county>
             <name>Kuresoi South</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-168</itextId>
-            <county>Nakuru</county>
             <name>Kuresoi North</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-169</itextId>
-            <county>Nakuru</county>
             <name>Subukia</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-170</itextId>
-            <county>Nakuru</county>
             <name>Rongai</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-171</itextId>
-            <county>Nakuru</county>
             <name>Bahati</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-172</itextId>
-            <county>Nakuru</county>
             <name>Nakuru Town West</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-173</itextId>
-            <county>Nakuru</county>
             <name>Nakuru Town East</name>
+            <county>Nakuru</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-174</itextId>
-            <county>Narok</county>
             <name>Kilgoris</name>
+            <county>Narok</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-175</itextId>
-            <county>Narok</county>
             <name>Emurua Dikirr</name>
+            <county>Narok</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-176</itextId>
-            <county>Narok</county>
             <name>Narok North</name>
+            <county>Narok</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-177</itextId>
-            <county>Narok</county>
             <name>Narok East</name>
+            <county>Narok</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-178</itextId>
-            <county>Narok</county>
             <name>Narok South</name>
+            <county>Narok</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-179</itextId>
-            <county>Narok</county>
             <name>Narok West</name>
+            <county>Narok</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-180</itextId>
-            <county>Kajiado</county>
             <name>Kajiado North</name>
+            <county>Kajiado</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-181</itextId>
-            <county>Kajiado</county>
             <name>Kajiado Central</name>
+            <county>Kajiado</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-182</itextId>
-            <county>Kajiado</county>
             <name>Kajiado East</name>
+            <county>Kajiado</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-183</itextId>
-            <county>Kajiado</county>
             <name>Kajiado West</name>
+            <county>Kajiado</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-184</itextId>
-            <county>Kajiado</county>
             <name>Kajiado South</name>
+            <county>Kajiado</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-185</itextId>
-            <county>Kericho</county>
             <name>Kipkelion East</name>
+            <county>Kericho</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-186</itextId>
-            <county>Kericho</county>
             <name>Kipkelion West</name>
+            <county>Kericho</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-187</itextId>
-            <county>Kericho</county>
             <name>Ainamoi</name>
+            <county>Kericho</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-188</itextId>
-            <county>Kericho</county>
             <name>Bureti</name>
+            <county>Kericho</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-189</itextId>
-            <county>Kericho</county>
             <name>Belgut</name>
+            <county>Kericho</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-190</itextId>
-            <county>Kericho</county>
             <name>Sigowet/Soin</name>
+            <county>Kericho</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-191</itextId>
-            <county>Bomet</county>
             <name>Sotik</name>
+            <county>Bomet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-192</itextId>
-            <county>Bomet</county>
             <name>Chepalungu</name>
+            <county>Bomet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-193</itextId>
-            <county>Bomet</county>
             <name>Bomet East</name>
+            <county>Bomet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-194</itextId>
-            <county>Bomet</county>
             <name>Bomet Central</name>
+            <county>Bomet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-195</itextId>
-            <county>Bomet</county>
             <name>Konoin</name>
+            <county>Bomet</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-196</itextId>
-            <county>Kakamega</county>
             <name>Lugari</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-197</itextId>
-            <county>Kakamega</county>
             <name>Likuyani</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-198</itextId>
-            <county>Kakamega</county>
             <name>Malava</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-199</itextId>
-            <county>Kakamega</county>
             <name>Lurambi</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-200</itextId>
-            <county>Kakamega</county>
             <name>Navakholo</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-201</itextId>
-            <county>Kakamega</county>
             <name>Mumias West</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-202</itextId>
-            <county>Kakamega</county>
             <name>Mumias East</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-203</itextId>
-            <county>Kakamega</county>
             <name>Matungu</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-204</itextId>
-            <county>Kakamega</county>
             <name>Butere</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-205</itextId>
-            <county>Kakamega</county>
             <name>Khwisero</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-206</itextId>
-            <county>Kakamega</county>
             <name>Shinyalu</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-207</itextId>
-            <county>Kakamega</county>
             <name>Ikolomani</name>
+            <county>Kakamega</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-208</itextId>
-            <county>Vihiga</county>
             <name>Vihiga</name>
+            <county>Vihiga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-209</itextId>
-            <county>Vihiga</county>
             <name>Sabatia</name>
+            <county>Vihiga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-210</itextId>
-            <county>Vihiga</county>
             <name>Hamisi</name>
+            <county>Vihiga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-211</itextId>
-            <county>Vihiga</county>
             <name>Luanda</name>
+            <county>Vihiga</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-212</itextId>
-            <county>Bungoma</county>
             <name>Mt. Elgon</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-213</itextId>
-            <county>Bungoma</county>
             <name>Sirisia</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-214</itextId>
-            <county>Bungoma</county>
             <name>Kabuchai</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-215</itextId>
-            <county>Bungoma</county>
             <name>Bumula</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-216</itextId>
-            <county>Bungoma</county>
             <name>Kanduyi</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-217</itextId>
-            <county>Bungoma</county>
             <name>Webuye East</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-218</itextId>
-            <county>Bungoma</county>
             <name>Kimilili</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-219</itextId>
-            <county>Bungoma</county>
             <name>Tongaren</name>
+            <county>Bungoma</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-220</itextId>
-            <county>Busia</county>
             <name>Teso North</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-221</itextId>
-            <county>Busia</county>
             <name>Teso South</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-222</itextId>
-            <county>Busia</county>
             <name>Nambale</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-223</itextId>
-            <county>Busia</county>
             <name>Matayos</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-224</itextId>
-            <county>Busia</county>
             <name>Butula</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-225</itextId>
-            <county>Busia</county>
             <name>Funyula</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-226</itextId>
-            <county>Busia</county>
             <name>Budalangi</name>
+            <county>Busia</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-227</itextId>
-            <county>Siaya</county>
             <name>Ugenya</name>
+            <county>Siaya</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-228</itextId>
-            <county>Siaya</county>
             <name>Ugunja</name>
+            <county>Siaya</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-229</itextId>
-            <county>Siaya</county>
             <name>Alego Usonga</name>
+            <county>Siaya</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-230</itextId>
-            <county>Siaya</county>
             <name>Gem</name>
+            <county>Siaya</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-231</itextId>
-            <county>Siaya</county>
             <name>Bondo</name>
+            <county>Siaya</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-232</itextId>
-            <county>Siaya</county>
             <name>Rarieda</name>
+            <county>Siaya</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-233</itextId>
-            <county>Kisumu</county>
             <name>Kisumu East</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-234</itextId>
-            <county>Kisumu</county>
             <name>Kisumu Central</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-235</itextId>
-            <county>Kisumu</county>
             <name>Kisumu East</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-236</itextId>
-            <county>Kisumu</county>
             <name>Kisumu West</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-237</itextId>
-            <county>Kisumu</county>
             <name>Seme</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-238</itextId>
-            <county>Kisumu</county>
             <name>Nyando</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-239</itextId>
-            <county>Kisumu</county>
             <name>Muhoroni</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-240</itextId>
-            <county>Kisumu</county>
             <name>Nyakach</name>
+            <county>Kisumu</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-241</itextId>
-            <county>Homa Bay</county>
             <name>Kasipul</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-242</itextId>
-            <county>Homa Bay</county>
             <name>Kabondo Kasipul</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-243</itextId>
-            <county>Homa Bay</county>
             <name>Karachuonyo</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-244</itextId>
-            <county>Homa Bay</county>
             <name>Rangwe</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-245</itextId>
-            <county>Homa Bay</county>
             <name>Homa Bay Town</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-246</itextId>
-            <county>Homa Bay</county>
             <name>Ndhiwa</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-247</itextId>
-            <county>Homa Bay</county>
             <name>Mbita</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-248</itextId>
-            <county>Homa Bay</county>
             <name>Suba</name>
+            <county>Homa Bay</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-249</itextId>
-            <county>Migori</county>
             <name>Rongo</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-250</itextId>
-            <county>Migori</county>
             <name>Awendo</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-251</itextId>
-            <county>Migori</county>
             <name>Suna East</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-252</itextId>
-            <county>Migori</county>
             <name>Suna West</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-253</itextId>
-            <county>Migori</county>
             <name>Uriri</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-254</itextId>
-            <county>Migori</county>
             <name>Nyatike</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-255</itextId>
-            <county>Migori</county>
             <name>Kuria West</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-256</itextId>
-            <county>Migori</county>
             <name>Kuria East</name>
+            <county>Migori</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-257</itextId>
-            <county>Kisii</county>
             <name>Bonchari</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-258</itextId>
-            <county>Kisii</county>
             <name>South Mugirango</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-259</itextId>
-            <county>Kisii</county>
             <name>Bomachoge Borabu</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-260</itextId>
-            <county>Kisii</county>
             <name>Bobasi</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-261</itextId>
-            <county>Kisii</county>
             <name>Bomachoge Chache</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-262</itextId>
-            <county>Kisii</county>
             <name>Nyaribari Masaba</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-263</itextId>
-            <county>Kisii</county>
             <name>Nyaribari Chache</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-264</itextId>
-            <county>Kisii</county>
             <name>Kitutu Chache North</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-265</itextId>
-            <county>Kisii</county>
             <name>Kitutu Chache South</name>
+            <county>Kisii</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-266</itextId>
-            <county>Nyamira</county>
             <name>Kitutu Masaba</name>
+            <county>Nyamira</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-267</itextId>
-            <county>Nyamira</county>
             <name>West Mugirango</name>
+            <county>Nyamira</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-268</itextId>
-            <county>Nyamira</county>
             <name>North Mugirango</name>
+            <county>Nyamira</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-269</itextId>
-            <county>Nyamira</county>
             <name>Borabu</name>
+            <county>Nyamira</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-270</itextId>
-            <county>Nairobi</county>
             <name>Westlands</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-271</itextId>
-            <county>Nairobi</county>
             <name>Dagoretti North</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-272</itextId>
-            <county>Nairobi</county>
             <name>Dagoretti South</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-273</itextId>
-            <county>Nairobi</county>
             <name>Langata</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-274</itextId>
-            <county>Nairobi</county>
             <name>Kibra</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-275</itextId>
-            <county>Nairobi</county>
             <name>Roysambu</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-276</itextId>
-            <county>Nairobi</county>
             <name>Kasarani</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-277</itextId>
-            <county>Nairobi</county>
             <name>Ruaraka</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-278</itextId>
-            <county>Nairobi</county>
             <name>Embakasi South</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-279</itextId>
-            <county>Nairobi</county>
             <name>Embakasi North</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-280</itextId>
-            <county>Nairobi</county>
             <name>Embakasi Central</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-281</itextId>
-            <county>Nairobi</county>
             <name>Embakasi East</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-282</itextId>
-            <county>Nairobi</county>
             <name>Embakasi West</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-283</itextId>
-            <county>Nairobi</county>
             <name>Makadara</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-284</itextId>
-            <county>Nairobi</county>
             <name>Kamukunji</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-285</itextId>
-            <county>Nairobi</county>
             <name>Starehe</name>
+            <county>Nairobi</county>
           </item>
           <item>
             <itextId>static_instance-select_subcounty-286</itextId>
-            <county>Nairobi</county>
             <name>Mathare</name>
+            <county>Nairobi</county>
           </item>
         </root>
       </instance>
