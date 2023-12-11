@@ -5,26 +5,26 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/case_vaccination/cv_created/created_by:label">
-            <value>Created By</value>
-          </text>
-          <text id="/case_vaccination/cv_created/created_on:label">
-            <value>Created On</value>
-          </text>
-          <text id="/case_vaccination/cv_prerequisites/cv_date:label">
+          <text id="/case_vaccination/case_vaccination/cv_date:label">
             <value>Date</value>
           </text>
-          <text id="/case_vaccination/cv_prerequisites/cv_dose_number:hint">
+          <text id="/case_vaccination/case_vaccination/cv_dose_number:hint">
             <value>e.g. 1: for first dose, 2: for second dose etc.</value>
           </text>
-          <text id="/case_vaccination/cv_prerequisites/cv_dose_number:label">
+          <text id="/case_vaccination/case_vaccination/cv_dose_number:label">
             <value>Dose Number</value>
           </text>
-          <text id="/case_vaccination/cv_prerequisites/cv_name:hint">
+          <text id="/case_vaccination/case_vaccination/cv_name:hint">
             <value>i.e. product name</value>
           </text>
-          <text id="/case_vaccination/cv_prerequisites/cv_name:label">
+          <text id="/case_vaccination/case_vaccination/cv_name:label">
             <value>Vaccine Name</value>
+          </text>
+          <text id="/case_vaccination/cv_reported/reported_by:label">
+            <value>Reported By</value>
+          </text>
+          <text id="/case_vaccination/cv_reported/reported_on:label">
+            <value>Reported On</value>
           </text>
           <text id="/case_vaccination/prerequisites/case_exposure_title:label">
             <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to document any vaccines the patient received for this disease or syndrome before or during the outbreak. &lt;/h4&gt;&lt;p&gt;This form can be filled multiple for each vaccine or vaccine dosage&lt;/p&gt;</value>
@@ -107,8 +107,8 @@
               </parent>
             </contact>
           </inputs>
-          <patient_uuid/>
-          <prerequisites>
+          <patient_uuid tag="hidden"/>
+          <prerequisites tag="hidden">
             <outbreak_location>
               <_id/>
               <name/>
@@ -124,28 +124,28 @@
             </outbreak_location>
             <ci_case_id/>
             <ci_case_name/>
-            <outbreak_code/>
-            <outbreak_name/>
-            <outbreak_date/>
-            <outbreak_status/>
-            <outbreak_location_name/>
-            <outbreak_location_county/>
-            <outbreak_location_subcounty/>
-            <case_outbreak_title/>
-            <case_outbreak_location_title/>
-            <case_name_title/>
-            <case_id_title/>
-            <case_exposure_title/>
+            <outbreak_code tag="hidden"/>
+            <outbreak_name tag="hidden"/>
+            <outbreak_date tag="hidden"/>
+            <outbreak_status tag="hidden"/>
+            <outbreak_location_name tag="hidden"/>
+            <outbreak_location_county tag="hidden"/>
+            <outbreak_location_subcounty tag="hidden"/>
+            <case_outbreak_title tag="hidden"/>
+            <case_outbreak_location_title tag="hidden"/>
+            <case_name_title tag="hidden"/>
+            <case_id_title tag="hidden"/>
+            <case_exposure_title tag="hidden"/>
           </prerequisites>
-          <cv_prerequisites>
+          <case_vaccination>
             <cv_name/>
             <cv_dose_number/>
             <cv_date/>
-          </cv_prerequisites>
-          <cv_created>
-            <created_by/>
-            <created_on/>
-          </cv_created>
+          </case_vaccination>
+          <cv_reported>
+            <reported_by/>
+            <reported_on/>
+          </cv_reported>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -169,7 +169,7 @@
       <bind nodeset="/case_vaccination/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_vaccination/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_vaccination/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -192,11 +192,11 @@
       <bind nodeset="/case_vaccination/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/case_exposure_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_vaccination/cv_prerequisites/cv_name" type="string" required="true()"/>
-      <bind nodeset="/case_vaccination/cv_prerequisites/cv_dose_number" type="int" required="true()"/>
-      <bind nodeset="/case_vaccination/cv_prerequisites/cv_date" type="date" required="true()"/>
-      <bind nodeset="/case_vaccination/cv_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_vaccination/cv_created/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_vaccination/case_vaccination/cv_name" type="string" required="true()"/>
+      <bind nodeset="/case_vaccination/case_vaccination/cv_dose_number" type="int" required="true()"/>
+      <bind nodeset="/case_vaccination/case_vaccination/cv_date" type="date" required="true()"/>
+      <bind nodeset="/case_vaccination/cv_reported/reported_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_vaccination/cv_reported/reported_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_vaccination/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -234,25 +234,25 @@
         <label ref="jr:itext('/case_vaccination/prerequisites/case_exposure_title:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_vaccination/cv_prerequisites">
-      <input ref="/case_vaccination/cv_prerequisites/cv_name">
-        <label ref="jr:itext('/case_vaccination/cv_prerequisites/cv_name:label')"/>
-        <hint ref="jr:itext('/case_vaccination/cv_prerequisites/cv_name:hint')"/>
+    <group appearance="field-list" ref="/case_vaccination/case_vaccination">
+      <input ref="/case_vaccination/case_vaccination/cv_name">
+        <label ref="jr:itext('/case_vaccination/case_vaccination/cv_name:label')"/>
+        <hint ref="jr:itext('/case_vaccination/case_vaccination/cv_name:hint')"/>
       </input>
-      <input ref="/case_vaccination/cv_prerequisites/cv_dose_number">
-        <label ref="jr:itext('/case_vaccination/cv_prerequisites/cv_dose_number:label')"/>
-        <hint ref="jr:itext('/case_vaccination/cv_prerequisites/cv_dose_number:hint')"/>
+      <input ref="/case_vaccination/case_vaccination/cv_dose_number">
+        <label ref="jr:itext('/case_vaccination/case_vaccination/cv_dose_number:label')"/>
+        <hint ref="jr:itext('/case_vaccination/case_vaccination/cv_dose_number:hint')"/>
       </input>
-      <input ref="/case_vaccination/cv_prerequisites/cv_date">
-        <label ref="jr:itext('/case_vaccination/cv_prerequisites/cv_date:label')"/>
+      <input ref="/case_vaccination/case_vaccination/cv_date">
+        <label ref="jr:itext('/case_vaccination/case_vaccination/cv_date:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_vaccination/cv_created">
-      <input ref="/case_vaccination/cv_created/created_by">
-        <label ref="jr:itext('/case_vaccination/cv_created/created_by:label')"/>
+    <group appearance="field-list" ref="/case_vaccination/cv_reported">
+      <input ref="/case_vaccination/cv_reported/reported_by">
+        <label ref="jr:itext('/case_vaccination/cv_reported/reported_by:label')"/>
       </input>
-      <input ref="/case_vaccination/cv_created/created_on">
-        <label ref="jr:itext('/case_vaccination/cv_created/created_on:label')"/>
+      <input ref="/case_vaccination/cv_reported/reported_on">
+        <label ref="jr:itext('/case_vaccination/cv_reported/reported_on:label')"/>
       </input>
     </group>
   </h:body>

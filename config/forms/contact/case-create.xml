@@ -6,7 +6,7 @@
       <itext>
         <translation lang="en">
           <text id="/data/case/case_contact/_id:hint">
-            <value>Only case contacts from &lt;strong&gt;<output value=" /data/case/outbreak_location_name "/>&lt;/strong&gt; can be selected here</value>
+            <value>Only case contacts from &lt;strong&gt;<output value=" /data/case/outbreak_location_name "/>&lt;/strong&gt; can be selected here. If the contact is not listed here, fill the biographical information below.</value>
           </text>
           <text id="/data/case/case_contact/_id:label">
             <value>Followed Contact</value>
@@ -7964,7 +7964,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-12-04 9-36">
+        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-12-11 8-43">
           <inputs>
             <meta>
               <location>
@@ -18043,7 +18043,7 @@ Course</name>
       <bind nodeset="/data/case/case_identifiers/case_nupi" type="string"/>
       <bind nodeset="/data/case/case_identifiers/case_is_contact" type="select1" required="true()"/>
       <bind nodeset="/data/case/case_contact" relevant="selected( /data/case/case_identifiers/case_is_contact , 'yes')"/>
-      <bind nodeset="/data/case/case_contact/_id" type="string" required="true()"/>
+      <bind nodeset="/data/case/case_contact/_id" type="string"/>
       <bind nodeset="/data/case/case_contact/name" type="string"/>
       <bind nodeset="/data/case/case_contact/cc_biographical_data/surname" type="string"/>
       <bind nodeset="/data/case/case_contact/cc_biographical_data/first_name" type="string"/>

@@ -5,12 +5,6 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/case_exposure/ce_created/created_by:label">
-            <value>Created By</value>
-          </text>
-          <text id="/case_exposure/ce_created/created_on:label">
-            <value>Created On</value>
-          </text>
           <text id="/case_exposure/ce_food/cef_date:label">
             <value>When did the patient consume the food</value>
           </text>
@@ -82,6 +76,12 @@
           </text>
           <text id="/case_exposure/ce_food/cef_water_title:label">
             <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Water&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_exposure/ce_reported/reported_by:label">
+            <value>Reported By</value>
+          </text>
+          <text id="/case_exposure/ce_reported/reported_on:label">
+            <value>Reported On</value>
           </text>
           <text id="/case_exposure/ce_travel/cet_city_town_village:label">
             <value>City, Town, Village</value>
@@ -770,8 +770,8 @@
               </parent>
             </contact>
           </inputs>
-          <patient_uuid/>
-          <prerequisites>
+          <patient_uuid tag="hidden"/>
+          <prerequisites tag="hidden">
             <outbreak_location>
               <_id/>
               <name/>
@@ -822,10 +822,10 @@
             <cet_city_town_village/>
             <cet_date/>
           </ce_travel>
-          <ce_created>
-            <created_by/>
-            <created_on/>
-          </ce_created>
+          <ce_reported>
+            <reported_by/>
+            <reported_on/>
+          </ce_reported>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -875,23 +875,23 @@
       <bind nodeset="/case_exposure/ce_type/cel_type" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_food" relevant="selected( /case_exposure/ce_type/cel_type , 'food')"/>
       <bind nodeset="/case_exposure/ce_food/cef_name" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" calculate="today()" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" required="true()" calculate="today()"/>
       <bind nodeset="/case_exposure/ce_food/cef_time" type="time" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_source" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_affected_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_source" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')"/>
       <bind nodeset="/case_exposure/ce_food/cef_waste_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_toilet_type" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')" required="true()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')"/>
       <bind nodeset="/case_exposure/ce_travel" relevant="selected( /case_exposure/ce_type/cel_type , 'travel')"/>
       <bind nodeset="/case_exposure/ce_travel/cet_country" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_city_town_village" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_date" type="date" required="true()"/>
-      <bind nodeset="/case_exposure/ce_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_exposure/ce_created/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_exposure/ce_reported/reported_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_exposure/ce_reported/reported_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_exposure/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -1823,12 +1823,12 @@
         <label ref="jr:itext('/case_exposure/ce_travel/cet_date:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_exposure/ce_created">
-      <input ref="/case_exposure/ce_created/created_by">
-        <label ref="jr:itext('/case_exposure/ce_created/created_by:label')"/>
+    <group appearance="field-list" ref="/case_exposure/ce_reported">
+      <input ref="/case_exposure/ce_reported/reported_by">
+        <label ref="jr:itext('/case_exposure/ce_reported/reported_by:label')"/>
       </input>
-      <input ref="/case_exposure/ce_created/created_on">
-        <label ref="jr:itext('/case_exposure/ce_created/created_on:label')"/>
+      <input ref="/case_exposure/ce_reported/reported_on">
+        <label ref="jr:itext('/case_exposure/ce_reported/reported_on:label')"/>
       </input>
     </group>
   </h:body>

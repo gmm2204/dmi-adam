@@ -84,7 +84,7 @@
       <bind nodeset="/data/cases_group/outbreak_location_name" type="string" calculate="../../cases_group/outbreak_location/name"/>
       <bind nodeset="/data/cases_group/cha_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/data/cases_group/cha_outbreak_location_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
+      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" calculate="../../parent" readonly="true()"/>
       <bind nodeset="/data/cases_group/outbreak_location/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/code" type="string"/>

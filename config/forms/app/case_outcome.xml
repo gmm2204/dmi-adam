@@ -5,6 +5,12 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/case_outcome/co_created/created_by:label">
+            <value>Created By</value>
+          </text>
+          <text id="/case_outcome/co_created/created_on:label">
+            <value>Created On</value>
+          </text>
           <text id="/case_outcome/co_final/cof_case_classification/confirmed:label">
             <value>Confirmed</value>
           </text>
@@ -104,11 +110,8 @@
           <text id="/case_outcome/co_laboratory/col_sample_type:label">
             <value>Samples collected</value>
           </text>
-          <text id="/case_outcome/co_meta/created_by:label">
-            <value>Created By</value>
-          </text>
-          <text id="/case_outcome/co_meta/created_on:label">
-            <value>Created On</value>
+          <text id="/case_outcome/co_laboratory/col_sample_type_other:label">
+            <value>Samples collected (other)</value>
           </text>
           <text id="/case_outcome/prerequisites/case_id_title:label">
             <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_outcome/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
@@ -123,7 +126,7 @@
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_outcome/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/case_outcome_title:label">
-            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to record lab data and results (if any samples were taken), final patient status (recovered, hospitalized, referred or alive) and final case classification (confirmed, suspected, probable or non case). This form is only filled once, but can be updated.&lt;/h4&gt;</value>
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to record lab data and results (if any samples were taken), final patient status (recovered, hospitalized, referred or alive) and final case classification (confirmed, suspected, probable or non case).&lt;/h4&gt; &lt;p&gt;This is to be filled only once, but can be updated.&lt;/p&gt;</value>
           </text>
           <text id="/case_outcome/prerequisites/outbreak_location/_id:label">
             <value>Outbreak Location</value>
@@ -191,8 +194,8 @@
               </parent>
             </contact>
           </inputs>
-          <patient_uuid/>
-          <prerequisites>
+          <patient_uuid tag="hidden"/>
+          <prerequisites tag="hidden">
             <outbreak_location>
               <_id/>
               <name/>
@@ -226,6 +229,7 @@
             <col_consent/>
             <col_sample_date/>
             <col_sample_type/>
+            <col_sample_type_other/>
             <col_results/>
           </co_laboratory>
           <co_final>
@@ -234,10 +238,10 @@
             <cof_referral_reason/>
             <cof_date/>
           </co_final>
-          <co_meta>
+          <co_created>
             <created_by/>
             <created_on/>
-          </co_meta>
+          </co_created>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -286,15 +290,16 @@
       <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consent" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_type , 'other')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
-      <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" calculate="today()"/>
-      <bind nodeset="/case_outcome/co_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_outcome/co_meta/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_final/cof_date" type="date" calculate="today()" required="true()"/>
+      <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -385,6 +390,9 @@
           <value>other</value>
         </item>
       </select>
+      <input ref="/case_outcome/co_laboratory/col_sample_type_other">
+        <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_type_other:label')"/>
+      </input>
       <select1 ref="/case_outcome/co_laboratory/col_results">
         <label ref="jr:itext('/case_outcome/co_laboratory/col_results:label')"/>
         <item>
@@ -459,12 +467,12 @@
         <label ref="jr:itext('/case_outcome/co_final/cof_date:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_outcome/co_meta">
-      <input ref="/case_outcome/co_meta/created_by">
-        <label ref="jr:itext('/case_outcome/co_meta/created_by:label')"/>
+    <group appearance="field-list" ref="/case_outcome/co_created">
+      <input ref="/case_outcome/co_created/created_by">
+        <label ref="jr:itext('/case_outcome/co_created/created_by:label')"/>
       </input>
-      <input ref="/case_outcome/co_meta/created_on">
-        <label ref="jr:itext('/case_outcome/co_meta/created_on:label')"/>
+      <input ref="/case_outcome/co_created/created_on">
+        <label ref="jr:itext('/case_outcome/co_created/created_on:label')"/>
       </input>
     </group>
   </h:body>

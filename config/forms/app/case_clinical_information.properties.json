@@ -1,0 +1,14 @@
+{
+  "title": "Case Clinical Information",
+  "icon": "icon-symptoms-colored",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "(contact.hierarchy_id == 'case') || (!contact)"
+  },
+  "hidden_fields": [
+    "case_outbreak_title",
+    "patient_uuid",
+    "prerequisites"
+  ]
+}

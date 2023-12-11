@@ -3,5 +3,10 @@
   "icon": "icon-hospitalization-colored",
   "context": {
     "expression": "(contact.hierarchy_id === 'case') || (!contact)"
-  }
+  },
+  "hidden_fields": [
+    "patient_uuid",
+    "prerequisites",
+    "chl_title"
+  ]
 }
