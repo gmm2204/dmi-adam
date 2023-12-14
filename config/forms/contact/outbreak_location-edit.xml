@@ -15742,7 +15742,7 @@ Course</name>
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/outbreak_location/parent" type="string"/>
       <bind nodeset="/data/outbreak_location/type" type="string"/>
-      <bind nodeset="/data/outbreak_location/name" type="string" required="true()" calculate="concat( /data/outbreak_location/ol_county , ' &gt; ',  /data/outbreak_location/ol_subcounty )"/>
+      <bind nodeset="/data/outbreak_location/name" type="string" calculate="concat( /data/outbreak_location/ol_county , ' &gt; ',  /data/outbreak_location/ol_subcounty )" required="true()"/>
       <bind nodeset="/data/outbreak_location/outbreak_name" type="string" calculate="../../outbreak_location/outbreak/name"/>
       <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/outbreak_location/outbreak/name" type="string"/>

@@ -15774,7 +15774,7 @@ Course</name>
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" required="true()" readonly="true()"/>
       <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
       <bind nodeset="/data/contact/parent" type="string"/>
       <bind nodeset="/data/contact/type" type="string"/>
@@ -15790,8 +15790,8 @@ Course</name>
       <bind nodeset="/data/outbreak/description" type="string"/>
       <bind nodeset="/data/outbreak/county" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/subcounty" type="select1" required="true()"/>
-      <bind nodeset="/data/outbreak/date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/data/outbreak/status" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/outbreak/date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/outbreak/status" type="select1" required="true()" readonly="true()"/>
       <bind nodeset="/data/outbreak/contact" type="string" calculate="coalesce( /data/init/select_person ,&quot;NEW&quot;)"/>
       <bind nodeset="/data/outbreak/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
       <bind nodeset="/data/outbreak/metas/created_by" type="string" calculate="../../../inputs/user/name"/>

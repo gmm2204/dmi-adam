@@ -1,6 +1,6 @@
 {
   "messages-en": {
-    "localhost/medic": "DAD9SE8pvIKj0UatlH7Uig=="
+    "localhost/medic": "zfoQZYJgsf2pRu3UNvAXoA=="
   },
   "form:contact:clinic:create": {
     "localhost/medic": "osnVTPdAqrL1U2cKN15BZw=="
@@ -9,10 +9,10 @@
     "localhost/medic": "B/fdBF58vQw3+yoram4Zrg=="
   },
   "form:contact:district_hospital:create": {
-    "localhost/medic": "TATEQjmx/7e49ZcfS8Gj+w=="
+    "localhost/medic": "d/+gZhpOyf0FHNXRoeeF/Q=="
   },
   "form:contact:district_hospital:edit": {
-    "localhost/medic": "/Jkg2u6qpIQ+lUllbeNpxg=="
+    "localhost/medic": "LM0/MS4DqBdRSKX24YpPwg=="
   },
   "form:contact:health_center:create": {
     "localhost/medic": "7YzK4Sa/TYFAHc2dUHKoeg=="
@@ -21,7 +21,7 @@
     "localhost/medic": "dLp5HjL5ms8RK8aXJH0f6A=="
   },
   "form:contact:person:create": {
-    "localhost/medic": "kDJNasddWcXsXPuf5P9qBA=="
+    "localhost/medic": "2cwPloWOEFGxM5jX0P+nXA=="
   },
   "form:contact:person:edit": {
     "localhost/medic": "yHbzwuh/is6Jb4a0efmaaQ=="
@@ -81,7 +81,7 @@
     "localhost/medic": "NLQ4eNsSzDzBU58pUOtjvQ=="
   },
   "form:case_outcome": {
-    "localhost/medic": "LtNEKmItQnHECMUZiIvDFg=="
+    "localhost/medic": "GDWJ4Q5GJLdVNkx47noabg=="
   },
   "form:contact:person": {
     "localhost/medic": "4vx0LCQJBRINgz+nYrbu9w=="
@@ -90,10 +90,10 @@
     "localhost/medic": "j8Bv0lrmiyPYgM39FpoUGA=="
   },
   "form:contact:outbreak:create": {
-    "localhost/medic": "iEeDSOLG+U1N/vKXyoYIqw=="
+    "localhost/medic": "mF5srP040g4Aj29lG7hZ1w=="
   },
   "form:contact:outbreak:edit": {
-    "localhost/medic": "twODphGrOvFL0BmEp6WQ/Q=="
+    "localhost/medic": "0VIg8JFVODeoR0sX9GBEOQ=="
   },
   "form:contact:health_unit": {
     "localhost/medic": "OjBcB3h+L6X3fIln99Yd1A=="
@@ -108,19 +108,19 @@
     "localhost/medic": "M+AANW7y24NzKcd6sWSJeA=="
   },
   "form:contact:case:edit": {
-    "localhost/medic": "iZAML69FgCUgEEQ1j6ZoeQ=="
+    "localhost/medic": "TLKJYKBZEcn23+8C6/URow=="
   },
   "form:contact:health_unit:create": {
-    "localhost/medic": "fAAFcpacpk/vRIEZq06nEg=="
+    "localhost/medic": "oF8QnV3ZSXreLXsf5XKffQ=="
   },
   "form:contact:health_unit:edit": {
     "localhost/medic": "PMI2AXdaYmniwvvw66SALA=="
   },
   "form:contact:case_contact:create": {
-    "localhost/medic": "iQxiZGuWxnT2BZsYoY5obg=="
+    "localhost/medic": "Ny9YJyD8V/OG4/nSjN3thA=="
   },
   "form:contact:case_contact:edit": {
-    "localhost/medic": "Gbcuj0Zlup30wbJKjQM0YA=="
+    "localhost/medic": "upC11KUirWOhUruWYeqjfQ=="
   },
   "form:case_contact_follow_up": {
     "localhost/medic": "H7jwpYV0mEs/In2YzTsp1A=="
@@ -132,16 +132,16 @@
     "localhost/medic": "RcNNteoIfQLoIrbeWlJ4yA=="
   },
   "form:contact:outbreak_location:create": {
-    "localhost/medic": "3Po1h7tLWijuqNIuoF/9jg=="
+    "localhost/medic": "88fEFfPBKI+1onO10wclbQ=="
   },
   "form:contact:outbreak_location:edit": {
-    "localhost/medic": "WlSjXOVcY1zq35yjVV5JZw=="
+    "localhost/medic": "2lye/I8cawate8gDmMRbhw=="
   },
   "form:contact:cases_group:create": {
-    "localhost/medic": "klb5T/GmJdagHYIHXLjP4w=="
+    "localhost/medic": "gQd/CUmOVujWw9Yg0H/EjA=="
   },
   "form:contact:cases_group:edit": {
-    "localhost/medic": "iBSzagB6PAhkP7pBYQtCDQ=="
+    "localhost/medic": "y746cQfXFvS6829o6Iy6Lw=="
   },
   "form:contact:group:create": {
     "localhost/medic": "OD91NttHOPhDtR7hTtc0vw=="
@@ -156,21 +156,21 @@
     "localhost/medic": "I8R1T2SXP/3X/Oz4dm7Emw=="
   },
   "form:contact:moh:create": {
-    "localhost/medic": "yg4ajQ+PvxC5aOLg4xYInQ=="
+    "localhost/medic": "9ffxgkfaBZrVy7l9F1wN0Q=="
   },
   "form:contact:moh:edit": {
     "localhost/medic": "sQ3/Wpao0UAbR7EkQdsIlQ=="
   },
   "form:case_hospitalization": {
-    "localhost/medic": "oF7eStma1U+LCmK+G5RiNg=="
+    "localhost/medic": "ppDkn/SNJI1sAO0DyeyCSg=="
   },
   "form:case_exposure": {
-    "localhost/medic": "I3cl2pHqELo0QVVA/G2C8w=="
+    "localhost/medic": "UdQ2ghUMzR/vBgZ2jDW6DA=="
   },
   "form:case_vaccination": {
     "localhost/medic": "U14JW/1ry2Xhiufc6W3n9g=="
   },
   "form:case_clinical_information": {
-    "localhost/medic": "gnVSXvauxbiP//ITmXnDyg=="
+    "localhost/medic": "YuVTv58L2rFu6EmDu05Bxg=="
   }
 }

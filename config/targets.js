@@ -52,5 +52,31 @@ module.exports = [
             return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_code === 'dysentery' && r.fields.co_final.cof_case_classification === 'confirmed');
         },
         date: 'reported',
+    },
+    {
+        id: 'cholera_all_cases',
+        type: 'count',
+        icon: 'icon-patients-colored',
+        goal: -1,
+        translation_key: 'targets.outbreak.cholera.title',
+        subtitle_translation_key: 'targets.outbreak.cholera.all.subtitle',
+        appliesTo: 'reports',
+        appliesIf: (c, r) => {
+            return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_code === 'cholera');
+        },
+        date: 'reported',
+    },
+    {
+        id: 'cholera_confirmed_cases',
+        type: 'count',
+        icon: 'icon-cholera-colored',
+        goal: -1,
+        translation_key: 'targets.outbreak.cholera.title',
+        subtitle_translation_key: 'targets.outbreak.cholera.confirmed.subtitle',
+        appliesTo: 'reports',
+        appliesIf: (c, r) => {
+            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_code === 'cholera' && r.fields.co_final.cof_case_classification === 'confirmed');
+        },
+        date: 'reported',
     }
 ];
