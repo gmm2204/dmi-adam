@@ -56,9 +56,6 @@
           <text id="/case_clinical_information/cholera_screening/cholera_vaccination:label">
             <value>Has the patient been vaccinated?</value>
           </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_vaccination_doses/0:label">
-            <value>0</value>
-          </text>
           <text id="/case_clinical_information/cholera_screening/cholera_vaccination_doses/1:label">
             <value>1</value>
           </text>
@@ -2290,7 +2287,7 @@
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_clinical_information/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -2314,18 +2311,18 @@
       <bind nodeset="/case_clinical_information/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_investigation_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/dysentery_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'dysentery'"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_other" type="string" relevant="selected( /case_clinical_information/dysentery_screening/dysentery_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'cholera'"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_doses" type="select1" required="true()" relevant=" /case_clinical_information/cholera_screening/cholera_vaccination  = 'yes'"/>
       <bind nodeset="/case_clinical_information/covid19_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
-      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_others" type="string"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case" type="select1"/>
@@ -2343,7 +2340,7 @@
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_symptomatic_after" type="select1" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'no')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_asymptomatic_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'yes')"/>
       <bind nodeset="/case_clinical_information/evd_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_location" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms" type="select" required="true()"/>
@@ -2402,7 +2399,7 @@
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'measles'"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_rash" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_rash_type" type="select1" required="true()" relevant="selected( /case_clinical_information/measles_screening/measles_symptoms_rash , 'yes')"/>
@@ -2489,7 +2486,7 @@
       <bind nodeset="/case_clinical_information/ci_record_cutaneous" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous" relevant="selected( /case_clinical_information/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_ent" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_ent" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_duration_days" type="int" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_type" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_localization" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
@@ -2704,10 +2701,6 @@
       </select1>
       <select1 ref="/case_clinical_information/cholera_screening/cholera_vaccination_doses">
         <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses:label')"/>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses/0:label')"/>
-          <value>0</value>
-        </item>
         <item>
           <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses/1:label')"/>
           <value>1</value>
