@@ -298,8 +298,13 @@
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
       <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" calculate="today()"/>
+<<<<<<< HEAD
       <bind nodeset="/case_outcome/co_created/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
       <bind nodeset="/case_outcome/co_created/created_on" type="date" readonly="true()" calculate="today()"/>
+=======
+      <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>
+>>>>>>> 6b773bbcfe271865971b3749ffa0454f5141588a
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

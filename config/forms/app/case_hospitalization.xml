@@ -16929,7 +16929,7 @@ Course</name>
       <bind nodeset="/case_hospitalization/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_hospitalization/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_hospitalization/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_hospitalization/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_hospitalization/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_hospitalization/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_hospitalization/prerequisites/outbreak_location/ol_subcounty" type="string"/>
       <bind nodeset="/case_hospitalization/prerequisites/outbreak_location/outbreak/_id" type="string"/>
@@ -16952,7 +16952,11 @@ Course</name>
       <bind nodeset="/case_hospitalization/prerequisites/case_hospitalization_title" readonly="true()" type="string"/>
       <bind nodeset="/case_hospitalization/ch_location/chl_title" readonly="true()" type="string"/>
       <bind nodeset="/case_hospitalization/ch_location/chl_country" type="select1" required="true()"/>
+<<<<<<< HEAD
       <bind nodeset="/case_hospitalization/ch_location/chl_county" type="select1" calculate=" /case_hospitalization/prerequisites/outbreak_location_county " required="true()" relevant="selected( /case_hospitalization/ch_location/chl_country , 'Kenya')"/>
+=======
+      <bind nodeset="/case_hospitalization/ch_location/chl_county" type="select1" required="true()" calculate=" /case_hospitalization/prerequisites/outbreak_location_county " relevant="selected( /case_hospitalization/ch_location/chl_country , 'Kenya')"/>
+>>>>>>> 6b773bbcfe271865971b3749ffa0454f5141588a
       <bind nodeset="/case_hospitalization/ch_location/chl_subcounty" type="select1" required="true()" relevant="selected( /case_hospitalization/ch_location/chl_country , 'Kenya')"/>
       <bind nodeset="/case_hospitalization/ch_location/chl_type" type="select1" required="true()"/>
       <bind nodeset="/case_hospitalization/ch_location/chl_facility" type="string" required="true()" relevant="selected( /case_hospitalization/ch_location/chl_type , 'health_facility')"/>
@@ -16976,8 +16980,8 @@ Course</name>
       <bind nodeset="/case_hospitalization/cht_covid19/cht_covid19_ventilation" type="select1"/>
       <bind nodeset="/case_hospitalization/cht_covid19/cht_covid19_extracorporeal_membrane_oxygenation" type="select1"/>
       <bind nodeset="/case_hospitalization/ch_outcome/cho_outcome" type="select1"/>
-      <bind nodeset="/case_hospitalization/ch_reported/reported_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_hospitalization/ch_reported/reported_on" type="date" readonly="true()" calculate="today()"/>
+      <bind nodeset="/case_hospitalization/ch_reported/reported_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_hospitalization/ch_reported/reported_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_hospitalization/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
