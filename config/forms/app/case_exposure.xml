@@ -849,7 +849,7 @@
       <bind nodeset="/case_exposure/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_exposure/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_exposure/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_exposure/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_exposure/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_exposure/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_exposure/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_exposure/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -890,8 +890,8 @@
       <bind nodeset="/case_exposure/ce_travel/cet_country" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_city_town_village" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_date" type="date" required="true()"/>
-      <bind nodeset="/case_exposure/ce_reported/reported_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_exposure/ce_reported/reported_on" type="date" readonly="true()" calculate="today()"/>
+      <bind nodeset="/case_exposure/ce_reported/reported_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_exposure/ce_reported/reported_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_exposure/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

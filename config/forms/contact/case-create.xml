@@ -83,9 +83,6 @@
           <text id="/data/case/case_demographics/case_sex:label">
             <value>Sex</value>
           </text>
-          <text id="/data/case/case_demographics/case_sex_cs:label">
-            <value>Sex</value>
-          </text>
           <text id="/data/case/case_demographics/ephemeral_dob/age_months:label">
             <value>Age (Months)</value>
           </text>
@@ -7967,7 +7964,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-12-15 13-15">
+        <data id="contact:case:create" prefix="J1!contact:case:create!" delimiter="#" version="2023-12-15 14-58">
           <inputs>
             <meta>
               <location>
@@ -8033,7 +8030,6 @@ Mutonga/Kithumula</value>
               <first_name/>
               <middle_name/>
               <case_sex/>
-              <case_sex_cs/>
               <date_of_birth/>
               <date_of_birth_method/>
               <ephemeral_dob>
@@ -18054,19 +18050,18 @@ Course</name>
       <bind nodeset="/data/case/case_contact/cc_biographical_data/middle_name" type="string"/>
       <bind nodeset="/data/case/case_contact/cc_biographical_data/sex" type="string"/>
       <bind nodeset="/data/case/case_contact/cc_biographical_data/date_of_birth" type="string"/>
-      <bind nodeset="/data/case/case_contact/cc_residence_contact/contact_phone_number" type="tel"/>
+      <bind nodeset="/data/case/case_contact/cc_residence_contact/contact_phone_number" type="string"/>
       <bind nodeset="/data/case/case_contact/cc_residence_contact/contact_email_address" type="string"/>
       <bind nodeset="/data/case/case_demographics/case_demographics_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/case/case_demographics/surname" type="string" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_biographical_data/surname, ' '))" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/first_name" type="string" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_biographical_data/first_name, ' '))" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/surname" type="string" required="true()" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_biographical_data/surname, ' '))"/>
+      <bind nodeset="/data/case/case_demographics/first_name" type="string" required="true()" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_biographical_data/first_name, ' '))"/>
       <bind nodeset="/data/case/case_demographics/middle_name" type="string" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_biographical_data/middle_name, ' '))"/>
-      <bind nodeset="/data/case/case_demographics/case_sex" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/case_sex_cs" type="string" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_biographical_data/sex, ' '))" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/date_of_birth" type="string" calculate="../ephemeral_dob/dob_iso" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/case_sex" type="select1" required="true()" calculate="once(../../../case/case_contact/cc_biographical_data/sex)"/>
+      <bind nodeset="/data/case/case_demographics/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_iso"/>
       <bind nodeset="/data/case/case_demographics/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../../case/case_contact/cc_biographical_data/date_of_birth, ' '))" required="true()"/>
-      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_years" type="int" constraint=". &gt;= 0 and . &lt;= 130" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/dob_calendar" type="date" required="true()" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../../case/case_contact/cc_biographical_data/date_of_birth, ' '))"/>
+      <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_years" type="int" required="true()" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 130"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected( /data/case/case_demographics/ephemeral_dob/dob_method , 'no')"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) + 12, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0))"/>
       <bind nodeset="/data/case/case_demographics/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>
@@ -18080,14 +18075,14 @@ Course</name>
       <bind nodeset="/data/case/case_demographics/case_identification_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_demographics/case_identification_document_type" type="select1" required="true()"/>
       <bind nodeset="/data/case/case_demographics/case_identification_document_type_label" type="string" calculate="jr:choice-name( /data/case/case_demographics/case_identification_document_type ,' /data/case/case_demographics/case_identification_document_type ')"/>
-      <bind nodeset="/data/case/case_demographics/case_identification_document_number" type="string" relevant="(( /data/case/case_demographics/case_identification_document_type  != &quot;&quot;) and ( /data/case/case_demographics/case_identification_document_type  != &quot;none&quot;))" required="true()"/>
+      <bind nodeset="/data/case/case_demographics/case_identification_document_number" type="string" required="true()" relevant="(( /data/case/case_demographics/case_identification_document_type  != &quot;&quot;) and ( /data/case/case_demographics/case_identification_document_type  != &quot;none&quot;))"/>
       <bind nodeset="/data/case/case_location/case_location_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_location/case_phone_number" type="tel" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_email_address" type="string"/>
+      <bind nodeset="/data/case/case_location/case_email_address" type="string" calculate="once(if( /data/case/case_identifiers/case_is_contact  = 'yes', ../../../case/case_contact/cc_residence_contact/contact_email_address, ' '))"/>
       <bind nodeset="/data/case/case_location/case_country" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_county" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_subcounty" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
-      <bind nodeset="/data/case/case_location/case_ward" type="select1" relevant="selected( /data/case/case_location/case_country , 'Kenya')" required="true()"/>
+      <bind nodeset="/data/case/case_location/case_county" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
+      <bind nodeset="/data/case/case_location/case_subcounty" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
+      <bind nodeset="/data/case/case_location/case_ward" type="select1" required="true()" relevant="selected( /data/case/case_location/case_country , 'Kenya')"/>
       <bind nodeset="/data/case/case_location/case_facility" type="string"/>
       <bind nodeset="/data/case/case_reporting_location" relevant=" /data/case/outbreak_code  = 'evd'"/>
       <bind nodeset="/data/case/case_reporting_location/case_reporting_location_title" readonly="true()" type="string"/>
@@ -18100,13 +18095,13 @@ Course</name>
       <bind nodeset="/data/case/case_demographics_extended/case_demographics_extended_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_demographics_extended/case_education_level" type="select1"/>
       <bind nodeset="/data/case/case_demographics_extended/case_occupation" type="select1" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_other_occupation" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'other')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_country" type="select1" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_facility" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre" type="select1" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre_other" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_position" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
-      <bind nodeset="/data/case/case_demographics_extended/case_hcw_station" type="string" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')" required="true()"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_other_occupation" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'other')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_country" type="select1" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_facility" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre" type="select1" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_cadre_other" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_position" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
+      <bind nodeset="/data/case/case_demographics_extended/case_hcw_station" type="string" required="true()" relevant="selected( /data/case/case_demographics_extended/case_occupation , 'hcw')"/>
       <bind nodeset="/data/case/case_household_head/case_hh_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case/case_household_head/case_hh" type="select1"/>
       <bind nodeset="/data/case/case_household_head/case_hh_name" type="string" relevant="selected( /data/case/case_household_head/case_hh , 'no')"/>
@@ -18163,10 +18158,7 @@ Course</name>
           <hint ref="jr:itext('/data/case/case_contact/_id:hint')"/>
         </input>
         <group ref="/data/case/case_contact/cc_biographical_data"/>
-        <group ref="/data/case/case_contact/cc_residence_contact">
-          <input appearance="hidden" ref="/data/case/case_contact/cc_residence_contact/contact_phone_number"/>
-          <input appearance="hidden" ref="/data/case/case_contact/cc_residence_contact/contact_email_address"/>
-        </group>
+        <group ref="/data/case/case_contact/cc_residence_contact"/>
       </group>
       <group appearance="field-list" ref="/data/case/case_demographics">
         <input ref="/data/case/case_demographics/case_demographics_title">
@@ -18192,9 +18184,6 @@ Course</name>
             <value>female</value>
           </item>
         </select1>
-        <input ref="/data/case/case_demographics/case_sex_cs">
-          <label ref="jr:itext('/data/case/case_demographics/case_sex_cs:label')"/>
-        </input>
         <group ref="/data/case/case_demographics/ephemeral_dob">
           <select1 ref="/data/case/case_demographics/ephemeral_dob/dob_method">
             <label ref="jr:itext('/data/case/case_demographics/ephemeral_dob/dob_method:label')"/>

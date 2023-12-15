@@ -2311,28 +2311,28 @@
       <bind nodeset="/case_clinical_information/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_investigation_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/dysentery_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'dysentery'"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_other" type="string" relevant="selected( /case_clinical_information/dysentery_screening/dysentery_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'cholera'"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_doses" type="select1" relevant=" /case_clinical_information/cholera_screening/cholera_vaccination  = 'yes'" required="true()"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_doses" type="select1" required="true()" relevant=" /case_clinical_information/cholera_screening/cholera_vaccination  = 'yes'"/>
       <bind nodeset="/case_clinical_information/covid19_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
-      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_others" type="string"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case" type="select1"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions" type="select" relevant="selected( /case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_other" type="string" relevant="selected( /case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions , 'other')" required="true()"/>
+      <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions" type="select" required="true()" relevant="selected( /case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present , 'yes')"/>
+      <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_other" type="string" required="true()" relevant="selected( /case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions , 'other')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_date" type="date" required="true()" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case , 'yes')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_screening" type="select1"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_variant" type="string" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_screening , 'yes')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_lab_confirmation_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_screening , 'yes')"/>
@@ -2340,19 +2340,19 @@
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_symptomatic_after" type="select1" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'no')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_asymptomatic_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'yes')"/>
       <bind nodeset="/case_clinical_information/evd_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_location" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_others" type="string" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'other')"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'unexplained_bleeding')" required="true()"/>
+      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding" type="string" required="true()" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'unexplained_bleeding')"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_status_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_date_death" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_death" type="select1" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_community" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_name" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_date_death" type="date" required="true()" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')"/>
+      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_death" type="select1" required="true()" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')"/>
+      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_community" type="string" required="true()" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')"/>
+      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_name" type="string" required="true()" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_department" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_tradiotional_healer_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited" type="select1" required="true()"/>
@@ -2399,12 +2399,12 @@
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'measles'"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_rash" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_rash_type" type="select1" relevant="selected( /case_clinical_information/measles_screening/measles_symptoms_rash , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_rash_type" type="select1" required="true()" relevant="selected( /case_clinical_information/measles_screening/measles_symptoms_rash , 'yes')"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit_date" type="date" relevant="selected( /case_clinical_information/measles_screening/measles_residence_visit , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit_date" type="date" required="true()" relevant="selected( /case_clinical_information/measles_screening/measles_residence_visit , 'yes')"/>
       <bind nodeset="/case_clinical_information/unknown_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_onset" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_fever_history" type="select1" required="true()"/>
@@ -2412,82 +2412,81 @@
       <bind nodeset="/case_clinical_information/unknown_screening/general_chills" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_profuse_sweating" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_intense_pain" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/unknown_screening/general_intense_pain_sites" type="select" relevant="selected( /case_clinical_information/unknown_screening/general_intense_pain , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/unknown_screening/general_intense_pain_sites_other" type="string" relevant="selected( /case_clinical_information/unknown_screening/general_intense_pain_sites , 'other')" required="true()"/>
+      <bind nodeset="/case_clinical_information/unknown_screening/general_intense_pain_sites" type="select" required="true()" relevant="selected( /case_clinical_information/unknown_screening/general_intense_pain , 'yes')"/>
+      <bind nodeset="/case_clinical_information/unknown_screening/general_intense_pain_sites_other" type="string" required="true()" relevant="selected( /case_clinical_information/unknown_screening/general_intense_pain_sites , 'other')"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_observed_abnormal_bleeding" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/unknown_screening/general_observed_abnormal_bleeding_sites" type="select" relevant="selected( /case_clinical_information/unknown_screening/general_observed_abnormal_bleeding , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/unknown_screening/general_observed_abnormal_bleeding_sites_others" type="string" relevant="selected( /case_clinical_information/unknown_screening/general_observed_abnormal_bleeding_sites , 'other')" required="true()"/>
+      <bind nodeset="/case_clinical_information/unknown_screening/general_observed_abnormal_bleeding_sites" type="select" required="true()" relevant="selected( /case_clinical_information/unknown_screening/general_observed_abnormal_bleeding , 'yes')"/>
+      <bind nodeset="/case_clinical_information/unknown_screening/general_observed_abnormal_bleeding_sites_others" type="string" required="true()" relevant="selected( /case_clinical_information/unknown_screening/general_observed_abnormal_bleeding_sites , 'other')"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_dehydration" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_signs_of_shock" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_intense_fatigue" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening/os_symptoms_other" type="string"/>
       <bind nodeset="/case_clinical_information/unknown_screening/general_main_patient_complains" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cardiology_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_cardiology" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_cardiology" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_cardiology" relevant="selected( /case_clinical_information/ci_record_cardiology , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_heart_rate" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_capillary_refill_time" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_systolic_blood_pressure" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_diastolic_blood_pressure" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_weak_pulse" type="select1" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_cardiac_failure_signs" type="select1" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_cardiac_auscultation" type="select1" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_peripheral_oedemas" type="select1" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_other" type="string" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_weak_pulse" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_cardiac_failure_signs" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_cardiac_auscultation" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_peripheral_oedemas" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_cardiology/ci_cardiology_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_cardiology/ci_cardiology_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_respiratory_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_respiratory" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_respiratory" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_respiratory" relevant="selected( /case_clinical_information/ci_record_respiratory , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_respiratory/cir_rate" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_respiratory/cir_oxygen_saturation" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_respiratory/cir_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_cough" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_expectoration" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_expectoration_with_blood" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_breath_shortness" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_respiratory_distress" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_cyanosis" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_abnormal_lung_auscultation" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_signs_of_pneumonia" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_signs_of_pneumothorax" type="select1" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_respiratory/cir_other" type="string" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_cough" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_expectoration" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_expectoration_with_blood" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_breath_shortness" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_respiratory_distress" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_cyanosis" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_abnormal_lung_auscultation" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_signs_of_pneumonia" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_signs_of_pneumothorax" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_respiratory/cir_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_respiratory/cir_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_gastrointestinal_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_gastrointestinal" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_gastrointestinal" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_gastrointestinal" relevant="selected( /case_clinical_information/ci_record_gastrointestinal , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_nausea_vomiting" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_appetite_loss" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stomach_abdominal_pain" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_hiccups" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_tender_abdomen" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_palpable_spleen" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_abdominal_mass" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_palpable_liver" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_diarrhea" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_diarrhea_blood" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stool_rice_water_like_stools" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stool_bloody" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stool_pale" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_jaundice" type="select1" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_other" type="string" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stomach_abdominal_pain" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_hiccups" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_tender_abdomen" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_palpable_spleen" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_abdominal_mass" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_palpable_liver" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_diarrhea" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_diarrhea_blood" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stool_rice_water_like_stools" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stool_bloody" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_stool_pale" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_jaundice" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_gastrointestinal/cig_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_gastrointestinal/cig_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_neurology_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_neurology" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_neurology" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_neurology" relevant="selected( /case_clinical_information/ci_record_neurology , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_neurology/cin_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_paralysis" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_flaccid" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_abnormal_movements" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_seizures" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_mental_disorder" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_drowsiness_coma" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_neck_stiffness" type="select1" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_neurology/cin_other" type="string" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_paralysis" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_flaccid" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_abnormal_movements" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_seizures" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_mental_disorder" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_drowsiness_coma" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_neck_stiffness" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_neurology/cin_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_neurology/cin_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_cutaneous" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_cutaneous" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous" relevant="selected( /case_clinical_information/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_observed_disorders" type="select1" required="true()"/>
-<<<<<<< HEAD
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_ent" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_ent" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_duration_days" type="int" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_type" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_localization" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
@@ -2496,61 +2495,50 @@
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_skin_ulceration" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_enlarged_lymph_nodes" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/cic_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')"/>
-=======
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_duration_days" type="int" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_type" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_localization" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_localization_specified" type="string" relevant="selected( /case_clinical_information/ci_cutaneous/cic_localization , 'localized')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_skin_necrosis" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_skin_ulceration" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_enlarged_lymph_nodes" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/cic_other" type="string" relevant="selected( /case_clinical_information/ci_cutaneous/cic_observed_disorders , 'yes')" required="true()"/>
->>>>>>> 6b773bbcfe271865971b3749ffa0454f5141588a
       <bind nodeset="/case_clinical_information/ci_ent_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_ent" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_ent" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_ent" relevant="selected( /case_clinical_information/ci_record_ent , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_ent/cie_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_conjunctivitis" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_conjuctival_injections" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_runny_nose" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_ear_pain" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_voice_hoarse" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_difficulty_swallowing" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_sore_throat" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_oral_ulcerations" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_hypersalivation" type="select1" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_ent/cie_other" type="string" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_conjunctivitis" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_conjuctival_injections" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_runny_nose" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_ear_pain" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_voice_hoarse" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_difficulty_swallowing" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_sore_throat" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_oral_ulcerations" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_hypersalivation" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_ent/cie_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_ent/cie_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_uro_gynecology_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_uro_gynecology" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_uro_gynecology" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_uro_gynecology" relevant="selected( /case_clinical_information/ci_record_uro_gynecology , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_uro_gynecology/ciug_recent_spontaneous_abortion" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_uro_gynecology/ciug_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_vaginal_bleeding_outside_menstruation" type="select1" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_vaginal_discharge" type="select1" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_urine_dark" type="select1" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_urination_pain" type="select1" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_urine_not_passing" type="select1" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cie_other" type="string" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_vaginal_bleeding_outside_menstruation" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_vaginal_discharge" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_urine_dark" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_urination_pain" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cuig_urine_not_passing" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_uro_gynecology/cie_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_uro_gynecology/ciug_observed_disorders , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_underlying_conditions_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
-      <bind nodeset="/case_clinical_information/ci_record_underlying_conditions" type="select1" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_record_underlying_conditions" type="select1" required="true()" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
       <bind nodeset="/case_clinical_information/ci_underlying_conditions" relevant="selected( /case_clinical_information/ci_record_underlying_conditions , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_underlying_conditions/ciuc_pregrancy" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/ciuc_pregrancy_months" type="int" relevant="selected( /case_clinical_information/ci_underlying_conditions/ciuc_pregrancy , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/ciuc_pregrancy_months" type="int" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/ciuc_pregrancy , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_post_partum" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_conditions" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_chronic_disease" type="select1" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_chronic_disease_specify" type="string" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_chronic_disease , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_associated_acute_disease" type="select1" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_associated_acute_disease_specify" type="string" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_associated_acute_disease , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_immunodeficiency" type="select1" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_immunodeficiency_specify" type="string" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_immunodeficiency , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_malnutrition" type="select1" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_muac_measurement" type="decimal" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_other" type="string" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_chronic_disease" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_chronic_disease_specify" type="string" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_chronic_disease , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_associated_acute_disease" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_associated_acute_disease_specify" type="string" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_associated_acute_disease , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_immunodeficiency" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_immunodeficiency_specify" type="string" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_immunodeficiency , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_malnutrition" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_muac_measurement" type="decimal" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')"/>
+      <bind nodeset="/case_clinical_information/ci_underlying_conditions/cuic_other" type="string" required="true()" relevant="selected( /case_clinical_information/ci_underlying_conditions/cuic_conditions , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_interviewee/case_interviewee_type" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_interviewee/case_interviewee_name" type="string" relevant="selected( /case_clinical_information/ci_interviewee/case_interviewee_type , 'proxy')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_interviewee/case_inverviewee_relationship" type="select1" relevant="selected( /case_clinical_information/ci_interviewee/case_interviewee_type , 'proxy')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_interviewee/case_interviewee_name" type="string" required="true()" relevant="selected( /case_clinical_information/ci_interviewee/case_interviewee_type , 'proxy')"/>
+      <bind nodeset="/case_clinical_information/ci_interviewee/case_inverviewee_relationship" type="select1" required="true()" relevant="selected( /case_clinical_information/ci_interviewee/case_interviewee_type , 'proxy')"/>
       <bind nodeset="/case_clinical_information/cci_created/created_by" type="string" calculate="../../inputs/user/name"/>
       <bind nodeset="/case_clinical_information/cci_created/created_on" type="string" calculate="today()"/>
       <bind nodeset="/case_clinical_information/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>

@@ -265,7 +265,7 @@
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_outcome/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
+      <bind nodeset="/case_outcome/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/name" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/outbreak_location/ol_subcounty" type="string"/>
@@ -289,22 +289,17 @@
       <bind nodeset="/case_outcome/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consent" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_type , 'other')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consent" type="select1" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_date" type="date" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_type" type="select" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_type_other" type="string" relevant="selected( /case_outcome/co_laboratory/col_sample_type , 'other')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_results" type="select1" relevant="selected( /case_outcome/co_laboratory/col_consent , 'yes')" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
-      <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" calculate="today()"/>
-<<<<<<< HEAD
-      <bind nodeset="/case_outcome/co_created/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_outcome/co_created/created_on" type="date" readonly="true()" calculate="today()"/>
-=======
+      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')" required="true()"/>
+      <bind nodeset="/case_outcome/co_final/cof_date" type="date" calculate="today()" required="true()"/>
       <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
       <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>
->>>>>>> 6b773bbcfe271865971b3749ffa0454f5141588a
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
