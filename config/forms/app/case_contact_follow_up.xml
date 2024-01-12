@@ -166,8 +166,8 @@
       <bind nodeset="/case_contact_follow_up/cc_follow_up/cc_follow_up_title" readonly="true()" type="string"/>
       <bind nodeset="/case_contact_follow_up/cc_follow_up/ccfu_date_last_contact" type="date" required="true()"/>
       <bind nodeset="/case_contact_follow_up/cc_follow_up/ccfu_day_current_follow_up" type="int" required="true()"/>
-      <bind nodeset="/case_contact_follow_up/record_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_contact_follow_up/record_meta/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_contact_follow_up/record_meta/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_contact_follow_up/record_meta/created_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_contact_follow_up/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

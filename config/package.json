@@ -11,13 +11,15 @@
     "ci": "./test/check-app-settings-is-committed && npm run eslint && npm run test"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-json": "^2.0.1",
     "chai": "^4.2.0",
     "cht-conf": "^3.7.0",
     "cht-conf-test-harness": "^2.3.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-json": "^2.0.1",
     "mocha": "^8.3.2",
     "rosie": "^2.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint-loader": "^4.0.2"
+  }
 }
