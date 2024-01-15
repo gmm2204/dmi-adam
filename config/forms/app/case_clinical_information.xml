@@ -156,7 +156,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_cardiology/ci_record_cardiology:label">
-            <value>Record cardiology</value>
+            <value>Record cardiology?</value>
           </text>
           <text id="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent:label">
             <value>Date of onset</value>
@@ -249,7 +249,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_cutaneous/ci_record_cutaneous:label">
-            <value>Record cutaneous</value>
+            <value>Record cutaneous?</value>
           </text>
           <text id="/case_clinical_information/ci_ent/ci_ent_information/cie_conjuctival_injections/no:label">
             <value>No</value>
@@ -378,7 +378,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_ent/ci_record_ent:label">
-            <value>Record Ear, Nose and Throat (ENT)</value>
+            <value>Record ear, nose and throat (ENT)?</value>
           </text>
           <text id="/case_clinical_information/ci_gastrointestinal/ci_gastrointestinal_information/cig_abdominal_mass/no:label">
             <value>No</value>
@@ -567,7 +567,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_gastrointestinal/ci_record_gastrointestinal:label">
-            <value>Record gastrointestinal</value>
+            <value>Record gastrointestinal?</value>
           </text>
           <text id="/case_clinical_information/ci_interviewee/case_interviewee_name:hint">
             <value>Surname, First Name, Last Name</value>
@@ -732,7 +732,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_neurology/ci_record_neurology:label">
-            <value>Record neurology</value>
+            <value>Record neurology?</value>
           </text>
           <text id="/case_clinical_information/ci_respiratory/ci_record_respiratory/no:label">
             <value>No</value>
@@ -741,7 +741,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_respiratory/ci_record_respiratory:label">
-            <value>Record respiratory</value>
+            <value>Record respiratory?</value>
           </text>
           <text id="/case_clinical_information/ci_respiratory/ci_respiratory_information/cir_abnormal_lung_auscultation/no:label">
             <value>No</value>
@@ -876,7 +876,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_underlying_conditions/ci_record_underlying_conditions:label">
-            <value>Record underlying condition</value>
+            <value>Record underlying condition?</value>
           </text>
           <text id="/case_clinical_information/ci_underlying_conditions/ci_underlying_conditions_information/ciuc_pregrancy/no:label">
             <value>No</value>
@@ -987,7 +987,7 @@
             <value>Yes</value>
           </text>
           <text id="/case_clinical_information/ci_uro_gynecology/ci_record_uro_gynecology:label">
-            <value>Record Uro-Gynecology</value>
+            <value>Record uro-gynecology?</value>
           </text>
           <text id="/case_clinical_information/ci_uro_gynecology/ci_uro_gynecology_information/cie_other:label">
             <value>Any other uro-gynecological signs</value>
@@ -2110,7 +2110,7 @@
             <general_main_patient_complains/>
           </unknown_screening>
           <ci_cardiology>
-            <ci_record_cardiology>yes</ci_record_cardiology>
+            <ci_record_cardiology>no</ci_record_cardiology>
             <ci_cardiology_information>
               <ci_cardiology_heart_rate/>
               <ci_cardiology_capillary_refill_time/>
@@ -2125,7 +2125,7 @@
             </ci_cardiology_information>
           </ci_cardiology>
           <ci_respiratory>
-            <ci_record_respiratory>yes</ci_record_respiratory>
+            <ci_record_respiratory>no</ci_record_respiratory>
             <ci_respiratory_information>
               <cir_rate/>
               <cir_oxygen_saturation/>
@@ -2143,7 +2143,7 @@
             </ci_respiratory_information>
           </ci_respiratory>
           <ci_gastrointestinal>
-            <ci_record_gastrointestinal>yes</ci_record_gastrointestinal>
+            <ci_record_gastrointestinal>no</ci_record_gastrointestinal>
             <ci_gastrointestinal_information>
               <cig_nausea_vomiting/>
               <cig_appetite_loss/>
@@ -2164,7 +2164,7 @@
             </ci_gastrointestinal_information>
           </ci_gastrointestinal>
           <ci_neurology>
-            <ci_record_neurology>yes</ci_record_neurology>
+            <ci_record_neurology>no</ci_record_neurology>
             <ci_neurology_information>
               <cin_observed_disorders/>
               <cin_paralysis/>
@@ -2178,7 +2178,7 @@
             </ci_neurology_information>
           </ci_neurology>
           <ci_cutaneous>
-            <ci_record_cutaneous>yes</ci_record_cutaneous>
+            <ci_record_cutaneous>no</ci_record_cutaneous>
             <ci_cutaneous_information>
               <cic_observed_disorders/>
               <ci_ent/>
@@ -2193,7 +2193,7 @@
             </ci_cutaneous_information>
           </ci_cutaneous>
           <ci_ent>
-            <ci_record_ent>yes</ci_record_ent>
+            <ci_record_ent>no</ci_record_ent>
             <ci_ent_information>
               <cie_observed_disorders/>
               <cie_conjunctivitis/>
@@ -2209,7 +2209,7 @@
             </ci_ent_information>
           </ci_ent>
           <ci_uro_gynecology>
-            <ci_record_uro_gynecology>yes</ci_record_uro_gynecology>
+            <ci_record_uro_gynecology>no</ci_record_uro_gynecology>
             <ci_uro_gynecology_information>
               <ciug_recent_spontaneous_abortion/>
               <ciug_observed_disorders/>
@@ -2222,7 +2222,7 @@
             </ci_uro_gynecology_information>
           </ci_uro_gynecology>
           <ci_underlying_conditions>
-            <ci_record_underlying_conditions>yes</ci_record_underlying_conditions>
+            <ci_record_underlying_conditions>no</ci_record_underlying_conditions>
             <ci_underlying_conditions_information>
               <ciuc_pregrancy/>
               <ciuc_pregrancy_months/>
@@ -2470,7 +2470,7 @@
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_record_cutaneous" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information" relevant="selected( /case_clinical_information/ci_cutaneous/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_duration_days" type="int" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_type" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_localization" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>

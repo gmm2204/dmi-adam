@@ -12,57 +12,102 @@
     "adamtest.icapkenya.org/medic": "8+w9RlkvGggk0xD311U9Iw=="
   },
   "form:contact:district_hospital:create": {
-    "adamtest.icapkenya.org/medic": "rwbAnRiVLQdHLY2uXd26vw=="
+    "adamtest.icapkenya.org/medic": "VnP4EOx4Bn4xM08HmkAsxg=="
   },
   "form:contact:district_hospital:edit": {
-    "adamtest.icapkenya.org/medic": "FixGVBiCGjUR6zf+kTdfWg=="
+    "adamtest.icapkenya.org/medic": "/Jkg2u6qpIQ+lUllbeNpxg=="
   },
   "form:case_contact_follow_up": {
-    "adamtest.icapkenya.org/medic": "XJ7FrFaQ4YnR3vDX4W3wFg=="
+    "adamtest.icapkenya.org/medic": "lZIb56eIXsc4a8THRPXkEA=="
   },
   "form:case_investigation": {
     "adamtest.icapkenya.org/medic": "L7/TKzIANuivoEBXwF2iyg=="
   },
   "form:contact:health_unit:create": {
-    "adamtest.icapkenya.org/medic": "5djvQYqZND8zpZXyCdzTxw=="
+    "adamtest.icapkenya.org/medic": "WE+nKTvUvVUK2ARDNfi7KQ=="
   },
   "form:contact:health_unit:edit": {
-    "adamtest.icapkenya.org/medic": "99rprRZC6OYfRIzAZpHyQQ=="
+    "adamtest.icapkenya.org/medic": "PMI2AXdaYmniwvvw66SALA=="
   },
   "form:contact:health_unit": {
     "adamtest.icapkenya.org/medic": "OjBcB3h+L6X3fIln99Yd1A=="
   },
   "form:contact:outbreak:create": {
-    "adamtest.icapkenya.org/medic": "GghuAgaqoTT0u4Tly4oBDQ=="
+    "adamtest.icapkenya.org/medic": "iEeDSOLG+U1N/vKXyoYIqw=="
   },
   "form:contact:outbreak:edit": {
-    "adamtest.icapkenya.org/medic": "/tquzjo8pSUT1zz/rAyvNA=="
+    "adamtest.icapkenya.org/medic": "qgCT7emzxgIm3PItNVIJWA=="
   },
   "form:contact:outbreak": {
     "adamtest.icapkenya.org/medic": "j8Bv0lrmiyPYgM39FpoUGA=="
   },
   "form:contact:person:create": {
-    "adamtest.icapkenya.org/medic": "TCa5XBs0NJcziSLILIfkUQ=="
+    "adamtest.icapkenya.org/medic": "2cwPloWOEFGxM5jX0P+nXA=="
   },
   "form:contact:person:edit": {
-    "adamtest.icapkenya.org/medic": "roUPknPlnrxaUu/x9d8faQ=="
+    "adamtest.icapkenya.org/medic": "Vl41/BU0DaFYShxgZ9JPgQ=="
   },
   "form:contact:person": {
     "adamtest.icapkenya.org/medic": "4vx0LCQJBRINgz+nYrbu9w=="
   },
   "form:contact:case:create": {
-    "adamtest.icapkenya.org/medic": "1N3YBcH5irxDcVzC+EkCmg=="
+    "adamtest.icapkenya.org/medic": "l2S+PK7YDb1BKR8jVMUFgw=="
   },
   "form:contact:case:edit": {
-    "adamtest.icapkenya.org/medic": "SQCkuj7F6IifX0rBrRF+5g=="
+    "adamtest.icapkenya.org/medic": "H8R7yVp2XT7EvogOl1axYg=="
   },
   "form:case_management": {
-    "adamtest.icapkenya.org/medic": "5u+9AHS9FISpF7VlkyuEWA=="
+    "adamtest.icapkenya.org/medic": "CdDPGj+hTk82O17e/3KxnQ=="
   },
   "form:contact:case_contact:create": {
-    "adamtest.icapkenya.org/medic": "78Boo5y4jegUawtSd+jHoA=="
+    "adamtest.icapkenya.org/medic": "GaSLJpTy5zVFE/AEm6/5Qg=="
   },
   "form:contact:case_contact:edit": {
-    "adamtest.icapkenya.org/medic": "ZzU/BLM6XSdFwf+EnH7dAQ=="
+    "adamtest.icapkenya.org/medic": "pFgOPd64fbk8cMpOH6ZHQg=="
+  },
+  "form:contact:cases_group:create": {
+    "adamtest.icapkenya.org/medic": "gQd/CUmOVujWw9Yg0H/EjA=="
+  },
+  "form:contact:cases_group:edit": {
+    "adamtest.icapkenya.org/medic": "iBSzagB6PAhkP7pBYQtCDQ=="
+  },
+  "form:contact:group:create": {
+    "adamtest.icapkenya.org/medic": "OD91NttHOPhDtR7hTtc0vw=="
+  },
+  "form:contact:group:edit": {
+    "adamtest.icapkenya.org/medic": "vrndnyAJOf8NdMDG/NYiyw=="
+  },
+  "form:contact:hcw:create": {
+    "adamtest.icapkenya.org/medic": "92UD7sJAa70W0P3xkHUJxA=="
+  },
+  "form:contact:hcw:edit": {
+    "adamtest.icapkenya.org/medic": "RcNNteoIfQLoIrbeWlJ4yA=="
+  },
+  "form:contact:moh:create": {
+    "adamtest.icapkenya.org/medic": "9ffxgkfaBZrVy7l9F1wN0Q=="
+  },
+  "form:contact:moh:edit": {
+    "adamtest.icapkenya.org/medic": "sQ3/Wpao0UAbR7EkQdsIlQ=="
+  },
+  "form:contact:outbreak_location:create": {
+    "adamtest.icapkenya.org/medic": "S5PO3m7JvT/4EOUFmzVMAQ=="
+  },
+  "form:contact:outbreak_location:edit": {
+    "adamtest.icapkenya.org/medic": "JmtmAkoCGrOZ9sfZxwCFQA=="
+  },
+  "form:case_clinical_information": {
+    "adamtest.icapkenya.org/medic": "s/uXDkV2E3X7HGBYq+/9iQ=="
+  },
+  "form:case_exposure": {
+    "adamtest.icapkenya.org/medic": "pK3zckK3DjoJWlk0dUbVRA=="
+  },
+  "form:case_hospitalization": {
+    "adamtest.icapkenya.org/medic": "v7isCv7R+/MjQThYYyKv+g=="
+  },
+  "form:case_outcome": {
+    "adamtest.icapkenya.org/medic": "9NZdphJdtBfLZBdpBMDq5g=="
+  },
+  "form:case_vaccination": {
+    "adamtest.icapkenya.org/medic": "ikukjeJR4MATRxmzUUKBuw=="
   }
 }

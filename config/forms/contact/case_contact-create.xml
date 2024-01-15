@@ -17138,7 +17138,7 @@ Course</name>
       <bind nodeset="/data/case_contact/cc_biographical_data/first_name" type="string" required="true()"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/middle_name" type="string"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/sex" type="select1" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth" type="string" required="true()" calculate="../ephemeral_dob/dob_iso"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth" type="string" calculate="../ephemeral_dob/dob_iso" required="true()"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_method" type="select1" required="true()"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_calendar" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'yes')"/>

@@ -284,11 +284,11 @@
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_date" type="date" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type" type="select" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_sample_type , 'other')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other" type="string" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_sample_type , 'other')" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_results" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
+      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()"/>
       <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
       <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>

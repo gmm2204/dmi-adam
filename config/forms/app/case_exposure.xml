@@ -875,17 +875,17 @@
       <bind nodeset="/case_exposure/ce_type/cel_type" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_food" relevant="selected( /case_exposure/ce_type/cel_type , 'food')"/>
       <bind nodeset="/case_exposure/ce_food/cef_name" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" required="true()" calculate="today()"/>
+      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" calculate="today()" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_time" type="time" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_source" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_affected_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_source" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_waste_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_toilet_type" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')"/>
+      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel" relevant="selected( /case_exposure/ce_type/cel_type , 'travel')"/>
       <bind nodeset="/case_exposure/ce_travel/cet_country" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_city_town_village" type="string" required="true()"/>
