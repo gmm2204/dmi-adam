@@ -47,6 +47,9 @@
           <text id="/data/case_contact/cc_biographical_data/contact_relationship/mother:label">
             <value>Mother</value>
           </text>
+          <text id="/data/case_contact/cc_biographical_data/contact_relationship/other:label">
+            <value>Other</value>
+          </text>
           <text id="/data/case_contact/cc_biographical_data/contact_relationship/partner:label">
             <value>Partner</value>
           </text>
@@ -61,6 +64,9 @@
           </text>
           <text id="/data/case_contact/cc_biographical_data/contact_relationship:label">
             <value>Relation to the case</value>
+          </text>
+          <text id="/data/case_contact/cc_biographical_data/contact_relationship_other:label">
+            <value>Relation to the case (other)</value>
           </text>
           <text id="/data/case_contact/cc_biographical_data/ephemeral_dob/age_months:label">
             <value>Age (Months)</value>
@@ -905,15 +911,6 @@ DOB ISO: <output value=" /data/case_contact/cc_biographical_data/ephemeral_dob/d
           <text id="/data/case_contact/cc_residence_contact/contact_email_address:label">
             <value>Email Address</value>
           </text>
-          <text id="/data/case_contact/cc_residence_contact/contact_geolocation_valid/no:label">
-            <value>No</value>
-          </text>
-          <text id="/data/case_contact/cc_residence_contact/contact_geolocation_valid/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/data/case_contact/cc_residence_contact/contact_geolocation_valid:label">
-            <value>Are you with the contact at their home?</value>
-          </text>
           <text id="/data/case_contact/cc_residence_contact/contact_location_title:label">
             <value>&lt;h3 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 5px 0;"&gt;Residence &amp; Contact&lt;/h3&gt;</value>
           </text>
@@ -949,6 +946,9 @@ DOB ISO: <output value=" /data/case_contact/cc_biographical_data/ephemeral_dob/d
           </text>
           <text id="static_instance-contact_relationship-12">
             <value>Co-Worker</value>
+          </text>
+          <text id="static_instance-contact_relationship-13">
+            <value>Other</value>
           </text>
           <text id="static_instance-contact_relationship-2">
             <value>Father</value>
@@ -7067,7 +7067,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:case_contact:create" prefix="J1!contact:case_contact:create!" delimiter="#" version="2023-12-04 15-29">
+        <data id="contact:case_contact:create" prefix="J1!contact:case_contact:create!" delimiter="#" version="2024-01-20 11-00">
           <inputs>
             <meta>
               <location>
@@ -7113,6 +7113,7 @@ Mutonga/Kithumula</value>
               <contact_household/>
               <contact_household_head/>
               <contact_relationship/>
+              <contact_relationship_other/>
             </cc_biographical_data>
             <cc_residence_contact>
               <contact_location_title/>
@@ -7122,7 +7123,6 @@ Mutonga/Kithumula</value>
               <contact_county/>
               <contact_subcounty/>
               <contact_address/>
-              <contact_geolocation_valid/>
             </cc_residence_contact>
             <cc_occupation>
               <contact_occupation_title/>
@@ -7480,6 +7480,10 @@ Mutonga/Kithumula</value>
           <item>
             <itextId>static_instance-contact_relationship-12</itextId>
             <name>coworker</name>
+          </item>
+          <item>
+            <itextId>static_instance-contact_relationship-13</itextId>
+            <name>other</name>
           </item>
         </root>
       </instance>
@@ -17141,9 +17145,9 @@ Course</name>
       <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth" type="string" calculate="../ephemeral_dob/dob_iso" required="true()"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/date_of_birth_method" type="string" calculate="../ephemeral_dob/dob_method"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_method" type="select1" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_calendar" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'yes')"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_years" type="int" required="true()" constraint=". &gt;= 0 and . &lt;= 130" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')"/>
-      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_months" type="int" constraint=". &gt;= 0 and . &lt;= 11" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_calendar" type="date" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_years" type="int" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 130" required="true()"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/age_months" type="int" relevant="selected( /data/case_contact/cc_biographical_data/ephemeral_dob/dob_method , 'no')" constraint=". &gt;= 0 and . &lt;= 11"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_months" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) + 12, format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0))"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_years" type="string" calculate="if(format-date-time(today(),&quot;%m&quot;) - coalesce(../age_months, 0) &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/ephemeral_dob/dob_approx" type="string" calculate="concat(string( /data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_years ),'-',if( /data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_months )),  /data/case_contact/cc_biographical_data/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))"/>
@@ -17155,18 +17159,18 @@ Course</name>
       <bind nodeset="/data/case_contact/cc_biographical_data/contact_household" readonly="true()" type="string"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/contact_household_head" type="select1"/>
       <bind nodeset="/data/case_contact/cc_biographical_data/contact_relationship" type="select1"/>
+      <bind nodeset="/data/case_contact/cc_biographical_data/contact_relationship_other" type="string" relevant="selected( /data/case_contact/cc_biographical_data/contact_relationship , 'other')"/>
       <bind nodeset="/data/case_contact/cc_residence_contact/contact_location_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case_contact/cc_residence_contact/contact_phone_number" type="tel"/>
       <bind nodeset="/data/case_contact/cc_residence_contact/contact_email_address" type="string"/>
       <bind nodeset="/data/case_contact/cc_residence_contact/contact_country" type="select1" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_residence_contact/contact_county" type="select1" required="true()" relevant="selected( /data/case_contact/cc_residence_contact/contact_country , 'Kenya')"/>
-      <bind nodeset="/data/case_contact/cc_residence_contact/contact_subcounty" type="select1" required="true()" relevant="selected( /data/case_contact/cc_residence_contact/contact_country , 'Kenya')"/>
+      <bind nodeset="/data/case_contact/cc_residence_contact/contact_county" type="select1" relevant="selected( /data/case_contact/cc_residence_contact/contact_country , 'Kenya')" required="true()"/>
+      <bind nodeset="/data/case_contact/cc_residence_contact/contact_subcounty" type="select1" relevant="selected( /data/case_contact/cc_residence_contact/contact_country , 'Kenya')" required="true()"/>
       <bind nodeset="/data/case_contact/cc_residence_contact/contact_address" type="string"/>
-      <bind nodeset="/data/case_contact/cc_residence_contact/contact_geolocation_valid" type="select1" required="true()"/>
       <bind nodeset="/data/case_contact/cc_occupation/contact_occupation_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/case_contact/cc_occupation/contact_occupation" type="select1" required="true()"/>
-      <bind nodeset="/data/case_contact/cc_occupation/contact_occupation_health_facility" type="string" required="true()" relevant="selected( /data/case_contact/cc_occupation/contact_occupation , 'hcw')"/>
-      <bind nodeset="/data/case_contact/cc_occupation/contact_occupation_other" type="string" required="true()" relevant="selected( /data/case_contact/cc_occupation/contact_occupation , 'other')"/>
+      <bind nodeset="/data/case_contact/cc_occupation/contact_occupation" type="select1"/>
+      <bind nodeset="/data/case_contact/cc_occupation/contact_occupation_health_facility" type="string" relevant="selected( /data/case_contact/cc_occupation/contact_occupation , 'hcw')"/>
+      <bind nodeset="/data/case_contact/cc_occupation/contact_occupation_other" type="string" relevant="selected( /data/case_contact/cc_occupation/contact_occupation , 'other')"/>
       <bind nodeset="/data/case_contact/cc_case_contact/contact_case_relationship_title" readonly="true()" type="string"/>
       <bind nodeset="/data/case_contact/cc_case_contact/contact_first_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/data/case_contact/cc_case_contact/contact_last_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
@@ -17303,7 +17307,14 @@ Course</name>
             <label ref="jr:itext('/data/case_contact/cc_biographical_data/contact_relationship/coworker:label')"/>
             <value>coworker</value>
           </item>
+          <item>
+            <label ref="jr:itext('/data/case_contact/cc_biographical_data/contact_relationship/other:label')"/>
+            <value>other</value>
+          </item>
         </select1>
+        <input ref="/data/case_contact/cc_biographical_data/contact_relationship_other">
+          <label ref="jr:itext('/data/case_contact/cc_biographical_data/contact_relationship_other:label')"/>
+        </input>
       </group>
       <group appearance="field-list" ref="/data/case_contact/cc_residence_contact">
         <input ref="/data/case_contact/cc_residence_contact/contact_location_title">
@@ -18308,17 +18319,6 @@ Course</name>
         <input ref="/data/case_contact/cc_residence_contact/contact_address">
           <label ref="jr:itext('/data/case_contact/cc_residence_contact/contact_address:label')"/>
         </input>
-        <select1 ref="/data/case_contact/cc_residence_contact/contact_geolocation_valid">
-          <label ref="jr:itext('/data/case_contact/cc_residence_contact/contact_geolocation_valid:label')"/>
-          <item>
-            <label ref="jr:itext('/data/case_contact/cc_residence_contact/contact_geolocation_valid/yes:label')"/>
-            <value>yes</value>
-          </item>
-          <item>
-            <label ref="jr:itext('/data/case_contact/cc_residence_contact/contact_geolocation_valid/no:label')"/>
-            <value>no</value>
-          </item>
-        </select1>
       </group>
       <group ref="/data/case_contact/cc_occupation">
         <input ref="/data/case_contact/cc_occupation/contact_occupation_title">

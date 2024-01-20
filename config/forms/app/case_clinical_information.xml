@@ -1730,31 +1730,37 @@
           <text id="/case_clinical_information/prerequisites/case_outbreak_title:label">
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_clinical_information/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/_id:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/_id:label">
+            <value>Cases Group</value>
+          </text>
+          <text id="/case_clinical_information/prerequisites/cases_group/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/_id:label">
             <value>Outbreak Location</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/name:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/name:label">
             <value>Outbreak Location Name</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/ol_county:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/ol_county:label">
             <value>Outbreak Location County</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/ol_subcounty:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/ol_subcounty:label">
             <value>Outbreak Location Sub-county</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/outbreak/_id:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/_id:label">
             <value>Outbreak</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/outbreak/code:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/code:label">
             <value>Outbreak Code</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/outbreak/date:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/date:label">
             <value>Outbreak Date</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/outbreak/name:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/name:label">
             <value>Outbreak Name</value>
           </text>
-          <text id="/case_clinical_information/prerequisites/outbreak_location/outbreak/status:label">
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/status:label">
             <value>Outbreak Status</value>
           </text>
           <text id="/case_clinical_information/unknown_screening/general_chills/no:label">
@@ -1953,6 +1959,10 @@
                   <parent>
                     <_id/>
                     <name/>
+                    <parent>
+                      <_id/>
+                      <name/>
+                    </parent>
                   </parent>
                 </parent>
               </parent>
@@ -1960,19 +1970,23 @@
           </inputs>
           <patient_uuid tag="hidden"/>
           <prerequisites tag="hidden">
-            <outbreak_location>
+            <cases_group>
               <_id/>
               <name/>
-              <ol_county/>
-              <ol_subcounty/>
-              <outbreak>
+              <outbreak_location>
                 <_id/>
                 <name/>
-                <code/>
-                <date/>
-                <status/>
-              </outbreak>
-            </outbreak_location>
+                <ol_county/>
+                <ol_subcounty/>
+                <outbreak>
+                  <_id/>
+                  <name/>
+                  <code/>
+                  <date/>
+                  <status/>
+                </outbreak>
+              </outbreak_location>
+            </cases_group>
             <ci_case_id/>
             <ci_case_name/>
             <outbreak_code/>
@@ -1995,16 +2009,16 @@
             <dysentery_diarrhea_per_day/>
           </dysentery_screening>
           <cholera_screening>
-            <cholera_symptoms_start_date/>
             <cholera_symptoms/>
             <cholera_symptoms_others/>
+            <cholera_symptoms_start_date/>
             <cholera_vaccination/>
             <cholera_vaccination_doses/>
           </cholera_screening>
           <covid19_screening>
-            <covid19_symptoms_start_date/>
             <covid19_symptoms/>
             <covid19_symptoms_others/>
+            <covid19_symptoms_start_date/>
             <covid19_contact_with_confirmed_case/>
           </covid19_screening>
           <covid19_underlying_conditions>
@@ -2023,12 +2037,12 @@
             <covid19_previous_case_asymptomatic_date/>
           </covid19_screening_extended>
           <evd_screening>
-            <evd_symptoms_start_date/>
-            <evd_symptoms_start_location/>
-            <evd_symptoms_start_residence/>
             <evd_symptoms/>
             <evd_symptoms_others/>
             <evd_symptoms_unexplained_bleeding/>
+            <evd_symptoms_start_date/>
+            <evd_symptoms_start_location/>
+            <evd_symptoms_start_residence/>
           </evd_screening>
           <evd_screening_extended>
             <evd_patient_status_title/>
@@ -2084,10 +2098,10 @@
             <evd_case_investigator_case_def/>
           </evd_screening_extended>
           <measles_screening>
-            <measles_symptoms_start_date/>
             <measles_symptoms_fever/>
             <measles_symptoms_rash/>
             <measles_rash_type/>
+            <measles_symptoms_start_date/>
             <measles_residence_visit/>
             <measles_residence_visit_date/>
           </measles_screening>
@@ -2270,25 +2284,29 @@
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/name" type="string"/>
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/name" type="string"/>
+      <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_clinical_information/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/name" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/ol_county" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/ol_subcounty" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/outbreak/_id" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/outbreak/name" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/outbreak/code" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/outbreak/date" type="string"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location/outbreak/status" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/name" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/_id" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/name" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/ol_county" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/ol_subcounty" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/_id" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/name" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/date" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/status" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/ci_case_id" type="string" calculate="../../inputs/contact/patient_id"/>
       <bind nodeset="/case_clinical_information/prerequisites/ci_case_name" type="string" calculate="../../inputs/contact/name"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_code" type="string" calculate="../outbreak_location/outbreak/code"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_name" type="string" calculate="../outbreak_location/outbreak/name"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_date" type="string" calculate="../outbreak_location/outbreak/date"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_status" type="string" calculate="../outbreak_location/outbreak/status"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_name" type="string" calculate="../outbreak_location/name"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_county" type="string" calculate="../outbreak_location/ol_county"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_subcounty" type="string" calculate="../outbreak_location/ol_subcounty"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_code" type="string" calculate="../cases_group/outbreak_location/outbreak/code"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_name" type="string" calculate="../cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_date" type="string" calculate="../cases_group/outbreak_location/outbreak/date"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_status" type="string" calculate="../cases_group/outbreak_location/outbreak/status"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_name" type="string" calculate="../cases_group/outbreak_location/name"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_county" type="string" calculate="../cases_group/outbreak_location/ol_county"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_subcounty" type="string" calculate="../cases_group/outbreak_location/ol_subcounty"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_name_title" readonly="true()" type="string"/>
@@ -2300,15 +2318,15 @@
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_other" type="string" relevant="selected( /case_clinical_information/dysentery_screening/dysentery_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day" type="int" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'cholera'"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_symptoms , 'other')"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_doses" type="select1" relevant=" /case_clinical_information/cholera_screening/cholera_vaccination  = 'yes'" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
-      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_others" type="string"/>
+      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case" type="select1"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present" type="select1" required="true()"/>
@@ -2324,12 +2342,12 @@
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_symptomatic_after" type="select1" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'no')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_asymptomatic_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'yes')"/>
       <bind nodeset="/case_clinical_information/evd_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_location" type="string" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_others" type="string" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'unexplained_bleeding')" required="true()"/>
+      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_location" type="string" required="true()"/>
+      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_status_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_status" type="select1" required="true()"/>
@@ -2383,10 +2401,10 @@
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'measles'"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_rash" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_rash_type" type="select1" relevant="selected( /case_clinical_information/measles_screening/measles_symptoms_rash , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit_date" type="date" relevant="selected( /case_clinical_information/measles_screening/measles_residence_visit , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
@@ -2470,7 +2488,7 @@
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_record_cutaneous" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information" relevant="selected( /case_clinical_information/ci_cutaneous/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_duration_days" type="int" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_type" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_localization" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
@@ -2534,17 +2552,21 @@
       <group appearance="field-list" ref="/case_clinical_information/inputs/contact">
         <group ref="/case_clinical_information/inputs/contact/parent">
           <group ref="/case_clinical_information/inputs/contact/parent/parent">
-            <group ref="/case_clinical_information/inputs/contact/parent/parent/parent"/>
+            <group ref="/case_clinical_information/inputs/contact/parent/parent/parent">
+              <group ref="/case_clinical_information/inputs/contact/parent/parent/parent/parent"/>
+            </group>
           </group>
         </group>
       </group>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/prerequisites">
-      <group ref="/case_clinical_information/prerequisites/outbreak_location">
-        <input appearance="hidden select-contact type-outbreak_location" ref="/case_clinical_information/prerequisites/outbreak_location/_id">
-          <label ref="jr:itext('/case_clinical_information/prerequisites/outbreak_location/_id:label')"/>
+      <group ref="/case_clinical_information/prerequisites/cases_group">
+        <input appearance="hidden select-contact type-cases_group" ref="/case_clinical_information/prerequisites/cases_group/_id">
+          <label ref="jr:itext('/case_clinical_information/prerequisites/cases_group/_id:label')"/>
         </input>
-        <group ref="/case_clinical_information/prerequisites/outbreak_location/outbreak"/>
+        <group ref="/case_clinical_information/prerequisites/cases_group/outbreak_location">
+          <group ref="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak"/>
+        </group>
       </group>
       <input ref="/case_clinical_information/prerequisites/case_outbreak_title">
         <label ref="jr:itext('/case_clinical_information/prerequisites/case_outbreak_title:label')"/>
@@ -2630,9 +2652,6 @@
       </input>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/cholera_screening">
-      <input ref="/case_clinical_information/cholera_screening/cholera_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_start_date:label')"/>
-      </input>
       <select ref="/case_clinical_information/cholera_screening/cholera_symptoms">
         <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms:label')"/>
         <item>
@@ -2672,6 +2691,9 @@
         <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_others:label')"/>
         <hint ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_others:hint')"/>
       </input>
+      <input ref="/case_clinical_information/cholera_screening/cholera_symptoms_start_date">
+        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_start_date:label')"/>
+      </input>
       <select1 ref="/case_clinical_information/cholera_screening/cholera_vaccination">
         <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination:label')"/>
         <item>
@@ -2700,9 +2722,6 @@
       </select1>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/covid19_screening">
-      <input ref="/case_clinical_information/covid19_screening/covid19_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/covid19_screening/covid19_symptoms_start_date:label')"/>
-      </input>
       <select ref="/case_clinical_information/covid19_screening/covid19_symptoms">
         <label ref="jr:itext('/case_clinical_information/covid19_screening/covid19_symptoms:label')"/>
         <item>
@@ -2737,6 +2756,9 @@
       <input ref="/case_clinical_information/covid19_screening/covid19_symptoms_others">
         <label ref="jr:itext('/case_clinical_information/covid19_screening/covid19_symptoms_others:label')"/>
         <hint ref="jr:itext('/case_clinical_information/covid19_screening/covid19_symptoms_others:hint')"/>
+      </input>
+      <input ref="/case_clinical_information/covid19_screening/covid19_symptoms_start_date">
+        <label ref="jr:itext('/case_clinical_information/covid19_screening/covid19_symptoms_start_date:label')"/>
       </input>
       <select1 ref="/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case">
         <label ref="jr:itext('/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case:label')"/>
@@ -2893,16 +2915,6 @@
       </input>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/evd_screening">
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_date:label')"/>
-      </input>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_location:label')"/>
-      </input>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_residence">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_residence:label')"/>
-        <hint ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_residence:hint')"/>
-      </input>
       <select ref="/case_clinical_information/evd_screening/evd_symptoms">
         <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms:label')"/>
         <item>
@@ -3004,6 +3016,16 @@
       </input>
       <input ref="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding">
         <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding:label')"/>
+      </input>
+      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_date">
+        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_date:label')"/>
+      </input>
+      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_location">
+        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_location:label')"/>
+      </input>
+      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_residence">
+        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_residence:label')"/>
+        <hint ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_residence:hint')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/evd_screening_extended">
@@ -3354,9 +3376,6 @@
       </select1>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/measles_screening">
-      <input ref="/case_clinical_information/measles_screening/measles_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/measles_screening/measles_symptoms_start_date:label')"/>
-      </input>
       <select1 appearance="columns" ref="/case_clinical_information/measles_screening/measles_symptoms_fever">
         <label ref="jr:itext('/case_clinical_information/measles_screening/measles_symptoms_fever:label')"/>
         <item>
@@ -3390,6 +3409,9 @@
           <value>other</value>
         </item>
       </select1>
+      <input ref="/case_clinical_information/measles_screening/measles_symptoms_start_date">
+        <label ref="jr:itext('/case_clinical_information/measles_screening/measles_symptoms_start_date:label')"/>
+      </input>
       <select1 appearance="columns" ref="/case_clinical_information/measles_screening/measles_residence_visit">
         <label ref="jr:itext('/case_clinical_information/measles_screening/measles_residence_visit:label')"/>
         <item>

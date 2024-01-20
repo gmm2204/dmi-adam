@@ -5,9 +5,6 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/data/outbreak_location/external_id:label">
-            <value>External ID</value>
-          </text>
           <text id="/data/outbreak_location/ol_county:label">
             <value>County</value>
           </text>
@@ -5996,7 +5993,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak_location:edit" prefix="J1!contact:outbreak_location:edit!" delimiter="#" version="2023-11-28 12-32">
+        <data id="contact:outbreak_location:edit" prefix="J1!contact:outbreak_location:edit!" delimiter="#" version="2024-01-20 10-57">
           <inputs>
             <meta>
               <location>
@@ -6028,7 +6025,6 @@ Mutonga/Kithumula</value>
             </outbreak>
             <ol_county/>
             <ol_subcounty/>
-            <external_id/>
             <meta tag="hidden">
               <created_by/>
               <created_by_person_uuid/>
@@ -15744,7 +15740,7 @@ Course</name>
       <bind nodeset="/data/outbreak_location/type" type="string"/>
       <bind nodeset="/data/outbreak_location/name" type="string" required="true()" calculate="concat( /data/outbreak_location/ol_county , ' &gt; ',  /data/outbreak_location/ol_subcounty )"/>
       <bind nodeset="/data/outbreak_location/outbreak_name" type="string" calculate="../../outbreak_location/outbreak/name"/>
-      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" calculate="../../parent" readonly="true()"/>
+      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/code" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/date" type="string"/>
@@ -15753,7 +15749,6 @@ Course</name>
       <bind nodeset="/data/outbreak_location/outbreak/subcounty" type="string"/>
       <bind nodeset="/data/outbreak_location/ol_county" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak_location/ol_subcounty" type="select1" required="true()"/>
-      <bind nodeset="/data/outbreak_location/external_id" type="string"/>
       <bind nodeset="/data/outbreak_location/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak_location/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/outbreak_location/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>

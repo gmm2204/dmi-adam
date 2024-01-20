@@ -6,10 +6,10 @@
       <itext>
         <translation lang="en">
           <text id="/data/cases_group/cha_outbreak_location_title:label">
-            <value>&lt;h4 style=&quot;border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0&quot;&gt;Outbreak Location: <output value=" /data/cases_group/outbreak_location_name "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;font-weight: normal; border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0&quot;&gt;Outbreak Location: <output value=" /data/cases_group/outbreak_location_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/data/cases_group/cha_outbreak_title:label">
-            <value>&lt;h4 style=&quot;border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0&quot;&gt;Outbreak: <output value=" /data/cases_group/outbreak_name "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;font-weight: normal; border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0&quot;&gt;Outbreak: <output value=" /data/cases_group/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/data/cases_group/name:label">
             <value>Cases Group Name</value>
@@ -26,10 +26,19 @@
           <text id="/data/cases_group/outbreak_location/outbreak/name:label">
             <value>Name</value>
           </text>
+          <text id="/data/contact/title:label">
+            <value>A primary contact associated with this &lt;strong&gt;cases group&lt;/strong&gt; will be automatically created.</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Set the Primary Contact</value>
+          </text>
+          <text id="/data/init/select_person:label">
+            <value>Select the Primary Contact</value>
+          </text>
         </translation>
       </itext>
       <instance>
-        <data id="contact:cases_group:create" prefix="J1!contact:cases_group:create!" delimiter="#" version="2023-11-28 12-33">
+        <data id="contact:cases_group:create" prefix="J1!contact:cases_group:create!" delimiter="#" version="2024-01-20 11-14">
           <inputs>
             <meta>
               <location>
@@ -62,12 +71,28 @@
               </outbreak>
             </outbreak_location>
             <name/>
+            <contact/>
             <metas>
               <created_by/>
               <created_by_person_uuid/>
               <created_by_place_uuid/>
             </metas>
           </cases_group>
+          <init>
+            <create_new_person>new_person</create_new_person>
+            <select_person/>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>person</type>
+            <name/>
+            <title/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -77,6 +102,15 @@
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/name" type="string" readonly="true()" calculate="concat(../../cases_group/name, &quot; - Primary Contact&quot;)"/>
+      <bind nodeset="/data/contact/title" readonly="true()" type="string"/>
+      <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
+      <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
+      <bind nodeset="/data/contact/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
       <bind nodeset="/data/cases_group/parent" type="string"/>
       <bind nodeset="/data/cases_group/type" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_name" type="string" calculate="../../cases_group/outbreak_location/outbreak/name"/>
@@ -89,6 +123,7 @@
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/code" type="string"/>
       <bind nodeset="/data/cases_group/name" type="string" required="true()"/>
+      <bind nodeset="/data/cases_group/contact" type="string" calculate="coalesce( /data/init/select_person ,&quot;NEW&quot;)"/>
       <bind nodeset="/data/cases_group/metas/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/cases_group/metas/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/cases_group/metas/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -103,6 +138,24 @@
         <input ref="/data/inputs/user/name"/>
       </group>
     </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 appearance="hidden" ref="/data/init/create_new_person">
+        <label ref="jr:itext('/data/init/create_new_person:label')"/>
+        <item>
+          <label>New Person</label>
+          <value>new_person</value>
+        </item>
+      </select1>
+      <input appearance="db-object" ref="/data/init/select_person">
+        <label ref="jr:itext('/data/init/select_person:label')"/>
+      </input>
+      <group appearance="field-list" ref="/data/contact">
+        <input ref="/data/contact/title">
+          <label ref="jr:itext('/data/contact/title:label')"/>
+        </input>
+        <group appearance="hidden" ref="/data/contact/meta"/>
+        </group>
+      </group>
     <group appearance="field-list" ref="/data/cases_group">
       <input ref="/data/cases_group/cha_outbreak_title">
         <label ref="jr:itext('/data/cases_group/cha_outbreak_title:label')"/>

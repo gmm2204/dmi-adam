@@ -21,6 +21,10 @@ services:
         max-file: "${LOG_MAX_FILES:-20}"
     networks:
       cht-net:
+    ports: 
+      - 5984:5984
+    expose:
+      - 5984
 
 volumes:
   cht-credentials:

@@ -8,6 +8,7 @@
     "place_hierarchy_types": [
         "moh",
         "health_unit",
+        "health_facility",
         "person",
         "outbreak",
         "outbreak_location",
@@ -47,7 +48,8 @@
             "edit_key": "contact.type.person.edit",
             "parents": [
                 "health_unit",
-                "outbreak_location"
+                "outbreak_location",
+                "cases_group"
             ],
             "icon": "icon-user-outline-gray",
             "create_form": "form:contact:person:create",
@@ -91,8 +93,7 @@
             ],
             "icon": "icon-cases_group-colored",
             "create_form": "form:contact:cases_group:create",
-            "edit_form": "form:contact:cases_group:edit",
-            "person": true
+            "edit_form": "form:contact:cases_group:edit"
         },
         {
             "id": "case",

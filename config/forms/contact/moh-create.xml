@@ -26,7 +26,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="contact:moh:create" prefix="J1!contact:moh:create!" delimiter="#" version="2023-11-22 15-17">
+        <data id="contact:moh:create" prefix="J1!contact:moh:create!" delimiter="#" version="2024-01-20 10-58">
           <inputs>
             <meta>
               <location>
@@ -83,7 +83,7 @@
       <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
       <bind nodeset="/data/contact/parent" type="string"/>
       <bind nodeset="/data/contact/type" type="string"/>
-      <bind nodeset="/data/contact/name" type="string" calculate="concat(../../moh/name, &quot;'s Primary Contact&quot;)"/>
+      <bind nodeset="/data/contact/name" type="string" calculate="concat(../../moh/name, &quot; - Primary Contact&quot;)"/>
       <bind nodeset="/data/contact/title" readonly="true()" type="string"/>
       <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
