@@ -32,6 +32,12 @@
           <text id="/data/outbreak_location/outbreak/date:label">
             <value>Date</value>
           </text>
+          <text id="/data/outbreak_location/outbreak/disease:label">
+            <value>Disease</value>
+          </text>
+          <text id="/data/outbreak_location/outbreak/disease_name:label">
+            <value>Disease name</value>
+          </text>
           <text id="/data/outbreak_location/outbreak/name:label">
             <value>Name</value>
           </text>
@@ -43,48 +49,6 @@
           </text>
           <text id="static_instance-contact-0">
             <value>New Person</value>
-          </text>
-          <text id="static_instance-outbreak_status-0">
-            <value>Active</value>
-          </text>
-          <text id="static_instance-outbreak_status-1">
-            <value>Controlled</value>
-          </text>
-          <text id="static_instance-outbreaks-0">
-            <value>Unknown Outbreak</value>
-          </text>
-          <text id="static_instance-outbreaks-1">
-            <value>Acute Flacid Paralysis</value>
-          </text>
-          <text id="static_instance-outbreaks-10">
-            <value>SARI/ILI</value>
-          </text>
-          <text id="static_instance-outbreaks-11">
-            <value>Viral Haemorrhagic Fever (Ebola, Rift Valley Fever, Crimea - Congo HF)</value>
-          </text>
-          <text id="static_instance-outbreaks-2">
-            <value>Anthrax</value>
-          </text>
-          <text id="static_instance-outbreaks-3">
-            <value>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</value>
-          </text>
-          <text id="static_instance-outbreaks-4">
-            <value>Cholera</value>
-          </text>
-          <text id="static_instance-outbreaks-5">
-            <value>Malaria</value>
-          </text>
-          <text id="static_instance-outbreaks-6">
-            <value>Meningococcal Meningitis</value>
-          </text>
-          <text id="static_instance-outbreaks-7">
-            <value>Measles</value>
-          </text>
-          <text id="static_instance-outbreaks-8">
-            <value>Neonatal Tetanus (NNT)</value>
-          </text>
-          <text id="static_instance-outbreaks-9">
-            <value>Rabies</value>
           </text>
           <text id="static_instance-select_country-0">
             <value>Afghanistan</value>
@@ -6005,7 +5969,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak_location:create" prefix="J1!contact:outbreak_location:create!" delimiter="#" version="2024-01-20 10-59">
+        <data id="contact:outbreak_location:create" prefix="J1!contact:outbreak_location:create!" delimiter="#" version="2024-01-22 13-09">
           <inputs>
             <meta>
               <location>
@@ -6030,6 +5994,8 @@ Mutonga/Kithumula</value>
               <_id/>
               <name/>
               <code/>
+              <disease/>
+              <disease_name/>
               <date/>
               <status/>
               <county/>
@@ -6081,70 +6047,6 @@ Mutonga/Kithumula</value>
           <item>
             <itextId>static_instance-contact-0</itextId>
             <name>new_person</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="outbreaks">
-        <root>
-          <item>
-            <itextId>static_instance-outbreaks-0</itextId>
-            <name>unknown</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-1</itextId>
-            <name>afp</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-2</itextId>
-            <name>anthrax</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-3</itextId>
-            <name>dysentry</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-4</itextId>
-            <name>cholera</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-5</itextId>
-            <name>malaria</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-6</itextId>
-            <name>menigitis</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-7</itextId>
-            <name>measles</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-8</itextId>
-            <name>nnt</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-9</itextId>
-            <name>rabies</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-10</itextId>
-            <name>sari_ili</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreaks-11</itextId>
-            <name>evd</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="outbreak_status">
-        <root>
-          <item>
-            <itextId>static_instance-outbreak_status-0</itextId>
-            <name>active</name>
-          </item>
-          <item>
-            <itextId>static_instance-outbreak_status-1</itextId>
-            <name>controlled</name>
           </item>
         </root>
       </instance>
@@ -15772,11 +15674,11 @@ Course</name>
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/init/create_new_person" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" required="true()" relevant="selected( /data/init/create_new_person ,'old_person')"/>
       <bind nodeset="/data/contact/parent" type="string"/>
       <bind nodeset="/data/contact/type" type="string"/>
-      <bind nodeset="/data/contact/name" type="string" calculate="concat(../../outbreak_location/name, &quot; - Primary Contact&quot;)" readonly="true()"/>
+      <bind nodeset="/data/contact/name" type="string" readonly="true()" calculate="concat(../../outbreak_location/name, &quot; - Primary Contact&quot;)"/>
       <bind nodeset="/data/contact/title" readonly="true()" type="string"/>
       <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -15785,9 +15687,11 @@ Course</name>
       <bind nodeset="/data/outbreak_location/type" type="string"/>
       <bind nodeset="/data/outbreak_location/name" type="string" calculate="concat( /data/outbreak_location/ol_county , ' &gt; ',  /data/outbreak_location/ol_subcounty )" required="true()"/>
       <bind nodeset="/data/outbreak_location/outbreak_name" type="string" calculate="../../outbreak_location/outbreak/name"/>
-      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" calculate="../../parent" readonly="true()"/>
+      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/data/outbreak_location/outbreak/disease" type="string"/>
+      <bind nodeset="/data/outbreak_location/outbreak/disease_name" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/date" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/status" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/county" type="string"/>

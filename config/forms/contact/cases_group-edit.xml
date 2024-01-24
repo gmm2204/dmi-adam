@@ -23,13 +23,19 @@
           <text id="/data/cases_group/outbreak_location/outbreak/code:label">
             <value>Code</value>
           </text>
+          <text id="/data/cases_group/outbreak_location/outbreak/disease:label">
+            <value>Disease</value>
+          </text>
+          <text id="/data/cases_group/outbreak_location/outbreak/disease_name:label">
+            <value>Disease name</value>
+          </text>
           <text id="/data/cases_group/outbreak_location/outbreak/name:label">
             <value>Name</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="contact:cases_group:edit" prefix="J1!contact:cases_group:edit!" delimiter="#" version="2023-11-28 12-37">
+        <data id="contact:cases_group:edit" prefix="J1!contact:cases_group:edit!" delimiter="#" version="2024-01-22 11-09">
           <inputs>
             <meta>
               <location>
@@ -59,6 +65,8 @@
               <outbreak>
                 <name/>
                 <code/>
+                <disease/>
+                <disease_name/>
               </outbreak>
             </outbreak_location>
             <name/>
@@ -84,10 +92,12 @@
       <bind nodeset="/data/cases_group/outbreak_location_name" type="string" calculate="../../cases_group/outbreak_location/name"/>
       <bind nodeset="/data/cases_group/cha_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/data/cases_group/cha_outbreak_location_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" calculate="../../parent" readonly="true()"/>
+      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/cases_group/outbreak_location/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/data/cases_group/outbreak_location/outbreak/disease" type="string"/>
+      <bind nodeset="/data/cases_group/outbreak_location/outbreak/disease_name" type="string"/>
       <bind nodeset="/data/cases_group/name" type="string" required="true()"/>
       <bind nodeset="/data/cases_group/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/cases_group/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>

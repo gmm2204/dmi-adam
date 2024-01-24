@@ -6,19 +6,16 @@
       <itext>
         <translation lang="en">
           <text id="/case_vaccination/case_vaccination/cv_date:label">
-            <value>Date</value>
-          </text>
-          <text id="/case_vaccination/case_vaccination/cv_dose_number:hint">
-            <value>e.g. 1: for first dose, 2: for second dose etc.</value>
+            <value>Date of vaccination</value>
           </text>
           <text id="/case_vaccination/case_vaccination/cv_dose_number:label">
-            <value>Dose Number</value>
+            <value>Number of doses</value>
           </text>
           <text id="/case_vaccination/case_vaccination/cv_name:hint">
             <value>i.e. product name</value>
           </text>
           <text id="/case_vaccination/case_vaccination/cv_name:label">
-            <value>Vaccine Name</value>
+            <value>Name of the vaccine</value>
           </text>
           <text id="/case_vaccination/cv_reported/reported_by:label">
             <value>Reported By</value>
@@ -263,7 +260,6 @@
       </input>
       <input ref="/case_vaccination/case_vaccination/cv_dose_number">
         <label ref="jr:itext('/case_vaccination/case_vaccination/cv_dose_number:label')"/>
-        <hint ref="jr:itext('/case_vaccination/case_vaccination/cv_dose_number:hint')"/>
       </input>
       <input ref="/case_vaccination/case_vaccination/cv_date">
         <label ref="jr:itext('/case_vaccination/case_vaccination/cv_date:label')"/>

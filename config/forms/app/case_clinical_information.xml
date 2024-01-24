@@ -11,6 +11,18 @@
           <text id="/case_clinical_information/cci_created/created_on:label">
             <value>Created On</value>
           </text>
+          <text id="/case_clinical_information/cholera_screening/cholera_hospitalization/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/cholera_screening/cholera_hospitalization/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/cholera_screening/cholera_hospitalization:label">
+            <value>Has the patient been hospitalized?</value>
+          </text>
+          <text id="/case_clinical_information/cholera_screening/cholera_hospitalization_prompt:label">
+            <value>Complete the case hospitalization task after submitting this form</value>
+          </text>
           <text id="/case_clinical_information/cholera_screening/cholera_symptoms/abdominal_cramps:label">
             <value>Abdominal cramps</value>
           </text>
@@ -56,17 +68,8 @@
           <text id="/case_clinical_information/cholera_screening/cholera_vaccination:label">
             <value>Has the patient been vaccinated?</value>
           </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_vaccination_doses/1:label">
-            <value>1</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_vaccination_doses/2:label">
-            <value>2</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_vaccination_doses/&gt;2:label">
-            <value>&gt;2</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_vaccination_doses:label">
-            <value>How many doses?</value>
+          <text id="/case_clinical_information/cholera_screening/cholera_vaccination_prompt:label">
+            <value>Complete the case vaccination task after submitting this form</value>
           </text>
           <text id="/case_clinical_information/ci_cardiology/ci_cardiology_information/ci_cardiology_capillary_refill_time/no:label">
             <value>No</value>
@@ -1283,396 +1286,6 @@
           <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date:label">
             <value>Date of onset of symptoms</value>
           </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/abdominal_pain:label">
-            <value>Abdominal pain</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/anorexia:label">
-            <value>Anorexia / loss of appetite</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bleeding_gums:label">
-            <value>Bleeding gums (Gingivitis)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bleeding_injection_points:label">
-            <value>Bleeding at injection points</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bleeding_nose:label">
-            <value>Bleeding nose (epistaxis)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bleeding_unexplained:label">
-            <value>Unexplained bleeding</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bleeding_vagina:label">
-            <value>Vaginal bleeding outside of menstruation</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bloody_stool:label">
-            <value>Dark or bloody stool (melaena)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/bloody_vomit:label">
-            <value>Vomiting of blood (haematemesis)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/conjuctivitis:label">
-            <value>Conjuctivitis (red eyes)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/diarrhea:label">
-            <value>Diarrhea</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/difficulty_breathing:label">
-            <value>Difficulty breathing</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/difficulty_swallowing:label">
-            <value>Difficulty swallowing</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/fever:label">
-            <value>Fever</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/headache:label">
-            <value>Headache</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/hiccups:label">
-            <value>Hiccups</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/intense_coughing:label">
-            <value>Intense Coughing</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/intense_fatigue:label">
-            <value>Intense Fatigue / weakness</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/joint_pain:label">
-            <value>Joint pain</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/muscle_pain:label">
-            <value>Muscle pain</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/others:label">
-            <value>Others</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/skin_rash:label">
-            <value>Skin rash</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms/vomiting_nausea:label">
-            <value>Vomiting / Nausea</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms:label">
-            <value>Symptoms</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_others:hint">
-            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_others:label">
-            <value>Symptoms (others)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_start_date:label">
-            <value>When did the symptoms first appear?</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_start_location:label">
-            <value>Where was the patient when the symptoms first appeared?</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_start_residence:hint">
-            <value>Village, Town or City</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_start_residence:label">
-            <value>Where was the patient residing when the symptoms first appeared?</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding:label">
-            <value>Unexplained Bleeding (Specify)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact:label">
-            <value>Patient have had contact with any Wild Animal or wild animal products in the past one month</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_date:label">
-            <value>Date of Contact</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_location:label">
-            <value>Village/Town/City where the patient had contact with Wild Animal</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_subcounty:label">
-            <value>Sub County</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Wild Animals or Animal Products&lt;/p&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/baboons:label">
-            <value>Baboons</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/bat:label">
-            <value>Bat</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/chimpanzees:label">
-            <value>Chimpanzees</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/duikers:label">
-            <value>Duikers</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/gorillas:label">
-            <value>Gorillas</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/monkeys:label">
-            <value>Monkeys</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type/squirrel:label">
-            <value>Squirrels</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type:label">
-            <value>Type of Wild Animal the patient had contact with</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_animal_contact_type_other:label">
-            <value>Other animal contact (separate using commas if multiple)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def:label">
-            <value>Does the alert meet case definition for Acute Viral Hemorrhagic Fever?</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_case_investigator_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Case Investigator Assessment&lt;/p&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact:label">
-            <value>Contact with suspected or confirmed VHF case within 1 month before onset</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_date_last:label">
-            <value>Date of Last Contact</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_death_date:label">
-            <value>Death Date</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_location:label">
-            <value>Village/neighborhood/town</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_name:label">
-            <value>Name of contact</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_relationship:label">
-            <value>Relation to Patient</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_subcounty:label">
-            <value>Sub County</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_title:label">
-            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Contact with Suspected or Confirmed VHF&lt;/h4&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_type/frequent_direct:label">
-            <value>Frequent direct contact</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_type/same_community:label">
-            <value>Same community</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_type/same_household:label">
-            <value>Same household</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_type/same_room_vehicle:label">
-            <value>Same room or vehicle</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_type:label">
-            <value>Type of contact</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_vital_status/alive:label">
-            <value>Alive</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_vital_status/dead:label">
-            <value>Dead</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_vital_status/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_contact_vital_status:label">
-            <value>Vital status of the suspected or confirmed VHF case</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral:label">
-            <value>Did patient attend a funeral within 1 month before onset of Illness</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_date:label">
-            <value>Date of funeral</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact:label">
-            <value>Patient carried/touched the deceased</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_name:label">
-            <value>Name of Deceased Person</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_relationship:label">
-            <value>Relation to patient</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_location:label">
-            <value>Village/neighborhood/town</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_subcounty:label">
-            <value>Sub County</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_funeral_title:label">
-            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Funerals and Burials&lt;/h4&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel:label">
-            <value>Did patient travel outside home area in the last one month</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_departure_date:label">
-            <value>Date of departure</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_location:label">
-            <value>Village/Town/City visited</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry:label">
-            <value>Travelled out of the country</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry_location:label">
-            <value>Country travelled to (Address/Village/ town/ City)</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_return_date:label">
-            <value>Date of return</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_subcounty:label">
-            <value>Sub county visited</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_outside_travel_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Travel History&lt;/p&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_date_death:label">
-            <value>Date of death</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_community:label">
-            <value>Village / neighbourhood</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_death/community:label">
-            <value>Community</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_death/health_facility:label">
-            <value>Health Facility</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_death/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_death:label">
-            <value>Location of death</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_department:label">
-            <value>Health Facility Department</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_name:label">
-            <value>Health Facility Name</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_status/alive:label">
-            <value>Alive</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_status/dead:label">
-            <value>Dead</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_status/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_status:label">
-            <value>Condition of the patient when found</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_patient_status_title:label">
-            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Patient Status&lt;/h4&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_tradiotional_healer_title:label">
-            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Traditional Healer&lt;/h4&gt;</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_date_seen:label">
-            <value>Date Seen</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_location:label">
-            <value>Village/Town/City where the patient visited the traditional healer</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_name:label">
-            <value>Traditional Healer's Name</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_sub_county:label">
-            <value>Sub County</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited:label">
-            <value>Traditional Healer Visited/consulted 3 weeks before becoming ill</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_vaccination/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_vaccination/unknown:label">
-            <value>Unknown</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_vaccination/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_vaccination:label">
-            <value>Ebola Vaccine received</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_vaccination_date:label">
-            <value>Ebola Vaccine received date</value>
-          </text>
-          <text id="/case_clinical_information/evd_screening_extended/evd_vaccination_title:label">
-            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Vaccination&lt;/p&gt;</value>
-          </text>
           <text id="/case_clinical_information/measles_screening/measles_rash_type/maculopapular:label">
             <value>Maculopapular</value>
           </text>
@@ -1728,7 +1341,7 @@
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_clinical_information/prerequisites/outbreak_location_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_clinical_information/prerequisites/case_outbreak_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_clinical_information/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_clinical_information/prerequisites/outbreak_name "/> - <output value=" /case_clinical_information/prerequisites/outbreak_syndrome_disease_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/_id:label">
             <value>Cases Group</value>
@@ -1752,13 +1365,19 @@
             <value>Outbreak</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/code:label">
-            <value>Outbreak Code</value>
+            <value>Outbreak syndrome code</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/date:label">
             <value>Outbreak Date</value>
           </text>
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease:label">
+            <value>Outbreak syndrome disease</value>
+          </text>
+          <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease_name:label">
+            <value>Outbreak syndrome disease name</value>
+          </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/name:label">
-            <value>Outbreak Name</value>
+            <value>Outbreak name</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/status:label">
             <value>Outbreak Status</value>
@@ -1925,6 +1544,369 @@
           <text id="/case_clinical_information/unknown_screening/os_symptoms_other:label">
             <value>Other symptoms (separate using commas if multiple)</value>
           </text>
+          <text id="/case_clinical_information/vhf_evd_screening/evd_animal_contact_prompt:label">
+            <value>Complete the case exposure task after submitting this form</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/evd_animal_exposure/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/evd_animal_exposure/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/evd_animal_exposure:label">
+            <value>Has the patient had contact with any wild animals and their products in within the last month?</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_animal_contact_title:label">
+            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Exposure to wild animals or animal products&lt;/p&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def:label">
+            <value>Does the alert meet case definition for <output value=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease_name "/>?</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_title:label">
+            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Case Investigator Assessment&lt;/p&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact:label">
+            <value>Contact with suspected or confirmed VHF case within 1 month before onset</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_date_last:label">
+            <value>Date of Last Contact</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_death_date:label">
+            <value>Death Date</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_location:label">
+            <value>Village/neighborhood/town</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_name:label">
+            <value>Name of contact</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_relationship:label">
+            <value>Relation to Patient</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_subcounty:label">
+            <value>Sub County</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Contact with Suspected or Confirmed VHF&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_type/frequent_direct:label">
+            <value>Frequent direct contact</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_type/same_community:label">
+            <value>Same community</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_type/same_household:label">
+            <value>Same household</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_type/same_room_vehicle:label">
+            <value>Same room or vehicle</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_type:label">
+            <value>Type of contact</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status/alive:label">
+            <value>Alive</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status/dead:label">
+            <value>Dead</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status:label">
+            <value>Vital status of the suspected or confirmed VHF case</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination:label">
+            <value>Ebola Vaccine received</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_date:label">
+            <value>Ebola Vaccine received date</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_title:label">
+            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Vaccination&lt;/p&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral:label">
+            <value>Did patient attend a funeral within 1 month before onset of Illness</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_date:label">
+            <value>Date of funeral</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact:label">
+            <value>Patient carried/touched the deceased</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_name:label">
+            <value>Name of Deceased Person</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_relationship:label">
+            <value>Relation to patient</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_location:label">
+            <value>Village/neighborhood/town</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_subcounty:label">
+            <value>Sub County</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_funeral_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Funerals and Burials&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel:label">
+            <value>Did patient travel outside home area in the last one month</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_departure_date:label">
+            <value>Date of departure</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_location:label">
+            <value>Village/Town/City visited</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry:label">
+            <value>Travelled out of the country</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry_location:label">
+            <value>Country travelled to (Address/Village/ town/ City)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_return_date:label">
+            <value>Date of return</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_subcounty:label">
+            <value>Sub county visited</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_title:label">
+            <value>&lt;p style="font-weight:bold; text-decoration:underline"&gt;Travel History&lt;/p&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_date_death:label">
+            <value>Date of death</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_community:label">
+            <value>Village / neighbourhood</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_death/community:label">
+            <value>Community</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_death/health_facility:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_death/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_death:label">
+            <value>Location of death</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_department:label">
+            <value>Health Facility Department</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_name:label">
+            <value>Health Facility Name</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_status/alive:label">
+            <value>Alive</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_status/dead:label">
+            <value>Dead</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_status/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_status:label">
+            <value>Condition of the patient when found</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_patient_status_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Patient Status&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_date_seen:label">
+            <value>Date Seen</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_location:label">
+            <value>Village/Town/City where the patient visited the traditional healer</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_name:label">
+            <value>Traditional Healer's Name</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_sub_county:label">
+            <value>Sub County</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_title:label">
+            <value>&lt;h4 style="border-bottom: rgb(150, 150, 150) dashed 1px; padding: 15px 0"&gt;Traditional Healer&lt;/h4&gt;</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited/unknown:label">
+            <value>Unknown</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited:label">
+            <value>Traditional Healer Visited/consulted 3 weeks before becoming ill</value>
+          </text>
+          <text id="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure:label">
+            <value>Has the patient had contact with any wild animals and their products in within the last five days?</value>
+          </text>
+          <text id="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure_prompt:label">
+            <value>Complete the case exposure task after submitting this form</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/abdominal_pain:label">
+            <value>Abdominal pain</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/anorexia:label">
+            <value>Anorexia / loss of appetite</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_gums:label">
+            <value>Bleeding gums (Gingivitis)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_injection_points:label">
+            <value>Bleeding at injection points</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_nose:label">
+            <value>Bleeding nose (epistaxis)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_unexplained:label">
+            <value>Unexplained bleeding</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_vagina:label">
+            <value>Vaginal bleeding outside of menstruation</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bloody_stool:label">
+            <value>Dark or bloody stool (melaena)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/bloody_vomit:label">
+            <value>Vomiting of blood (haematemesis)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/conjuctivitis:label">
+            <value>Conjuctivitis (red eyes)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/diarrhea:label">
+            <value>Diarrhea</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/difficulty_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/difficulty_swallowing:label">
+            <value>Difficulty swallowing</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/headache:label">
+            <value>Headache</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/hiccups:label">
+            <value>Hiccups</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/intense_coughing:label">
+            <value>Intense Coughing</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/intense_fatigue:label">
+            <value>Intense Fatigue / weakness</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/joint_pain:label">
+            <value>Joint pain</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/muscle_pain:label">
+            <value>Muscle pain</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/others:label">
+            <value>Others</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/skin_rash:label">
+            <value>Skin rash</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/vomiting_nausea:label">
+            <value>Vomiting / Nausea</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms:label">
+            <value>Symptoms</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_others:hint">
+            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_others:label">
+            <value>Symptoms (others)</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_start_date:label">
+            <value>When did the symptoms first appear?</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_start_location:label">
+            <value>Where was the patient when the symptoms first appeared?</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_start_residence:hint">
+            <value>Village, Town or City</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_start_residence:label">
+            <value>Where was the patient residing when the symptoms first appeared?</value>
+          </text>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding:label">
+            <value>Unexplained Bleeding (Specify)</value>
+          </text>
         </translation>
       </itext>
       <instance>
@@ -1982,6 +1964,8 @@
                   <_id/>
                   <name/>
                   <code/>
+                  <disease/>
+                  <disease_name/>
                   <date/>
                   <status/>
                 </outbreak>
@@ -1991,6 +1975,8 @@
             <ci_case_name/>
             <outbreak_code/>
             <outbreak_name/>
+            <outbreak_syndrome_disease/>
+            <outbreak_syndrome_disease_name/>
             <outbreak_date/>
             <outbreak_status/>
             <outbreak_location_name/>
@@ -2013,7 +1999,9 @@
             <cholera_symptoms_others/>
             <cholera_symptoms_start_date/>
             <cholera_vaccination/>
-            <cholera_vaccination_doses/>
+            <cholera_vaccination_prompt/>
+            <cholera_hospitalization/>
+            <cholera_hospitalization_prompt/>
           </cholera_screening>
           <covid19_screening>
             <covid19_symptoms/>
@@ -2036,67 +2024,67 @@
             <covid19_previous_case_symptomatic_after/>
             <covid19_previous_case_asymptomatic_date/>
           </covid19_screening_extended>
-          <evd_screening>
-            <evd_symptoms/>
-            <evd_symptoms_others/>
-            <evd_symptoms_unexplained_bleeding/>
-            <evd_symptoms_start_date/>
-            <evd_symptoms_start_location/>
-            <evd_symptoms_start_residence/>
-          </evd_screening>
-          <evd_screening_extended>
-            <evd_patient_status_title/>
-            <evd_patient_status/>
-            <evd_patient_date_death/>
-            <evd_patient_location_death/>
-            <evd_patient_location_community/>
-            <evd_patient_location_health_facility_name/>
-            <evd_patient_location_health_facility_department/>
-            <evd_tradiotional_healer_title/>
-            <evd_traditional_healer_visited/>
-            <evd_traditional_healer_name/>
-            <evd_traditional_healer_location/>
-            <evd_traditional_healer_sub_county/>
-            <evd_traditional_healer_date_seen/>
-            <evd_contact_title/>
-            <evd_contact/>
-            <evd_contact_name/>
-            <evd_contact_type/>
-            <evd_contact_relationship/>
-            <evd_contact_date_last/>
-            <evd_contact_location/>
-            <evd_contact_subcounty/>
-            <evd_contact_vital_status/>
-            <evd_contact_death_date/>
-            <evd_funeral_title/>
-            <evd_funeral/>
-            <evd_funeral_deceased_name/>
-            <evd_funeral_deceased_relationship/>
-            <evd_funeral_date/>
-            <evd_funeral_location/>
-            <evd_funeral_subcounty/>
-            <evd_funeral_deceased_contact/>
-            <evd_animal_contact_title/>
-            <evd_animal_contact/>
-            <evd_animal_contact_type/>
-            <evd_animal_contact_type_other/>
-            <evd_animal_contact_location/>
-            <evd_animal_contact_subcounty/>
-            <evd_animal_contact_date/>
-            <evd_outside_travel_title/>
-            <evd_outside_travel/>
-            <evd_outside_travel_location/>
-            <evd_outside_travel_subcounty/>
-            <evd_outside_travel_offcountry/>
-            <evd_outside_travel_offcountry_location/>
-            <evd_outside_travel_departure_date/>
-            <evd_outside_travel_return_date/>
-            <evd_vaccination_title/>
-            <evd_vaccination/>
-            <evd_vaccination_date/>
-            <evd_case_investigator_title/>
-            <evd_case_investigator_case_def/>
-          </evd_screening_extended>
+          <vhf_screening>
+            <vhf_symptoms/>
+            <vhf_symptoms_others/>
+            <vhf_symptoms_unexplained_bleeding/>
+            <vhf_symptoms_start_date/>
+            <vhf_symptoms_start_location/>
+            <vhf_symptoms_start_residence/>
+          </vhf_screening>
+          <vhf_rvf_screening>
+            <rvf_animal_exposure/>
+            <rvf_animal_exposure_prompt/>
+          </vhf_rvf_screening>
+          <vhf_evd_screening>
+            <vhf_patient_status_title/>
+            <vhf_patient_status/>
+            <vhf_patient_date_death/>
+            <vhf_patient_location_death/>
+            <vhf_patient_location_community/>
+            <vhf_patient_location_health_facility_name/>
+            <vhf_patient_location_health_facility_department/>
+            <vhf_traditional_healer_title/>
+            <vhf_traditional_healer_visited/>
+            <vhf_traditional_healer_name/>
+            <vhf_traditional_healer_location/>
+            <vhf_traditional_healer_sub_county/>
+            <vhf_traditional_healer_date_seen/>
+            <vhf_contact_title/>
+            <vhf_contact/>
+            <vhf_contact_name/>
+            <vhf_contact_type/>
+            <vhf_contact_relationship/>
+            <vhf_contact_date_last/>
+            <vhf_contact_location/>
+            <vhf_contact_subcounty/>
+            <vhf_contact_vital_status/>
+            <vhf_contact_death_date/>
+            <vhf_funeral_title/>
+            <vhf_funeral/>
+            <vhf_funeral_deceased_name/>
+            <vhf_funeral_deceased_relationship/>
+            <vhf_funeral_date/>
+            <vhf_funeral_location/>
+            <vhf_funeral_subcounty/>
+            <vhf_funeral_deceased_contact/>
+            <vhf_animal_contact_title/>
+            <evd_animal_exposure/>
+            <evd_animal_contact_prompt/>
+            <vhf_outside_travel_title/>
+            <vhf_outside_travel/>
+            <vhf_outside_travel_location/>
+            <vhf_outside_travel_subcounty/>
+            <vhf_outside_travel_offcountry/>
+            <vhf_outside_travel_offcountry_location/>
+            <vhf_outside_travel_departure_date/>
+            <vhf_outside_travel_return_date/>
+            <vhf_evd_vaccination_title/>
+            <vhf_evd_vaccination/>
+            <vhf_evd_vaccination_date/>
+            <vhf_case_investigator_title/>
+            <vhf_case_investigator_case_def/>
+          </vhf_evd_screening>
           <measles_screening>
             <measles_symptoms_fever/>
             <measles_symptoms_rash/>
@@ -2296,12 +2284,16 @@
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/_id" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease_name" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/date" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/status" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/ci_case_id" type="string" calculate="../../inputs/contact/patient_id"/>
       <bind nodeset="/case_clinical_information/prerequisites/ci_case_name" type="string" calculate="../../inputs/contact/name"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_code" type="string" calculate="../cases_group/outbreak_location/outbreak/code"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_name" type="string" calculate="../cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_syndrome_disease" type="string" calculate="../cases_group/outbreak_location/outbreak/disease"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_syndrome_disease_name" type="string" calculate="../cases_group/outbreak_location/outbreak/disease_name"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_date" type="string" calculate="../cases_group/outbreak_location/outbreak/date"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_status" type="string" calculate="../cases_group/outbreak_location/outbreak/status"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_name" type="string" calculate="../cases_group/outbreak_location/name"/>
@@ -2322,7 +2314,9 @@
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_doses" type="select1" relevant=" /case_clinical_information/cholera_screening/cholera_vaccination  = 'yes'" required="true()"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_prompt" readonly="true()" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_vaccination , 'yes')"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_hospitalization" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/cholera_screening/cholera_hospitalization_prompt" readonly="true()" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_hospitalization , 'yes')"/>
       <bind nodeset="/case_clinical_information/covid19_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_others" type="string"/>
@@ -2341,65 +2335,64 @@
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms" type="select1" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_screening , 'yes')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_symptomatic_after" type="select1" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'no')"/>
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_asymptomatic_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_others" type="string" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'other')"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_clinical_information/evd_screening/evd_symptoms , 'unexplained_bleeding')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_location" type="string" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening/evd_symptoms_start_residence" type="string" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'evd'"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_status_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_date_death" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_death" type="select1" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_community" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_name" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_department" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_patient_status , 'dead')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_tradiotional_healer_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_traditional_healer_name" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_traditional_healer_location" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_traditional_healer_sub_county" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_traditional_healer_visited , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_traditional_healer_date_seen" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_traditional_healer_visited , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_name" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_type" type="select1" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_relationship" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_date_last" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_location" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_subcounty" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_vital_status" type="select1" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_contact_death_date" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_contact_vital_status , 'dead')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_name" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_relationship" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_date" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_funeral , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_location" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_subcounty" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact" type="select1" relevant="selected( /case_clinical_information/evd_screening_extended/evd_funeral , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact_type" type="select" relevant="selected( /case_clinical_information/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact_type_other" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_animal_contact_type , 'other')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact_location" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact_subcounty" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_animal_contact_date" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_animal_contact , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_location" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_subcounty" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry" type="select1" relevant="selected( /case_clinical_information/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry_location" type="string" relevant="selected( /case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_departure_date" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_outside_travel_return_date" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_outside_travel , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_vaccination_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_vaccination" type="select1"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_vaccination_date" type="date" relevant="selected( /case_clinical_information/evd_screening_extended/evd_vaccination , 'yes')"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'vhf'"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms" type="select" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_others" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'other')"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'unexplained_bleeding')" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_location" type="string" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_residence" type="string" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_rvf_screening" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease  = 'rift_valley_fever'"/>
+      <bind nodeset="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure_prompt" readonly="true()" type="string" relevant="selected( /case_clinical_information/vhf_rvf_screening/rvf_animal_exposure , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease  = 'ebola_virus_disease'"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_status_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_status" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_date_death" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_location_death" type="select1" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_location_community" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_name" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_patient_status , 'dead')" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_department" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_patient_status , 'dead')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_name" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_location" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_sub_county" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_date_seen" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_name" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_type" type="select1" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_relationship" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_date_last" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_location" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_subcounty" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status" type="select1" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_contact_death_date" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_contact_vital_status , 'dead')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_name" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_funeral , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_relationship" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_funeral , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_date" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_funeral , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_location" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_funeral , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_subcounty" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_funeral , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact" type="select1" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_funeral , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_animal_contact_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/evd_animal_exposure" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/evd_animal_contact_prompt" readonly="true()" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/evd_animal_exposure , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel" type="select1" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_location" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_outside_travel , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_subcounty" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_outside_travel , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry" type="select1" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_outside_travel , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry_location" type="string" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_departure_date" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_outside_travel , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_return_date" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_outside_travel , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination" type="select1"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_date" type="date" relevant="selected( /case_clinical_information/vhf_evd_screening/vhf_evd_vaccination , 'yes')"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'measles'"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_rash" type="select1" required="true()"/>
@@ -2705,21 +2698,23 @@
           <value>no</value>
         </item>
       </select1>
-      <select1 ref="/case_clinical_information/cholera_screening/cholera_vaccination_doses">
-        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses:label')"/>
+      <input ref="/case_clinical_information/cholera_screening/cholera_vaccination_prompt">
+        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_prompt:label')"/>
+      </input>
+      <select1 ref="/case_clinical_information/cholera_screening/cholera_hospitalization">
+        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_hospitalization:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses/1:label')"/>
-          <value>1</value>
+          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_hospitalization/yes:label')"/>
+          <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses/2:label')"/>
-          <value>2</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination_doses/&gt;2:label')"/>
-          <value>&gt;2</value>
+          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_hospitalization/no:label')"/>
+          <value>no</value>
         </item>
       </select1>
+      <input ref="/case_clinical_information/cholera_screening/cholera_hospitalization_prompt">
+        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_hospitalization_prompt:label')"/>
+      </input>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/covid19_screening">
       <select ref="/case_clinical_information/covid19_screening/covid19_symptoms">
@@ -2914,463 +2909,431 @@
         <label ref="jr:itext('/case_clinical_information/covid19_screening_extended/covid19_previous_case_asymptomatic_date:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_clinical_information/evd_screening">
-      <select ref="/case_clinical_information/evd_screening/evd_symptoms">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms:label')"/>
+    <group appearance="field-list" ref="/case_clinical_information/vhf_screening">
+      <select ref="/case_clinical_information/vhf_screening/vhf_symptoms">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/fever:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/fever:label')"/>
           <value>fever</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/vomiting_nausea:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/vomiting_nausea:label')"/>
           <value>vomiting_nausea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/diarrhea:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/diarrhea:label')"/>
           <value>diarrhea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/conjuctivitis:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/conjuctivitis:label')"/>
           <value>conjuctivitis</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/intense_fatigue:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/intense_fatigue:label')"/>
           <value>intense_fatigue</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/anorexia:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/anorexia:label')"/>
           <value>anorexia</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/abdominal_pain:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/abdominal_pain:label')"/>
           <value>abdominal_pain</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/muscle_pain:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/muscle_pain:label')"/>
           <value>muscle_pain</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/joint_pain:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/joint_pain:label')"/>
           <value>joint_pain</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/headache:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/headache:label')"/>
           <value>headache</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/difficulty_breathing:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/difficulty_breathing:label')"/>
           <value>difficulty_breathing</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/difficulty_swallowing:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/difficulty_swallowing:label')"/>
           <value>difficulty_swallowing</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/skin_rash:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/skin_rash:label')"/>
           <value>skin_rash</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/hiccups:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/hiccups:label')"/>
           <value>hiccups</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/intense_coughing:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/intense_coughing:label')"/>
           <value>intense_coughing</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bleeding_injection_points:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_injection_points:label')"/>
           <value>bleeding_injection_points</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bleeding_gums:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_gums:label')"/>
           <value>bleeding_gums</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bleeding_nose:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_nose:label')"/>
           <value>bleeding_nose</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bleeding_vagina:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_vagina:label')"/>
           <value>bleeding_vagina</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bloody_stool:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bloody_stool:label')"/>
           <value>bloody_stool</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bloody_vomit:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bloody_vomit:label')"/>
           <value>bloody_vomit</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/bleeding_unexplained:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/bleeding_unexplained:label')"/>
           <value>bleeding_unexplained</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms/others:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/others:label')"/>
           <value>others</value>
         </item>
       </select>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_others">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_others:label')"/>
-        <hint ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_others:hint')"/>
+      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_others">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_others:label')"/>
+        <hint ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_others:hint')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_unexplained_bleeding:label')"/>
+      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_date:label')"/>
+      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_start_date">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_start_date:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_location:label')"/>
+      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_start_location">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_start_location:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening/evd_symptoms_start_residence">
-        <label ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_residence:label')"/>
-        <hint ref="jr:itext('/case_clinical_information/evd_screening/evd_symptoms_start_residence:hint')"/>
+      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_start_residence">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_start_residence:label')"/>
+        <hint ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_start_residence:hint')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_clinical_information/evd_screening_extended">
-      <input ref="/case_clinical_information/evd_screening_extended/evd_patient_status_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_status_title:label')"/>
-      </input>
-      <select1 ref="/case_clinical_information/evd_screening_extended/evd_patient_status">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_status:label')"/>
+    <group appearance="field-list" ref="/case_clinical_information/vhf_rvf_screening">
+      <select1 ref="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure">
+        <label ref="jr:itext('/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_status/alive:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure_prompt">
+        <label ref="jr:itext('/case_clinical_information/vhf_rvf_screening/rvf_animal_exposure_prompt:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/case_clinical_information/vhf_evd_screening">
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_patient_status_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_status_title:label')"/>
+      </input>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/vhf_patient_status">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_status:label')"/>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_status/alive:label')"/>
           <value>alive</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_status/dead:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_status/dead:label')"/>
           <value>dead</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_status/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_status/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_patient_date_death">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_date_death:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_patient_date_death">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_date_death:label')"/>
       </input>
-      <select1 ref="/case_clinical_information/evd_screening_extended/evd_patient_location_death">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_death:label')"/>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/vhf_patient_location_death">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_death:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_death/community:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_death/community:label')"/>
           <value>community</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_death/health_facility:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_death/health_facility:label')"/>
           <value>health_facility</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_death/other:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_death/other:label')"/>
           <value>other</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_patient_location_community">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_community:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_patient_location_community">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_community:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_name">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_name:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_name">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_name:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_department">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_patient_location_health_facility_department:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_department">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_patient_location_health_facility_department:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_tradiotional_healer_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_tradiotional_healer_title:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_title:label')"/>
       </input>
-      <select1 ref="/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited:label')"/>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_visited/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_visited/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_traditional_healer_name">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_name:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_name">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_name:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_traditional_healer_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_location:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_location">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_location:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_traditional_healer_sub_county">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_sub_county:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_sub_county">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_sub_county:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_traditional_healer_date_seen">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_traditional_healer_date_seen:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_date_seen">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_traditional_healer_date_seen:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_title:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_title:label')"/>
       </input>
-      <select1 ref="/case_clinical_information/evd_screening_extended/evd_contact">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact:label')"/>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/vhf_contact">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_name">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_name:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_name">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_name:label')"/>
       </input>
-      <select1 ref="/case_clinical_information/evd_screening_extended/evd_contact_type">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_type:label')"/>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/vhf_contact_type">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_type:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_type/same_room_vehicle:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_type/same_room_vehicle:label')"/>
           <value>same_room_vehicle</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_type/same_household:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_type/same_household:label')"/>
           <value>same_household</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_type/frequent_direct:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_type/frequent_direct:label')"/>
           <value>frequent_direct</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_type/same_community:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_type/same_community:label')"/>
           <value>same_community</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_relationship">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_relationship:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_relationship">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_relationship:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_date_last">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_date_last:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_date_last">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_date_last:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_location:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_location">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_location:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_subcounty">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_subcounty:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_subcounty">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_subcounty:label')"/>
       </input>
-      <select1 ref="/case_clinical_information/evd_screening_extended/evd_contact_vital_status">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_vital_status:label')"/>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_vital_status/alive:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status/alive:label')"/>
           <value>alive</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_vital_status/dead:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status/dead:label')"/>
           <value>dead</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_vital_status/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_vital_status/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_contact_death_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_contact_death_date:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_contact_death_date">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_contact_death_date:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_funeral_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_title:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_title:label')"/>
       </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_funeral">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral:label')"/>
+      <select1 appearance="columns" ref="/case_clinical_information/vhf_evd_screening/vhf_funeral">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_name">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_deceased_name:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_name">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_name:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_relationship">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_deceased_relationship:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_relationship">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_relationship:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_funeral_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_date:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_date">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_date:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_funeral_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_location:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_location">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_location:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_funeral_subcounty">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_subcounty:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_subcounty">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_subcounty:label')"/>
       </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact:label')"/>
+      <select1 appearance="columns" ref="/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_funeral_deceased_contact/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_funeral_deceased_contact/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_animal_contact_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_title:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_animal_contact_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_animal_contact_title:label')"/>
       </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_animal_contact">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact:label')"/>
+      <select1 ref="/case_clinical_information/vhf_evd_screening/evd_animal_exposure">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/evd_animal_exposure:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/evd_animal_exposure/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/evd_animal_exposure/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/case_clinical_information/vhf_evd_screening/evd_animal_contact_prompt">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/evd_animal_contact_prompt:label')"/>
+      </input>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel:label')"/>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <select appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_animal_contact_type">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type:label')"/>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/bat:label')"/>
-          <value>bat</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/monkeys:label')"/>
-          <value>monkeys</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/chimpanzees:label')"/>
-          <value>chimpanzees</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/gorillas:label')"/>
-          <value>gorillas</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/baboons:label')"/>
-          <value>baboons</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/duikers:label')"/>
-          <value>duikers</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/squirrel:label')"/>
-          <value>squirrel</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type/other:label')"/>
-          <value>other</value>
-        </item>
-      </select>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_animal_contact_type_other">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_type_other:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_location">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_location:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_animal_contact_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_location:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_subcounty">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_subcounty:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_animal_contact_subcounty">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_subcounty:label')"/>
-      </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_animal_contact_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_animal_contact_date:label')"/>
-      </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_outside_travel">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel:label')"/>
+      <select1 appearance="columns" ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_location:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry_location">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_offcountry_location:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_subcounty">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_subcounty:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_departure_date">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_departure_date:label')"/>
       </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_outside_travel_return_date">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_outside_travel_return_date:label')"/>
+      </input>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_title:label')"/>
+      </input>
+      <select1 appearance="columns" ref="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry_location">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_offcountry_location:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_date">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_evd_vaccination_date:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_departure_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_departure_date:label')"/>
+      <input ref="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_title">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_case_investigator_title:label')"/>
       </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_outside_travel_return_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_outside_travel_return_date:label')"/>
-      </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_vaccination_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_vaccination_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_vaccination">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_vaccination:label')"/>
+      <select1 appearance="columns" ref="/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def">
+        <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_vaccination/yes:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_vaccination/no:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def/no:label')"/>
           <value>no</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_vaccination/unknown:label')"/>
-          <value>unknown</value>
-        </item>
-      </select1>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_vaccination_date">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_vaccination_date:label')"/>
-      </input>
-      <input ref="/case_clinical_information/evd_screening_extended/evd_case_investigator_title">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_case_investigator_title:label')"/>
-      </input>
-      <select1 appearance="columns" ref="/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def">
-        <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def:label')"/>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def/yes:label')"/>
-          <value>yes</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def/no:label')"/>
-          <value>no</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/evd_screening_extended/evd_case_investigator_case_def/unknown:label')"/>
+          <label ref="jr:itext('/case_clinical_information/vhf_evd_screening/vhf_case_investigator_case_def/unknown:label')"/>
           <value>unknown</value>
         </item>
       </select1>

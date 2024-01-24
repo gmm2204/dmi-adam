@@ -32,6 +32,12 @@
           <text id="/data/outbreak/description:label">
             <value>Description</value>
           </text>
+          <text id="/data/outbreak/disease:label">
+            <value>Syndrome specific disease</value>
+          </text>
+          <text id="/data/outbreak/disease_name:label">
+            <value>Syndrome specific disease (name)</value>
+          </text>
           <text id="/data/outbreak/name:label">
             <value>Name</value>
           </text>
@@ -49,45 +55,6 @@
           </text>
           <text id="static_instance-outbreak_status-1">
             <value>Controlled</value>
-          </text>
-          <text id="static_instance-outbreaks-0">
-            <value>Unknown Outbreak</value>
-          </text>
-          <text id="static_instance-outbreaks-1">
-            <value>Acute Flacid Paralysis</value>
-          </text>
-          <text id="static_instance-outbreaks-10">
-            <value>Rabies</value>
-          </text>
-          <text id="static_instance-outbreaks-11">
-            <value>SARI/ILI</value>
-          </text>
-          <text id="static_instance-outbreaks-12">
-            <value>Viral Haemorrhagic Fever (Ebola, Rift Valley Fever, Crimea - Congo HF)</value>
-          </text>
-          <text id="static_instance-outbreaks-2">
-            <value>Anthrax</value>
-          </text>
-          <text id="static_instance-outbreaks-3">
-            <value>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</value>
-          </text>
-          <text id="static_instance-outbreaks-4">
-            <value>Cholera</value>
-          </text>
-          <text id="static_instance-outbreaks-5">
-            <value>COVID-19</value>
-          </text>
-          <text id="static_instance-outbreaks-6">
-            <value>Malaria</value>
-          </text>
-          <text id="static_instance-outbreaks-7">
-            <value>Meningococcal Meningitis</value>
-          </text>
-          <text id="static_instance-outbreaks-8">
-            <value>Measles</value>
-          </text>
-          <text id="static_instance-outbreaks-9">
-            <value>Neonatal Tetanus (NNT)</value>
           </text>
           <text id="static_instance-select_country-0">
             <value>Afghanistan</value>
@@ -5999,6 +5966,87 @@ Mutonga/Kithumula</value>
           <text id="static_instance-select_ward-999">
             <value>Butsotso Central</value>
           </text>
+          <text id="static_instance-syndrome_diseases-0">
+            <value>Alkhurma hemorrhagic fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-1">
+            <value>Chapare hemorrhagic fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-10">
+            <value>Omsk hemorrhagic fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-11">
+            <value>Rift Valley fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-12">
+            <value>Severe Dengue</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-13">
+            <value>Yellow Fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-2">
+            <value>Crimean-Congo hemorrhagic fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-3">
+            <value>Ebola (Ebola Virus Disease)</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-4">
+            <value>Hantavirus Pulmonary Syndrome (HPS)</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-5">
+            <value>Hemorrhagic fever with renal syndrome (HFRS)</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-6">
+            <value>Kyasanur Forest Disease (KFD)</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-7">
+            <value>Lassa fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-8">
+            <value>Lujo hemorrhagic fever</value>
+          </text>
+          <text id="static_instance-syndrome_diseases-9">
+            <value>Marburg hemorrhagic fever</value>
+          </text>
+          <text id="static_instance-syndromes-0">
+            <value>Unknown Outbreak</value>
+          </text>
+          <text id="static_instance-syndromes-1">
+            <value>Acute Flacid Paralysis</value>
+          </text>
+          <text id="static_instance-syndromes-10">
+            <value>Rabies</value>
+          </text>
+          <text id="static_instance-syndromes-11">
+            <value>SARI/ILI</value>
+          </text>
+          <text id="static_instance-syndromes-12">
+            <value>Viral Haemorrhagic Fevers</value>
+          </text>
+          <text id="static_instance-syndromes-2">
+            <value>Anthrax</value>
+          </text>
+          <text id="static_instance-syndromes-3">
+            <value>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</value>
+          </text>
+          <text id="static_instance-syndromes-4">
+            <value>Cholera</value>
+          </text>
+          <text id="static_instance-syndromes-5">
+            <value>COVID-19</value>
+          </text>
+          <text id="static_instance-syndromes-6">
+            <value>Malaria</value>
+          </text>
+          <text id="static_instance-syndromes-7">
+            <value>Meningococcal Meningitis</value>
+          </text>
+          <text id="static_instance-syndromes-8">
+            <value>Measles</value>
+          </text>
+          <text id="static_instance-syndromes-9">
+            <value>Neonatal Tetanus (NNT)</value>
+          </text>
           <text id="static_instance-yes_no-0">
             <value>Yes</value>
           </text>
@@ -6008,7 +6056,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak:create" prefix="J1!contact:outbreak:create!" delimiter="#" version="2024-01-20 10-59">
+        <data id="contact:outbreak:create" prefix="J1!contact:outbreak:create!" delimiter="#" version="2024-01-23 9-31">
           <inputs>
             <meta>
               <location>
@@ -6028,6 +6076,8 @@ Mutonga/Kithumula</value>
             <parent>PARENT</parent>
             <type/>
             <code/>
+            <disease/>
+            <disease_name/>
             <name/>
             <description/>
             <county/>
@@ -6035,7 +6085,6 @@ Mutonga/Kithumula</value>
             <date/>
             <status>active</status>
             <contact/>
-            <geolocation/>
             <metas>
               <created_by/>
               <created_by_person_uuid/>
@@ -6082,59 +6131,133 @@ Mutonga/Kithumula</value>
           </item>
         </root>
       </instance>
-      <instance id="outbreaks">
+      <instance id="syndromes">
         <root>
           <item>
-            <itextId>static_instance-outbreaks-0</itextId>
+            <itextId>static_instance-syndromes-0</itextId>
             <name>unknown</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-1</itextId>
+            <itextId>static_instance-syndromes-1</itextId>
             <name>afp</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-2</itextId>
+            <itextId>static_instance-syndromes-2</itextId>
             <name>anthrax</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-3</itextId>
+            <itextId>static_instance-syndromes-3</itextId>
             <name>dysentery</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-4</itextId>
+            <itextId>static_instance-syndromes-4</itextId>
             <name>cholera</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-5</itextId>
+            <itextId>static_instance-syndromes-5</itextId>
             <name>covid19</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-6</itextId>
+            <itextId>static_instance-syndromes-6</itextId>
             <name>malaria</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-7</itextId>
+            <itextId>static_instance-syndromes-7</itextId>
             <name>menigitis</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-8</itextId>
+            <itextId>static_instance-syndromes-8</itextId>
             <name>measles</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-9</itextId>
+            <itextId>static_instance-syndromes-9</itextId>
             <name>nnt</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-10</itextId>
+            <itextId>static_instance-syndromes-10</itextId>
             <name>rabies</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-11</itextId>
+            <itextId>static_instance-syndromes-11</itextId>
             <name>sari_ili</name>
           </item>
           <item>
-            <itextId>static_instance-outbreaks-12</itextId>
-            <name>evd</name>
+            <itextId>static_instance-syndromes-12</itextId>
+            <name>vhf</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="syndrome_diseases">
+        <root>
+          <item>
+            <itextId>static_instance-syndrome_diseases-0</itextId>
+            <name>alkhurma_hemorrhagic_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-1</itextId>
+            <name>chapare_hemorrhagic_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-2</itextId>
+            <name>crimean_congo_hemorragic_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-3</itextId>
+            <name>ebola_virus_disease</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-4</itextId>
+            <name>hantavirus_pulmonary_disease</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-5</itextId>
+            <name>hemorrhagic_fever_with_renal_syndrome</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-6</itextId>
+            <name>kyasanur_forest_disease</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-7</itextId>
+            <name>lassa_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-8</itextId>
+            <name>lujo_hemorrhagic_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-9</itextId>
+            <name>marbug</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-10</itextId>
+            <name>omsk_hemorrhagic_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-11</itextId>
+            <name>rift_valley_fever</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-12</itextId>
+            <name>severe_dengue</name>
+            <syndrome>vhf</syndrome>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-13</itextId>
+            <name>yellow_fever</name>
+            <syndrome>vhf</syndrome>
           </item>
         </root>
       </instance>
@@ -15786,14 +15909,15 @@ Course</name>
       <bind nodeset="/data/outbreak/parent" type="string"/>
       <bind nodeset="/data/outbreak/type" type="string"/>
       <bind nodeset="/data/outbreak/code" type="select1" required="true()"/>
-      <bind nodeset="/data/outbreak/name" type="string" required="true()" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')"/>
+      <bind nodeset="/data/outbreak/disease" type="select1"/>
+      <bind nodeset="/data/outbreak/disease_name" type="string" calculate="concat(jr:choice-name( /data/outbreak/disease ,' /data/outbreak/disease '),'')"/>
+      <bind nodeset="/data/outbreak/name" type="string" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" required="true()"/>
       <bind nodeset="/data/outbreak/description" type="string"/>
       <bind nodeset="/data/outbreak/county" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/subcounty" type="select1" required="true()"/>
-      <bind nodeset="/data/outbreak/date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/outbreak/date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/data/outbreak/status" type="select1" required="true()" readonly="true()"/>
       <bind nodeset="/data/outbreak/contact" type="string" calculate="coalesce( /data/init/select_person ,&quot;NEW&quot;)"/>
-      <bind nodeset="/data/outbreak/geolocation" type="string" calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))"/>
       <bind nodeset="/data/outbreak/metas/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak/metas/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/outbreak/metas/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -15879,9 +16003,16 @@ Course</name>
           <value>sari_ili</value>
         </item>
         <item>
-          <label>Viral Haemorrhagic Fever (Ebola, Rift Valley Fever, Crimea - Congo HF)</label>
-          <value>evd</value>
+          <label>Viral Haemorrhagic Fevers</label>
+          <value>vhf</value>
         </item>
+      </select1>
+      <select1 appearance="autocomplete" ref="/data/outbreak/disease">
+        <label ref="jr:itext('/data/outbreak/disease:label')"/>
+        <itemset nodeset="instance('syndrome_diseases')/root/item[syndrome= /data/outbreak/code ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
       </select1>
       <input ref="/data/outbreak/description">
         <label ref="jr:itext('/data/outbreak/description:label')"/>

@@ -24,10 +24,12 @@ SELECT
     T1.doc->'case_location'->>'case_subcounty' as case_sub_county,
     
     -- Outcome and status
-    T2.doc->'fields'->'co_final'->>'cof_case_classification' as case_outcome,
+    T8.outcome_label as case_outcome,
     T2.doc->'fields'->'co_final'->>'cof_patient_status' as case_status,
     T2.doc->'fields'->'co_final'->'cof_date' as case_outcome_date,
     CAST(T1.doc->'meta'->>'case_investigation_date' as DATE) as case_investigation_date,
+    to_char(CAST(T1.doc->'meta'->>'case_investigation_date' as DATE), 'YYYY') as case_investigation_year,
+    to_char(CAST(T1.doc->'meta'->>'case_investigation_date' as DATE), 'MM') as case_investigation_month,
     
     -- Geolocation
     T2.doc->'geolocation_log'->0->'recording'->>'latitude' as case_latitude,
@@ -46,6 +48,7 @@ FROM
     LEFT JOIN "public"."dim_syndromes" T5 ON (T5.syndrome_code = T1.doc->'cases_group'->'outbreak_location'->'outbreak'->>'code')
     LEFT JOIN "public"."dim_occupation" T6 ON (T6.occupation_code = T1.doc->'case_demographics_extended'->>'case_occupation')
     LEFT JOIN "public"."dim_sex" T7 ON (T7.sex_code = T1.doc->'case_demographics'->>'case_sex')
+    LEFT JOIN "public"."dim_case_outcome" T8 ON (T8.outcome_code = T2.doc->'fields'->'co_final'->>'cof_case_classification')
     
 WHERE 
     T1.doc->>'contact_type' = 'case'
