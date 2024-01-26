@@ -87,7 +87,7 @@
             <value>Results</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_results_date:label">
-            <value>Date</value>
+            <value>Results date</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt/no:label">
             <value>No</value>
@@ -114,7 +114,7 @@
             <value>Results</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_results_date:label">
-            <value>Date</value>
+            <value>Results date</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_date:label">
             <value>Date of sample collection</value>
@@ -372,19 +372,19 @@
       <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type" type="select" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_sample_type , 'other')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other" type="string" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_sample_type , 'other')" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results" type="select1" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results" type="select1" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
-      <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')" required="true()"/>
+      <bind nodeset="/case_outcome/co_final/cof_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
       <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>

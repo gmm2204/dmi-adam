@@ -170,7 +170,7 @@
       <bind nodeset="/case_management/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_management/inputs/contact/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_management/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_management/prerequisites/outbreak_location/_id" type="string" calculate="../../../inputs/contact/parent/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_management/prerequisites/outbreak_location/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/parent/_id"/>
       <bind nodeset="/case_management/prerequisites/outbreak_location/ol_county" type="string"/>
       <bind nodeset="/case_management/prerequisites/outbreak_location/ol_subcounty" type="string"/>
       <bind nodeset="/case_management/prerequisites/outbreak_location/outbreak/_id" type="string"/>
@@ -197,8 +197,8 @@
       <bind nodeset="/case_management/cm_vitals/cmv_pulse_rate" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_respiratory_rate" type="int"/>
       <bind nodeset="/case_management/cm_vitals/cmv_oxygen_saturation" type="int"/>
-      <bind nodeset="/case_management/cm_meta/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_management/cm_meta/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_management/cm_meta/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_management/cm_meta/created_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_management/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

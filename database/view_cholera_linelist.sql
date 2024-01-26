@@ -1,6 +1,6 @@
--- DROP VIEW "public"."linelist_cholera";
+DROP VIEW "public"."linelist_cholera";
 
--- CREATE VIEW linelist_cholera AS
+CREATE VIEW linelist_cholera AS
 
 SELECT
     -- Outbreak and Syndrome
@@ -17,10 +17,12 @@ SELECT
     -- Biodata
     T7.sex_name as case_sex,
     T6.occupation_name as case_occupation,
-    CAST((case when (T1.doc -> 'case_demographics' -> 'ephemeral_dob' ->> 'dob_method') = 'yes' then (T1.doc -> 'case_demographics' ->> 'date_of_birth') else (T1.doc -> 'case_demographics' -> 'ephemeral_dob' ->> 'dob_approx') end) as DATE) as case_date_of_birth,    
+    CAST((case when (T1.doc -> 'case_demographics' -> 'ephemeral_dob' ->> 'dob_method') = 'yes' then (T1.doc -> 'case_demographics' ->> 'date_of_birth') else (T1.doc -> 'case_demographics' -> 'ephemeral_dob' ->> 'dob_approx') end) as DATE) as case_date_of_birth,
+    CAST(date_part('year', age(CAST((case when (T1.doc -> 'case_demographics' -> 'ephemeral_dob' ->> 'dob_method') = 'yes' then (T1.doc -> 'case_demographics' ->> 'date_of_birth') else (T1.doc -> 'case_demographics' -> 'ephemeral_dob' ->> 'dob_approx') end) as DATE))) as varchar) as case_age,
     T4.ag_label as case_age_group,
     
     -- Residence
+    T1.doc->'case_location'->>'case_country' as case_country,
     T1.doc->'case_location'->>'case_county' as case_county,
     T1.doc->'case_location'->>'case_subcounty' as case_sub_county,
     
@@ -34,9 +36,9 @@ SELECT
     
     -- Hospitalization
     T3.doc->'fields'->'cholera_screening'->>'cholera_hospitalization' as case_hospitalized,
-    THospitalization.doc->'fields'->'ch_location'->>'chl_facility' as case_hospitalization_facicility_name,
+    THospitalization.doc->'fields'->'ch_location'->>'chl_facility' as case_hospitalization_facility_name,
     THospitalization.doc->'fields'->'ch_admission'->>'cha_visit_date' as case_hospitalization_visit_date,
-    THospitalization.doc->'fields'->'cht_cholera'->>'cht_cholera_treatment' as case_hospitalization_treatment,
+    THospitalization.doc->'fields'->'cht_cholera'->>'cht_cholera_treatment_label' as case_hospitalization_treatment,
     
     -- Outcome and status
     T8.outcome_label as case_outcome,
@@ -72,4 +74,5 @@ FROM
     LEFT JOIN "public"."couchdb" TOutbreakLocation ON (T1.doc->'parent'->'parent'->>'_id' = TOutbreakLocation.doc->>'_id' AND TOutbreakLocation.doc->>'type' = 'contact')
     
 WHERE 
-    T1.doc->>'contact_type' = 'case'
+    T1.doc->>'contact_type' = 'case' 
+    AND T1.doc->'cases_group'->'outbreak_location'->'outbreak'->>'disease' = 'cholera'
