@@ -5,6 +5,69 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/case_clinical_information/ads_screening/ads_diarrhea_per_day:label">
+            <value>How many times per day the did the patient diarrhea?</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/acute_bloody_diarrhea:label">
+            <value>Acute bloody diarrhea</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/acute_mucous_diarrhea:label">
+            <value>Acute mucous diarrhea</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/acute_watery_diarrhea:label">
+            <value>Acute watery diarrhea</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/adbominal_pain:label">
+            <value>Abdominal Pain</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/back_pain:label">
+            <value>Back pain</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/diarrhea:label">
+            <value>Diarrhea</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/headache:label">
+            <value>Headache</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/myalgia:label">
+            <value>Myalgia</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/paralysis:label">
+            <value>Paralysis</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/salivary_discharge:label">
+            <value>Salivary discharge</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/sunken_fontanel:label">
+            <value>Sunken fontanel's (if baby)</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/sweat:label">
+            <value>Sweat</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms/vomiting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms:label">
+            <value>Symptoms</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms_other:hint">
+            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms_other:label">
+            <value>Symptoms (other)</value>
+          </text>
+          <text id="/case_clinical_information/ads_screening/ads_symptoms_start_date:label">
+            <value>Date of onset of symptoms</value>
+          </text>
           <text id="/case_clinical_information/cci_created/created_by:label">
             <value>Created By</value>
           </text>
@@ -22,42 +85,6 @@
           </text>
           <text id="/case_clinical_information/cholera_screening/cholera_hospitalization_prompt:label">
             <value>Complete the case hospitalization task after submitting this form</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/abdominal_cramps:label">
-            <value>Abdominal cramps</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/diarrhea:label">
-            <value>Diarrhea</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/fever:label">
-            <value>Fever</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/headache:label">
-            <value>Headache</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/myalgia:label">
-            <value>Myalgia</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/nausea:label">
-            <value>Nausea</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms/vomiting:label">
-            <value>Vomiting</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms:label">
-            <value>Symptoms</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms_others:hint">
-            <value>Any other symptoms not listed above</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms_others:label">
-            <value>Symptoms (other)</value>
-          </text>
-          <text id="/case_clinical_information/cholera_screening/cholera_symptoms_start_date:label">
-            <value>Date of onset of symptoms</value>
           </text>
           <text id="/case_clinical_information/cholera_screening/cholera_vaccination/no:label">
             <value>No</value>
@@ -629,8 +656,56 @@
           <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship/Uncle:label">
             <value>Uncle</value>
           </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship/other:label">
+            <value>Other</value>
+          </text>
           <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship:label">
             <value>Relationship with the case</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Aunt:label">
+            <value>Aunt</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Child:label">
+            <value>Child</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Co-worker:label">
+            <value>Co-worker</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Father:label">
+            <value>Father</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Friend:label">
+            <value>Friend</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Grand father:label">
+            <value>Grand father</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Grand mother:label">
+            <value>Grand mother</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Guardian:label">
+            <value>Guardian</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Mother:label">
+            <value>Mother</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Partner:label">
+            <value>Partner</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Sibling:label">
+            <value>Sibling</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Spouse:label">
+            <value>Spouse</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Uncle:label">
+            <value>Uncle</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other:label">
+            <value>Relationship with the case (other)</value>
           </text>
           <text id="/case_clinical_information/ci_neurology/ci_neurology_information/cin_abnormal_movements/no:label">
             <value>No</value>
@@ -1232,60 +1307,6 @@
           <text id="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present:label">
             <value>Any underlying conditions</value>
           </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day:label">
-            <value>How many times per day the did the patient diarrhea?</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/acute_bloody_diarrhea:label">
-            <value>Acute bloody diarrhea</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/acute_mucous_diarrhea:label">
-            <value>Acute mucous diarrhea</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/acute_watery_diarrhea:label">
-            <value>Acute watery diarrhea</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/adbominal_pain:label">
-            <value>Abdominal Pain</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/back_pain:label">
-            <value>Back pain</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/fever:label">
-            <value>Fever</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/nausea:label">
-            <value>Nausea</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/paralysis:label">
-            <value>Paralysis</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/salivary_discharge:label">
-            <value>Salivary discharge</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/sunken_fontanel:label">
-            <value>Sunken fontanel's (if baby)</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/sweat:label">
-            <value>Sweat</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms/vomiting:label">
-            <value>Vomiting</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms:label">
-            <value>Symptoms</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms_other:hint">
-            <value>Any other symptoms not listed above. Separate with commas if multiple</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms_other:label">
-            <value>Symptoms (other)</value>
-          </text>
-          <text id="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date:label">
-            <value>Date of onset of symptoms</value>
-          </text>
           <text id="/case_clinical_information/measles_screening/measles_rash_type/maculopapular:label">
             <value>Maculopapular</value>
           </text>
@@ -1328,11 +1349,14 @@
           <text id="/case_clinical_information/measles_screening/measles_symptoms_start_date:label">
             <value>When did the symptoms first appear?</value>
           </text>
+          <text id="/case_clinical_information/prerequisites/case_disease_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Disease: <output value=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease_name "/>&lt;/h4&gt;</value>
+          </text>
           <text id="/case_clinical_information/prerequisites/case_id_title:label">
             <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_clinical_information/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_clinical_information/prerequisites/case_investigation_title:label">
-            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to document the clinical details of the case, such as the symptoms that the patient reported and when they started, as well as any relevant medical history that may affect the case classification.&lt;/h4&gt; &lt;p&gt;This is to be filled only once, but can be updated.&lt;/p&gt;</value>
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to document the clinical details of the case, such as the symptoms that the patient reported and when they started, as well as any relevant medical history that may affect the case classification.&lt;/h4&gt; &lt;p&gt;c.&lt;/p&gt;</value>
           </text>
           <text id="/case_clinical_information/prerequisites/case_name_title:label">
             <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case Name: <output value=" /case_clinical_information/prerequisites/ci_case_name "/>&lt;/h4&gt;</value>
@@ -1341,7 +1365,7 @@
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak Location: <output value=" /case_clinical_information/prerequisites/outbreak_location_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_clinical_information/prerequisites/case_outbreak_title:label">
-            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_clinical_information/prerequisites/outbreak_name "/> - <output value=" /case_clinical_information/prerequisites/outbreak_syndrome_disease_name "/>&lt;/h4&gt;</value>
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Outbreak: <output value=" /case_clinical_information/prerequisites/outbreak_name "/>&lt;/h4&gt;</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/_id:label">
             <value>Cases Group</value>
@@ -1371,10 +1395,10 @@
             <value>Outbreak Date</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease:label">
-            <value>Outbreak syndrome disease</value>
+            <value>Disease Code</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease_name:label">
-            <value>Outbreak syndrome disease name</value>
+            <value>Disease Name</value>
           </text>
           <text id="/case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/name:label">
             <value>Outbreak name</value>
@@ -1874,8 +1898,8 @@
           <text id="/case_clinical_information/vhf_screening/vhf_symptoms/muscle_pain:label">
             <value>Muscle pain</value>
           </text>
-          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/others:label">
-            <value>Others</value>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms/other:label">
+            <value>Other</value>
           </text>
           <text id="/case_clinical_information/vhf_screening/vhf_symptoms/skin_rash:label">
             <value>Skin rash</value>
@@ -1886,11 +1910,11 @@
           <text id="/case_clinical_information/vhf_screening/vhf_symptoms:label">
             <value>Symptoms</value>
           </text>
-          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_others:hint">
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_other:hint">
             <value>Any other symptoms not listed above. Separate with commas if multiple</value>
           </text>
-          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_others:label">
-            <value>Symptoms (others)</value>
+          <text id="/case_clinical_information/vhf_screening/vhf_symptoms_other:label">
+            <value>Symptoms (other)</value>
           </text>
           <text id="/case_clinical_information/vhf_screening/vhf_symptoms_start_date:label">
             <value>When did the symptoms first appear?</value>
@@ -1975,29 +1999,27 @@
             <ci_case_name/>
             <outbreak_code/>
             <outbreak_name/>
-            <outbreak_syndrome_disease/>
-            <outbreak_syndrome_disease_name/>
+            <outbreak_disease/>
+            <outbreak_disease_name/>
             <outbreak_date/>
             <outbreak_status/>
             <outbreak_location_name/>
             <outbreak_location_county/>
             <outbreak_location_subcounty/>
             <case_outbreak_title tag="hidden"/>
+            <case_disease_title/>
             <case_outbreak_location_title/>
             <case_name_title/>
             <case_id_title/>
             <case_investigation_title/>
           </prerequisites>
-          <dysentery_screening>
-            <dysentery_symptoms_start_date/>
-            <dysentery_symptoms/>
-            <dysentery_symptoms_other/>
-            <dysentery_diarrhea_per_day/>
-          </dysentery_screening>
+          <ads_screening>
+            <ads_symptoms/>
+            <ads_symptoms_other/>
+            <ads_diarrhea_per_day/>
+            <ads_symptoms_start_date/>
+          </ads_screening>
           <cholera_screening>
-            <cholera_symptoms/>
-            <cholera_symptoms_others/>
-            <cholera_symptoms_start_date/>
             <cholera_vaccination/>
             <cholera_vaccination_prompt/>
             <cholera_hospitalization/>
@@ -2026,7 +2048,7 @@
           </covid19_screening_extended>
           <vhf_screening>
             <vhf_symptoms/>
-            <vhf_symptoms_others/>
+            <vhf_symptoms_other/>
             <vhf_symptoms_unexplained_bleeding/>
             <vhf_symptoms_start_date/>
             <vhf_symptoms_start_location/>
@@ -2245,6 +2267,7 @@
             <case_interviewee_type>patient</case_interviewee_type>
             <case_interviewee_name/>
             <case_inverviewee_relationship/>
+            <case_inverviewee_relationship_other/>
           </ci_interviewee>
           <cci_created>
             <created_by/>
@@ -2275,7 +2298,7 @@
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_clinical_information/inputs/contact/parent/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_clinical_information/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_clinical_information/prerequisites/cases_group/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/case_clinical_information/prerequisites/cases_group/_id" type="string" calculate="../../../inputs/contact/parent/_id" readonly="true()"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/name" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/_id" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/cases_group/outbreak_location/name" type="string"/>
@@ -2292,27 +2315,25 @@
       <bind nodeset="/case_clinical_information/prerequisites/ci_case_name" type="string" calculate="../../inputs/contact/name"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_code" type="string" calculate="../cases_group/outbreak_location/outbreak/code"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_name" type="string" calculate="../cases_group/outbreak_location/outbreak/name"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_syndrome_disease" type="string" calculate="../cases_group/outbreak_location/outbreak/disease"/>
-      <bind nodeset="/case_clinical_information/prerequisites/outbreak_syndrome_disease_name" type="string" calculate="../cases_group/outbreak_location/outbreak/disease_name"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_disease" type="string" calculate="../cases_group/outbreak_location/outbreak/disease"/>
+      <bind nodeset="/case_clinical_information/prerequisites/outbreak_disease_name" type="string" calculate="../cases_group/outbreak_location/outbreak/disease_name"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_date" type="string" calculate="../cases_group/outbreak_location/outbreak/date"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_status" type="string" calculate="../cases_group/outbreak_location/outbreak/status"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_name" type="string" calculate="../cases_group/outbreak_location/name"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_county" type="string" calculate="../cases_group/outbreak_location/ol_county"/>
       <bind nodeset="/case_clinical_information/prerequisites/outbreak_location_subcounty" type="string" calculate="../cases_group/outbreak_location/ol_subcounty"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_clinical_information/prerequisites/case_disease_title" readonly="true()" type="string" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease_name  != ''"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_clinical_information/prerequisites/case_investigation_title" readonly="true()" type="string"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'dysentery'"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_symptoms_other" type="string" relevant="selected( /case_clinical_information/dysentery_screening/dysentery_symptoms , 'other')"/>
-      <bind nodeset="/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day" type="int" required="true()"/>
-      <bind nodeset="/case_clinical_information/cholera_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'cholera'"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_others" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_symptoms , 'other')"/>
-      <bind nodeset="/case_clinical_information/cholera_screening/cholera_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/ads_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'ads'"/>
+      <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms" type="select" required="true()"/>
+      <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms_other" type="string" relevant="selected( /case_clinical_information/ads_screening/ads_symptoms , 'other')"/>
+      <bind nodeset="/case_clinical_information/ads_screening/ads_diarrhea_per_day" type="int" relevant="selected( /case_clinical_information/ads_screening/ads_symptoms , 'diarrhea')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_clinical_information/cholera_screening" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease  = 'cholera'"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_prompt" readonly="true()" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_vaccination , 'yes')"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_hospitalization" type="select1" required="true()"/>
@@ -2320,7 +2341,7 @@
       <bind nodeset="/case_clinical_information/covid19_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_others" type="string"/>
-      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case" type="select1"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present" type="select1" required="true()"/>
@@ -2337,9 +2358,9 @@
       <bind nodeset="/case_clinical_information/covid19_screening_extended/covid19_previous_case_asymptomatic_date" type="date" relevant="selected( /case_clinical_information/covid19_screening_extended/covid19_previous_case_symptoms , 'yes')"/>
       <bind nodeset="/case_clinical_information/vhf_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'vhf'"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms" type="select" required="true()"/>
-      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_others" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'other')"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_other" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'unexplained_bleeding')" required="true()"/>
-      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_location" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/vhf_rvf_screening" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease  = 'rift_valley_fever'"/>
@@ -2397,7 +2418,7 @@
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_rash" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_rash_type" type="select1" relevant="selected( /case_clinical_information/measles_screening/measles_symptoms_rash , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit_date" type="date" relevant="selected( /case_clinical_information/measles_screening/measles_residence_visit , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
@@ -2481,7 +2502,7 @@
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_record_cutaneous" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information" relevant="selected( /case_clinical_information/ci_cutaneous/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_duration_days" type="int" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_type" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_localization" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
@@ -2534,6 +2555,7 @@
       <bind nodeset="/case_clinical_information/ci_interviewee/case_interviewee_type" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_interviewee/case_interviewee_name" type="string" relevant="selected( /case_clinical_information/ci_interviewee/case_interviewee_type , 'proxy')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_interviewee/case_inverviewee_relationship" type="select1" relevant="selected( /case_clinical_information/ci_interviewee/case_interviewee_type , 'proxy')" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other" type="select1" relevant="selected( /case_clinical_information/ci_interviewee/case_inverviewee_relationship , 'other')" required="true()"/>
       <bind nodeset="/case_clinical_information/cci_created/created_by" type="string" calculate="../../inputs/user/name"/>
       <bind nodeset="/case_clinical_information/cci_created/created_on" type="string" calculate="today()"/>
       <bind nodeset="/case_clinical_information/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
@@ -2564,6 +2586,9 @@
       <input ref="/case_clinical_information/prerequisites/case_outbreak_title">
         <label ref="jr:itext('/case_clinical_information/prerequisites/case_outbreak_title:label')"/>
       </input>
+      <input ref="/case_clinical_information/prerequisites/case_disease_title">
+        <label ref="jr:itext('/case_clinical_information/prerequisites/case_disease_title:label')"/>
+      </input>
       <input ref="/case_clinical_information/prerequisites/case_outbreak_location_title">
         <label ref="jr:itext('/case_clinical_information/prerequisites/case_outbreak_location_title:label')"/>
       </input>
@@ -2577,116 +2602,86 @@
         <label ref="jr:itext('/case_clinical_information/prerequisites/case_investigation_title:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/case_clinical_information/dysentery_screening">
-      <input ref="/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms_start_date:label')"/>
-      </input>
-      <select ref="/case_clinical_information/dysentery_screening/dysentery_symptoms">
-        <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms:label')"/>
+    <group appearance="field-list" ref="/case_clinical_information/ads_screening">
+      <select ref="/case_clinical_information/ads_screening/ads_symptoms">
+        <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms:label')"/>
         <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/adbominal_pain:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/adbominal_pain:label')"/>
           <value>adbominal_pain</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/nausea:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/nausea:label')"/>
           <value>nausea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/vomiting:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/vomiting:label')"/>
           <value>vomiting</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/acute_watery_diarrhea:label')"/>
-          <value>acute_watery_diarrhea</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/acute_bloody_diarrhea:label')"/>
-          <value>acute_bloody_diarrhea</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/acute_mucous_diarrhea:label')"/>
-          <value>acute_mucous_diarrhea</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/fever:label')"/>
-          <value>fever</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/salivary_discharge:label')"/>
-          <value>salivary_discharge</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/sweat:label')"/>
-          <value>sweat</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/back_pain:label')"/>
-          <value>back_pain</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/sunken_fontanel:label')"/>
-          <value>sunken_fontanel</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/paralysis:label')"/>
-          <value>paralysis</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms/other:label')"/>
-          <value>other</value>
-        </item>
-      </select>
-      <input ref="/case_clinical_information/dysentery_screening/dysentery_symptoms_other">
-        <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms_other:label')"/>
-        <hint ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_symptoms_other:hint')"/>
-      </input>
-      <input ref="/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day">
-        <label ref="jr:itext('/case_clinical_information/dysentery_screening/dysentery_diarrhea_per_day:label')"/>
-      </input>
-    </group>
-    <group appearance="field-list" ref="/case_clinical_information/cholera_screening">
-      <select ref="/case_clinical_information/cholera_screening/cholera_symptoms">
-        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms:label')"/>
-        <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/diarrhea:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/diarrhea:label')"/>
           <value>diarrhea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/nausea:label')"/>
-          <value>nausea</value>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/acute_watery_diarrhea:label')"/>
+          <value>acute_watery_diarrhea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/vomiting:label')"/>
-          <value>vomiting</value>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/acute_bloody_diarrhea:label')"/>
+          <value>acute_bloody_diarrhea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/abdominal_cramps:label')"/>
-          <value>abdominal_cramps</value>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/acute_mucous_diarrhea:label')"/>
+          <value>acute_mucous_diarrhea</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/fever:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/fever:label')"/>
           <value>fever</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/headache:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/salivary_discharge:label')"/>
+          <value>salivary_discharge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/sweat:label')"/>
+          <value>sweat</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/back_pain:label')"/>
+          <value>back_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/headache:label')"/>
           <value>headache</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/myalgia:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/sunken_fontanel:label')"/>
+          <value>sunken_fontanel</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/paralysis:label')"/>
+          <value>paralysis</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/myalgia:label')"/>
           <value>myalgia</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms/other:label')"/>
+          <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms/other:label')"/>
           <value>other</value>
         </item>
       </select>
-      <input ref="/case_clinical_information/cholera_screening/cholera_symptoms_others">
-        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_others:label')"/>
-        <hint ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_others:hint')"/>
+      <input ref="/case_clinical_information/ads_screening/ads_symptoms_other">
+        <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms_other:label')"/>
+        <hint ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms_other:hint')"/>
       </input>
-      <input ref="/case_clinical_information/cholera_screening/cholera_symptoms_start_date">
-        <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_symptoms_start_date:label')"/>
+      <input ref="/case_clinical_information/ads_screening/ads_diarrhea_per_day">
+        <label ref="jr:itext('/case_clinical_information/ads_screening/ads_diarrhea_per_day:label')"/>
       </input>
+      <input ref="/case_clinical_information/ads_screening/ads_symptoms_start_date">
+        <label ref="jr:itext('/case_clinical_information/ads_screening/ads_symptoms_start_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/case_clinical_information/cholera_screening">
       <select1 ref="/case_clinical_information/cholera_screening/cholera_vaccination">
         <label ref="jr:itext('/case_clinical_information/cholera_screening/cholera_vaccination:label')"/>
         <item>
@@ -2910,7 +2905,7 @@
       </input>
     </group>
     <group appearance="field-list" ref="/case_clinical_information/vhf_screening">
-      <select ref="/case_clinical_information/vhf_screening/vhf_symptoms">
+      <select appearance="minimal" ref="/case_clinical_information/vhf_screening/vhf_symptoms">
         <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms:label')"/>
         <item>
           <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/fever:label')"/>
@@ -3001,13 +2996,13 @@
           <value>bleeding_unexplained</value>
         </item>
         <item>
-          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/others:label')"/>
-          <value>others</value>
+          <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms/other:label')"/>
+          <value>other</value>
         </item>
       </select>
-      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_others">
-        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_others:label')"/>
-        <hint ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_others:hint')"/>
+      <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_other">
+        <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_other:label')"/>
+        <hint ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_other:hint')"/>
       </input>
       <input ref="/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding">
         <label ref="jr:itext('/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding:label')"/>
@@ -4856,6 +4851,69 @@
         <item>
           <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship/Spouse:label')"/>
           <value>Spouse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <select1 ref="/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other">
+        <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other:label')"/>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Father:label')"/>
+          <value>Father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Mother:label')"/>
+          <value>Mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Grand father:label')"/>
+          <value>Grand father</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Grand mother:label')"/>
+          <value>Grand mother</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Sibling:label')"/>
+          <value>Sibling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Child:label')"/>
+          <value>Child</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Aunt:label')"/>
+          <value>Aunt</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Uncle:label')"/>
+          <value>Uncle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Guardian:label')"/>
+          <value>Guardian</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Friend:label')"/>
+          <value>Friend</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Co-worker:label')"/>
+          <value>Co-worker</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Partner:label')"/>
+          <value>Partner</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/Spouse:label')"/>
+          <value>Spouse</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/case_clinical_information/ci_interviewee/case_inverviewee_relationship_other/other:label')"/>
+          <value>other</value>
         </item>
       </select1>
     </group>

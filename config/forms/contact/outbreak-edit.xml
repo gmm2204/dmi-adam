@@ -5972,6 +5972,9 @@ Mutonga/Kithumula</value>
           <text id="static_instance-syndrome_diseases-13">
             <value>Yellow Fever</value>
           </text>
+          <text id="static_instance-syndrome_diseases-14">
+            <value>Cholera</value>
+          </text>
           <text id="static_instance-syndrome_diseases-2">
             <value>Crimean-Congo hemorrhagic fever</value>
           </text>
@@ -6009,13 +6012,13 @@ Mutonga/Kithumula</value>
             <value>SARI/ILI</value>
           </text>
           <text id="static_instance-syndromes-12">
-            <value>Viral Haemorrhagic Fevers</value>
+            <value>Viral Haemorrhagic Fever</value>
           </text>
           <text id="static_instance-syndromes-2">
             <value>Anthrax</value>
           </text>
           <text id="static_instance-syndromes-3">
-            <value>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</value>
+            <value>Acute Diarrheal Syndrome</value>
           </text>
           <text id="static_instance-syndromes-4">
             <value>Cholera</value>
@@ -6044,7 +6047,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak:edit" prefix="J1!contact:outbreak:edit!" delimiter="#" version="2024-01-22 13-08">
+        <data id="contact:outbreak:edit" prefix="J1!contact:outbreak:edit!" delimiter="#" version="2024-01-26 14-12">
           <inputs>
             <meta>
               <location>
@@ -6111,7 +6114,7 @@ Mutonga/Kithumula</value>
           </item>
           <item>
             <itextId>static_instance-syndromes-3</itextId>
-            <name>dysentery</name>
+            <name>ads</name>
           </item>
           <item>
             <itextId>static_instance-syndromes-4</itextId>
@@ -6222,6 +6225,11 @@ Mutonga/Kithumula</value>
             <itextId>static_instance-syndrome_diseases-13</itextId>
             <syndrome>vhf</syndrome>
             <name>yellow_fever</name>
+          </item>
+          <item>
+            <itextId>static_instance-syndrome_diseases-14</itextId>
+            <syndrome>ads</syndrome>
+            <name>cholera</name>
           </item>
         </root>
       </instance>
@@ -15863,14 +15871,14 @@ Course</name>
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/outbreak/parent" type="string"/>
       <bind nodeset="/data/outbreak/type" type="string"/>
-      <bind nodeset="/data/outbreak/code" type="select1" required="true()" readonly="true()"/>
+      <bind nodeset="/data/outbreak/code" type="select1" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/disease" type="select1" readonly="true()"/>
       <bind nodeset="/data/outbreak/disease_name" type="string" calculate="concat(jr:choice-name( /data/outbreak/disease ,' /data/outbreak/disease '), '')" readonly="true()"/>
-      <bind nodeset="/data/outbreak/name" type="string" required="true()" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" readonly="true()"/>
+      <bind nodeset="/data/outbreak/name" type="string" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/description" type="string" readonly="true()"/>
-      <bind nodeset="/data/outbreak/county" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/outbreak/subcounty" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/outbreak/date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" readonly="true()"/>
+      <bind nodeset="/data/outbreak/county" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/outbreak/subcounty" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/outbreak/date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/status" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -15903,8 +15911,8 @@ Course</name>
           <value>anthrax</value>
         </item>
         <item>
-          <label>Acute Diarrheal Syndrome (Diarrheal Diseases-Dysentery)</label>
-          <value>dysentery</value>
+          <label>Acute Diarrheal Syndrome</label>
+          <value>ads</value>
         </item>
         <item>
           <label>Cholera</label>
@@ -15939,7 +15947,7 @@ Course</name>
           <value>sari_ili</value>
         </item>
         <item>
-          <label>Viral Haemorrhagic Fevers</label>
+          <label>Viral Haemorrhagic Fever</label>
           <value>vhf</value>
         </item>
       </select1>

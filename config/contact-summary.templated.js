@@ -20,6 +20,11 @@ module.exports = {
       appliesToType: ['outbreak_location', 'cases_group', 'case']
     },
     {
+      label: 'contact.type.disease',
+      value: contact.disease_name,
+      appliesToType: ['outbreak', 'outbreak_location', 'cases_group', 'case']
+    },
+    {
       label: 'contact.type.outbreak_location',
       value: contact.outbreak_location_name,
       appliesToType: ['cases_group', 'case']

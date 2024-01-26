@@ -23,8 +23,11 @@
           <text id="/case_vaccination/cv_reported/reported_on:label">
             <value>Reported On</value>
           </text>
+          <text id="/case_vaccination/prerequisites/case_disease_title:label">
+            <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Disease: <output value=" /case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/disease_name "/>&lt;/h4&gt;</value>
+          </text>
           <text id="/case_vaccination/prerequisites/case_exposure_title:label">
-            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to document any vaccines the patient received for this disease or syndrome before or during the outbreak. &lt;/h4&gt;&lt;p&gt;This form can be filled multiple for each vaccine or vaccine dosage&lt;/p&gt;</value>
+            <value>&lt;h4 style="padding: 5px 0; font-weight: 400;"&gt;Use this section to document any vaccines the patient received for this disease or syndrome before or during the outbreak. &lt;/h4&gt;&lt;p&gt;This form can be filled multiple times for each vaccine or vaccine dosage&lt;/p&gt;</value>
           </text>
           <text id="/case_vaccination/prerequisites/case_id_title:label">
             <value>&lt;h4 style=&quot;border-bottom: rgb(200,200,200) dotted 1px; padding: 5px 0; font-weight: 400;&quot;&gt;Case ID: <output value=" /case_vaccination/prerequisites/ci_case_id "/>&lt;/h4&gt;</value>
@@ -64,6 +67,12 @@
           </text>
           <text id="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/date:label">
             <value>Outbreak Date</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/disease:label">
+            <value>Disease Code</value>
+          </text>
+          <text id="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/disease_name:label">
+            <value>Disease Name</value>
           </text>
           <text id="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/name:label">
             <value>Outbreak Name</value>
@@ -128,6 +137,8 @@
                   <_id/>
                   <name/>
                   <code/>
+                  <disease/>
+                  <disease_name/>
                   <date/>
                   <status/>
                 </outbreak>
@@ -137,12 +148,15 @@
             <ci_case_name/>
             <outbreak_code tag="hidden"/>
             <outbreak_name tag="hidden"/>
+            <outbreak_disease/>
+            <outbreak_disease_name/>
             <outbreak_date tag="hidden"/>
             <outbreak_status tag="hidden"/>
             <outbreak_location_name tag="hidden"/>
             <outbreak_location_county tag="hidden"/>
             <outbreak_location_subcounty tag="hidden"/>
             <case_outbreak_title tag="hidden"/>
+            <case_disease_title/>
             <case_outbreak_location_title tag="hidden"/>
             <case_name_title tag="hidden"/>
             <case_id_title tag="hidden"/>
@@ -182,7 +196,7 @@
       <bind nodeset="/case_vaccination/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_vaccination/inputs/contact/parent/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_vaccination/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_vaccination/prerequisites/cases_group/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/_id"/>
+      <bind nodeset="/case_vaccination/prerequisites/cases_group/_id" type="string" calculate="../../../inputs/contact/parent/_id" readonly="true()"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/name" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/_id" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/name" type="string"/>
@@ -191,18 +205,23 @@
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/_id" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/code" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/disease" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/disease_name" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/date" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/status" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/ci_case_id" type="string" calculate="../../inputs/contact/patient_id"/>
       <bind nodeset="/case_vaccination/prerequisites/ci_case_name" type="string" calculate="../../inputs/contact/name"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_code" type="string" calculate="../cases_group/outbreak_location/outbreak/code"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_name" type="string" calculate="../cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_disease" type="string" calculate="../cases_group/outbreak_location/outbreak/disease"/>
+      <bind nodeset="/case_vaccination/prerequisites/outbreak_disease_name" type="string" calculate="../cases_group/outbreak_location/outbreak/disease_name"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_date" type="string" calculate="../cases_group/outbreak_location/outbreak/date"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_status" type="string" calculate="../cases_group/outbreak_location/outbreak/status"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_location_name" type="string" calculate="../cases_group/outbreak_location/name"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_location_county" type="string" calculate="../cases_group/outbreak_location/ol_county"/>
       <bind nodeset="/case_vaccination/prerequisites/outbreak_location_subcounty" type="string" calculate="../cases_group/outbreak_location/ol_subcounty"/>
       <bind nodeset="/case_vaccination/prerequisites/case_outbreak_title" readonly="true()" type="string"/>
+      <bind nodeset="/case_vaccination/prerequisites/case_disease_title" readonly="true()" type="string" relevant=" /case_vaccination/prerequisites/cases_group/outbreak_location/outbreak/disease_name  != ''"/>
       <bind nodeset="/case_vaccination/prerequisites/case_outbreak_location_title" readonly="true()" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/case_name_title" readonly="true()" type="string"/>
       <bind nodeset="/case_vaccination/prerequisites/case_id_title" readonly="true()" type="string"/>
@@ -210,8 +229,8 @@
       <bind nodeset="/case_vaccination/case_vaccination/cv_name" type="string" required="true()"/>
       <bind nodeset="/case_vaccination/case_vaccination/cv_dose_number" type="int" required="true()"/>
       <bind nodeset="/case_vaccination/case_vaccination/cv_date" type="date" required="true()"/>
-      <bind nodeset="/case_vaccination/cv_reported/reported_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
-      <bind nodeset="/case_vaccination/cv_reported/reported_on" type="date" readonly="true()" calculate="today()"/>
+      <bind nodeset="/case_vaccination/cv_reported/reported_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
+      <bind nodeset="/case_vaccination/cv_reported/reported_on" type="date" calculate="today()" readonly="true()"/>
       <bind nodeset="/case_vaccination/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -239,6 +258,9 @@
       </group>
       <input ref="/case_vaccination/prerequisites/case_outbreak_title">
         <label ref="jr:itext('/case_vaccination/prerequisites/case_outbreak_title:label')"/>
+      </input>
+      <input ref="/case_vaccination/prerequisites/case_disease_title">
+        <label ref="jr:itext('/case_vaccination/prerequisites/case_disease_title:label')"/>
       </input>
       <input ref="/case_vaccination/prerequisites/case_outbreak_location_title">
         <label ref="jr:itext('/case_vaccination/prerequisites/case_outbreak_location_title:label')"/>

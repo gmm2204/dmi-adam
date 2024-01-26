@@ -35,7 +35,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="contact:cases_group:edit" prefix="J1!contact:cases_group:edit!" delimiter="#" version="2024-01-22 11-09">
+        <data id="contact:cases_group:edit" prefix="J1!contact:cases_group:edit!" delimiter="#" version="2024-01-26 15-56">
           <inputs>
             <meta>
               <location>
@@ -55,6 +55,7 @@
             <parent>PARENT</parent>
             <type>cases_group</type>
             <outbreak_name/>
+            <disease_name/>
             <outbreak_code/>
             <outbreak_location_name/>
             <cha_outbreak_title/>
@@ -88,6 +89,7 @@
       <bind nodeset="/data/cases_group/parent" type="string"/>
       <bind nodeset="/data/cases_group/type" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_name" type="string" calculate="../../cases_group/outbreak_location/outbreak/name"/>
+      <bind nodeset="/data/cases_group/disease_name" type="string" calculate="../../cases_group/outbreak_location/outbreak/disease_name"/>
       <bind nodeset="/data/cases_group/outbreak_code" type="string" calculate="../../cases_group/outbreak_location/outbreak/code"/>
       <bind nodeset="/data/cases_group/outbreak_location_name" type="string" calculate="../../cases_group/outbreak_location/name"/>
       <bind nodeset="/data/cases_group/cha_outbreak_title" readonly="true()" type="string"/>
