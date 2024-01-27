@@ -1,8 +1,0 @@
-New fields
-
-Place of death
-
-Lab
-* RDT result
-* Culture result
-* Lab Confirmation

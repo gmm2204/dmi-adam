@@ -4,3 +4,5 @@ developer/.env
 config/backups
 config/node_modules
 deploy
+scripts
+superset

@@ -111,11 +111,11 @@
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
-      <bind nodeset="/data/init/create_new_person" type="select1" required="true()" readonly="true()"/>
-      <bind nodeset="/data/init/select_person" type="db:person" required="true()" relevant="selected( /data/init/create_new_person ,'old_person')"/>
+      <bind nodeset="/data/init/create_new_person" type="select1" readonly="true()" required="true()"/>
+      <bind nodeset="/data/init/select_person" type="db:person" relevant="selected( /data/init/create_new_person ,'old_person')" required="true()"/>
       <bind nodeset="/data/contact/parent" type="string"/>
       <bind nodeset="/data/contact/type" type="string"/>
-      <bind nodeset="/data/contact/name" type="string" calculate="concat(../../cases_group/name, &quot; - Primary Contact&quot;)" readonly="true()"/>
+      <bind nodeset="/data/contact/name" type="string" readonly="true()" calculate="concat(../../cases_group/name, &quot; - Primary Contact&quot;)"/>
       <bind nodeset="/data/contact/title" readonly="true()" type="string"/>
       <bind nodeset="/data/contact/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/contact/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
@@ -128,7 +128,7 @@
       <bind nodeset="/data/cases_group/outbreak_location_name" type="string" calculate="../../cases_group/outbreak_location/name"/>
       <bind nodeset="/data/cases_group/cha_outbreak_title" readonly="true()" type="string"/>
       <bind nodeset="/data/cases_group/cha_outbreak_location_title" readonly="true()" type="string"/>
-      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" calculate="../../parent" readonly="true()"/>
+      <bind nodeset="/data/cases_group/outbreak_location/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/cases_group/outbreak_location/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/cases_group/outbreak_location/outbreak/code" type="string"/>
