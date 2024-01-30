@@ -340,7 +340,7 @@
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_outcome/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_outcome/prerequisites/cases_group/_id" type="string" calculate="../../../inputs/contact/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_outcome/prerequisites/cases_group/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/_id"/>
       <bind nodeset="/case_outcome/prerequisites/cases_group/name" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/cases_group/outbreak_location/_id" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/cases_group/outbreak_location/name" type="string"/>
@@ -377,16 +377,16 @@
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_sample_type , 'other')"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_results_date" type="date" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results" type="select1" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_results_date" type="date" required="true()" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
       <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
-      <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_created/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_outcome/co_created/created_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>

@@ -26,17 +26,11 @@
           <text id="/data/inputs/user/name:label">
             <value>Name of the logged in user</value>
           </text>
-          <text id="/data/person/email:label">
-            <value>Email Address</value>
-          </text>
           <text id="/data/person/name:label">
             <value>Name</value>
           </text>
           <text id="/data/person/parent:label">
             <value>Parent ID</value>
-          </text>
-          <text id="/data/person/phone:label">
-            <value>Phone Number</value>
           </text>
           <text id="/data/person/type:label">
             <value>Person type</value>
@@ -44,7 +38,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="contact:person:create" prefix="J1!contact:person:create!" delimiter="#" version="2024-01-20 11-50">
+        <data id="contact:person:create" prefix="J1!contact:person:create!" delimiter="#" version="2024-01-29 12-10">
           <inputs>
             <meta>
               <location>
@@ -64,8 +58,6 @@
             <parent>PARENT</parent>
             <type>person</type>
             <name/>
-            <phone/>
-            <email/>
             <meta tag="hidden">
               <created_by/>
               <created_by_person_uuid/>
@@ -95,9 +87,7 @@
       <bind nodeset="/data/init/type_label" type="string" calculate="jr:choice-name( /data/init/type_selector ,' /data/init/type_selector ')"/>
       <bind nodeset="/data/person/parent" type="string"/>
       <bind nodeset="/data/person/type" type="string"/>
-      <bind nodeset="/data/person/name" type="string"/>
-      <bind nodeset="/data/person/phone" type="tel" required="true()"/>
-      <bind nodeset="/data/person/email" type="string" required="true()"/>
+      <bind nodeset="/data/person/name" type="string" required="true()"/>
       <bind nodeset="/data/person/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/person/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/person/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -139,12 +129,6 @@
     <group ref="/data/person">
       <input ref="/data/person/name">
         <label ref="jr:itext('/data/person/name:label')"/>
-      </input>
-      <input ref="/data/person/phone">
-        <label ref="jr:itext('/data/person/phone:label')"/>
-      </input>
-      <input ref="/data/person/email">
-        <label ref="jr:itext('/data/person/email:label')"/>
       </input>
       <group appearance="hidden" ref="/data/person/meta"/>
     </group>

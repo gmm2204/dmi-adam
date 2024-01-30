@@ -15873,12 +15873,12 @@ Course</name>
       <bind nodeset="/data/outbreak/type" type="string"/>
       <bind nodeset="/data/outbreak/code" type="select1" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/disease" type="select1" readonly="true()"/>
-      <bind nodeset="/data/outbreak/disease_name" type="string" readonly="true()" calculate="concat(jr:choice-name( /data/outbreak/disease ,' /data/outbreak/disease '), '')"/>
+      <bind nodeset="/data/outbreak/disease_name" type="string" calculate="concat(jr:choice-name( /data/outbreak/disease ,' /data/outbreak/disease '), '')" readonly="true()"/>
       <bind nodeset="/data/outbreak/name" type="string" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/description" type="string" readonly="true()"/>
       <bind nodeset="/data/outbreak/county" type="select1" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/subcounty" type="select1" readonly="true()" required="true()"/>
-      <bind nodeset="/data/outbreak/date" type="date" readonly="true()" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/data/outbreak/date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" readonly="true()" required="true()"/>
       <bind nodeset="/data/outbreak/status" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>

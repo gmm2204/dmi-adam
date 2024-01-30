@@ -8,6 +8,9 @@
           <text id="/data/outbreak_location/ol_county:label">
             <value>County</value>
           </text>
+          <text id="/data/outbreak_location/ol_name:label">
+            <value>Name</value>
+          </text>
           <text id="/data/outbreak_location/ol_subcounty:label">
             <value>Sub County</value>
           </text>
@@ -5957,7 +5960,7 @@ Mutonga/Kithumula</value>
         </translation>
       </itext>
       <instance>
-        <data id="contact:outbreak_location:edit" prefix="J1!contact:outbreak_location:edit!" delimiter="#" version="2024-01-26 15-54">
+        <data id="contact:outbreak_location:edit" prefix="J1!contact:outbreak_location:edit!" delimiter="#" version="2024-01-29 8-47">
           <inputs>
             <meta>
               <location>
@@ -5990,6 +5993,7 @@ Mutonga/Kithumula</value>
               <county/>
               <subcounty/>
             </outbreak>
+            <ol_name/>
             <ol_county/>
             <ol_subcounty/>
             <meta tag="hidden">
@@ -15641,10 +15645,10 @@ Course</name>
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/outbreak_location/parent" type="string"/>
       <bind nodeset="/data/outbreak_location/type" type="string"/>
-      <bind nodeset="/data/outbreak_location/name" type="string" calculate="concat( /data/outbreak_location/ol_county , ' &gt; ',  /data/outbreak_location/ol_subcounty )" required="true()"/>
+      <bind nodeset="/data/outbreak_location/name" type="string" calculate="concat( /data/outbreak_location/ol_name , ' ')"/>
       <bind nodeset="/data/outbreak_location/outbreak_name" type="string" calculate="../../outbreak_location/outbreak/name"/>
       <bind nodeset="/data/outbreak_location/disease_name" type="string" calculate="../../outbreak_location/outbreak/disease_name"/>
-      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" calculate="../../parent" readonly="true()"/>
+      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" readonly="true()" calculate="../../parent"/>
       <bind nodeset="/data/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/code" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/disease" type="string"/>
@@ -15653,8 +15657,9 @@ Course</name>
       <bind nodeset="/data/outbreak_location/outbreak/status" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/county" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/subcounty" type="string"/>
-      <bind nodeset="/data/outbreak_location/ol_county" type="select1" required="true()"/>
-      <bind nodeset="/data/outbreak_location/ol_subcounty" type="select1" required="true()"/>
+      <bind nodeset="/data/outbreak_location/ol_name" type="string" required="true()" calculate="../outbreak/subcounty"/>
+      <bind nodeset="/data/outbreak_location/ol_county" type="select1" calculate="../outbreak/county"/>
+      <bind nodeset="/data/outbreak_location/ol_subcounty" type="select1" calculate="../outbreak/subcounty"/>
       <bind nodeset="/data/outbreak_location/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/outbreak_location/meta/created_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/outbreak_location/meta/created_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
@@ -15675,6 +15680,9 @@ Course</name>
           <label ref="jr:itext('/data/outbreak_location/outbreak/_id:label')"/>
         </input>
       </group>
+      <input appearance="autocomplete" ref="/data/outbreak_location/ol_name">
+        <label ref="jr:itext('/data/outbreak_location/ol_name:label')"/>
+      </input>
       <select1 appearance="autocomplete" ref="/data/outbreak_location/ol_county">
         <label ref="jr:itext('/data/outbreak_location/ol_county:label')"/>
         <item>
