@@ -19,15 +19,7 @@ module.exports = [
             days: 7, //7 days until due
             start: 7, //Show for 7 days before due day
             end: 1, //Show for 1 day after due
-        }],
-        resolvedIf: function (contact, report, event, dueDate) {
-            return Utils.isFormSubmittedInWindow(
-                contact.reports,
-                'case_clinical_information',
-                Utils.addDate(dueDate, -event.start).getTime(),
-                Utils.addDate(dueDate, event.end + 1).getTime()
-            );
-        }
+        }]
     },
     {
         name: 'case_outcome',
@@ -49,15 +41,7 @@ module.exports = [
             days: 7, //7 days until due
             start: 7, //Show for 7 days before due day
             end: 1, //Show for 1 day after due
-        }],
-        resolvedIf: function (contact, report, event, dueDate) {
-            return Utils.isFormSubmittedInWindow(
-                contact.reports,
-                'case_outcome',
-                Utils.addDate(dueDate, -event.start).getTime(),
-                Utils.addDate(dueDate, event.end + 1).getTime()
-            );
-        }
+        }]
     },
     {
         name: 'case_exposure',
@@ -95,15 +79,7 @@ module.exports = [
             days: 7, //7 days until due
             start: 7, //Show for 7 days before due day
             end: 1, //Show for 1 day after due
-        }],
-        resolvedIf: function (contact, report, event, dueDate) {
-            return Utils.isFormSubmittedInWindow(
-                contact.reports,
-                'case_exposure',
-                Utils.addDate(dueDate, -event.start).getTime(),
-                Utils.addDate(dueDate, event.end + 1).getTime()
-            );
-        }
+        }]
     },
     {
         name: 'case_vaccination',
@@ -139,15 +115,7 @@ module.exports = [
             days: 7, //7 days until due
             start: 7, //Show for 7 days before due day
             end: 1, //Show for 1 day after due
-        }],
-        resolvedIf: function (contact, report, event, dueDate) {
-            return Utils.isFormSubmittedInWindow(
-                contact.reports,
-                'case_vaccination',
-                Utils.addDate(dueDate, -event.start).getTime(),
-                Utils.addDate(dueDate, event.end + 1).getTime()
-            );
-        }
+        }]
     },
     {
         name: 'case_hospitalization',
@@ -183,14 +151,6 @@ module.exports = [
             days: 7, //7 days until due
             start: 7, //Show for 7 days before due day
             end: 1, //Show for 1 day after due
-        }],
-        resolvedIf: function (contact, report, event, dueDate) {
-            return Utils.isFormSubmittedInWindow(
-                contact.reports,
-                'case_hospitalization',
-                Utils.addDate(dueDate, -event.start).getTime(),
-                Utils.addDate(dueDate, event.end + 1).getTime()
-            );
-        }
+        }]
     }
 ];

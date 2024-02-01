@@ -10,7 +10,7 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.cholera.all.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_code === 'cholera');
+            return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_disease === 'cholera');
         },
         date: 'reported',
     },
@@ -23,7 +23,7 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.cholera.confirmed.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_code === 'cholera' && r.fields.co_final.cof_case_classification === 'confirmed');
+            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'cholera' && r.fields.co_final.cof_case_classification === 'confirmed');
         },
         date: 'reported',
     },
@@ -36,7 +36,7 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.cholera.recovered.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_code === 'cholera' && r.fields.co_final.cof_patient_status === 'recovered');
+            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'cholera' && r.fields.co_final.cof_patient_status === 'recovered');
         },
         date: 'reported',
     },
@@ -49,7 +49,7 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.rvf.all.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_clinical_information' && r.fields.prerequisites.disease === 'rvf');
+            return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_disease === 'rift_valley_fever');
         },
         date: 'reported',
     },
@@ -62,7 +62,7 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.rvf.confirmed.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_outcome' && r.fields.prerequisites.disease === 'rvf' && r.fields.co_final.cof_case_classification === 'confirmed');
+            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'rift_valley_fever' && r.fields.co_final.cof_case_classification === 'confirmed');
         },
         date: 'reported',
     },
@@ -75,7 +75,7 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.rvf.recovered.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_outcome' && r.fields.prerequisites.disease === 'rvf' && r.fields.co_final.cof_patient_status === 'recovered');
+            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'rift_valley_fever' && r.fields.co_final.cof_patient_status === 'recovered');
         },
         date: 'reported',
     },
