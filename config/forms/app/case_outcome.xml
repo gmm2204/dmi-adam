@@ -59,93 +59,6 @@
           <text id="/case_outcome/co_final/cof_referral_reason:label">
             <value>Reason for referral</value>
           </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_case_id:label">
-            <value>Unique Case ID</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab:hint">
-            <value>e.g. Culture etc.</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab:label">
-            <value>Other laboratory tests conducted?</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/indeterminate:label">
-            <value>Indeterminate</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/negative:label">
-            <value>Negative</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/pending:label">
-            <value>Pending</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/positive:label">
-            <value>Positive</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results:label">
-            <value>Results</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results_date:label">
-            <value>Results date</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt/no:label">
-            <value>No</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt:label">
-            <value>Rapid diagnostic test conducted?</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/indeterminate:label">
-            <value>Indeterminate</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/negative:label">
-            <value>Negative</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/pending:label">
-            <value>Pending</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/positive:label">
-            <value>Positive</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results:label">
-            <value>Results</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results_date:label">
-            <value>Results date</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_date:label">
-            <value>Date of sample collection</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type/biopsy:label">
-            <value>Biopsy</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type/blood:label">
-            <value>Blood</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type/saliva:label">
-            <value>Saliva</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type/stool:label">
-            <value>Stool</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type/urine:label">
-            <value>Urine</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type:label">
-            <value>Samples collected</value>
-          </text>
-          <text id="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other:label">
-            <value>Samples collected (other)</value>
-          </text>
           <text id="/case_outcome/co_laboratory/col_sample_collected/no:label">
             <value>No</value>
           </text>
@@ -153,7 +66,97 @@
             <value>Yes</value>
           </text>
           <text id="/case_outcome/co_laboratory/col_sample_collected:label">
-            <value>Did the patient consent to sample collection (express and/or informed) for laboratory confirmation?</value>
+            <value>Were samples collected?</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_case_id:label">
+            <value>Unique Case ID</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab:hint">
+            <value>e.g. Culture etc.</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab:label">
+            <value>Other laboratory tests conducted?</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/indeterminate:label">
+            <value>Indeterminate</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/negative:label">
+            <value>Negative</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/pending:label">
+            <value>Pending</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/positive:label">
+            <value>Positive</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results:label">
+            <value>Results</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results_date:label">
+            <value>Results date</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt/no:label">
+            <value>No</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt:label">
+            <value>Rapid diagnostic test conducted?</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/indeterminate:label">
+            <value>Indeterminate</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/negative:label">
+            <value>Negative</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/pending:label">
+            <value>Pending</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/positive:label">
+            <value>Positive</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results:label">
+            <value>Results</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results_date:label">
+            <value>Results date</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_date:label">
+            <value>Date of sample collection</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/biopsy:label">
+            <value>Biopsy</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/blood:label">
+            <value>Blood</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/saliva:label">
+            <value>Saliva</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/serum:label">
+            <value>Blood Serum</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/stool:label">
+            <value>Stool</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type/urine:label">
+            <value>Urine</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type:label">
+            <value>Samples collected</value>
+          </text>
+          <text id="/case_outcome/co_laboratory/col_sample_information/col_sample_type_other:label">
+            <value>Samples collected (other)</value>
           </text>
           <text id="/case_outcome/prerequisites/case_disease_title:label">
             <value>&lt;h4 style=&quot;padding: 5px 0;&quot;&gt;Disease: <output value=" /case_outcome/prerequisites/cases_group/outbreak_location/outbreak/disease_name "/>&lt;/h4&gt;</value>
@@ -297,7 +300,7 @@
           </prerequisites>
           <co_laboratory>
             <col_sample_collected>no</col_sample_collected>
-            <col_consented_information>
+            <col_sample_information>
               <col_case_id/>
               <col_sample_date/>
               <col_sample_type/>
@@ -312,7 +315,7 @@
                 <col_lab_results>pending</col_lab_results>
                 <col_lab_results_date/>
               </col_lab_group>
-            </col_consented_information>
+            </col_sample_information>
           </co_laboratory>
           <co_final>
             <cof_case_classification/>
@@ -349,7 +352,7 @@
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/case_outcome/inputs/contact/parent/parent/parent/parent/name" type="string"/>
       <bind nodeset="/case_outcome/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
-      <bind nodeset="/case_outcome/prerequisites/cases_group/_id" type="string" calculate="../../../inputs/contact/parent/_id" readonly="true()"/>
+      <bind nodeset="/case_outcome/prerequisites/cases_group/_id" type="string" readonly="true()" calculate="../../../inputs/contact/parent/_id"/>
       <bind nodeset="/case_outcome/prerequisites/cases_group/name" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/cases_group/outbreak_location/_id" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/cases_group/outbreak_location/name" type="string"/>
@@ -381,25 +384,25 @@
       <bind nodeset="/case_outcome/prerequisites/case_id_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_case_id" type="string" calculate=" /case_outcome/prerequisites/case_uuid " readonly="true()" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type" type="select" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other" type="string" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_sample_type , 'other')" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_group" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_rdt , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant=" /case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results  != 'pending'"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_group" relevant="selected( /case_outcome/co_laboratory/col_consented_information/col_lab , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant=" /case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results  != 'pending'"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_case_id" type="string" readonly="true()" calculate=" /case_outcome/prerequisites/case_uuid " required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_sample_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_sample_type" type="select" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_information/col_sample_type , 'other')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt" type="select1" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group" relevant="selected( /case_outcome/co_laboratory/col_sample_information/col_rdt , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results" type="select1" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant=" /case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results  != 'pending'"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab" type="select1" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group" relevant="selected( /case_outcome/co_laboratory/col_sample_information/col_lab , 'yes')"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results" type="select1" required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant=" /case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results  != 'pending'"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')" required="true()"/>
-      <bind nodeset="/case_outcome/co_final/cof_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
-      <bind nodeset="/case_outcome/co_created/created_by" type="string" calculate="../../inputs/user/name" readonly="true()"/>
-      <bind nodeset="/case_outcome/co_created/created_on" type="date" calculate="today()" readonly="true()"/>
+      <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>
+      <bind nodeset="/case_outcome/co_final/cof_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_outcome/co_created/created_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
+      <bind nodeset="/case_outcome/co_created/created_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_outcome/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
     </model>
   </h:head>
@@ -456,112 +459,116 @@
           <value>no</value>
         </item>
       </select1>
-      <group ref="/case_outcome/co_laboratory/col_consented_information">
-        <input ref="/case_outcome/co_laboratory/col_consented_information/col_case_id">
-          <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_case_id:label')"/>
+      <group ref="/case_outcome/co_laboratory/col_sample_information">
+        <input ref="/case_outcome/co_laboratory/col_sample_information/col_case_id">
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_case_id:label')"/>
         </input>
-        <input ref="/case_outcome/co_laboratory/col_consented_information/col_sample_date">
-          <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_date:label')"/>
+        <input ref="/case_outcome/co_laboratory/col_sample_information/col_sample_date">
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_date:label')"/>
         </input>
-        <select ref="/case_outcome/co_laboratory/col_consented_information/col_sample_type">
-          <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type:label')"/>
+        <select ref="/case_outcome/co_laboratory/col_sample_information/col_sample_type">
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type:label')"/>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type/blood:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/blood:label')"/>
             <value>blood</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type/urine:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/serum:label')"/>
+            <value>serum</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/urine:label')"/>
             <value>urine</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type/saliva:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/saliva:label')"/>
             <value>saliva</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type/biopsy:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/biopsy:label')"/>
             <value>biopsy</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type/stool:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/stool:label')"/>
             <value>stool</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type/other:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type/other:label')"/>
             <value>other</value>
           </item>
         </select>
-        <input ref="/case_outcome/co_laboratory/col_consented_information/col_sample_type_other">
-          <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_sample_type_other:label')"/>
+        <input ref="/case_outcome/co_laboratory/col_sample_information/col_sample_type_other">
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_sample_type_other:label')"/>
         </input>
-        <select1 ref="/case_outcome/co_laboratory/col_consented_information/col_rdt">
-          <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt:label')"/>
+        <select1 ref="/case_outcome/co_laboratory/col_sample_information/col_rdt">
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt:label')"/>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt/yes:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt/yes:label')"/>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt/no:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt/no:label')"/>
             <value>no</value>
           </item>
         </select1>
-        <group ref="/case_outcome/co_laboratory/col_consented_information/col_rdt_group">
-          <select1 ref="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results">
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results:label')"/>
+        <group ref="/case_outcome/co_laboratory/col_sample_information/col_rdt_group">
+          <select1 ref="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results">
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results:label')"/>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/positive:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/positive:label')"/>
               <value>positive</value>
             </item>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/negative:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/negative:label')"/>
               <value>negative</value>
             </item>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/indeterminate:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/indeterminate:label')"/>
               <value>indeterminate</value>
             </item>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results/pending:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results/pending:label')"/>
               <value>pending</value>
             </item>
           </select1>
-          <input ref="/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results_date">
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_rdt_group/col_rdt_results_date:label')"/>
+          <input ref="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results_date">
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results_date:label')"/>
           </input>
         </group>
-        <select1 ref="/case_outcome/co_laboratory/col_consented_information/col_lab">
-          <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab:label')"/>
-          <hint ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab:hint')"/>
+        <select1 ref="/case_outcome/co_laboratory/col_sample_information/col_lab">
+          <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab:label')"/>
+          <hint ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab:hint')"/>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab/yes:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab/yes:label')"/>
             <value>yes</value>
           </item>
           <item>
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab/no:label')"/>
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab/no:label')"/>
             <value>no</value>
           </item>
         </select1>
-        <group ref="/case_outcome/co_laboratory/col_consented_information/col_lab_group">
-          <select1 ref="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results">
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results:label')"/>
+        <group ref="/case_outcome/co_laboratory/col_sample_information/col_lab_group">
+          <select1 ref="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results">
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results:label')"/>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/positive:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/positive:label')"/>
               <value>positive</value>
             </item>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/negative:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/negative:label')"/>
               <value>negative</value>
             </item>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/indeterminate:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/indeterminate:label')"/>
               <value>indeterminate</value>
             </item>
             <item>
-              <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results/pending:label')"/>
+              <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results/pending:label')"/>
               <value>pending</value>
             </item>
           </select1>
-          <input ref="/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results_date">
-            <label ref="jr:itext('/case_outcome/co_laboratory/col_consented_information/col_lab_group/col_lab_results_date:label')"/>
+          <input ref="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results_date">
+            <label ref="jr:itext('/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results_date:label')"/>
           </input>
         </group>
       </group>

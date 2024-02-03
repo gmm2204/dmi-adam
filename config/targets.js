@@ -12,7 +12,8 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_disease === 'cholera');
         },
-        date: 'reported',
+        date: 'now',
+        aggregate: true
     },
     {
         id: 'cholera_confirmed_cases',
@@ -23,9 +24,10 @@ module.exports = [
         subtitle_translation_key: 'targets.outbreak.cholera.confirmed.subtitle',
         appliesTo: 'reports',
         appliesIf: (c, r) => {
-            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'cholera' && r.fields.co_final.cof_case_classification === 'confirmed');
+            return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'cholera' && (r.fields.co_final.cof_case_classification === 'confirmed' || r.fields.co_final.cof_case_classification === 'epi_linked'));
         },
-        date: 'reported',
+        date: 'now',
+        aggregate: true
     },
     {
         id: 'cholera_recovered_cases',
@@ -38,7 +40,8 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'cholera' && r.fields.co_final.cof_patient_status === 'recovered');
         },
-        date: 'reported',
+        date: 'now',
+        aggregate: true
     },
     {
         id: 'rvf_cases',
@@ -51,7 +54,7 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_disease === 'rift_valley_fever');
         },
-        date: 'reported',
+        date: 'now',
     },
     {
         id: 'rvf_confirmed_cases',
@@ -64,7 +67,7 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'rift_valley_fever' && r.fields.co_final.cof_case_classification === 'confirmed');
         },
-        date: 'reported',
+        date: 'now',
     },
     {
         id: 'rvf_recovered_cases',
@@ -77,7 +80,7 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_disease === 'rift_valley_fever' && r.fields.co_final.cof_patient_status === 'recovered');
         },
-        date: 'reported',
+        date: 'now',
     },
     {
         id: 'covid19_cases',
@@ -90,7 +93,7 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_clinical_information' && r.fields.prerequisites.outbreak_code === 'covid19');
         },
-        date: 'reported',
+        date: 'now',
     },
     {
         id: 'covid19_confirmed_cases',
@@ -103,7 +106,7 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_code === 'covid19' && r.fields.co_final.cof_case_classification === 'confirmed');
         },
-        date: 'reported',
+        date: 'now',
     },
     {
         id: 'recovered_cases',
@@ -116,6 +119,6 @@ module.exports = [
         appliesIf: (c, r) => {
             return (r.form === 'case_outcome' && r.fields.prerequisites.outbreak_code === 'covid19' && r.fields.co_final.cof_patient_status === 'recovered');
         },
-        date: 'reported',
+        date: 'now',
     }
 ];
