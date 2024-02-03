@@ -385,18 +385,18 @@
       <bind nodeset="/case_outcome/prerequisites/case_outcome_title" readonly="true()" type="string"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_collected" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information" relevant="selected( /case_outcome/co_laboratory/col_sample_collected , 'yes')"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_case_id" type="string" readonly="true()" calculate=" /case_outcome/prerequisites/case_uuid " required="true()"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_case_id" type="string" readonly="true()" required="true()" calculate=" /case_outcome/prerequisites/case_uuid "/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_sample_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_sample_type" type="select" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_sample_type_other" type="string" required="true()" relevant="selected( /case_outcome/co_laboratory/col_sample_information/col_sample_type , 'other')"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group" relevant="selected( /case_outcome/co_laboratory/col_sample_information/col_rdt , 'yes')"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant=" /case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results  != 'pending'"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results_date" type="date" required="true()" relevant=" /case_outcome/co_laboratory/col_sample_information/col_rdt_group/col_rdt_results  != 'pending'" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group" relevant="selected( /case_outcome/co_laboratory/col_sample_information/col_lab , 'yes')"/>
       <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results" type="select1" required="true()"/>
-      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" relevant=" /case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results  != 'pending'"/>
+      <bind nodeset="/case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results_date" type="date" required="true()" relevant=" /case_outcome/co_laboratory/col_sample_information/col_lab_group/col_lab_results  != 'pending'" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_outcome/co_final/cof_case_classification" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_patient_status" type="select1" required="true()"/>
       <bind nodeset="/case_outcome/co_final/cof_referral_reason" type="string" required="true()" relevant="selected( /case_outcome/co_final/cof_patient_status , 'referred')"/>

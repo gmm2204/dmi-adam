@@ -15656,7 +15656,7 @@ Course</name>
       <bind nodeset="/data/outbreak_location/name" type="string" calculate="concat( /data/outbreak_location/ol_name , ' ')"/>
       <bind nodeset="/data/outbreak_location/outbreak_name" type="string" calculate="../../outbreak_location/outbreak/name"/>
       <bind nodeset="/data/outbreak_location/disease_name" type="string" calculate="../../outbreak_location/outbreak/disease_name"/>
-      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" readonly="true()" calculate="../../parent"/>
+      <bind nodeset="/data/outbreak_location/outbreak/_id" type="string" calculate="../../parent" readonly="true()"/>
       <bind nodeset="/data/outbreak_location/outbreak/name" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/code" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/disease" type="string"/>
@@ -15665,7 +15665,7 @@ Course</name>
       <bind nodeset="/data/outbreak_location/outbreak/status" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/county" type="string"/>
       <bind nodeset="/data/outbreak_location/outbreak/subcounty" type="string"/>
-      <bind nodeset="/data/outbreak_location/ol_name" type="string" required="true()" calculate="../outbreak/subcounty"/>
+      <bind nodeset="/data/outbreak_location/ol_name" type="string" calculate="../outbreak/subcounty" required="true()"/>
       <bind nodeset="/data/outbreak_location/ol_county" type="select1" calculate="../outbreak/county"/>
       <bind nodeset="/data/outbreak_location/ol_subcounty" type="select1" calculate="../outbreak/subcounty"/>
       <bind nodeset="/data/outbreak_location/meta/created_by" type="string" calculate="../../../inputs/user/name"/>
