@@ -15927,7 +15927,7 @@ Course</name>
       <bind nodeset="/data/outbreak/code" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/disease" type="select1"/>
       <bind nodeset="/data/outbreak/disease_name" type="string" calculate="concat(jr:choice-name( /data/outbreak/disease ,' /data/outbreak/disease '),'')"/>
-      <bind nodeset="/data/outbreak/name" type="string" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')" required="true()"/>
+      <bind nodeset="/data/outbreak/name" type="string" required="true()" calculate="concat(jr:choice-name( /data/outbreak/code ,' /data/outbreak/code '), ' ', ' (on ',  /data/outbreak/date , ' at ',  /data/outbreak/county , ' - ',  /data/outbreak/subcounty , ')')"/>
       <bind nodeset="/data/outbreak/description" type="string"/>
       <bind nodeset="/data/outbreak/county" type="select1" required="true()"/>
       <bind nodeset="/data/outbreak/subcounty" type="select1"/>

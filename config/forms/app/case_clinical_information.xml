@@ -2353,7 +2353,7 @@
       <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms_other" type="string" relevant="selected( /case_clinical_information/ads_screening/ads_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/ads_screening/ads_diarrhea_per_day" type="int" relevant="selected( /case_clinical_information/ads_screening/ads_symptoms , 'diarrhea')" required="true()"/>
-      <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/ads_screening/ads_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/cholera_screening" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease  = 'cholera'"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/cholera_screening/cholera_vaccination_prompt" readonly="true()" type="string" relevant="selected( /case_clinical_information/cholera_screening/cholera_vaccination , 'yes')"/>
@@ -2362,7 +2362,7 @@
       <bind nodeset="/case_clinical_information/covid19_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_others" type="string"/>
-      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/covid19_screening/covid19_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/covid19_screening/covid19_contact_with_confirmed_case" type="select1"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'covid19'"/>
       <bind nodeset="/case_clinical_information/covid19_underlying_conditions/cuc_underlying_conditions_present" type="select1" required="true()"/>
@@ -2381,7 +2381,7 @@
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms" type="select" required="true()"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_other" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'other')"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_unexplained_bleeding" type="string" relevant="selected( /case_clinical_information/vhf_screening/vhf_symptoms , 'unexplained_bleeding')" required="true()"/>
-      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_location" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/vhf_screening/vhf_symptoms_start_residence" type="string" required="true()"/>
       <bind nodeset="/case_clinical_information/vhf_rvf_screening" relevant=" /case_clinical_information/prerequisites/cases_group/outbreak_location/outbreak/disease  = 'rift_valley_fever'"/>
@@ -2439,7 +2439,7 @@
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_fever" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_rash" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_rash_type" type="select1" relevant="selected( /case_clinical_information/measles_screening/measles_symptoms_rash , 'yes')" required="true()"/>
-      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/measles_screening/measles_symptoms_start_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/measles_screening/measles_residence_visit_date" type="date" relevant="selected( /case_clinical_information/measles_screening/measles_residence_visit , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/unknown_screening" relevant=" /case_clinical_information/prerequisites/outbreak_code  = 'unknown'"/>
@@ -2523,7 +2523,7 @@
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_record_cutaneous" type="select1" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information" relevant="selected( /case_clinical_information/ci_cutaneous/ci_record_cutaneous , 'yes')"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders" type="select1" required="true()"/>
-      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
+      <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/ci_ent" type="date" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_duration_days" type="int" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_type" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>
       <bind nodeset="/case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_localization" type="select1" relevant="selected( /case_clinical_information/ci_cutaneous/ci_cutaneous_information/cic_observed_disorders , 'yes')" required="true()"/>

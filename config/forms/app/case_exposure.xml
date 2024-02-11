@@ -19353,39 +19353,39 @@ Course</name>
       <bind nodeset="/case_exposure/ce_type/cel_type" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_food" relevant="selected( /case_exposure/ce_type/cel_type , 'food')"/>
       <bind nodeset="/case_exposure/ce_food/cef_name" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" required="true()" calculate="today()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_exposure/ce_food/cef_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()" calculate="today()"/>
       <bind nodeset="/case_exposure/ce_food/cef_time" type="time" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_source" type="string" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_participants_affected_count" type="int" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_water_source" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')"/>
+      <bind nodeset="/case_exposure/ce_food/cef_water_source_other" type="string" relevant="selected( /case_exposure/ce_food/cef_water_source , 'other')" required="true()"/>
       <bind nodeset="/case_exposure/ce_food/cef_waste_title" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_food/cef_toilet_type" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" required="true()" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')"/>
+      <bind nodeset="/case_exposure/ce_food/cef_toilet_type_other" type="string" relevant="selected( /case_exposure/ce_food/cef_toilet_type , 'other')" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel" relevant="selected( /case_exposure/ce_type/cel_type , 'travel')"/>
       <bind nodeset="/case_exposure/ce_travel/cet_origin" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_travel/ceto_country" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/ceto_city_town_village" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_travel/ceto_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_exposure/ce_travel/ceto_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cet_destination" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_travel/cetd_country" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_travel/cetd_city_town_village" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_travel/cetd_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_exposure/ce_travel/cetd_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_exposure/ce_animal" relevant="selected( /case_exposure/ce_type/cel_type , 'animal')"/>
       <bind nodeset="/case_exposure/ce_animal/cea_exposure" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_animal/cea_exposure_other" type="string" required="true()" relevant="selected( /case_exposure/ce_animal/cea_exposure , 'other')"/>
+      <bind nodeset="/case_exposure/ce_animal/cea_exposure_other" type="string" relevant="selected( /case_exposure/ce_animal/cea_exposure , 'other')" required="true()"/>
       <bind nodeset="/case_exposure/ce_animal/cea_type" type="select1" required="true()"/>
       <bind nodeset="/case_exposure/ce_animal/cea_species" type="select" required="true()"/>
-      <bind nodeset="/case_exposure/ce_animal/cea_species_other" type="string" required="true()" relevant="selected( /case_exposure/ce_animal/cea_species , 'other')"/>
+      <bind nodeset="/case_exposure/ce_animal/cea_species_other" type="string" relevant="selected( /case_exposure/ce_animal/cea_species , 'other')" required="true()"/>
       <bind nodeset="/case_exposure/ce_animal/cea_location" readonly="true()" type="string"/>
       <bind nodeset="/case_exposure/ce_animal/cea_country" type="select1" required="true()"/>
-      <bind nodeset="/case_exposure/ce_animal/cea_county" type="select1" required="true()" relevant="selected( /case_exposure/ce_animal/cea_country , 'Kenya')"/>
-      <bind nodeset="/case_exposure/ce_animal/cea_subcounty" type="select1" required="true()" relevant="selected( /case_exposure/ce_animal/cea_country , 'Kenya')"/>
-      <bind nodeset="/case_exposure/ce_animal/cea_ward" type="select1" required="true()" relevant="selected( /case_exposure/ce_animal/cea_country , 'Kenya')"/>
+      <bind nodeset="/case_exposure/ce_animal/cea_county" type="select1" relevant="selected( /case_exposure/ce_animal/cea_country , 'Kenya')" required="true()"/>
+      <bind nodeset="/case_exposure/ce_animal/cea_subcounty" type="select1" relevant="selected( /case_exposure/ce_animal/cea_country , 'Kenya')" required="true()"/>
+      <bind nodeset="/case_exposure/ce_animal/cea_ward" type="select1" relevant="selected( /case_exposure/ce_animal/cea_country , 'Kenya')" required="true()"/>
       <bind nodeset="/case_exposure/ce_animal/ceto_city_town_village" type="string" required="true()"/>
-      <bind nodeset="/case_exposure/ce_animal/cea_date" type="date" required="true()" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))"/>
+      <bind nodeset="/case_exposure/ce_animal/cea_date" type="date" constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" required="true()"/>
       <bind nodeset="/case_exposure/ce_reported/reported_by" type="string" readonly="true()" calculate="../../inputs/user/name"/>
       <bind nodeset="/case_exposure/ce_reported/reported_on" type="date" readonly="true()" calculate="today()"/>
       <bind nodeset="/case_exposure/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
